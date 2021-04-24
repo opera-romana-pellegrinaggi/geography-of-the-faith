@@ -32,7 +32,7 @@ canvas {
 }
 
 .night {
-  background: -webkit-linear-gradient(top, rgb(0, 0, 0) 50%, rgb(25, 19, 39)80%, rgb(43, 32, 72));
+  background: -webkit-linear-gradient(bottom left, rgb(0, 0, 0) 50%, rgb(25, 19, 39)80%, rgb(43, 32, 72));
   width: 100vw;
   height: 100vh;
   position: absolute;
