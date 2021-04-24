@@ -1,253 +1,253 @@
-id	name
--1	Northern Cyprus
--2	Kosovo
--3	Somaliland
-4	Afghanistan
-8	Albania
-10	Antarctica
-12	Algeria
-16	American Samoa
-20	Andorra
-24	Angola
-28	Antigua and Barbuda
-31	Azerbaijan
-32	Argentina
-36	Australia
-40	Austria
-44	Bahamas
-48	Bahrain
-50	Bangladesh
-51	Armenia
-52	Barbados
-56	Belgium
-60	Bermuda
-64	Bhutan
-68	Bolivia, Plurinational State of
-70	Bosnia and Herzegovina
-72	Botswana
-74	Bouvet Island
-76	Brazil
-84	Belize
-86	British Indian Ocean Territory
-90	Solomon Islands
-92	Virgin Islands, British
-96	Brunei Darussalam
-100	Bulgaria
-104	Myanmar
-108	Burundi
-112	Belarus
-116	Cambodia
-120	Cameroon
-124	Canada
-132	Cape Verde
-136	Cayman Islands
-140	Central African Republic
-144	Sri Lanka
-148	Chad
-152	Chile
-156	China
-158	Taiwan, Province of China
-162	Christmas Island
-166	Cocos (Keeling) Islands
-170	Colombia
-174	Comoros
-175	Mayotte
-178	Congo
-180	Congo, the Democratic Republic of the
-184	Cook Islands
-188	Costa Rica
-191	Croatia
-192	Cuba
-196	Cyprus
-203	Czech Republic
-204	Benin
-208	Denmark
-212	Dominica
-214	Dominican Republic
-218	Ecuador
-222	El Salvador
-226	Equatorial Guinea
-231	Ethiopia
-232	Eritrea
-233	Estonia
-234	Faroe Islands
-238	Falkland Islands (Malvinas)
-239	South Georgia and the South Sandwich Islands
-242	Fiji
-246	Finland
-248	Åland Islands
-250	France
-254	French Guiana
-258	French Polynesia
-260	French Southern Territories
-262	Djibouti
-266	Gabon
-268	Georgia
-270	Gambia
-275	Palestinian Territory, Occupied
-276	Germany
-288	Ghana
-292	Gibraltar
-296	Kiribati
-300	Greece
-304	Greenland
-308	Grenada
-312	Guadeloupe
-316	Guam
-320	Guatemala
-324	Guinea
-328	Guyana
-332	Haiti
-334	Heard Island and McDonald Islands
-336	Holy See (Vatican City State)
-340	Honduras
-344	Hong Kong
-348	Hungary
-352	Iceland
-356	India
-360	Indonesia
-364	Iran, Islamic Republic of
-368	Iraq
-372	Ireland
-376	Israel
-380	Italy
-384	Côte d'Ivoire
-388	Jamaica
-392	Japan
-398	Kazakhstan
-400	Jordan
-404	Kenya
-408	Korea, Democratic People's Republic of
-410	Korea, Republic of
-414	Kuwait
-417	Kyrgyzstan
-418	Lao People's Democratic Republic
-422	Lebanon
-426	Lesotho
-428	Latvia
-430	Liberia
-434	Libya
-438	Liechtenstein
-440	Lithuania
-442	Luxembourg
-446	Macao
-450	Madagascar
-454	Malawi
-458	Malaysia
-462	Maldives
-466	Mali
-470	Malta
-474	Martinique
-478	Mauritania
-480	Mauritius
-484	Mexico
-492	Monaco
-496	Mongolia
-498	Moldova, Republic of
-499	Montenegro
-500	Montserrat
-504	Morocco
-508	Mozambique
-512	Oman
-516	Namibia
-520	Nauru
-524	Nepal
-528	Netherlands
-531	Curaçao
-533	Aruba
-534	Sint Maarten (Dutch part)
-535	Bonaire, Sint Eustatius and Saba
-540	New Caledonia
-548	Vanuatu
-554	New Zealand
-558	Nicaragua
-562	Niger
-566	Nigeria
-570	Niue
-574	Norfolk Island
-578	Norway
-580	Northern Mariana Islands
-581	United States Minor Outlying Islands
-583	Micronesia, Federated States of
-584	Marshall Islands
-585	Palau
-586	Pakistan
-591	Panama
-598	Papua New Guinea
-600	Paraguay
-604	Peru
-608	Philippines
-612	Pitcairn
-616	Poland
-620	Portugal
-624	Guinea-Bissau
-626	Timor-Leste
-630	Puerto Rico
-634	Qatar
-638	Réunion
-642	Romania
-643	Russian Federation
-646	Rwanda
-652	Saint Barthélemy
-654	Saint Helena, Ascension and Tristan da Cunha
-659	Saint Kitts and Nevis
-660	Anguilla
-662	Saint Lucia
-663	Saint Martin (French part)
-666	Saint Pierre and Miquelon
-670	Saint Vincent and the Grenadines
-674	San Marino
-678	Sao Tome and Principe
-682	Saudi Arabia
-686	Senegal
-688	Serbia
-690	Seychelles
-694	Sierra Leone
-702	Singapore
-703	Slovakia
-704	Viet Nam
-705	Slovenia
-706	Somalia
-710	South Africa
-716	Zimbabwe
-724	Spain
-728	South Sudan
-729	Sudan
-732	Western Sahara
-740	Suriname
-744	Svalbard and Jan Mayen
-748	Swaziland
-752	Sweden
-756	Switzerland
-760	Syrian Arab Republic
-762	Tajikistan
-764	Thailand
-768	Togo
-772	Tokelau
-776	Tonga
-780	Trinidad and Tobago
-784	United Arab Emirates
-788	Tunisia
-792	Turkey
-795	Turkmenistan
-796	Turks and Caicos Islands
-798	Tuvalu
-800	Uganda
-804	Ukraine
-807	Macedonia, the former Yugoslav Republic of
-818	Egypt
-826	United Kingdom
-831	Guernsey
-832	Jersey
-833	Isle of Man
-834	Tanzania, United Republic of
-840	United States
-850	Virgin Islands, U.S.
-854	Burkina Faso
-858	Uruguay
-860	Uzbekistan
-862	Venezuela, Bolivarian Republic of
-876	Wallis and Futuna
-882	Samoa
-887	Yemen
-894	Zambia
+id	name_en	name_it
+-1	Northern Cyprus	Cipro del Nord
+-2	Kosovo	Kosovo
+-3	Somaliland	Somaliland
+4	Afghanistan	Afghanistan
+8	Albania	Albania
+10	Antarctica	Antartide
+12	Algeria	Algeria
+16	American Samoa	Samoa Americane
+20	Andorra	Andorra
+24	Angola	Angola
+28	Antigua and Barbuda	Antigua e Barbuda
+31	Azerbaijan	Azerbaigian
+32	Argentina	Argentina
+36	Australia	Australia
+40	Austria	Austria
+44	Bahamas	Bahamas
+48	Bahrain	Bahrain
+50	Bangladesh	Bangladesh
+51	Armenia	Armenia
+52	Barbados	Barbados
+56	Belgium	Belgio
+60	Bermuda	Bermuda
+64	Bhutan	Bhutan
+68	Plurinational State of Bolivia	Stato Plurinazionale della Bolivia
+70	Bosnia and Herzegovina	Bosnia ed Erzegovina
+72	Botswana	Botswana
+74	Bouvet Island	Isola di Bouvet
+76	Brazil	Brasile
+84	Belize	Belize
+86	British Indian Ocean Territory	Territorio britannico dell'Oceano Indiano
+90	Solomon Islands	Isole Salomone
+92	Virgin Islands, British	Isole vergini britanniche
+96	Brunei Darussalam	Brunei Darussalam
+100	Bulgaria	Bulgaria
+104	Myanmar	Birmania (Myanmar)
+108	Burundi	Burundi
+112	Belarus	Bielorussia
+116	Cambodia	Cambogia
+120	Cameroon	Camerun
+124	Canada	Canada
+132	Cape Verde	Capo Verde
+136	Cayman Islands	Isole Cayman
+140	Central African Republic	Repubblica Centrafricana
+144	Sri Lanka	Sri Lanka
+148	Chad	Ciad
+152	Chile	Cile
+156	China	Cina
+158	Taiwan, Republic of China	Taiwan (Repubblica di Cina)
+162	Christmas Island	Isola di Natale
+166	Cocos (Keeling) Islands	Isole Cocos
+170	Colombia	Colombia
+174	Comoros	Comore
+175	Mayotte	Maiotta
+178	Republic of Congo	Repubblica del Congo
+180	Democratic Republic of the Congo	Repubblica Democratic del Congo
+184	Cook Islands	Isole Cook
+188	Costa Rica	Costa Rica
+191	Croatia	Croazia
+192	Cuba	Cuba
+196	Cyprus	Cipro
+203	Czech Republic	Repubblica Ceca
+204	Benin	Benin
+208	Denmark	Danimarca
+212	Dominica	Dominica
+214	Dominican Republic	Repubblica Dominicana
+218	Ecuador	Ecuador
+222	El Salvador	El Salvador
+226	Equatorial Guinea	Guinea equatoriale
+231	Ethiopia	Etiopia
+232	Eritrea	Eritrea
+233	Estonia	Estonia
+234	Faroe Islands	Isole Faroe
+238	Falkland Islands (Malvinas)	Isole Falkland
+239	South Georgia and the South Sandwich Islands	Georgia del Sud ed Isole sandwich meridionali
+242	Fiji	Figi
+246	Finland	Finlandia
+248	Åland Islands	Isole Aland
+250	France	Francia
+254	French Guiana	Guyana francese
+258	French Polynesia	Polinesia francese
+260	French Southern Territories	Territori della Francia del sud
+262	Djibouti	Gibuti
+266	Gabon	Gabon
+268	Georgia	Georgia
+270	Gambia	Gambia
+275	Palestinian Territory, Occupied	Territori palestinesi occupati
+276	Germany	Germania
+288	Ghana	Gahna
+292	Gibraltar	Gibilterra
+296	Kiribati	Kiribati
+300	Greece	Grecia
+304	Greenland	Groenlandia
+308	Grenada	Grenada
+312	Guadeloupe	Guadalupa
+316	Guam	Guam
+320	Guatemala	Guatemala
+324	Guinea	Guinea
+328	Guyana	Guyana
+332	Haiti	Haiti
+334	Heard Island and McDonald Islands	Isole Heard e McDonald
+336	Holy See (Vatican City State)	Santa Sede (Città dello Stato del Vaticano)
+340	Honduras	Honduras
+344	Hong Kong	Hong Kong
+348	Hungary	Ungheria
+352	Iceland	Islanda
+356	India	India
+360	Indonesia	Indonesia
+364	Iran, Islamic Republic of	Iran
+368	Iraq	Iraq
+372	Ireland	Irlanda
+376	Israel	Israele
+380	Italy	Italia
+384	Côte d'Ivoire	Costa d'Avorio
+388	Jamaica	Giamaica
+392	Japan	Giappone
+398	Kazakhstan	Kazakistan
+400	Jordan	Giordania
+404	Kenya	Kenya
+408	Korea, Democratic People's Republic of	Corea del Nord
+410	Korea, Republic of	Corea del Sud
+414	Kuwait	Kuwait
+417	Kyrgyzstan	Kirghizistan
+418	Lao People's Democratic Republic	Repubblica popolare democratica del Laos
+422	Lebanon	Libano
+426	Lesotho	Lesotho
+428	Latvia	Lettonia
+430	Liberia	Liberia
+434	Libya	Libia
+438	Liechtenstein	Liechtenstein
+440	Lithuania	Lituania
+442	Luxembourg	Lussemburgo
+446	Macau	Macao
+450	Madagascar	Madagascar
+454	Malawi	Malawi
+458	Malaysia	Malaysia
+462	Maldives	Maldive
+466	Mali	Mali
+470	Malta	Malta
+474	Martinique	Martinica
+478	Mauritania	Mauritania
+480	Mauritius	Mauritius
+484	Mexico	Messico
+492	Monaco	Monaco
+496	Mongolia	Mongolia
+498	Moldova, Republic of	Moldavia
+499	Montenegro	Montenegro
+500	Montserrat	Montserrat
+504	Morocco	Marocco
+508	Mozambique	Mozambico
+512	Oman	Oman
+516	Namibia	Namibia
+520	Nauru	Nauru
+524	Nepal	Nepal
+528	Netherlands	Paesi Bassi (Olanda)
+531	Curaçao	Curaçao
+533	Aruba	Aruba
+534	Sint Maarten (Dutch part)	Sint Maarten (parte olandese)
+535	Bonaire, Sint Eustatius and Saba	Bonaire, Sint Eustatius e Saba
+540	New Caledonia	Nuova Caledonia
+548	Vanuatu	Vanuatu
+554	New Zealand	Nuova Zelanda
+558	Nicaragua	Nicaragua
+562	Niger	Niger
+566	Nigeria	Nigeria
+570	Niue	Niue
+574	Norfolk Island	Isola di Norfolk
+578	Norway	Norvegia
+580	Northern Mariana Islands	Isole Marianne Settentrionali
+581	United States Minor Outlying Islands	Isole minori esterne degli Stati Uniti d'America
+583	Micronesia, Federated States of	Stati Federati di Micronesia
+584	Marshall Islands	Isole Marshall
+585	Palau	Palau
+586	Pakistan	Pakistan
+591	Panama	Panama
+598	Papua New Guinea	Papua Nuova Guinea
+600	Paraguay	Paraguay
+604	Peru	Perù
+608	Philippines	Filippine
+612	Pitcairn	Pitcairn
+616	Poland	Polonia
+620	Portugal	Portogallo
+624	Guinea-Bissau	Guinea-Bissau
+626	Timor-Leste	Timor Est
+630	Puerto Rico	Puerto Rico
+634	Qatar	Qatar
+638	Réunion	Riunione
+642	Romania	Romania
+643	Russian Federation	Russia, Federazione Russa
+646	Rwanda	Ruanda
+652	Saint Barthélemy	Saint-Barthélemy
+654	Saint Helena, Ascension and Tristan da Cunha	Sant'Elena, Ascensione e Tristan da Cunha
+659	Saint Kitts and Nevis	Saint Kitts e Nevis
+660	Anguilla	Anguilla
+662	Saint Lucia	Santa Lucia
+663	Saint Martin (French part)	San Martino
+666	Saint Pierre and Miquelon	Saint-Pierre e Miquelon
+670	Saint Vincent and the Grenadines	San Vincenzo e Grenadine
+674	San Marino	San Marino
+678	São Tomé and Príncipe	São Tomé e Príncipe
+682	Saudi Arabia	Arabia Saudita
+686	Senegal	Senegal
+688	Serbia	Serbia
+690	Seychelles	Seychelles
+694	Sierra Leone	Sierra Leone
+702	Singapore	Singapore
+703	Slovakia	Slovacchia
+704	Vietnam	Vietnam
+705	Slovenia	Slovenia
+706	Somalia	Somalia
+710	South Africa	Sudafrica
+716	Zimbabwe	Zimbabwe
+724	Spain	Spagna
+728	South Sudan	Sudan del Sud
+729	Sudan	Sudan
+732	Western Sahara	Sahara Occidentale
+740	Suriname	Suriname
+744	Svalbard and Jan Mayen	Svalbard e Jan Mayen
+748	Swaziland	Swaziland
+752	Sweden	Svezia
+756	Switzerland	Svizzera
+760	Syrian Arab Republic	Repubblica araba della Siria
+762	Tajikistan	Tagikistan
+764	Thailand	Tailandia
+768	Togo	Togo
+772	Tokelau	Tokelau
+776	Tonga	Tonga
+780	Trinidad and Tobago	Trinidad e Tobago
+784	United Arab Emirates	Emirati Arabi Uniti
+788	Tunisia	Tunisia
+792	Turkey	Turchia
+795	Turkmenistan	Turkmenistan
+796	Turks and Caicos Islands	Turks e Caicos
+798	Tuvalu	Tuvalu
+800	Uganda	Uganda
+804	Ukraine	Ucraina
+807	Macedonia, the former Yugoslav Republic of	Macedonia
+818	Egypt	Egitto
+826	United Kingdom	Regno Unito
+831	Guernsey	Guernsey
+832	Jersey	Jersey
+833	Isle of Man	Isola di Man
+834	Tanzania, United Republic of	Tanzania
+840	United States	Stati Uniti
+850	Virgin Islands, U.S.	Isole vergini, U.S.
+854	Burkina Faso	Burkina Faso
+858	Uruguay	Uruguay
+860	Uzbekistan	Uzbekistan
+862	Venezuela, Bolivarian Republic of	Venezuela
+876	Wallis and Futuna	Wallis e Futuna
+882	Samoa	Samoa
+887	Yemen	Yemen
+894	Zambia	Zambia
