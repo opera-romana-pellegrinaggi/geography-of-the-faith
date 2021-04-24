@@ -101,7 +101,7 @@ function starrySky(){
   let starCount = 250;
   let night = document.querySelector(".constellation");
   let widthWindow = window.innerWidth;
-  let heightWindow = window.innerHeight;
+  let heightWindow = window.innerWidth;
 
   for (let i = 0; i < starCount; i++) {
     star += "<span class='star " + style[getRandomArbitrary(0, 4)] + " " + opacity[getRandomArbitrary(0, 6)] + " "
