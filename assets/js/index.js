@@ -1,34 +1,34 @@
-var camera, scene, renderer;
-var mesh;
+let camera, scene, renderer;
+let mesh;
 // ms to wait after dragging before auto-rotating
-var rotationDelay = 3000;
+let rotationDelay = 3000;
 // scale of the globe (not the canvas element)
-var scaleFactor = 0.9;
+let scaleFactor = 0.9;
 // autorotation speed
-var degPerSec = 2.425;
+let degPerSec = 2.425;
 // start angles
-var angles = { x: -20, y: 40, z: 0};
-var colorWater = 'rgba(0,0,50,.1)'
-var colorLand = 'rgba(10,10,10,.5)'
-var colorGraticule = 'rgba(0,0,80,.1)'
-var colorCountry = '#a00';
-var current = d3.select('#current');
-var canvas = d3.select('#globe');
-var context = canvas.node().getContext('2d');
-var water = {type: 'Sphere'};
-var projection = d3.geoOrthographic().precision(0.1);
-var graticule = d3.geoGraticule10();
-var path = d3.geoPath(projection).context(context);
-var v0 // Mouse position in Cartesian coordinates at start of drag gesture.
-var r0 // Projection rotation as Euler angles at start.
-var q0 // Projection rotation as versor at start.
-var lastTime = d3.now()
-var degPerMs = degPerSec / 1000
-var width, height;
-var land, countries;
-var countryList;
-var autorotate, now, diff;
-var currentCountry;
+let angles = { x: -20, y: 40, z: 0};
+let colorWater = 'rgba(0,0,50,.1)'
+let colorLand = 'rgba(10,10,10,.5)'
+let colorGraticule = 'rgba(0,0,80,.1)'
+let colorCountry = '#a00';
+let current = d3.select('#current');
+let canvas = d3.select('#globe');
+let context = canvas.node().getContext('2d');
+let water = {type: 'Sphere'};
+let projection = d3.geoOrthographic().precision(0.1);
+let graticule = d3.geoGraticule10();
+let path = d3.geoPath(projection).context(context);
+let v0 // Mouse position in Cartesian coordinates at start of drag gesture.
+let r0 // Projection rotation as Euler angles at start.
+let q0 // Projection rotation as versor at start.
+let lastTime = d3.now()
+let degPerMs = degPerSec / 1000
+let width, height;
+let land, countries;
+let countryList;
+let autorotate, now, diff;
+let currentCountry;
 
 const lang = window.location.hostname.includes("geografia") ? "it" : "en";
 document.title = lang === "it" ? "Geografia della Fede - ORP" : "Geography of the Faith - ORP";
@@ -48,8 +48,8 @@ function init() {
 
   scene = new THREE.Scene();
 
-  var geometry = new THREE.SphereGeometry(9.5, 360, 100);
-  var material  = new THREE.MeshPhongMaterial();
+  let geometry = new THREE.SphereGeometry(9.5, 360, 100);
+  let material  = new THREE.MeshPhongMaterial();
 
   THREE.ImageUtils.crossOrigin = '';
   const loader = new THREE.TextureLoader();
@@ -59,7 +59,7 @@ function init() {
   material.specularMap = loader.load('assets/images/8081_earthspec4k.jpg');
   material.emissiveMap = loader.load('assets/images/8081_earthlights4k.jpg');
   material.emissive = new THREE.Color( 0xffffaa );
-  material.emissiveIntesity = 0.2;
+  material.emissiveIntesity = 1;
 
   mesh = new THREE.Mesh(geometry, material);
   mesh.rotation.x += 0.3;
@@ -67,14 +67,14 @@ function init() {
   mesh.rotation.z -= 0.1;
   scene.add(mesh);
 
-  var light1 = new THREE.DirectionalLight( 0xffffff, 0.5 );
+  let light1 = new THREE.DirectionalLight( 0xffffff, 0.5 );
   light1.position.set(100, 50, 100);
   scene.add(light1);
 }
 
 function resize() {
-  var width = renderer.domElement.clientWidth;
-  var height = renderer.domElement.clientHeight;
+  let width = renderer.domElement.clientWidth;
+  let height = renderer.domElement.clientHeight;
   renderer.setSize(width, height, false);
   camera.aspect = width / height;
   camera.updateProjectionMatrix(); 
@@ -116,7 +116,7 @@ function starrySky(){
   let loadMeteor = () => {
     setTimeout(loadMeteor, nextMeteorAppearanceTime);
     nextMeteorAppearanceTime = getRandomArbitrary(5000, 20000);
-    var meteor = "<div class='meteor "+ style[getRandomArbitrary(0, 4)] +"'></div>";
+    let meteor = "<div class='meteor "+ style[getRandomArbitrary(0, 4)] +"'></div>";
     document.getElementsByClassName('meteorShower')[0].innerHTML = meteor;
     setTimeout(function(){
       document.getElementsByClassName('meteorShower')[0].innerHTML = "";
@@ -126,7 +126,7 @@ function starrySky(){
 }
 
 function enter(country) {
-  var country = countryList.find(c => parseInt(c.id, 10) === parseInt(country.id, 10))
+  country = countryList.find(c => parseInt(c.id, 10) === parseInt(country.id, 10))
   current.text(country && country["name_"+lang] || '')
   stopRotation()
 }
@@ -138,7 +138,7 @@ function leave(country) {
 
 
 function setAngles() {
-  var rotation = projection.rotate()
+  let rotation = projection.rotate()
   rotation[0] = angles.y
   rotation[1] = angles.x
   rotation[2] = angles.z
@@ -171,9 +171,9 @@ function dragstarted() {
 }
 
 function dragged() {
-  var v1 = versor.cartesian(projection.rotate(r0).invert(d3.mouse(this)))
-  var q1 = versor.multiply(q0, versor.delta(v0, v1))
-  var r1 = versor.rotation(q1)
+  let v1 = versor.cartesian(projection.rotate(r0).invert(d3.mouse(this)))
+  let q1 = versor.multiply(q0, versor.delta(v0, v1))
+  let r1 = versor.rotation(q1)
   projection.rotate(r1)
   render()
 }
@@ -230,13 +230,13 @@ function loadData(cb) {
 
 // https://github.com/d3/d3-polygon
 function polygonContains(polygon, point) {
-  var n = polygon.length
-  var p = polygon[n - 1]
-  var x = point[0], y = point[1]
-  var x0 = p[0], y0 = p[1]
-  var x1, y1
-  var inside = false
-  for (var i = 0; i < n; ++i) {
+  let n = polygon.length
+  let p = polygon[n - 1]
+  let x = point[0], y = point[1]
+  let x0 = p[0], y0 = p[1]
+  let x1, y1
+  let inside = false
+  for (let i = 0; i < n; ++i) {
     p = polygon[i], x1 = p[0], y1 = p[1]
     if (((y1 > y) !== (y0 > y)) && (x < (x0 - x1) * (y - y1) / (y0 - y1) + x1)) inside = !inside
     x0 = x1, y0 = y1
@@ -245,7 +245,7 @@ function polygonContains(polygon, point) {
 }
 
 function mousemove() {
-  var c = getCountry(this)
+  let c = getCountry(this)
   if (!c) {
     if (currentCountry) {
       leave(currentCountry)
@@ -263,7 +263,7 @@ function mousemove() {
 }
 
 function getCountry(event) {
-  var pos = projection.invert(d3.mouse(event))
+  let pos = projection.invert(d3.mouse(event))
   return countries.features.find(function(f) {
     return f.geometry.coordinates.find(function(c1) {
       return polygonContains(c1, pos) || c1.find(function(c2) {
