@@ -51,7 +51,7 @@ function init() {
   var material  = new THREE.MeshPhongMaterial();
 
   THREE.ImageUtils.crossOrigin = '';
-  material.map = THREE.ImageUtils.loadTexture('http://s3-us-west-2.amazonaws.com/s.cdpn.io/1206469/earthmap1k.jpg')
+  material.map = THREE.ImageUtils.loadTexture('assets/images/8081_earthmap4k.jpg');
 
   mesh = new THREE.Mesh(geometry, material);
   mesh.rotation.x += 0.3;
@@ -118,10 +118,8 @@ function starrySky(){
 }
 
 function enter(country) {
-  var country = countryList.find(function(c) {
-    return parseInt(c.id, 10) === parseInt(country.id, 10)
-  })
-  current.text(country && country.name || '')
+  var country = countryList.find(c => parseInt(c.id, 10) === parseInt(country.id, 10))
+  current.text(country && country.name_it || '')
 }
 
 function leave(country) {
@@ -213,7 +211,7 @@ function rotate(elapsed) {
 function loadData(cb) {
   d3.json('https://unpkg.com/world-atlas@1.1.4/world/110m.json', function(error, world) {
     if (error) throw error
-    d3.tsv('https://gist.githubusercontent.com/mbostock/4090846/raw/07e73f3c2d21558489604a0bc434b3a5cf41a867/world-country-names.tsv', function(error, countries) {
+    d3.tsv('assets/tsv/world-country-names.tsv', function(error, countries) {
       if (error) throw error
       cb(world, countries)
     })
