@@ -263,14 +263,15 @@ function mousemove() {
 }
 
 function getCountry(event) {
-  let pos = projection.invert(d3.mouse(event))
-  return countries.features.find(function(f) {
-    return f.geometry.coordinates.find(function(c1) {
-      return polygonContains(c1, pos) || c1.find(function(c2) {
-        return polygonContains(c2, pos)
-      })
-    })
-  })
+  let pos = projection.invert(d3.mouse(event));
+  if(countries){
+    return countries.features.find(f => 
+      f.geometry.coordinates.find(c1 => 
+        polygonContains(c1, pos) || c1.find(c2 => polygonContains(c2, pos))
+      )
+    )
+  }
+  return false;
 }
 
 //
