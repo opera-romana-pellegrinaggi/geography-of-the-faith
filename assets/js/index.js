@@ -30,7 +30,8 @@ var countryList;
 var autorotate, now, diff;
 var currentCountry;
 
-
+const lang = window.location.hostname.includes("geografia") ? "it" : "en";
+document.title = lang === "it" ? "Geografia della Fede - ORP" : "Geography of the Faith - ORP";
 
 init();
 animate();
@@ -51,7 +52,14 @@ function init() {
   var material  = new THREE.MeshPhongMaterial();
 
   THREE.ImageUtils.crossOrigin = '';
-  material.map = THREE.ImageUtils.loadTexture('assets/images/8081_earthmap4k.jpg');
+  const loader = new THREE.TextureLoader();
+  material.map = loader.load('assets/images/8081_earthmap4k.jpg');
+  material.bumpMap = loader.load('assets/images/8081_earthbump4k.jpg');
+  material.bumpScale = 0.2;
+  material.specularMap = loader.load('assets/images/8081_earthspec4k.jpg');
+  material.emissiveMap = loader.load('assets/images/8081_earthlights4k.jpg');
+  material.emissive = new THREE.Color( 0xffffaa );
+  material.emissiveIntesity = 0.5;
 
   mesh = new THREE.Mesh(geometry, material);
   mesh.rotation.x += 0.3;
@@ -59,7 +67,7 @@ function init() {
   mesh.rotation.z -= 0.1;
   scene.add(mesh);
 
-  var light1 = new THREE.DirectionalLight( 0xffffff, 1 );
+  var light1 = new THREE.DirectionalLight( 0xffffff, 0.5 );
   light1.position.set(100, 50, 100);
   scene.add(light1);
 }
@@ -119,11 +127,13 @@ function starrySky(){
 
 function enter(country) {
   var country = countryList.find(c => parseInt(c.id, 10) === parseInt(country.id, 10))
-  current.text(country && country.name_it || '')
+  current.text(country && country["name_"+lang] || '')
+  stopRotation()
 }
 
 function leave(country) {
   current.text('')
+  startRotation()
 }
 
 
