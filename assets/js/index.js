@@ -59,7 +59,7 @@ function init() {
   material.specularMap = loader.load('assets/images/8081_earthspec4k.jpg');
   material.emissiveMap = loader.load('assets/images/8081_earthlights4k.jpg');
   material.emissive = new THREE.Color( 0xffffaa );
-  material.emissiveIntesity = 0.5;
+  material.emissiveIntesity = 0.2;
 
   mesh = new THREE.Mesh(geometry, material);
   mesh.rotation.x += 0.3;
