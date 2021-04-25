@@ -15,7 +15,9 @@
   let land, countries, countryList, autorotate;
   let projection = d3.geoOrthographic().precision(0.1);
   let graticule = d3.geoGraticule10();
-  //let path = d3.geoPath(projection).context(context);
+  let canvas = document.getElementById("globe");
+  let context = canvas.getContext('2d');
+  let path = d3.geoPath(projection).context(context);
 
 
 
@@ -86,6 +88,7 @@
   /**
    * Define functions for D3 map functionality
    */
+
    let loadData = (callback) => {
     d3.json('https://unpkg.com/world-atlas@1.1.4/world/110m.json', (error, world) => {
       if (error) throw error
@@ -104,13 +107,19 @@
   let scene = new THREE.Scene();
   const loader = new THREE.TextureLoader();
 
-  let camera = new THREE.PerspectiveCamera(45, width / height, 0.01, 1000);
+  const VIEW_ANGLE = 45;
+  const PERSPECTIVE = width / height;
+  const NEAR = 0.01;
+  const FAR = 1000;
+
+  let camera = new THREE.PerspectiveCamera(VIEW_ANGLE, PERSPECTIVE, NEAR, FAR);
   camera.position.z = 1.5;
 
   let renderer = new THREE.WebGLRenderer({
     antialias: true
   });
   renderer.setSize(width, height);
+  renderer.setClearColor(0x000);
   //renderer.shadowMap.enabled = true;
   //renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
