@@ -69,6 +69,14 @@
       })
     );
 
+  let scale = (ev) => {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    camera.aspect = width / height;
+    camera.updateProjectionMatrix();
+    renderer.setSize(width, height);
+  }
+
 
 
 
@@ -84,7 +92,7 @@
       });
     });
   }
-  
+
 
   /**
    * Start creating our THREE scene
@@ -133,16 +141,15 @@
   
   webglEl.appendChild(renderer.domElement);
 
-  loadData(function(world, cList) {
+  loadData((world, cList) => {
     land = topojson.feature(world, world.objects.land);
     countries = topojson.feature(world, world.objects.countries);
     countryList = cList;
-    
-    //window.addEventListener('resize', scale)
     //scale()
-    autorotate = d3.timer(rotate);
+    //autorotate = d3.timer(rotate);
   })
 
+  window.addEventListener('resize', scale);
   render();
 
 })();
