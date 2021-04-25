@@ -9,10 +9,29 @@
   let width = window.innerWidth,
     height = window.innerHeight;
 
+  /**
+   * Prepare D3 variables
+   */
+  let land, countries, countryList, autorotate;
+
+
+
+
+  /**
+   * Prepare THREE configurations
+   */
+
   // Earth params
   let radius = 0.5,
     segments = 64,
     rotation = 6;
+
+
+
+
+  /**
+   * Define functions for creating and rendering THREE geometries
+   */
 
   let render = () => {
     controls.update();
@@ -49,6 +68,13 @@
         side: THREE.BackSide,
       })
     );
+
+
+
+
+  /**
+   * Start creating our THREE scene
+   */
 
   let scene = new THREE.Scene();
   const loader = new THREE.TextureLoader();
@@ -92,6 +118,16 @@
   let controls = new THREE.TrackballControls(camera);
   
   webglEl.appendChild(renderer.domElement);
+
+  loadData(function(world, cList) {
+    land = topojson.feature(world, world.objects.land);
+    countries = topojson.feature(world, world.objects.countries);
+    countryList = cList;
+    
+    //window.addEventListener('resize', scale)
+    //scale()
+    autorotate = d3.timer(rotate);
+  })
 
   render();
 
