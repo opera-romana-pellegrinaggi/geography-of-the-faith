@@ -75,7 +75,7 @@
     camera.aspect = width / height;
     camera.updateProjectionMatrix();
     renderer.setSize(width, height);
-  }
+  };
 
 
 
@@ -145,8 +145,6 @@
     land = topojson.feature(world, world.objects.land);
     countries = topojson.feature(world, world.objects.countries);
     countryList = cList;
-    //scale()
-    //autorotate = d3.timer(rotate);
   })
 
   window.addEventListener('resize', scale);
