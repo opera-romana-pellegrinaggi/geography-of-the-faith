@@ -1,32 +1,31 @@
-<!-- inspired by: -->
-<!-- https://codepen.io/emilygoldfein/pen/wePYYL -->
-<!-- https://codepen.io/interaminense/pen/QyGbXL -->
 <!DOCTYPE html>
 <head>
-  <title>Geografia della Fede - Opera Romana Pellegrinaggi</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geografia della Fede - Opera Romana Pellegrinaggi</title>
   <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- inspired by: -->
+  <!-- https://codepen.io/emilygoldfein/pen/wePYYL -->
+  <!-- https://codepen.io/interaminense/pen/QyGbXL -->
+  <!-- http://thematicmapping.org/playground/webgl/earth/ -->
 </head>
 <body>
-  <h2 id="current"></h2>
-  <div class="night"></div>
-
-  <div class="constellation"></div>
-
-  <div class="moon">
-    <div class="texture"></div>
+  <div id="webgl">
+    <canvas width="1920" height="832" style="width: 1536px; height: 666px;"></canvas>
   </div>
-
-  <div class="meteorShower"></div>
-  <canvas id="canvas"></canvas>
-  <canvas id="globe"></canvas>
+  <a href="https://www.operaromanapellegrinaggi.org/" class="tm">
+    Opera Romana Pellegrinaggi
+  </a>
   <footer>
     <script src="https://ajax.googleapis.com/ajax/libs/threejs/r84/three.min.js"></script>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="assets/js/Detector.js"></script>
+    <script src="assets/js/TrackballControls.js"></script>
+    <!-- <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://d3js.org/d3-array.v2.min.js"></script>
     <script src="https://d3js.org/d3-geo.v2.min.js"></script>
     <script src="https://d3js.org/topojson.v3.min.js"></script>
-    <script src="https://unpkg.com/versor@0.1.2/dist/versor.min.js"></script>
+    <script src="https://unpkg.com/versor@0.1.2/dist/versor.min.js"></script> -->
     <script src="assets/js/index.js"></script>
   </footer>
+
 </body>
