@@ -13,6 +13,9 @@
    * Prepare D3 variables
    */
   let land, countries, countryList, autorotate;
+  let projection = d3.geoOrthographic().precision(0.1);
+  let graticule = d3.geoGraticule10();
+  //let path = d3.geoPath(projection).context(context);
 
 
 
