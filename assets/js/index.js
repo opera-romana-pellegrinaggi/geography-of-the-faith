@@ -73,6 +73,20 @@
 
 
   /**
+   * Define functions for D3 map functionality
+   */
+   let loadData = (callback) => {
+    d3.json('https://unpkg.com/world-atlas@1.1.4/world/110m.json', (error, world) => {
+      if (error) throw error
+      d3.tsv('assets/tsv/world-country-names.tsv', (error, countries) => {
+        if (error) throw error
+        callback(world, countries);
+      });
+    });
+  }
+  
+
+  /**
    * Start creating our THREE scene
    */
 
