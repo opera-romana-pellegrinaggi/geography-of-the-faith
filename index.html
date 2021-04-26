@@ -4,123 +4,26 @@
     <title>Geografia della Fede - Opera Romana Pellegrinaggi</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-    <script src="https://cesium.com/downloads/cesiumjs/releases/1.62/Build/Cesium/Cesium.js"></script>
-    <style>
-      @import url('https://cesium.com/downloads/cesiumjs/releases/1.62/Build/Cesium/Widgets/widgets.css');
-      html, body {padding: 0; margin: 0;}
-      #map {top: 0; right: 0; bottom: 0; left: 0; position: absolute !important;}
-      #credits { position: absolute; bottom: -200px; left: -200px; }
-    </style>
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
     <div id="map"></div>
     <div id="credits"></div>
-    <script>
-      Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5YzNlODY2Yy0yZjY1LTRkMDktOTViYi02M2I3M2NjMTg3YmIiLCJpZCI6NTM3MjUsImlhdCI6MTYxOTM1MzA0NX0.t8ZCZb4qQKgU2sQbzAwgZ85ReK07ZmRZjnecUP8IE9Y';
-      const lang = location.hostname.includes('geografiadellafede') ? 'it' : 'en';
-
-      let viewer = new Cesium.Viewer('map', {
-        animation: false,
-        baseLayerPicker: false,
-        sceneModePicker: false,
-        navigationHelpButton: true,
-        homeButton: true,
-        geocoder: true,
-        fullscreenButton: true,
-        imageryProvider: new Cesium.UrlTemplateImageryProvider({
-          url: 'https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=SxVQSzWgRNS3fbFsWN4k',
-          tileWidth: 512,
-          tileHeight: 512,
-          credit: null
-        }),
-        timeline: false,
-        scene3DOnly: true,
-        shadows: true,
-        creditContainer: document.getElementById("credits"),
-        creditViewport: null
-      });
-
-      let scene = viewer.scene;
-      scene.skyAtmosphere.show = false;
-      scene.fog.enabled = false;
-      scene.globe.showGroundAtmosphere = false;
-
-      let frame = viewer.infoBox.frame;
-      frame.addEventListener('load', function () {
-        let cssLink = frame.contentDocument.createElement('link');
-        cssLink.href = 'assets/css/infoBox.css';
-        cssLink.rel = 'stylesheet';
-        cssLink.type = 'text/css';
-        frame.contentDocument.head.appendChild(cssLink);
-      }, false);
-
-      let pinBuilder = new Cesium.PinBuilder();
-      const placeOfWorship = {
-        RED: {
-            image : pinBuilder.fromMakiIconId("place-of-worship", Cesium.Color.DARKRED, 36),
-            color : Cesium.Color.WHITE,
-            verticalOrigin : Cesium.VerticalOrigin.BOTTOM,
-        },
-        BLUE: {
-          image : pinBuilder.fromMakiIconId("place-of-worship", Cesium.Color.DARKBLUE, 36),
-          color : Cesium.Color.WHITE,
-          verticalOrigin : Cesium.VerticalOrigin.BOTTOM,
-        }
-      };
-
-      let label = {
-        font : 'bold 14pt Arial',
-        backgroundColor: new Cesium.Color(0.165, 0.165, 0.165, 0.8),
-        showBackground: true,
-        style: Cesium.LabelStyle.FILL_AND_OUTLINE,
-        outlineWidth : 2,
-        verticalOrigin : Cesium.VerticalOrigin.BOTTOM,
-        pixelOffset : new Cesium.Cartesian2(0, -40)
-      }
-
-      let createMarker = (latitude,longitude,title,marker,description) => viewer.entities.add({
-          name : title[lang],
-          description: description[lang],
-          position : Cesium.Cartesian3.fromDegrees(longitude,latitude),
-          billboard : marker,
-          label : { ...label, text: title[lang]}
-        });
-      //LATITUDE: increasing the value will increase vertical position, towards north
-      //LATITUDE: decreasing the value will decrease vertical position, towards south
-      //LONGITUDE: increase = move east
-      //LONGITUDE: decrease = move west
-      let JesusApostleEvangelistMarkers = {
-        stPeterBasilicaRome: createMarker(
-          41.9020481,12.4531362,
-          {
-            en: "Saint Peter's Basilica",
-            it: "Basilica di San Pietro"
-          },
-          placeOfWorship.RED,
-          {
-            en: '<p style="text-align:justify;"><img alt="Saint Peters Basilica" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/320px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg" width="320" height="167" style="float:left;padding:9px;border:3px solid white;border-radius:6px;margin: 0 12px 6px 0;" />The Basilica of Saint Peter is the main pilgrimage destination for all of christianity, after the Holy Land. This is the burial site of Saint Peter, prince of the Apostles and first Bishop of Rome; the tomb is directly below the high altar of the basilica. For this reason, many popes have been interred at St. Peter\'s since the Early Christian period. A church has stood on this site since the time of the Roman emperor Constantine the Great. Old St. Peter\'s Basilica dates from the 4th century AD. Construction of the present basilica began on 18 April 1506 and was completed on 18 November 1626.</p><p class="linkBookVisitContainer"><a class="linkBookVisit" href="https://www.omniavaticanrome.org/en/cards/la-basilica-di-san-pietro">Book your visit</a></p>',
-            it: '<p style="text-align:justify;"><img alt="La Basilica di San Pietro" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/320px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg" width="320" height="167" style="float:left;padding:9px;border:3px solid white;border-radius:6px;margin: 0 12px 6px 0;" />La Basilica di San Pietro è la principale destinazione del pellegrinaggio cristiano, dopo la Terra Santa. Qui c\è la tomba di San Pietro, principe degli Apostoli e primo Vescovo di Roma; la tomba si trova direttamente sotto l\'altare principale della basilica. Per questo motivo, molti dei papi, successori di San Pietro, sono stati sepolti nella Basilica sin dai primordi del cristianesimo. La prima chiesa in questo sito risale all\'epoca dell\'Imperatore Costantino il Grande, nel sec. IV d.C. La costruzione della basilica attuale ebbe inizio il 18 aprile 1506 e fu completata il 18 novembre 1626.</p><p class="linkBookVisitContainer"><a class="linkBookVisit" href="https://www.omniavaticanrome.org/it/cards/la-basilica-di-san-pietro">Prenota la visita</a></p>'
-          }
-        ),
-        stMarkVenice: createMarker(
-          45.4346203,12.3399706,
-          {
-            en: "Basilica of Saint Mark",
-            it: "Basilica di San Marco"
-          },
-          placeOfWorship.RED,
-          {
-            en: '<p style="text-align:justify;"><img alt="Saint Marks Basilica" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Venezia_Basilica_di_San_Marco_Fassade_2.jpg/320px-Venezia_Basilica_di_San_Marco_Fassade_2.jpg" width="320" height="214" style="float:left;padding:9px;border:3px solid white;border-radius:6px;margin: 0 12px 6px 0;" />The first Basilica was founded in the 9th century to house the mortal remains of St Mark the Evangelist, brought back to Italy from Egypt by Venetian merchants. According to christian tradition, Mark the Evangelist founded the church of Alexandria, one of the most important episcopal sees of early Christianity. His feast day is celebrated on April 25, and his symbol is the winged lion.</p><p style="text-align:justify;">Saint Mark became the travel companion and interpreter for Saint Peter during his travels throughout Asia Minor (1 Peter 1:1), after Peter was miraculously freed by angels from his imprisonment by Herod Agrippa I (Eusebius of Caesarea, Eccl. Hist. 2.9.1–4; Acts 12:1–19). Mark the Evangelist wrote down the sermons of Peter, thus composing the Gospel according to Mark (Eccl. Hist. 15–16), before he left for Alexandria in the third year of Claudius (AD 43). According to Acts 15:39, Mark went to Cyprus with Barnabas after the Council of Jerusalem; then in AD 49 (about 19 years after the Ascension of Jesus) Mark travelled to Alexandria and founded the Church of Alexandria. Today, the Coptic Orthodox Church, the Greek Orthodox Church of Alexandria, and the Coptic Catholic Church trace their origins to this community. Aspects of the Coptic liturgy can be traced back to Mark himself. He became the first bishop of Alexandria and he is honored as the founder of Christianity in Africa.</p><p class="linkBookVisitContainer"><a class="linkBookVisit" href="https://www.omniaforitaly.org">Book your visit</a></p>',
-            it: '<p style="text-align:justify;"><img alt="Saint Marks Basilica" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Venezia_Basilica_di_San_Marco_Fassade_2.jpg/320px-Venezia_Basilica_di_San_Marco_Fassade_2.jpg" width="320" height="214" style="float:left;padding:9px;border:3px solid white;border-radius:6px;margin: 0 12px 6px 0;" />La prima Basilica fu fondata nel sec. IX per ospitare i resti mortali di San Marco l\'Evangelista, portati in Italia dall\'Egitto da alcuni mercanti veneziani. Secondo la tradizione cristiana, San Marco l\'Evangelista fondò la chiesa di Alessandria, una delle più importanti sedi del cristianesimo antico. La sua festa viene celebrata il 25 Aprile, e suo simbolo è il leone alato.</p><p style="text-align:justify;">San Marco fu compagno di viaggio e interprete per San Pietro durante il viaggio da lui compiuto nell\'Asia Minore (1 Pietro 1,1), a seguito della miracolosa liberazione per intervento degli angeli dall\'imprigionamento da parte di Erode Agrippa I (Eusebio di Caesarea, Eccl. Hist. 2.9.1–4; Atti 12,1–19). San Marco l\'Evangelista appuntò i sermoni di Pietro, e così compose il Vangelo a lui attribuito (Eccl. Hist. 15–16), prima di partire per Alessandria nell\'anno terzo di Claudio (43 d.C.). Secondo Atti 15,39, Marco andò a Cipro con Barnaba dopo il Concilio di Gerusalemme; poi nel 49 d.C. (circa 19 anni dopo l\'Ascensione di Gesù) in Egitto dove fondò la chiesa di Alessandria; ad oggi la Chiesa Copta Ortodossa, la Chiesa Greco-ortodossa di Alessandria, e la Chiesa Copta Cattolica si fanno risalire a questa stessa comunità. Certi aspetti della liturgia Copta risalgono fino a San Marco. Fu il primo vescovo di Alessandria e viene onorato come il fondatore del cristianesimo nel continente africano.</p><p class="linkBookVisitContainer"><a class="linkBookVisit" href="https://www.omniaforitaly.org">Prenota la visita</a></p>'
-          }
-        )
-      }
-
-      //viewer.flyTo(viewer.entities);
-      viewer.camera.setView({
-        destination: Cesium.Cartesian3.fromDegrees(12.4531362,41.9020481, 15000000)
-      })
-    </script>
+    <div id="sidebar">
+      <div id="sidebar-header">
+        <h3>La geografia della fede</h3>
+        <h4>Luoghi di pellegrinaggio nel mondo</h4>
+      </div>
+      <div id="sidebar-contents">
+        <div><button id="placesApostles">LUOGHI DEGLI APOSTOLI</button></div>
+        <div><button id="placesEvangelists">LUOGHI DEGLI EVANGELISTI</button></div>
+        <div><button id="showAllPlaces">MOSTRA TUTTI</button></div>
+      </div>
+      <div id="sidebar-footer">Un progetto dell'Opera Romana Pellegrinaggi</div>
+    </div>
+    <footer>
+      <script src="https://cesium.com/downloads/cesiumjs/releases/1.62/Build/Cesium/Cesium.js"></script>
+      <script src="assets/js/index.js"></script>
+    </footer>
   </body>
 </html>

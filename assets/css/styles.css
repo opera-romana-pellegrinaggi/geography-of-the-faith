@@ -1,25 +1,11 @@
+@import url('https://cesium.com/downloads/cesiumjs/releases/1.62/Build/Cesium/Widgets/widgets.css');
+
 body {
   margin: 0;
   padding: 0;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-}
-
-canvas {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#canvas {
-  z-index: 997;
-}
-
-#globe {
-  z-index : 998;
 }
 
 .cesium-infoBox {
@@ -29,4 +15,56 @@ canvas {
 .cesium-button {
   color: white;
   fill: white;
+}
+
+#map {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  width: 80%;
+}
+#credits { position: absolute; bottom: -200px; left: -200px; }
+
+#sidebar {
+  width: 20%;
+  height: 100vh;
+  background-color: gray;
+  border-right: 1px solid white;
+  box-shadow: 0px 3px 40px 12px black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#sidebar-header {
+  text-align: center;
+  background-color: rgba(255,255,255,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 11vh;
+}
+
+#sidebar-contents {
+  position: absolute;
+  width: 100%;
+  top: 11vh;
+  left: 0;
+  text-align: center;
+  padding: 18px 0;
+}
+
+#sidebar-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: yellow;
+  color: darkblue;
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 4px 0;
 }
