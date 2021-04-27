@@ -68,20 +68,24 @@ const pin10 = pinBuilder
 let singleDigitPins = new Array(8);
 for (let i = 0; i < singleDigitPins.length; ++i) {
   singleDigitPins[i] = pinBuilder
-    .fromText("" + (i + 2), Cesium.Color.VIOLET, 48)
+    .fromText("" + (i + 2), Cesium.Color.DARKRED, 48)
     .toDataURL();
 }
 
 const placeOfWorship = {
   RED: {
-      image : pinBuilder.fromMakiIconId("place-of-worship", Cesium.Color.DARKRED, 36),
-      color : Cesium.Color.WHITE,
-      verticalOrigin : Cesium.VerticalOrigin.BOTTOM,
+    image: pinBuilder.fromMakiIconId("place-of-worship", Cesium.Color.DARKRED, 36),
+    color: Cesium.Color.WHITE,
+    verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
+    width: 36,
+    height: 36
   },
   BLUE: {
-    image : pinBuilder.fromMakiIconId("place-of-worship", Cesium.Color.DARKBLUE, 36),
-    color : Cesium.Color.WHITE,
-    verticalOrigin : Cesium.VerticalOrigin.BOTTOM,
+    image: pinBuilder.fromMakiIconId("place-of-worship", Cesium.Color.DARKBLUE, 36),
+    color: Cesium.Color.WHITE,
+    verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
+    width: 36,
+    height: 36
   }
 };
 
@@ -96,10 +100,6 @@ let label = {
 }
 
 let markersLayer = new Cesium.CustomDataSource();
-markersLayer.clustering.enabled = true;
-markersLayer.clustering.pixelRange = 15;
-markersLayer.clustering.minimumClusterSize = 3;
-viewer.dataSources.add(markersLayer);
 
 let createMarker = (latitude,longitude,title,marker,description) => markersLayer.entities.add({
     name : title[lang],
@@ -172,6 +172,23 @@ let PilgrimageMarkers = {
       en: "San Paolo alla Regola",
       it: "San Paolo alla Regola"
     }
+  ),
+  ChiesaSanPaoloMartirio: createMarker(
+    41.8338692361,12.4878894914,
+    {
+      en: "Church of the Martyrdom of Saint Paul at the Three Fountains",
+      it: "Chiesa del Martirio di San Paolo alle Tre Fontane"
+    },
+    placeOfWorship.RED,
+    {
+      en: "<p class=\"justify\">A church was first built here in the 5th or 6th century to memorialize the place where, according to tradition, Saint Paul was beheaded. According to a popular legend, his head bounced three times on the ground, and in those three spots, three fountains sprang forth; these still flow and are located in the church.</p>"
+          + "<p class=\"justify\">The church standing today was built at the start of the 17th century by the architect and sculptor Giacomo della Porta, as requested by cardinal Pietro Aldobrandini.</p>"
+          + "<p class=\"justify\">Inside the church the three fountains are yet extant, enclosed within three symbolic monumental covers in black marble, each at a different level. Near the first niche there is a pillar, which popular legend holds to be that to which Saint Paul was bound for his beheading.</p>"
+      ,
+      it: "<p class=\"justify\">La chiesa sorse nel sec. V-VI sul luogo dove, secondo la tradizione, San Paolo fu decapitato e la sua testa, rimbalzando tre volte sul terreno, fece scaturire ad ogni colpo altrettante sorgenti d’acqua: una calda, una tiepida e una fredda.</p>"
+          + "<p class=\"justify\">L’edificio fu ricostruito all’inizio del Seicento da Giacomo della Porta, per volere del cardinale Pietro Aldobrandini.</p>"
+          + "<p class=\"justify\">L’interno ospita ancora le tre fontane, racchiuse da altrettante edicole in marmo nero, poste su livelli diversi. Vicino alla prima nicchia, si trova la colonna dove, secondo la legenda popolare, San Paolo venne legato per essere decapitato.</p>"
+    }
   )
 }
 
@@ -196,10 +213,8 @@ const placesApostles = [
   ...placesSaintPeter
 ];
 
-
-
-
 let removeListener;
+let clusteredMarkers;
 
 let customStyle = () => {
   if (Cesium.defined(removeListener)) {
@@ -208,7 +223,21 @@ let customStyle = () => {
   } else {
     removeListener = markersLayer.clustering.clusterEvent.addEventListener(
       (clusteredEntities, cluster) => {
+        console.log('there was a cluster event');
+        console.log(clusteredEntities);
+        clusteredMarkers = clusteredEntities;
         cluster.label.show = false;
+        /*
+        allMarkers.forEach(a => {
+          if(clusteredEntities.includes(a)){
+            console.log('entity with id ' + a._id + ' is in the clustered collection');
+            a.label.show = false;
+          } else {
+            console.log('entity with id ' + a._id + ' is not in the clustered collection');
+            a.label.show = true;
+          }
+        });
+        */
         cluster.billboard.show = true;
         cluster.billboard.id = cluster.label.id;
         cluster.billboard.verticalOrigin =
@@ -238,17 +267,44 @@ let customStyle = () => {
   markersLayer.clustering.pixelRange = pixelRange;
 }
 
-
-//viewer.flyTo(viewer.entities);
-viewer.camera.setView({
-  destination: Cesium.Cartesian3.fromDegrees(12.4531362,41.9020481, 15000000)
+let ellipsoid = viewer.scene.globe.ellipsoid;
+let mousemoveLabel = viewer.entities.add({
+  name: 'mousemoveLabel',
+  label: {
+    ...label,
+    text: 'no position',
+    show: false
+  }
 });
-customStyle();
+
+viewer.scene.canvas.addEventListener('click', (e) => {
+  let cartesian = viewer.camera.pickEllipsoid(new Cesium.Cartesian2(e.clientX, e.clientY), ellipsoid);
+  if (cartesian) {
+    //console.log('we have cartesian coordinates');
+    let cartographic = ellipsoid.cartesianToCartographic(cartesian);
+    let longitudeString = Cesium.Math.toDegrees(cartographic.longitude).toFixed(10);
+    let latitudeString = Cesium.Math.toDegrees(cartographic.latitude).toFixed(10);
+    let labelText = '(' + longitudeString + ', ' + latitudeString + ')';
+    console.log(labelText);
+    mousemoveLabel.position = cartesian;
+    mousemoveLabel.label.text = labelText;
+    mousemoveLabel.show = true;
+  } else {
+    mousemoveLabel.show = false;
+  }
+});
+
 
 document.getElementById('placesApostles').addEventListener("click", () => {
+  console.log('placesApostles was called');
   allMarkers.forEach(a => {
     if(placesApostles.includes(a)){
       a.show = true;
+      if(clusteredMarkers.includes(a)){
+        a.label.show = false;
+      } else {
+        a.label.show = true;
+      }
     } else {
       a.show = false;
     }
@@ -256,9 +312,15 @@ document.getElementById('placesApostles').addEventListener("click", () => {
 });
 
 document.getElementById('placesEvangelists').addEventListener("click", () => {
+  console.log('placesEvangelists was called');
   allMarkers.forEach(a => {
     if(placesEvangelists.includes(a)){
       a.show = true;
+      if(clusteredMarkers.includes(a)){
+        a.label.show = false;
+      } else {
+        a.label.show = true;
+      }
     } else {
       a.show = false;
     }
@@ -266,8 +328,31 @@ document.getElementById('placesEvangelists').addEventListener("click", () => {
 });
 
 document.getElementById('showAllPlaces').addEventListener("click", () => {
+  console.log('showAllPlaces was called');
   allMarkers.forEach(a => {
     a.show = true;
+    if(clusteredMarkers.includes(a)){
+      a.label.show = false;
+    } else {
+      a.label.show = true;
+    }
   });
 });
 
+let dataSourcePromise = viewer.dataSources.add(markersLayer);
+dataSourcePromise.then(dataSource => {
+  let pixelRange = 15;
+  let minimumClusterSize = 3;
+  let enabled = true;
+
+  dataSource.clustering.enabled = enabled;
+  dataSource.clustering.pixelRange = pixelRange;
+  dataSource.clustering.minimumClusterSize = minimumClusterSize;
+  customStyle();
+  viewer.camera.setView({
+    destination: Cesium.Cartesian3.fromDegrees(12.4531362,41.9020481, 15000000)
+  });
+
+});
+
+//viewer.flyTo(viewer.entities);
