@@ -23,7 +23,11 @@ let viewer = new Cesium.Viewer('map', {
   homeButton: true,
   geocoder: true,
   fullscreenButton: true,
-  imageryProvider: bing, //mapTiler
+  imageryProvider: bing, //mapTiler,
+  terrainProvider : Cesium.createWorldTerrain({
+    requestVertexNormals: true,
+    requestWaterMask: true
+  }),
   timeline: false,
   scene3DOnly: true,
   shadows: true,
@@ -33,8 +37,11 @@ let viewer = new Cesium.Viewer('map', {
 
 let scene = viewer.scene;
 scene.skyAtmosphere.show = false;
-scene.fog.enabled = false;
+scene.fog.enabled = true;
 scene.globe.showGroundAtmosphere = false;
+scene.globe.enableLighting = true;
+scene.globe.dynamicAtmosphereLighting = true;
+scene.globe.dynamicAtmosphereLightingFromSun = true;
 scene.screenSpaceCameraController.maximumZoomDistance = 30000000;
 scene.screenSpaceCameraController.minimumZoomDistance = 1000;
 
@@ -146,7 +153,7 @@ let PilgrimageMarkers = {
     placeOfWorship.RED,
     {
       en: '<p class="justify"><img alt="Basilica Saint Paul outside the Walls Rome" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Roma_San_Paolo_fuori_le_mura_BW_1.JPG/320px-Roma_San_Paolo_fuori_le_mura_BW_1.JPG" width="320" height="223" class="entityImage" />The Apostle Paul arrived in Rome when, after having been arrested in Jerusalem and put into custody in Caesarea, he exercised his right as roman citizen and requested to stand trial before Caesar in Rome (Acts 21-24). After having been shipwrecked on the island of Malta, he traveled to Rome via Syracuse, Rhegium and Puteoli, arriving around the year 60 A.D. While in Rome, he spent two years under house arrest, and the narrative of the Acts of the Apostles ends with Paul preaching in Rome from his rented home while awaiting trial (Acts 28).</p><p class="justify">Pope Clement I (1st century), Saint Ignatius of Antioch (2nd century), and Saint Dionysius of Corinth (2nd century) recount that Saint Paul was martyred; the date of Paul\'s death is believed to have occurred after the Great Fire in Rome (64 A.D.), but before the end of Nero\'s reign (68 AD). The apocryphal Acts of Paul (160 AD), Tertullian (200 AD), Eusebius of Caesarea (320 AD), Lactantius (318 AD), Saint Jerome (392 AD), Saint John Chrysostom (c. 349–407) and Sulpicius Severus (403 AD) describe the martyrdom of Paul citing that Nero condemned Paul to death by decapitation at Rome. Caius, a priest in Rome in the 2nd century, mentions that the remains of Saint Paul were buried on the Ostian Way, and the christians in Rome erected a memorial. Emperor Constantine the Great built a church over the burial site in the 4th century, which was consecrated by Pope Sylvester I in 324 AD.</p>',
-      it: '<p class="justify"><img alt="Basilica Saint Paul outside the Walls Rome" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Roma_San_Paolo_fuori_le_mura_BW_1.JPG/320px-Roma_San_Paolo_fuori_le_mura_BW_1.JPG" width="320" height="223" class="entityImage" />L\'Apostolo Paolo giunse a Roma quando, dopo esser stato arrestato a Gerusalemme e esser stato messo in custodia tutelare a Cesarea, esercitò il suo diritto di cittadino romano e si appellò al giudizio dell\'imperatore a Roma (Atti 21-24). Dopo il naufragio sull\'isola di Malta, viaggiò a Roma via Siracusa, Reggio Calabria e Pozzuoli, per arrivare poi a Roma intorno al 60 d.C. Mentre a Roma, passò due anni agli arresti domiciliari, durante i quali predicò alla gente di Roma dalla casa presa in pigione, in attesa di comparire davanti a Cesare, e su questa nota arrivano a conclusione gli Atti degli Apostoli (Acts 28).</p><p class="justify">Papa Clemente I (sec. I), Sant\'Ignazio di Antiochia (sec. II), e San Dionisio di Corinto (sec. II) afferman che San Paolo fu martirizzato; si ritiene che la data del martirio di San Paolo si collochi a seguito del Incendio di Roma (64 d.C.), ma prima della fine del regno di Nerone (68 d.C.). Gli atti apocrifi  di Paolo (uno scritto del 160 d.C.), Tertulliano (200 d.C.), Eusebio di Cesarea (320 d.C.), Lattanzio (318 d.C.), San Girolamo (392 d.C.), San Giovanni Crisostomo (c. 349–407 d.C.) e Sulpicio Severo (403 d.C.) descrivono il martirio di Paolo dichiarando che Nerone abbia condannato Paolo a morte per decapitazione a Roma. Caio, un presiberto di Roma del sec. II, menziona che i resti di San Paolo furono seppelliti sulla Via Ostiense; i cristiani di Roma eressero un memoriale sul luogo della sepoltura. L\'Imperatore Constantino il Grande fece costruire una chiesa sul sito della sepoltura nel sec. IV, e la chiesa fu consacrata da Papa Silvestro I nel 324 d.C.</p>'
+      it: '<p class="justify"><img alt="Basilica Saint Paul outside the Walls Rome" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Roma_San_Paolo_fuori_le_mura_BW_1.JPG/320px-Roma_San_Paolo_fuori_le_mura_BW_1.JPG" width="320" height="223" class="entityImage" />L\'Apostolo Paolo giunse a Roma quando, dopo esser stato arrestato a Gerusalemme e esser stato messo in custodia tutelare a Cesarea, esercitò il suo diritto di cittadino romano e si appellò al giudizio dell\'imperatore a Roma (Atti 21-24). Dopo il naufragio sull\'isola di Malta, viaggiò a Roma via Siracusa, Reggio Calabria e Pozzuoli, per arrivare poi a Roma intorno al 60 d.C. Mentre a Roma, passò due anni agli arresti domiciliari, durante i quali predicò alla gente di Roma dalla casa presa in pigione, in attesa di comparire davanti a Cesare, e su questa nota arrivano a conclusione gli Atti degli Apostoli (Acts 28).</p><p class="justify">Papa Clemente I (sec. I), Sant\'Ignazio di Antiochia (sec. II), e San Dionisio di Corinto (sec. II) affermano che San Paolo fu martirizzato; si ritiene che la data del martirio di San Paolo si collochi a seguito dell\'incendio di Roma (64 d.C.), ma prima della fine del regno di Nerone (68 d.C.). Gli atti apocrifi  di Paolo (uno scritto del 160 d.C.), Tertulliano (200 d.C.), Eusebio di Cesarea (320 d.C.), Lattanzio (318 d.C.), San Girolamo (392 d.C.), San Giovanni Crisostomo (c. 349–407 d.C.) e Sulpicio Severo (403 d.C.) descrivono il martirio di Paolo dichiarando che Nerone avesse condannato Paolo a morte per decapitazione a Roma. Caio, un presbitero di Roma del sec. II, menziona che i resti di San Paolo furono seppelliti sulla Via Ostiense; i cristiani di Roma eressero un memoriale sul luogo della sepoltura. L\'Imperatore Constantino il Grande fece costruire una chiesa sul sito della sepoltura nel sec. IV, e la chiesa fu consacrata da Papa Silvestro I nel 324 d.C.</p>'
     }
   ),
   SantaMariaViaLata: createMarker(
@@ -174,7 +181,7 @@ let PilgrimageMarkers = {
     }
   ),
   ChiesaSanPaoloMartirio: createMarker(
-    41.8338692361,12.4878894914,
+    41.8338827697, 12.4843943162,
     {
       en: "Church of the Martyrdom of Saint Paul at the Three Fountains",
       it: "Chiesa del Martirio di San Paolo alle Tre Fontane"
@@ -189,6 +196,30 @@ let PilgrimageMarkers = {
           + "<p class=\"justify\">L’edificio fu ricostruito all’inizio del Seicento da Giacomo della Porta, per volere del cardinale Pietro Aldobrandini.</p>"
           + "<p class=\"justify\">L’interno ospita ancora le tre fontane, racchiuse da altrettante edicole in marmo nero, poste su livelli diversi. Vicino alla prima nicchia, si trova la colonna dove, secondo la legenda popolare, San Paolo venne legato per essere decapitato.</p>"
     }
+  ),
+  ChiesaSanPietroVincoli: createMarker(
+    41.8938240317, 12.4928614311,
+    {
+      en: "Basilica of Saint Peter in Chains",
+      it: "Basilica di San Pietro in Vincoli"
+    },
+    placeOfWorship.RED,
+    {
+      en: "",
+      it: ""
+    }
+  ),
+  ChiesaSantaPudenziana: createMarker(
+    41.8983854476, 12.4957403456,
+    {
+      en: "Basilica of Saint Pudentiana",
+      it: "Basilica di Santa Pudenziana"
+    },
+    placeOfWorship.RED,
+    {
+      en: "",
+      it: ""
+    }
   )
 }
 
@@ -197,11 +228,14 @@ const allMarkers = Object.values(PilgrimageMarkers);
 const placesSaintPaul = [
   PilgrimageMarkers.StPaulBasilicaRome,
   PilgrimageMarkers.SantaMariaViaLata,
-  PilgrimageMarkers.SanPaoloAllaRegola
+  PilgrimageMarkers.SanPaoloAllaRegola,
+  PilgrimageMarkers.ChiesaSanPaoloMartirio
 ];
 
 const placesSaintPeter = [
-  PilgrimageMarkers.StPeterBasilicaRome
+  PilgrimageMarkers.StPeterBasilicaRome,
+  PilgrimageMarkers.ChiesaSanPietroVincoli,
+  PilgrimageMarkers.ChiesaSantaPudenziana
 ];
 
 const placesEvangelists = [
@@ -267,30 +301,34 @@ let customStyle = () => {
   markersLayer.clustering.pixelRange = pixelRange;
 }
 
-let ellipsoid = viewer.scene.globe.ellipsoid;
 let mousemoveLabel = viewer.entities.add({
   name: 'mousemoveLabel',
   label: {
     ...label,
+    pixelOffset: null,
+    horizontalOrigin: Cesium.HorizontalOrigin.CENTER,
     text: 'no position',
     show: false
   }
 });
 
 viewer.scene.canvas.addEventListener('click', (e) => {
-  let cartesian = viewer.camera.pickEllipsoid(new Cesium.Cartesian2(e.clientX, e.clientY), ellipsoid);
+  const ellipsoid = viewer.scene.globe.ellipsoid;
+  const mousePosition = new Cesium.Cartesian2(e.clientX, e.clientY);
+  const cartesian = viewer.camera.pickEllipsoid(mousePosition, ellipsoid);
   if (cartesian) {
     //console.log('we have cartesian coordinates');
-    let cartographic = ellipsoid.cartesianToCartographic(cartesian);
-    let longitudeString = Cesium.Math.toDegrees(cartographic.longitude).toFixed(10);
-    let latitudeString = Cesium.Math.toDegrees(cartographic.latitude).toFixed(10);
-    let labelText = '(' + longitudeString + ', ' + latitudeString + ')';
+    const cartographic = ellipsoid.cartesianToCartographic(cartesian);
+    const longitude = Cesium.Math.toDegrees(cartographic.longitude - 0.00006);
+    const latitude = Cesium.Math.toDegrees(cartographic.latitude);
+    const labelText = latitude.toFixed(10) + ', ' + longitude.toFixed(10);
     console.log(labelText);
-    mousemoveLabel.position = cartesian;
+    navigator.clipboard.writeText(labelText);
+    mousemoveLabel.position = Cesium.Cartesian3.fromDegrees(longitude,latitude);
     mousemoveLabel.label.text = labelText;
-    mousemoveLabel.show = true;
+    mousemoveLabel.label.show = true;
   } else {
-    mousemoveLabel.show = false;
+    mousemoveLabel.label.show = false;
   }
 });
 

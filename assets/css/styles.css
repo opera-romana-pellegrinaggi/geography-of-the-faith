@@ -24,7 +24,12 @@ body {
   position: absolute;
   width: 80%;
 }
-#credits { position: absolute; bottom: -200px; left: -200px; }
+
+#credits {
+  position: absolute;
+  bottom: -200px;
+  left: -200px;
+}
 
 #sidebar {
   width: 20%;
@@ -67,4 +72,8 @@ body {
   font-weight: bold;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 4px 0;
+}
+
+.cesium-geocoder-searchButton {
+  fill: white;
 }
