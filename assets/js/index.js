@@ -49,6 +49,17 @@ scene.globe.dynamicAtmosphereLightingFromSun = true;
 scene.screenSpaceCameraController.maximumZoomDistance = 30000000;
 scene.screenSpaceCameraController.minimumZoomDistance = 500;
 scene.globe.depthTestAgainstTerrain=true;
+scene.moon = new Cesium.Moon();
+scene.primitives.add(Cesium.createOsmBuildings());
+
+let lensFlare = scene.postProcessStages.add(
+  Cesium.PostProcessStageLibrary.createLensFlareStage()
+);
+lensFlare.uniforms.intensity = 3.0;
+lensFlare.uniforms.distortion = 10.0;
+lensFlare.uniforms.ghostDispersal = 0.2;
+lensFlare.uniforms.haloWidth = 0.2;
+lensFlare.uniforms.dirtAmount = 0.1;
 
 let frame = viewer.infoBox.frame;
 frame.addEventListener('load', function () {
