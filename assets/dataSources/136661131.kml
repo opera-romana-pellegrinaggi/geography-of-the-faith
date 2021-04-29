@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+
+  
+  
+  
+  
+
+  <Document>
+
+    
+    
+    
+    
+    <Style id="style-core-normal0">
+      <IconStyle>
+        <scale>0.8</scale>
+        <Icon>
+          <href>https://pleiades.stoa.org/map_icons/justice-blue.png</href>
+        </Icon>
+      </IconStyle>
+      
+      <BalloonStyle>
+        <text><![CDATA[
+          <html><head>
+          <style type="text/css">
+          body {
+            font-family:'Helvetica Neue',serif;
+            font-size:1.2em;
+            color:#444;
+            width:auto; }
+          h1, h2, h3, h4 {
+            font-family:Verdana,sans-serif;
+            color:#2575AD; }
+          a { 
+            color:#2575AD;
+            text-decoration:underline; }
+          ul {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 1em;
+            text-indent: -0.5em; }
+          </style>
+          </head><body>
+          <h1>$[name]</h1>
+          <p><a href="$[address]" style="font-family:Verdana,sans-serif;               color: #2575AD;                text-decoration: underline">$[Snippet]</a></p>
+          <p style="color: #333; margin-left: 1em">$[description]</p>
+          </body></html>
+        ]]></text>
+      </BalloonStyle>
+    
+    </Style>
+    <Style id="style-core-highlight0">
+      <IconStyle>
+        <scale>1.2</scale>
+        <Icon>
+          <href>https://pleiades.stoa.org/map_icons/justice-blue.png</href>
+        </Icon>
+      </IconStyle>
+      
+      <BalloonStyle>
+        <text><![CDATA[
+          <html><head>
+          <style type="text/css">
+          body {
+            font-family:'Helvetica Neue',serif;
+            font-size:1.2em;
+            color:#444;
+            width:auto; }
+          h1, h2, h3, h4 {
+            font-family:Verdana,sans-serif;
+            color:#2575AD; }
+          a { 
+            color:#2575AD;
+            text-decoration:underline; }
+          ul {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 1em;
+            text-indent: -0.5em; }
+          </style>
+          </head><body>
+          <h1>$[name]</h1>
+          <p><a href="$[address]" style="font-family:Verdana,sans-serif;               color: #2575AD;                text-decoration: underline">$[Snippet]</a></p>
+          <p style="color: #333; margin-left: 1em">$[description]</p>
+          </body></html>
+        ]]></text>
+      </BalloonStyle>
+    
+    </Style>
+    <Style id="style-core-normal1">
+      <IconStyle>
+        <scale>0</scale>
+      </IconStyle>
+      <LineStyle>
+        <color>ffff0000</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>00ff0000</color>
+      </PolyStyle>
+      
+      <BalloonStyle>
+        <text><![CDATA[
+          <html><head>
+          <style type="text/css">
+          body {
+            font-family:'Helvetica Neue',serif;
+            font-size:1.2em;
+            color:#444;
+            width:auto; }
+          h1, h2, h3, h4 {
+            font-family:Verdana,sans-serif;
+            color:#2575AD; }
+          a { 
+            color:#2575AD;
+            text-decoration:underline; }
+          ul {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 1em;
+            text-indent: -0.5em; }
+          </style>
+          </head><body>
+          <h1>$[name]</h1>
+          <p><a href="$[address]" style="font-family:Verdana,sans-serif;               color: #2575AD;                text-decoration: underline">$[Snippet]</a></p>
+          <p style="color: #333; margin-left: 1em">$[description]</p>
+          </body></html>
+        ]]></text>
+      </BalloonStyle>
+    
+    </Style>
+    <Style id="style-core-highlight1">
+      <IconStyle>
+        <scale>0</scale>
+      </IconStyle>
+      <LineStyle>
+        <color>ffff0000</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>11ff0000</color>
+      </PolyStyle>
+      
+      <BalloonStyle>
+        <text><![CDATA[
+          <html><head>
+          <style type="text/css">
+          body {
+            font-family:'Helvetica Neue',serif;
+            font-size:1.2em;
+            color:#444;
+            width:auto; }
+          h1, h2, h3, h4 {
+            font-family:Verdana,sans-serif;
+            color:#2575AD; }
+          a { 
+            color:#2575AD;
+            text-decoration:underline; }
+          ul {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 1em;
+            text-indent: -0.5em; }
+          </style>
+          </head><body>
+          <h1>$[name]</h1>
+          <p><a href="$[address]" style="font-family:Verdana,sans-serif;               color: #2575AD;                text-decoration: underline">$[Snippet]</a></p>
+          <p style="color: #333; margin-left: 1em">$[description]</p>
+          </body></html>
+        ]]></text>
+      </BalloonStyle>
+    
+    </Style>
+    <StyleMap id="style-core-0">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#style-core-normal0</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#style-core-highlight0</styleUrl>
+      </Pair>
+    </StyleMap>
+    <StyleMap id="style-core-1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#style-core-normal1</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#style-core-highlight1</styleUrl>
+      </Pair>
+    </StyleMap>
+    
+    
+    
+  
+
+    <name>Locations of Via Francigena</name>
+    <visibility>1</visibility>
+    <open>0</open>
+
+    
+
+  <Folder id="places/136661131">
+    <name>Via Francigena</name>
+    <atom:link href="https://pleiades.stoa.org/places/136661131"/>
+    <address>https://pleiades.stoa.org/places/136661131</address>
+    <open>1</open>
+    <visibility>1</visibility>
+    <Snippet>Road</Snippet>
+
+    <description>
+    <![CDATA[
+      <p><em>The Via Francigena is a Medieval pilgrimage route connecting Canterbury, England, and Rome.</em></p>
+      <ul><!-- Attributes -->
+      <li>ID: <span>136661131</span></li>
+      <li>In context: <a href="https://pleiades.stoa.org/places/136661131" type="">Locations of Via Francigena</a></li>
+      <li>Names: <span>Unnamed</span></li>
+      <li>Locations:  </li>
+      </ul>
+      ]]>
+    </description>
+
+    <styleUrl>#style-core-normal0</styleUrl>
+
+    </Folder>
+    
+
+  </Document>
+  
+  
+
+</kml>

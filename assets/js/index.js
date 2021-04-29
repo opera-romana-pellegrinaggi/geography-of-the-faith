@@ -1,4 +1,8 @@
 Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5YzNlODY2Yy0yZjY1LTRkMDktOTViYi02M2I3M2NjMTg3YmIiLCJpZCI6NTM3MjUsImlhdCI6MTYxOTM1MzA0NX0.t8ZCZb4qQKgU2sQbzAwgZ85ReK07ZmRZjnecUP8IE9Y';
+Cesium.zip.useWebWorkers = false;
+Cesium.zip.Inflater = window.zip.Inflater;
+Cesium.zip.Deflater = window.zip.Deflater;
+
 //Cesium.BingMapsApi.defaultKey = 'AsRSrIU0SOTDG268mtY0kyGIN86fK07A9rjb5QPWU-9kW64slsXWdhTe0thkvykQ';
 const lang = location.hostname.includes('geografiadellafede') ? 'it' : 'en';
 
@@ -43,7 +47,8 @@ scene.globe.enableLighting = true;
 scene.globe.dynamicAtmosphereLighting = true;
 scene.globe.dynamicAtmosphereLightingFromSun = true;
 scene.screenSpaceCameraController.maximumZoomDistance = 30000000;
-scene.screenSpaceCameraController.minimumZoomDistance = 1000;
+scene.screenSpaceCameraController.minimumZoomDistance = 500;
+scene.globe.depthTestAgainstTerrain=true;
 
 let frame = viewer.infoBox.frame;
 frame.addEventListener('load', function () {
@@ -85,14 +90,18 @@ const placeOfWorship = {
     color: Cesium.Color.WHITE,
     verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
     width: 36,
-    height: 36
+    height: 36,
+    heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
+    disableDepthTestDistance: Number.POSITIVE_INFINITY
   },
   BLUE: {
     image: pinBuilder.fromMakiIconId("place-of-worship", Cesium.Color.DARKBLUE, 36),
     color: Cesium.Color.WHITE,
     verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
     width: 36,
-    height: 36
+    height: 36,
+    heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
+    disableDepthTestDistance: Number.POSITIVE_INFINITY
   }
 };
 
@@ -103,7 +112,9 @@ let label = {
   style: Cesium.LabelStyle.FILL_AND_OUTLINE,
   outlineWidth : 2,
   verticalOrigin : Cesium.VerticalOrigin.BOTTOM,
-  pixelOffset : new Cesium.Cartesian2(0, -40)
+  pixelOffset : new Cesium.Cartesian2(0, -40),
+  heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
+  disableDepthTestDistance: Number.POSITIVE_INFINITY
 }
 
 let markersLayer = new Cesium.CustomDataSource();
@@ -169,7 +180,7 @@ let PilgrimageMarkers = {
     }
   ),
   SanPaoloAllaRegola: createMarker(
-    41.8930597,12.4732267,
+    41.8928947908,12.4732163225,
     {
       en: "San Paolo alla Regola",
       it: "San Paolo alla Regola"
@@ -181,7 +192,7 @@ let PilgrimageMarkers = {
     }
   ),
   ChiesaSanPaoloMartirio: createMarker(
-    41.8338827697, 12.4843943162,
+    41.8338579021,12.4842554945,
     {
       en: "Church of the Martyrdom of Saint Paul at the Three Fountains",
       it: "Chiesa del Martirio di San Paolo alle Tre Fontane"
@@ -198,7 +209,7 @@ let PilgrimageMarkers = {
     }
   ),
   ChiesaSanPietroVincoli: createMarker(
-    41.8938240317, 12.4928614311,
+    41.8938205170,12.4931629806,
     {
       en: "Basilica of Saint Peter in Chains",
       it: "Basilica di San Pietro in Vincoli"
@@ -210,10 +221,46 @@ let PilgrimageMarkers = {
     }
   ),
   ChiesaSantaPudenziana: createMarker(
-    41.8983854476, 12.4957403456,
+    41.8983956134,12.4955143192,
     {
       en: "Basilica of Saint Pudentiana",
       it: "Basilica di Santa Pudenziana"
+    },
+    placeOfWorship.RED,
+    {
+      en: "",
+      it: ""
+    }
+  ),
+  ChiesaDomineQuoVadis: createMarker(
+    41.8664686432,12.5037318514,
+    {
+      en: "Church Domine Quo Vadis",
+      it: "Chiesa del Domine Quo Vadis"
+    },
+    placeOfWorship.RED,
+    {
+      en: "<p class=\"justify\">The church is situated at the crossing of Via Appia and Via Ardeatina, in the place where, according to tradition, Jesus would have appeared to Saint Peter as he was fleeing from Rome to escape persecution by Emperor Nero. When the apostle asked  Lord, where are you going?” (“Domine, quo vadis?”), Jesus would have answered “I am going to Rome to be crucified again”. Saint Peter, having understood the reprimand, turned around and went back into Rome, where he was martyred. When Jesus disappeared, he left the traces of his footprints on a stone, a copy of which can be found within the church: thus the name “in palmis”. The original can be found in the nearby Basilica of Saint Sebastian outside the Walls. Founded in the 9th century, the church was rebuilt in the 16th and 17th centuries; it was at this time that the current façade was built.</p>",
+      it: "<p class=\"justify\">La chiesa sorge all’incrocio tra la Via Appia e la Via Ardeatina, nel luogo in cui, secondo la tradizione, Gesù sarebbe apparso a Pietro in fuga da Roma per scampare alla persecuzione di Nerone. Alla domanda dell’apostolo “Signore, dove vai?” (“Domine, quo vadis?”), Gesù avrebbe risposto “Vado a Roma per farmi nuovamente crocifiggere”. Pietro, compreso il rimprovero, tornò indietro, affrontando il martirio. Gesù scomparve, lasciando però impresse le orme dei suoi piedi su una pietra, la cui copia è custodita all’interno della chiesa: di qui l’appellativo “in palmis”. L’originale si trova nella vicina Basilica di San Sebastiano fuori le Mura. Fondata nel secolo IX, la chiesa fu riedificata nel XVI e nel XVII secolo, quando fu realizzata la facciata nelle forme attuali.</p>"
+    }
+  ),
+  SanBartolomeoIsolaTiberina: createMarker(
+    41.8902556565,12.4782983111,
+    {
+      en: "Church of Saint Bartholomew on Tiber Island",
+      it: "Chiesa di San Bartolomeo all'Isola Tiberina"
+    },
+    placeOfWorship.RED,
+    {
+      en: "",
+      it: ""
+    }
+  ),
+  BasilicaSantiXIIApostoli: createMarker(
+    41.8981066261,12.4833804817,
+    {
+      en: "Basilica of the Twelve Apostles",
+      it: "Basilica dei Santi XII Apostoli"
     },
     placeOfWorship.RED,
     {
@@ -235,16 +282,22 @@ const placesSaintPaul = [
 const placesSaintPeter = [
   PilgrimageMarkers.StPeterBasilicaRome,
   PilgrimageMarkers.ChiesaSanPietroVincoli,
-  PilgrimageMarkers.ChiesaSantaPudenziana
+  PilgrimageMarkers.ChiesaSantaPudenziana,
+  PilgrimageMarkers.ChiesaDomineQuoVadis
 ];
+
+const placesSaintsPeterPaul = [
+  ...placesSaintPaul,
+  ...placesSaintPeter
+]
 
 const placesEvangelists = [
   PilgrimageMarkers.StMarkVenice
 ];
 
 const placesApostles = [
-  ...placesSaintPaul,
-  ...placesSaintPeter
+  ...placesSaintsPeterPaul,
+  PilgrimageMarkers.SanBartolomeoIsolaTiberina
 ];
 
 let removeListener;
@@ -276,6 +329,7 @@ let customStyle = () => {
         cluster.billboard.id = cluster.label.id;
         cluster.billboard.verticalOrigin =
           Cesium.VerticalOrigin.BOTTOM;
+        cluster.billboard.disableDepthTestDistance = Number.POSITIVE_INFINITY;
 
         if (clusteredEntities.length >= 50) {
           cluster.billboard.image = pin50;
@@ -305,6 +359,7 @@ let mousemoveLabel = viewer.entities.add({
   name: 'mousemoveLabel',
   label: {
     ...label,
+    font : 'bold 14pt monospace',
     pixelOffset: null,
     horizontalOrigin: Cesium.HorizontalOrigin.CENTER,
     text: 'no position',
@@ -312,25 +367,48 @@ let mousemoveLabel = viewer.entities.add({
   }
 });
 
-viewer.scene.canvas.addEventListener('click', (e) => {
-  const ellipsoid = viewer.scene.globe.ellipsoid;
-  const mousePosition = new Cesium.Cartesian2(e.clientX, e.clientY);
-  const cartesian = viewer.camera.pickEllipsoid(mousePosition, ellipsoid);
-  if (cartesian) {
-    //console.log('we have cartesian coordinates');
-    const cartographic = ellipsoid.cartesianToCartographic(cartesian);
-    const longitude = Cesium.Math.toDegrees(cartographic.longitude - 0.00006);
+let handler = new Cesium.ScreenSpaceEventHandler(viewer.canvas);
+
+let previousPickedEntity = undefined;
+handler.setInputAction((event) => {
+  const pickedPrimitive = viewer.scene.pick(event.endPosition);
+  const pickedEntity = (Cesium.defined(pickedPrimitive)) ? pickedPrimitive.id : undefined;
+  if(Cesium.defined(previousPickedEntity)){
+    previousPickedEntity.billboard.scale = 1.0;
+    previousPickedEntity.label.pixelOffset = new Cesium.Cartesian2(0, -40);
+  }
+  if (Cesium.defined(pickedEntity)) {
+    if(Cesium.defined(pickedEntity.billboard)){
+      pickedEntity.billboard.scale = 1.1;
+      pickedEntity.label.pixelOffset = new Cesium.Cartesian2(0, -50);
+      previousPickedEntity = pickedEntity;
+    }
+  }
+  const cartesian = viewer.scene.pickPosition(event.endPosition);
+  if (Cesium.defined(cartesian)) {
+    const cartographic = Cesium.Cartographic.fromCartesian(cartesian);
+    const longitude = Cesium.Math.toDegrees(cartographic.longitude);
     const latitude = Cesium.Math.toDegrees(cartographic.latitude);
-    const labelText = latitude.toFixed(10) + ', ' + longitude.toFixed(10);
-    console.log(labelText);
+    const labelText = latitude.toFixed(10) + ',' + longitude.toFixed(10);
     navigator.clipboard.writeText(labelText);
     mousemoveLabel.position = Cesium.Cartesian3.fromDegrees(longitude,latitude);
+    //mousemoveLabel.label.position = Cesium.Cartesian3.fromDegrees(longitude,latitude);
     mousemoveLabel.label.text = labelText;
     mousemoveLabel.label.show = true;
   } else {
     mousemoveLabel.label.show = false;
   }
-});
+}, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
+
+handler.setInputAction((event) => {
+  const cartesian = viewer.scene.pickPosition(event.position);
+  if (Cesium.defined(cartesian)) {
+    const cartographic = Cesium.Cartographic.fromCartesian(cartesian);
+    const longitude = Cesium.Math.toDegrees(cartographic.longitude);
+    const latitude = Cesium.Math.toDegrees(cartographic.latitude);
+    navigator.clipboard.writeText(labelText);
+  }
+}, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 
 
 document.getElementById('placesApostles').addEventListener("click", () => {
@@ -376,6 +454,25 @@ document.getElementById('showAllPlaces').addEventListener("click", () => {
     }
   });
 });
+
+
+let francigenaDataSourcePromise = viewer.dataSources.add(
+  Cesium.KmlDataSource.load('assets/dataSources/Via_Francigena.kmz', //assets/dataSources/136661131.kml
+  {
+       camera: viewer.scene.camera,
+       canvas: viewer.scene.canvas,
+       clampToGround: true
+  })
+);
+
+let francisciDataSourcePromise = viewer.dataSources.add(
+  Cesium.KmlDataSource.load('assets/dataSources/ViaFrancisci.kmz', //assets/dataSources/136661131.kml
+  {
+       camera: viewer.scene.camera,
+       canvas: viewer.scene.canvas,
+       clampToGround: true
+  })
+);
 
 let dataSourcePromise = viewer.dataSources.add(markersLayer);
 dataSourcePromise.then(dataSource => {
