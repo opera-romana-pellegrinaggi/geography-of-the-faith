@@ -36,7 +36,8 @@ let viewer = new Cesium.Viewer('map', {
   scene3DOnly: true,
   shadows: true,
   creditContainer: document.getElementById("credits"),
-  creditViewport: null
+  creditViewport: null,
+  shouldAnimate: true
 });
 
 let scene = viewer.scene;
@@ -482,6 +483,14 @@ let francisciDataSourcePromise = viewer.dataSources.add(
        camera: viewer.scene.camera,
        canvas: viewer.scene.canvas,
        clampToGround: true
+  })
+);
+
+let omniaVaticanRomeDataSourcePromise = viewer.dataSources.add(
+  Cesium.KmlDataSource.load('assets/dataSources/Omnia Vatican&Rome.kmz',{
+    camera: viewer.scene.camera,
+    canvas: viewer.scene.canvas,
+    clampToGround: true
   })
 );
 
