@@ -939,7 +939,9 @@ const airplaneEntity = viewer.entities.add({
   availability: new Cesium.TimeIntervalCollection([ new Cesium.TimeInterval({ start: start, stop: stop }) ]),
   position: positionProperty,
   point: { pixelSize: 30, color: Cesium.Color.GREEN },
-  path: new Cesium.PathGraphics({ width: 3 })
+  //path: new Cesium.PathGraphics({ width: 3 }),
+  //model: "assets/models/CesiumMilkTruck/CesiumMilkTruck.glb",
+  //clampToGround: true
 });
 // Make the camera track this moving entity.
 viewer.trackedEntity = airplaneEntity;
