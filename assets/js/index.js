@@ -1,14 +1,26 @@
+/*
+$sidebar = $('.sidebar');
+$full_page = $('.full-page');
+$sidebar_responsive = $('body > .navbar-collapse');
+window_width = $(window).width();
+*/
+
+$('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
+
+let allPromisedResolved = false;
+
 Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5YzNlODY2Yy0yZjY1LTRkMDktOTViYi02M2I3M2NjMTg3YmIiLCJpZCI6NTM3MjUsImlhdCI6MTYxOTM1MzA0NX0.t8ZCZb4qQKgU2sQbzAwgZ85ReK07ZmRZjnecUP8IE9Y';
 Cesium.zip.useWebWorkers = false;
 Cesium.zip.Inflater = window.zip.Inflater;
 Cesium.zip.Deflater = window.zip.Deflater;
 
 const lang = location.hostname.includes('geografiadellafede') ? 'it' : 'en';
+console.log(location.hostname + ' : lang set to ' + lang);
 
 var bing = new Cesium.BingMapsImageryProvider({
   url : 'https://dev.virtualearth.net',
   key : 'AsRSrIU0SOTDG268mtY0kyGIN86fK07A9rjb5QPWU-9kW64slsXWdhTe0thkvykQ',
-  mapStyle : Cesium.BingMapsStyle.AERIAL_WITH_LABELS_ON_DEMAND
+  mapStyle : Cesium.BingMapsStyle.AERIAL
 });
 
 let mapTiler = new Cesium.UrlTemplateImageryProvider({
@@ -19,8 +31,8 @@ let mapTiler = new Cesium.UrlTemplateImageryProvider({
 });
 
 let viewer = new Cesium.Viewer('map', {
-  animation: true,
-  timeline: true,
+  animation: false,
+  timeline: false,
   baseLayerPicker: false,
   sceneModePicker: false,
   navigationHelpButton: true,
@@ -60,7 +72,7 @@ lensFlare.uniforms.distortion = 10.0;
 lensFlare.uniforms.ghostDispersal = 0.2;
 lensFlare.uniforms.haloWidth = 0.2;
 lensFlare.uniforms.dirtAmount = 0.1;
-
+/*
 const flightData = [
   {
     "longitude": 12.467529000000006,
@@ -945,7 +957,7 @@ const airplaneEntity = viewer.entities.add({
 });
 // Make the camera track this moving entity.
 viewer.trackedEntity = airplaneEntity;
-
+*/
 let frame = viewer.infoBox.frame;
 frame.addEventListener('load', function () {
   let cssLink = frame.contentDocument.createElement('link');
@@ -1263,48 +1275,6 @@ let mousemoveLabel = viewer.entities.add({
   }
 });
 
-let handler = new Cesium.ScreenSpaceEventHandler(viewer.canvas);
-
-let previousPickedEntity = undefined;
-handler.setInputAction((event) => {
-  const pickedPrimitive = viewer.scene.pick(event.endPosition);
-  const pickedEntity = (Cesium.defined(pickedPrimitive)) ? pickedPrimitive.id : undefined;
-  if(Cesium.defined(previousPickedEntity)){
-    previousPickedEntity.billboard.scale = 1.0;
-    previousPickedEntity.label.pixelOffset = new Cesium.Cartesian2(0, -40);
-  }
-  if (Cesium.defined(pickedEntity)) {
-    if(Cesium.defined(pickedEntity.billboard)){
-      pickedEntity.billboard.scale = 1.1;
-      pickedEntity.label.pixelOffset = new Cesium.Cartesian2(0, -50);
-      previousPickedEntity = pickedEntity;
-    }
-  }
-  const cartesian = viewer.scene.pickPosition(event.endPosition);
-  if (Cesium.defined(cartesian)) {
-    const cartographic = Cesium.Cartographic.fromCartesian(cartesian);
-    const longitude = Cesium.Math.toDegrees(cartographic.longitude);
-    const latitude = Cesium.Math.toDegrees(cartographic.latitude);
-    const labelText = latitude.toFixed(10) + ',' + longitude.toFixed(10);
-    mousemoveLabel.position = Cesium.Cartesian3.fromDegrees(longitude,latitude);
-    //mousemoveLabel.label.position = Cesium.Cartesian3.fromDegrees(longitude,latitude);
-    mousemoveLabel.label.text = labelText;
-    mousemoveLabel.label.show = true;
-  } else {
-    mousemoveLabel.label.show = false;
-  }
-}, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
-
-handler.setInputAction((event) => {
-  const cartesian = viewer.scene.pickPosition(event.position);
-  if (Cesium.defined(cartesian)) {
-    const cartographic = Cesium.Cartographic.fromCartesian(cartesian);
-    const longitude = Cesium.Math.toDegrees(cartographic.longitude);
-    const latitude = Cesium.Math.toDegrees(cartographic.latitude);
-    const labelText = latitude.toFixed(10) + ',' + longitude.toFixed(10);
-    navigator.clipboard.writeText(labelText);
-  }
-}, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 
 
 document.getElementById('placesApostles').addEventListener("click", () => {
@@ -1359,7 +1329,9 @@ let francigenaDataSourcePromise = viewer.dataSources.add(
        canvas: viewer.scene.canvas,
        clampToGround: true
   })
-);
+).then(dataSource => {
+  console.log("francigenaDataSource is ready!");
+});
 
 let francisciDataSourcePromise = viewer.dataSources.add(
   Cesium.KmlDataSource.load('assets/dataSources/Via Francisci/ViaFrancisci.kmz',
@@ -1368,7 +1340,9 @@ let francisciDataSourcePromise = viewer.dataSources.add(
        canvas: viewer.scene.canvas,
        clampToGround: true
   })
-);
+).then(dataSource => {
+  console.log("francisciDataSource is ready!");
+});
 
 let francisciSudDataSourcePromise = viewer.dataSources.add(
   Cesium.KmlDataSource.load('assets/dataSources/Via Francisci/Via Francisci Sud.kmz',
@@ -1377,7 +1351,9 @@ let francisciSudDataSourcePromise = viewer.dataSources.add(
        canvas: viewer.scene.canvas,
        clampToGround: true
   })
-);
+).then(dataSource => {
+  console.log("francisciSudDataSource is ready!");
+});
 
 let lauretanaDataSourcePromise = viewer.dataSources.add(
   Cesium.KmlDataSource.load('assets/dataSources/Via Lauretana/Via Lauretana - tappe.kmz',
@@ -1386,7 +1362,9 @@ let lauretanaDataSourcePromise = viewer.dataSources.add(
        canvas: viewer.scene.canvas,
        clampToGround: true
   })
-);
+).then(dataSource => {
+  console.log("lauretanaDataSource is ready!");
+});
 
 let openBusModel,
   openBusPosition;
@@ -1397,12 +1375,15 @@ let omniaVaticanRomeDataSourcePromise = viewer.dataSources.add(
     clampToGround: true
   })
 ).then(dataSource => {
-  openBusModel = dataSource.entities.getById("CesiumMilkTruck");
-  openBusPosition = openBusModel.position;
+  console.log("omniaVaticanRomeDataSource is ready!");
+  //openBusModel = dataSource.entities.getById("CesiumMilkTruck");
+  //openBusPosition = openBusModel.position;
 });
+
 
 let dataSourcePromise = viewer.dataSources.add(markersLayer);
 dataSourcePromise.then(dataSource => {
+  console.log("markersLayer is ready!");
   let pixelRange = 15;
   let minimumClusterSize = 3;
   let enabled = true;
@@ -1411,10 +1392,129 @@ dataSourcePromise.then(dataSource => {
   dataSource.clustering.pixelRange = pixelRange;
   dataSource.clustering.minimumClusterSize = minimumClusterSize;
   customStyle();
-  viewer.camera.setView({
-    destination: Cesium.Cartesian3.fromDegrees(12.4531362,41.9020481, 15000000)
-  });
+});
+
+
+let helper = new Cesium.EventHelper();
+helper.add(scene.globe.tileLoadProgressEvent, ev => {
+  console.log("tiles to load = " + ev);
+  if(ev === 0){
+    console.log("and all tiles are now loaded");
+    if(allPromisedResolved){
+      $('.loader').fadeOut();
+    }
+  }
+});
+
+bing.readyPromise.then(() => {
+  console.log("bing maps is ready!");
+});
+let reddish = new Cesium.Color(0.9,0.7,0.7,0.6);
+let geoJsonDataSource = undefined;
+let geoJsonDataSourcePromise = viewer.dataSources.add(Cesium.GeoJsonDataSource.load('assets/dataSources/countries.geojson', {
+    stroke: new Cesium.Color(0.6,0.6,0.6,0.1),
+    material: reddish,
+    strokeWidth: 2
+  })).then(dataSource => {
+    //viewer.zoomTo(dataSource);
+    geoJsonDataSource = dataSource;
+    console.log("geoJsonDatasource loaded, number of entities = " + dataSource.entities.values.length);
+    
+    for (let i = 0; i < dataSource.entities.values.length; i++) {
+      let entity = dataSource.entities.values[i];
+      entity.polygon.height = 10000;
+      /*
+      let cartesianPositions = entity.polygon.hierarchy._value.positions;
+      let cartographicPositions = viewer.scene.globe.ellipsoid.cartesianArrayToCartographicArray(cartesianPositions);
+      let promise = Cesium.sampleTerrainMostDetailed(viewer.terrainProvider, cartographicPositions);
+      Cesium.when(promise, () => {
+        updatedPos = [];
+        for (let j = 0; j < cartographicPositions.length; j++) {
+          //dataSource.entities.values[i].polygon.height = terrainSamplePositions[i].height + 1.0;
+          updatedPos.push(cartographicPositions[j].longitude);
+          updatedPos.push(cartographicPositions[j].latitude);
+          updatedPos.push(cartographicPositions[j].height);
+        }
+        entity.polygon.hierarchy = Cesium.Cartesian3.fromRadiansArrayHeights(updatedPos);
+        entity.polygon.perPositionHeight = true;
+        entity.polygon.material = Cesium.Color.BLUE.withAlpha(0.5);
+      });
+      */
+    }
+
 
 });
 
 //viewer.flyTo(viewer.entities);
+Promise.all([francigenaDataSourcePromise, francisciDataSourcePromise, francisciSudDataSourcePromise, lauretanaDataSourcePromise, omniaVaticanRomeDataSourcePromise, dataSourcePromise, geoJsonDataSourcePromise]).then((values) => {
+  console.log("all promises are resolved!");
+  allPromisedResolved = true;
+  if(scene.globe.tilesLoaded){
+    $('.loader').fadeOut();
+  } else {
+    console.log("however tiles are still loading...");
+  }
+});
+
+viewer.camera.setView({
+  destination: Cesium.Cartesian3.fromDegrees(12.4531362,41.9020481, 15000000)
+});
+
+let entityColorARR = {
+  entityid: undefined,
+  color: undefined
+};
+
+let handler = new Cesium.ScreenSpaceEventHandler(viewer.canvas);
+
+let previousPickedEntity = undefined;
+handler.setInputAction((event) => {
+  const pickedPrimitive = viewer.scene.pick(event.endPosition);
+  const pickedEntity = (Cesium.defined(pickedPrimitive)) ? pickedPrimitive.id : undefined;
+  if(Cesium.defined(previousPickedEntity)){
+    if(Cesium.defined(previousPickedEntity.billboard)){
+      previousPickedEntity.billboard.scale = 1.0;
+      previousPickedEntity.label.pixelOffset = new Cesium.Cartesian2(0, -40);
+    } else if(Cesium.defined(geoJsonDataSource) && Cesium.defined(previousPickedEntity.id) && geoJsonDataSource.entities.getById(previousPickedEntity.id)){
+      previousPickedEntity.polygon.material = reddish;
+    }
+  }
+  if (Cesium.defined(pickedEntity)) {
+    if(Cesium.defined(pickedEntity.billboard)){
+      pickedEntity.billboard.scale = 1.1;
+      pickedEntity.label.pixelOffset = new Cesium.Cartesian2(0, -50);
+      previousPickedEntity = pickedEntity;
+    } else if(Cesium.defined(geoJsonDataSource) && Cesium.defined(pickedEntity.id) && geoJsonDataSource.entities.getById(pickedEntity.id)){
+      console.log("you seem to be hovering over a country");
+      console.log(pickedEntity);
+      pickedEntity.polygon.material = Cesium.Color.BLUE.withAlpha(0.9);
+    }
+  }
+  const cartesian = viewer.scene.pickPosition(event.endPosition);
+  if (Cesium.defined(cartesian)) {
+    const cartographic = Cesium.Cartographic.fromCartesian(cartesian);
+    const longitude = Cesium.Math.toDegrees(cartographic.longitude);
+    const latitude = Cesium.Math.toDegrees(cartographic.latitude);
+    const labelText = latitude.toFixed(10) + ',' + longitude.toFixed(10);
+    mousemoveLabel.position = Cesium.Cartesian3.fromDegrees(longitude,latitude);
+    //mousemoveLabel.label.position = Cesium.Cartesian3.fromDegrees(longitude,latitude);
+    mousemoveLabel.label.text = labelText;
+    mousemoveLabel.label.show = true;
+  } else {
+    mousemoveLabel.label.show = false;
+  }
+}, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
+
+handler.setInputAction((event) => {
+  const cartesian = viewer.scene.pickPosition(event.position);
+  if (Cesium.defined(cartesian)) {
+    const cartographic = Cesium.Cartographic.fromCartesian(cartesian);
+    const longitude = Cesium.Math.toDegrees(cartographic.longitude);
+    const latitude = Cesium.Math.toDegrees(cartographic.latitude);
+    const labelText = latitude.toFixed(10) + ',' + longitude.toFixed(10);
+    navigator.clipboard.writeText(labelText);
+  }
+}, Cesium.ScreenSpaceEventType.LEFT_CLICK);
+
+
+//viewer.flyTo(PilgrimageMarkers.StPeterBasilicaRome,{duration:5});
