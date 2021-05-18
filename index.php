@@ -63,13 +63,54 @@
           <a href="/" class="simple-text logo-normal"><?php _e("The geography of the faith"); ?></a>
         </div>
         <div class="sidebar-wrapper ps-container ps-theme-default">
-          <div><button id="placesApostles">LUOGHI DEGLI APOSTOLI</button></div>
-          <div><button id="placesEvangelists">LUOGHI DEGLI EVANGELISTI</button></div>
-          <div><button id="showAllPlaces">MOSTRA TUTTI</button></div>
+          <ul class="nav">
+            <li class="nav-item">
+              <div class="card card-collapse">
+                <div class="card-header" role="tab" id="headingTwo">
+                  <h5 class="mb-0">
+                    <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Filters
+                      <i class="material-icons">keyboard_arrow_down</i>
+                    </a>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+                    <div>
+                      <span>LUOGHI DEGLI APOSTOLI</span>
+                      <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                    <div>
+                      <span>LUOGHI DEGLI EVANGELISTI</span>
+                      <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                    <div>
+                      <span>MOSTRA TUTTI</span>
+                      <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!--
+            <li class="nav-item"><button id="placesApostles">LUOGHI DEGLI APOSTOLI</button></li>
+            <li class="nav-item"><button id="placesEvangelists">LUOGHI DEGLI EVANGELISTI</button></li>
+            <li class="nav-item"><button id="showAllPlaces">MOSTRA TUTTI</button></li> -->
+          </ul>
         </div>
       </div>
       <div class="main-panel ps-container ps-theme-default">
         <div id="map"></div>
+        <div id="currentNation">Planet earth</div>
         <div id="credits"></div>
         <div class="loader">
           <div class="loaderBar"></div>
