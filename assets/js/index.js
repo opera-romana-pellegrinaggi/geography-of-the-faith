@@ -499,6 +499,8 @@ let francigenaDataSourcePromise = viewer.dataSources.add(
   console.log("francigenaDataSource is ready!");
 });
 */
+
+/*
 let francigenaDataSourcePromise = viewer.dataSources.add(
   Cesium.KmlDataSource.load('assets/dataSources/Via Francigena/via-francigena-tessellate.kml',
   {
@@ -542,7 +544,7 @@ let lauretanaDataSourcePromise = viewer.dataSources.add(
 ).then(dataSource => {
   console.log("lauretanaDataSource is ready!");
 });
-
+*/
 let openBusModel,
   openBusPosition;
 let omniaVaticanRomeDataSourcePromise = viewer.dataSources.add(
@@ -577,9 +579,9 @@ helper.add(scene.globe.tileLoadProgressEvent, ev => {
   console.log("tiles to load = " + ev);
   if(ev === 0){
     console.log("and all tiles are now loaded");
-    if(allPromisedResolved){
+    //if(allPromisedResolved){
       $('.loader').fadeOut();
-    }
+    //}
   }
 });
 
@@ -618,7 +620,7 @@ let countryPolysPromise = viewer.dataSources.add(
   Cesium.KmlDataSource.load('assets/dataSources/countries/polygons.kmz',{
     camera: viewer.scene.camera,
     canvas: viewer.scene.canvas,
-    clampToGround: false
+    clampToGround: true
   })
 ).then(dataSource => {
   countryPolysDataSource = dataSource;
@@ -630,6 +632,7 @@ let countryPolysPromise = viewer.dataSources.add(
 });
 
 //viewer.flyTo(viewer.entities);
+/*
 Promise.all([francigenaDataSourcePromise, francisciDataSourcePromise, francisciSudDataSourcePromise, lauretanaDataSourcePromise, omniaVaticanRomeDataSourcePromise, markersLayerPromise, countriesPromise, countryPolysPromise]).then((values) => {
   console.log("all promises are resolved!");
   allPromisedResolved = true;
@@ -639,7 +642,7 @@ Promise.all([francigenaDataSourcePromise, francisciDataSourcePromise, francisciS
     console.log("however tiles are still loading...");
   }
 });
-
+*/
 viewer.camera.setView({
   destination: Cesium.Cartesian3.fromDegrees(12.4531362,41.9020481, 15000000)
 });
