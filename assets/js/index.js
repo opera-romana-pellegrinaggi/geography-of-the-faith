@@ -617,7 +617,7 @@ let countriesPromise = viewer.dataSources.add(
 
 let countryPolysDataSource = undefined;
 let countryPolysPromise = viewer.dataSources.add(
-  Cesium.KmlDataSource.load('assets/dataSources/countries/polygons.kmz',{
+  Cesium.KmlDataSource.load('assets/dataSources/countries/polygons.kmz',{ //countries-10m.kmz
     camera: viewer.scene.camera,
     canvas: viewer.scene.canvas,
     clampToGround: true
