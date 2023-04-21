@@ -113,3 +113,24 @@
   top: 3px;
   left: 10px;
 }
+
+.dark-edition .sidebar[data-background-color=black] .nav li:not(.active).active>[data-toggle=collapse], .dark-edition .sidebar[data-background-color=black] .nav li:not(.active) .dropdown-menu a:focus.togglebutton label .label, .dark-edition .sidebar[data-background-color=black] .nav li:not(.active) .dropdown-menu a:hover.togglebutton label .label, .dark-edition .sidebar[data-background-color=black] .nav li:not(.active):not(.active):hover>a.togglebutton label .label {
+  color: hsla(0,0%,100%,.8);
+}
+
+.dark-edition .sidebar[data-background-color=black] .nav li:not(.active) .dropdown-menu a.togglebutton label .label, .dark-edition .sidebar[data-background-color=black] .nav li:not(.active) a.togglebutton label .label {
+  color: #a9afbbd1;
+}
+
+.nav-link.togglebutton {
+  border-left: 1px groove grey;
+  border-right: 1px groove grey;
+}
+
+li.nav-item:last-child > .nav-link.togglebutton {
+  border-bottom: 1px groove grey;
+}
+
+.nav-link.collapsed {
+  border: 1px groove grey;
+}

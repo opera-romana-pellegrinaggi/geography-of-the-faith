@@ -64,42 +64,149 @@
         </div>
         <div class="sidebar-wrapper ps-container ps-theme-default ps-active-y">
           <ul class="nav" id="accordion" role="tablist">
-            <li class="nav-item active">
-              <a class="nav-link" data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                <i class="material-icons">filter_alt</i>
-                <p><?php _e("Filters"); ?></p>
+          <li class="nav-item active">
+              <a class="nav-link" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <i class="material-icons">place</i>
+                <p><?php _e("Sites"); ?></p>
               </a>
-              <div id="collapseTwo" class="collapse show" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                 <ul class="nav">
                   <li class="nav-item">
                     <a class="nav-link togglebutton">
                       <label>
-                        <input type="checkbox">
+                        <input type="checkbox" data-filter="apostles">
                         <span class="toggle"></span>
+                        <span class="label small"><?php _e("Places of the Apostles"); ?></span>
                       </label>
-                      <span class="small"><?php _e("Places of the Apostles"); ?></span>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link togglebutton">
                       <label>
-                        <input type="checkbox">
+                        <input type="checkbox" data-filter="evangelists">
                         <span class="toggle"></span>
+                        <span class="label small"><?php _e("Places of the Evangelists"); ?></span>
                       </label>
-                      <span class="small"><?php _e("Places of the Evangelists"); ?></span>
                     </a>
                   </li>
-                  <!--
                   <li class="nav-item">
                     <a class="nav-link togglebutton">
                       <label>
-                        <input type="checkbox">
+                        <input type="checkbox" data-filter="martyrs">
                         <span class="toggle"></span>
+                        <span class="label small"><?php _e("Places of the Martyrs"); ?></span>
                       </label>
-                      <span class="small"><?php _e("Show all"); ?></span>
                     </a>
                   </li>
-                  -->
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
+                        <input type="checkbox" data-filter="worldcathedrals">
+                        <span class="toggle"></span>
+                        <span class="label small"><?php _e("World Cathedrals"); ?></span>
+                      </label>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
+                        <input type="checkbox" data-filter="marianshrines">
+                        <span class="toggle"></span>
+                        <span class="label small"><?php _e("Marian shrines"); ?></span>
+                      </label>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
+                        <input type="checkbox" data-filter="universalsaints">
+                        <span class="toggle"></span>
+                        <span class="label small"><?php _e("Universal Saints"); ?></span>
+                      </label>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
+                        <input type="checkbox" data-filter="localsaints">
+                        <span class="toggle"></span>
+                        <span class="label small"><?php _e("Local Saints"); ?></span>
+                      </label>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <i class="material-icons">hiking</i>
+                <p><?php _e("Pilgrim Ways"); ?></p>
+              </a>
+              <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
+                        <input type="checkbox" data-filter="apostles">
+                        <span class="toggle"></span>
+                        <span class="label small"><?php _e("Via Francigena"); ?></span>
+                      </label>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
+                        <input type="checkbox" data-filter="evangelists">
+                        <span class="toggle"></span>
+                        <span class="label small"><?php _e("Way of Santiago"); ?></span>
+                      </label>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
+                        <input type="checkbox" data-filter="martyrs">
+                        <span class="toggle"></span>
+                        <span class="label small"><?php _e("Way of Saint Francis"); ?></span>
+                      </label>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
+                        <input type="checkbox" data-filter="worldcathedrals">
+                        <span class="toggle"></span>
+                        <span class="label small"><?php _e("Way of Saint Augustine"); ?></span>
+                      </label>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
+                        <input type="checkbox" data-filter="marianshrines">
+                        <span class="toggle"></span>
+                        <span class="label small"><?php _e("Way of Saint Benedict"); ?></span>
+                      </label>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
+                        <input type="checkbox" data-filter="universalsaints">
+                        <span class="toggle"></span>
+                        <span class="label small"><?php _e("Way of Loreto"); ?></span>
+                      </label>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
+                        <input type="checkbox" data-filter="localsaints">
+                        <span class="toggle"></span>
+                        <span class="label small"><?php _e("Way of Saint Nicholas"); ?></span>
+                      </label>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -115,8 +222,8 @@
                       <label>
                         <input type="checkbox">
                         <span class="toggle"></span>
+                        <span class="label small"><?php _e("Vatican&Rome Open Bus"); ?></span>
                       </label>
-                      <span class="small"><?php _e("Vatican&Rome Open Bus"); ?></span>
                     </a>
                   </li>
                   <li class="nav-item">
@@ -124,8 +231,8 @@
                       <label>
                         <input type="checkbox">
                         <span class="toggle"></span>
+                        <span class="label small"><?php _e("Way of Saint Augustine"); ?></span>
                       </label>
-                      <span class="small"><?php _e("Way of Saint Augustine"); ?></span>
                     </a>
                   </li>
                   <li class="nav-item">
@@ -133,8 +240,8 @@
                       <label>
                         <input type="checkbox">
                         <span class="toggle"></span>
+                        <span class="label small"><?php _e("Way of Saint Francis"); ?></span>
                       </label>
-                      <span class="small"><?php _e("Way of Saint Francis"); ?></span>
                     </a>
                   </li>
                 </ul>
