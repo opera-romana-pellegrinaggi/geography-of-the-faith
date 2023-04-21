@@ -10,9 +10,6 @@ $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
 let allPromisedResolved = false;
 
 Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5YzNlODY2Yy0yZjY1LTRkMDktOTViYi02M2I3M2NjMTg3YmIiLCJpZCI6NTM3MjUsImlhdCI6MTYxOTM1MzA0NX0.t8ZCZb4qQKgU2sQbzAwgZ85ReK07ZmRZjnecUP8IE9Y';
-Cesium.zip.useWebWorkers = false;
-Cesium.zip.Inflater = window.zip.Inflater;
-Cesium.zip.Deflater = window.zip.Deflater;
 
 const lang = location.hostname.includes('geografiadellafede') ? 'it' : 'en';
 console.log(location.hostname + ' : lang set to ' + lang);

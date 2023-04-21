@@ -52,7 +52,7 @@
     <link rel="stylesheet" href="node_modules/material-dashboard-dark-edition/assets/css/material-dashboard.min.css?v=2.1.2" />
 
     <!-- Cesium CSS -->
-    <link rel="stylesheet" href="https://cesium.com/downloads/cesiumjs/releases/1.62/Build/Cesium/Widgets/widgets.css" />
+    <link rel="stylesheet" href="https://cesium.com/downloads/cesiumjs/releases/1.104/Build/Cesium/Widgets/widgets.css" />
 
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
@@ -69,7 +69,7 @@
                 <div class="card-header" role="tab" id="headingTwo">
                   <h5 class="mb-0">
                     <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Filters
+                      <?php _e("Filters"); ?>
                       <i class="material-icons">keyboard_arrow_down</i>
                     </a>
                   </h5>
@@ -77,21 +77,21 @@
                 <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
                   <div class="card-body">
                     <div>
-                      <span>LUOGHI DEGLI APOSTOLI</span>
+                      <span><?php _e("Places of the Apostles"); ?></span>
                       <label class="switch">
                         <input type="checkbox">
                         <span class="slider round"></span>
                       </label>
                     </div>
                     <div>
-                      <span>LUOGHI DEGLI EVANGELISTI</span>
+                      <span><?php _e("Places of the Evangelists"); ?></span>
                       <label class="switch">
                         <input type="checkbox">
                         <span class="slider round"></span>
                       </label>
                     </div>
                     <div>
-                      <span>MOSTRA TUTTI</span>
+                      <span><?php _e("Show all"); ?></span>
                       <label class="switch">
                         <input type="checkbox">
                         <span class="slider round"></span>
@@ -110,7 +110,7 @@
       </div>
       <div class="main-panel ps-container ps-theme-default">
         <div id="map"></div>
-        <div id="currentNation">Planet earth</div>
+        <div id="currentNation"><?php _e("Planet earth"); ?></div>
         <div id="credits"></div>
         <div class="loader">
           <div class="loaderBar"></div>
@@ -119,10 +119,7 @@
     </div>
     <footer>
       <!-- Core JS files -->
-      <script src="https://cesium.com/downloads/cesiumjs/releases/1.80/Build/Cesium/Cesium.js"></script>
-      <script>window.zip = {};</script>
-      <script src="https://cesium.com/downloads/cesiumjs/releases/1.80/Build/Cesium/ThirdParty/Workers/inflate.js"></script>
-      <script src="https://cesium.com/downloads/cesiumjs/releases/1.80/Build/Cesium/ThirdParty/Workers/deflate.js"></script>
+      <script src="assets/js/Cesium/Build/Cesium/Cesium.js"></script>
 
       <script src="node_modules/material-dashboard-dark-edition/assets/js/core/jquery.min.js"></script>
       <script src="node_modules/material-dashboard-dark-edition/assets/js/core/popper.min.js"></script>

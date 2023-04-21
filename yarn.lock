@@ -2,21 +2,41 @@
 # yarn lockfile v1
 
 
-"@babel/runtime@^7.12.0":
-  version "7.14.0"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.14.0.tgz#46794bc20b612c5f75e62dd071e24dfd95f1cbe6"
-  integrity sha512-JELkvo/DlpNdJ7dlyw/eY7E0suy5i5GQH+Vlxaq1nsNJ+H7f4Vtv3jMeCEgRhZZQFXTjldYfQgv2qmM6M1v5wA==
+"@babel/runtime@^7.20.6":
+  version "7.21.0"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.21.0.tgz#5b55c9d394e5fcf304909a8b00c07dc217b56673"
+  integrity sha512-xwII0//EObnq89Ji5AKYQaRYiW/nZ3llSv29d49IuxPhKbtJoLP+9QUUZ4nVragQVtaVGeZrpB+ZtG/Pdy/POw==
   dependencies:
-    regenerator-runtime "^0.13.4"
+    regenerator-runtime "^0.13.11"
 
-i18next@^20.2.4:
-  version "20.2.4"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-20.2.4.tgz#972220f19dfef0075a70890d3e8b1f7cf64c5bd6"
-  integrity sha512-goE1LCA/IZOGG26PkkqoOl2KWR7YP606SvokVQZ29J6QwE02KycrzNetoMUJeqYrTxs4rmiiZgZp+q8qofQL6Q==
+arrive@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/arrive/-/arrive-2.4.1.tgz#564c87f20bc09b80de781124d9431695004b8020"
+  integrity sha512-gnpcKdKN4HJAmzpZIxDBJsw/z59sBvh9i4mJyHJCk+enrKnEZ/l1GspM1MGPxMxnRcdt+v/OIWEY5mNQSGisPQ==
+
+i18next@^22.4.15:
+  version "22.4.15"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-22.4.15.tgz#951882b751872994f8502b5a6ef6f796e6a7d7f8"
+  integrity sha512-yYudtbFrrmWKLEhl6jvKUYyYunj4bTBCe2qIUYAxbXoPusY7YmdwPvOE6fx6UIfWvmlbCWDItr7wIs8KEBZ5Zg==
   dependencies:
-    "@babel/runtime" "^7.12.0"
+    "@babel/runtime" "^7.20.6"
 
-regenerator-runtime@^0.13.4:
-  version "0.13.7"
-  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.7.tgz#cac2dacc8a1ea675feaabaeb8ae833898ae46f55"
-  integrity sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==
+material-dashboard-dark-edition@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/material-dashboard-dark-edition/-/material-dashboard-dark-edition-2.1.0.tgz#c459bd2489c2b0965da02e18f96faa9762ba8227"
+  integrity sha512-nK7X8sDReKEEF/3FNQbqOGr5Fjn3JiOvio/eeXdOqnL2z4mgRZaOlrRZSTN3izEOzF6M85OE/sCGbw48qh7YKQ==
+
+material-dashboard@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/material-dashboard/-/material-dashboard-2.1.0.tgz#9e61f8e52bb932ef190d81cbad60ecc5b5751d67"
+  integrity sha512-de6if9WnelNvQdtLRcyTao3vx1ESjOVsX6tiwAmSjJvfBHcHgKO9wP54jYLfYIn3ILbluqXh1GXPqubNLgH/Kg==
+
+perfect-scrollbar@^1.5.1:
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/perfect-scrollbar/-/perfect-scrollbar-1.5.5.tgz#41a211a2fb52a7191eff301432134ea47052b27f"
+  integrity sha512-dzalfutyP3e/FOpdlhVryN4AJ5XDVauVWxybSkLZmakFE2sS3y3pc4JnSprw8tGmHvkaG5Edr5T7LBTZ+WWU2g==
+
+regenerator-runtime@^0.13.11:
+  version "0.13.11"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
+  integrity sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==
