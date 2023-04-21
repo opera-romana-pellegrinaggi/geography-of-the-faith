@@ -58,47 +58,86 @@
   </head>
   <body class="dark-edition">
     <div class="wrapper">
-      <div class="sidebar" data-color="azure" data-background-color="black">
+      <div class="sidebar" data-color="purple" data-background-color="black">
         <div class="logo">
           <a href="/" class="simple-text logo-normal"><?php _e("The geography of the faith"); ?></a>
         </div>
-        <div class="sidebar-wrapper ps-container ps-theme-default">
-          <ul class="nav">
-            <li class="nav-item">
-              <div class="card card-collapse">
-                <div class="card-header" role="tab" id="headingTwo">
-                  <h5 class="mb-0">
-                    <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      <?php _e("Filters"); ?>
-                      <i class="material-icons">keyboard_arrow_down</i>
+        <div class="sidebar-wrapper ps-container ps-theme-default ps-active-y">
+          <ul class="nav" id="accordion" role="tablist">
+            <li class="nav-item active">
+              <a class="nav-link" data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <i class="material-icons">filter_alt</i>
+                <p><?php _e("Filters"); ?></p>
+              </a>
+              <div id="collapseTwo" class="collapse show" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
+                        <input type="checkbox">
+                        <span class="toggle"></span>
+                      </label>
+                      <span class="small"><?php _e("Places of the Apostles"); ?></span>
                     </a>
-                  </h5>
-                </div>
-                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-                  <div class="card-body">
-                    <div>
-                      <span><?php _e("Places of the Apostles"); ?></span>
-                      <label class="switch">
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
                         <input type="checkbox">
-                        <span class="slider round"></span>
+                        <span class="toggle"></span>
                       </label>
-                    </div>
-                    <div>
-                      <span><?php _e("Places of the Evangelists"); ?></span>
-                      <label class="switch">
+                      <span class="small"><?php _e("Places of the Evangelists"); ?></span>
+                    </a>
+                  </li>
+                  <!--
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
                         <input type="checkbox">
-                        <span class="slider round"></span>
+                        <span class="toggle"></span>
                       </label>
-                    </div>
-                    <div>
-                      <span><?php _e("Show all"); ?></span>
-                      <label class="switch">
+                      <span class="small"><?php _e("Show all"); ?></span>
+                    </a>
+                  </li>
+                  -->
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <i class="material-icons">airplanemode_active</i>
+                <p><?php _e("Flyovers"); ?></p>
+              </a>
+              <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
                         <input type="checkbox">
-                        <span class="slider round"></span>
+                        <span class="toggle"></span>
                       </label>
-                    </div>
-                  </div>
-                </div>
+                      <span class="small"><?php _e("Vatican&Rome Open Bus"); ?></span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
+                        <input type="checkbox">
+                        <span class="toggle"></span>
+                      </label>
+                      <span class="small"><?php _e("Way of Saint Augustine"); ?></span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
+                        <input type="checkbox">
+                        <span class="toggle"></span>
+                      </label>
+                      <span class="small"><?php _e("Way of Saint Francis"); ?></span>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <!--

@@ -696,3 +696,12 @@ handler.setInputAction((event) => {
 
 
 //viewer.flyTo(PilgrimageMarkers.StPeterBasilicaRome,{duration:5});
+
+//jQuery Document Ready
+$(function(){
+});
+
+$(document).on('click', '#accordion > .nav-item > .nav-link', ev => {
+  $('#accordion > .nav-item').removeClass('active');
+  $(ev.currentTarget).closest('.nav-item').addClass('active');
+});
