@@ -7,6 +7,38 @@ window_width = $(window).width();
 
 const ENDPOINT = 'https://geografiadellafede.bibleget.io/geofaith_backend.php';
 
+const GLOBE_STATE = {
+  DOCUMENT_READY: false,
+  MARKERS_LAYER_READY: false,
+  MARKERS_CREATED: false,
+  COUNTRY_POLYS_READY: false,
+  COUNTRY_BORDERS_READY: false,
+  OMNIA_VR_READY: false,
+  MAPS_SOURCE_READY: false,
+  TILES_LOADED: false
+}
+
+const isGlobeReady = () => {
+  return Object.values(GLOBE_STATE).reduce((prev,curr,idx) => {
+    return (prev && curr);
+  }, true);
+};
+
+const hideLoaderIfGlobeReady = () => {
+  if(isGlobeReady()) {
+    console.log('all conditions for globe ready are now met! hiding loader...');
+    $('.loader').fadeOut();
+  } else {
+    let arr = Object.entries(GLOBE_STATE).reduce((prev,curr) => {
+      if(curr[1] === false) {
+        prev.push(curr[0]);
+      }
+      return prev;
+    },[]);
+    console.log('conditions that are not yet met for the globe to be ready: ' + arr.sort().join(', ') );
+  }
+}
+
 $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
 
 let allPromisedResolved = false;
@@ -253,6 +285,8 @@ fetch(ENDPOINT).then((response) => response.json()).then((json) => {
     allMarkers.push(row.id_key);
     if( i === json.length-1 ) {
       console.log('all markers loaded from the database should now have been created');
+      GLOBE_STATE.MARKERS_CREATED = true;
+      hideLoaderIfGlobeReady();
     }
   }
 });
@@ -379,6 +413,8 @@ let omniaVaticanRomeDataSourcePromise = viewer.dataSources.add(
   })
 ).then(dataSource => {
   console.log("omniaVaticanRomeDataSource is ready!");
+  GLOBE_STATE.OMNIA_VR_READY = true;
+  hideLoaderIfGlobeReady();
   //openBusModel = dataSource.entities.getById("CesiumMilkTruck");
   //openBusPosition = openBusModel.position;
 });
@@ -388,6 +424,9 @@ let markersLayerPromise = viewer.dataSources.add(markersLayer);
 markersLayerPromise.then(dataSource => {
   markersDataSource = dataSource;
   console.log("markersLayer is ready!");
+  GLOBE_STATE.MARKERS_LAYER_READY = true;
+  hideLoaderIfGlobeReady();
+
   let pixelRange = 15;
   let minimumClusterSize = 3;
   let enabled = true;
@@ -404,14 +443,15 @@ helper.add(scene.globe.tileLoadProgressEvent, ev => {
   console.log("tiles to load = " + ev);
   if(ev === 0){
     console.log("and all tiles are now loaded");
-    //if(allPromisedResolved){
-      $('.loader').fadeOut();
-    //}
+    GLOBE_STATE.TILES_LOADED = true;
+    hideLoaderIfGlobeReady();
   }
 });
 
 bing.readyPromise.then(() => {
   console.log("bing maps is ready!");
+  GLOBE_STATE.MAPS_SOURCE_READY = true;
+  hideLoaderIfGlobeReady();
 });
 
 const pickColor = Cesium.Color.BLACK.withAlpha(0.3);
@@ -438,6 +478,8 @@ let countriesPromise = viewer.dataSources.add(
 ).then(dataSource => {
   countriesDataSource = dataSource;
   console.log("country borders kmz is ready!");
+  GLOBE_STATE.COUNTRY_BORDERS_READY = true;
+  hideLoaderIfGlobeReady();
 });
 
 let countryPolysDataSource = undefined;
@@ -454,6 +496,8 @@ let countryPolysPromise = viewer.dataSources.add(
   for(let i = 0; i < entities.length; i++){
     makeProperty(entities[i], Cesium.Color.BLACK.withAlpha(0.1));
   }
+  GLOBE_STATE.COUNTRY_POLYS_READY = true;
+  hideLoaderIfGlobeReady();
 });
 
 //viewer.flyTo(viewer.entities);
@@ -527,6 +571,9 @@ handler.setInputAction((event) => {
 
 //jQuery Document Ready
 $(function(){
+  console.log('document ready!');
+  GLOBE_STATE.DOCUMENT_READY = true;
+  hideLoaderIfGlobeReady();
 });
 
 $(document).on('click', '#accordion > .nav-item > .nav-link', ev => {
