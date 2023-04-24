@@ -39,7 +39,11 @@ const hideLoaderIfGlobeReady = () => {
   }
 }
 
-$('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
+const extent = Cesium.Rectangle.fromDegrees(12.373249, 41.987067, 12.626621, 41.797435);
+
+Cesium.Camera.DEFAULT_VIEW_RECTANGLE = extent;
+Cesium.Camera.DEFAULT_VIEW_FACTOR = 0;
+
 
 let allPromisedResolved = false;
 
@@ -574,6 +578,8 @@ $(function(){
   console.log('document ready!');
   GLOBE_STATE.DOCUMENT_READY = true;
   hideLoaderIfGlobeReady();
+  $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
+  $('.cesium-home-button').attr('title', 'Rome is Home!');
 });
 
 $(document).on('click', '#accordion > .nav-item > .nav-link', ev => {
