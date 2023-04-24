@@ -15,7 +15,8 @@ const GLOBE_STATE = {
   COUNTRY_BORDERS_READY: false,
   OMNIA_VR_READY: false,
   MAPS_SOURCE_READY: false,
-  TILES_LOADED: false
+  TILES_LOADED: false,
+  ALL_DRAWN: false
 }
 
 const isGlobeReady = () => {
@@ -85,6 +86,17 @@ let viewer = new Cesium.Viewer('map', {
   creditViewport: null,
   shouldAnimate: true
 });
+
+let isViewerReady = () => {
+  GLOBE_STATE.ALL_DRAWN = viewer.dataSourceDisplay.ready;
+  if( GLOBE_STATE.ALL_DRAWN ) {
+    console.log('all viewer polygons are now completely drawn');
+    clearInterval(viewerIntvl);
+    hideLoaderIfGlobeReady();
+  }
+}
+
+let viewerIntvl = setInterval(isViewerReady, 50);
 
 let scene = viewer.scene;
 scene.skyAtmosphere.show = false;
@@ -543,9 +555,13 @@ handler.setInputAction((event) => {
         entity.label.pixelOffset = new Cesium.Cartesian2(0, -50);
       } else if(Cesium.defined(entity.polygon) && countryPolysDataSource.entities.getById(entity.id)){
         jQuery('#currentNation').text(entity.name);
+      } else {
+        jQuery('#currentNation').text('Planet earth');
       }
       pickedEntities.add(entity);
     }
+  } else {
+    jQuery('#currentNation').text('Planet earth');
   }
   /*
   const cartesian = viewer.scene.pickPosition(event.endPosition);
@@ -572,6 +588,7 @@ handler.setInputAction((event) => {
     const latitude = Cesium.Math.toDegrees(cartographic.latitude);
     const labelText = latitude.toFixed(10) + ',' + longitude.toFixed(10);
     navigator.clipboard.writeText(labelText);
+    console.log('copied coordinates to clipboard: ' + labelText);
   }
 }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 
@@ -604,5 +621,4 @@ $(document).on('change', '.togglebutton input[type="checkbox"]', ev => {
       markersDataSource.clustering.enabled = true;
     }
   });
-
 });
