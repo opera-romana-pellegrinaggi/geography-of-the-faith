@@ -87,6 +87,9 @@ let viewer = new Cesium.Viewer('map', {
   shouldAnimate: true
 });
 
+//TODO: uncomment this when we have succeeded in implementing the flyTo for a country polygon on double click
+//viewer.screenSpaceEventHandler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
+
 let isViewerReady = () => {
   GLOBE_STATE.ALL_DRAWN = viewer.dataSourceDisplay.ready;
   if( GLOBE_STATE.ALL_DRAWN ) {
@@ -592,6 +595,25 @@ handler.setInputAction((event) => {
   }
 }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 
+//TODO: flyTo the country that was double clicked
+/*
+handler.setInputAction((event) => {
+  let pickedObjects = viewer.scene.drillPick(event.endPosition);
+  //const pickedPrimitive = viewer.scene.pick(event.endPosition);
+  //const pickedEntity = (Cesium.defined(pickedPrimitive)) ? pickedPrimitive.id : undefined;
+  if(Cesium.defined(pickedObjects)){
+    //Update the collection of picked entities.
+    pickedEntities.removeAll();
+    for (let i = 0; i < pickedObjects.length; ++i) {
+      let entity = pickedObjects[i].id;
+      if(Cesium.defined(entity.polygon) && countryPolysDataSource.entities.getById(entity.id)){
+        viewer.flyTo(pickedObjects[i]); //how should we pass in the correct entity?
+      }
+      pickedEntities.add(entity);
+    }
+  }
+}, Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
+*/
 
 //viewer.flyTo(PilgrimageMarkers.StPeterBasilicaRome,{duration:5});
 
