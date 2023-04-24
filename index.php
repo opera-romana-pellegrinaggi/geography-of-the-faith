@@ -74,7 +74,25 @@
                   <li class="nav-item">
                     <a class="nav-link togglebutton">
                       <label>
-                        <input type="checkbox" data-filter="apostles">
+                        <input type="checkbox" data-filter="RELIC">
+                        <span class="toggle"></span>
+                        <span class="label small"><?php _e("Relics"); ?></span>
+                      </label>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
+                        <input type="checkbox" data-filter="EUCHARISTIC_MIRACLE">
+                        <span class="toggle"></span>
+                        <span class="label small"><?php _e("Eucharistic miracles"); ?></span>
+                      </label>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
+                        <input type="checkbox" data-filter="APOSTLE">
                         <span class="toggle"></span>
                         <span class="label small"><?php _e("Places of the Apostles"); ?></span>
                       </label>
@@ -83,7 +101,7 @@
                   <li class="nav-item">
                     <a class="nav-link togglebutton">
                       <label>
-                        <input type="checkbox" data-filter="evangelists">
+                        <input type="checkbox" data-filter="EVANGELIST">
                         <span class="toggle"></span>
                         <span class="label small"><?php _e("Places of the Evangelists"); ?></span>
                       </label>
@@ -92,7 +110,7 @@
                   <li class="nav-item">
                     <a class="nav-link togglebutton">
                       <label>
-                        <input type="checkbox" data-filter="martyrs">
+                        <input type="checkbox" data-filter="MARTYR">
                         <span class="toggle"></span>
                         <span class="label small"><?php _e("Places of the Martyrs"); ?></span>
                       </label>
@@ -101,7 +119,7 @@
                   <li class="nav-item">
                     <a class="nav-link togglebutton">
                       <label>
-                        <input type="checkbox" data-filter="worldcathedrals">
+                        <input type="checkbox" data-filter="CATHEDRAL">
                         <span class="toggle"></span>
                         <span class="label small"><?php _e("World Cathedrals"); ?></span>
                       </label>
@@ -110,7 +128,7 @@
                   <li class="nav-item">
                     <a class="nav-link togglebutton">
                       <label>
-                        <input type="checkbox" data-filter="marianshrines">
+                        <input type="checkbox" data-filter="MARIAN_SHRINE">
                         <span class="toggle"></span>
                         <span class="label small"><?php _e("Marian shrines"); ?></span>
                       </label>
@@ -119,7 +137,16 @@
                   <li class="nav-item">
                     <a class="nav-link togglebutton">
                       <label>
-                        <input type="checkbox" data-filter="universalsaints">
+                        <input type="checkbox" data-filter="SHRINE">
+                        <span class="toggle"></span>
+                        <span class="label small"><?php _e("Shrines"); ?></span>
+                      </label>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
+                        <input type="checkbox" data-filter="SAINT_UNIVERSAL">
                         <span class="toggle"></span>
                         <span class="label small"><?php _e("Universal Saints"); ?></span>
                       </label>
@@ -128,7 +155,7 @@
                   <li class="nav-item">
                     <a class="nav-link togglebutton">
                       <label>
-                        <input type="checkbox" data-filter="localsaints">
+                        <input type="checkbox" data-filter="SAINT_LOCAL">
                         <span class="toggle"></span>
                         <span class="label small"><?php _e("Local Saints"); ?></span>
                       </label>
@@ -147,7 +174,7 @@
                   <li class="nav-item">
                     <a class="nav-link togglebutton">
                       <label>
-                        <input type="checkbox" data-filter="apostles">
+                        <input type="checkbox" data-filter="FRANCIGENA">
                         <span class="toggle"></span>
                         <span class="label small"><?php _e("Via Francigena"); ?></span>
                       </label>
@@ -156,7 +183,7 @@
                   <li class="nav-item">
                     <a class="nav-link togglebutton">
                       <label>
-                        <input type="checkbox" data-filter="evangelists">
+                        <input type="checkbox" data-filter="SANTIAGO">
                         <span class="toggle"></span>
                         <span class="label small"><?php _e("Way of Santiago"); ?></span>
                       </label>
@@ -165,7 +192,7 @@
                   <li class="nav-item">
                     <a class="nav-link togglebutton">
                       <label>
-                        <input type="checkbox" data-filter="martyrs">
+                        <input type="checkbox" data-filter="FRANCIS">
                         <span class="toggle"></span>
                         <span class="label small"><?php _e("Way of Saint Francis"); ?></span>
                       </label>
@@ -174,7 +201,7 @@
                   <li class="nav-item">
                     <a class="nav-link togglebutton">
                       <label>
-                        <input type="checkbox" data-filter="worldcathedrals">
+                        <input type="checkbox" data-filter="AUGUSTINE">
                         <span class="toggle"></span>
                         <span class="label small"><?php _e("Way of Saint Augustine"); ?></span>
                       </label>
@@ -183,7 +210,7 @@
                   <li class="nav-item">
                     <a class="nav-link togglebutton">
                       <label>
-                        <input type="checkbox" data-filter="marianshrines">
+                        <input type="checkbox" data-filter="BENEDICT">
                         <span class="toggle"></span>
                         <span class="label small"><?php _e("Way of Saint Benedict"); ?></span>
                       </label>
@@ -192,7 +219,7 @@
                   <li class="nav-item">
                     <a class="nav-link togglebutton">
                       <label>
-                        <input type="checkbox" data-filter="universalsaints">
+                        <input type="checkbox" data-filter="LORETO">
                         <span class="toggle"></span>
                         <span class="label small"><?php _e("Way of Loreto"); ?></span>
                       </label>
@@ -201,9 +228,64 @@
                   <li class="nav-item">
                     <a class="nav-link togglebutton">
                       <label>
-                        <input type="checkbox" data-filter="localsaints">
+                        <input type="checkbox" data-filter="NICHOLAS">
                         <span class="toggle"></span>
                         <span class="label small"><?php _e("Way of Saint Nicholas"); ?></span>
+                      </label>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <i class="material-icons">palette</i>
+                <p><?php _e("Christian Art"); ?></p>
+              </a>
+              <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
+                        <input type="checkbox" data-filter="FRESCO">
+                        <span class="toggle"></span>
+                        <span class="label small"><i class="material-icons">format_color_fill</i> <?php _e("Frescoes"); ?></span>
+                      </label>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
+                        <input type="checkbox" data-filter="MOSAIC">
+                        <span class="toggle"></span>
+                        <span class="label small"><i class="material-icons">extension</i> <?php _e("Mosaics"); ?></span>
+                      </label>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
+                        <input type="checkbox" data-filter="ICON">
+                        <span class="toggle"></span>
+                        <span class="label small"><i class="material-icons">account_box</i> <?php _e("Icons"); ?></span>
+                      </label>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
+                        <input type="checkbox" data-filter="PAINTING">
+                        <span class="toggle"></span>
+                        <span class="label small"><i class="material-icons">brush</i> <?php _e("Paintings"); ?></span>
+                      </label>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
+                        <input type="checkbox" data-filter="SCULPTURE">
+                        <span class="toggle"></span>
+                        <span class="label small"><i class="material-icons">brush</i> <?php _e("Sculptures"); ?></span>
                       </label>
                     </a>
                   </li>
@@ -247,10 +329,6 @@
                 </ul>
               </div>
             </li>
-            <!--
-            <li class="nav-item"><button id="placesApostles">LUOGHI DEGLI APOSTOLI</button></li>
-            <li class="nav-item"><button id="placesEvangelists">LUOGHI DEGLI EVANGELISTI</button></li>
-            <li class="nav-item"><button id="showAllPlaces">MOSTRA TUTTI</button></li> -->
           </ul>
         </div>
       </div>
