@@ -76,7 +76,7 @@
                       <label>
                         <input type="checkbox" data-filter="RELIC">
                         <span class="toggle"></span>
-                        <span class="label small"><?php _e("Relics"); ?></span>
+                        <span class="label small"><i class="material-icons">health_and_safety</i><?php _e("Relics"); ?></span>
                       </label>
                     </a>
                   </li>
@@ -85,7 +85,7 @@
                       <label>
                         <input type="checkbox" data-filter="EUCHARISTIC_MIRACLE">
                         <span class="toggle"></span>
-                        <span class="label small"><?php _e("Eucharistic miracles"); ?></span>
+                        <span class="label small"><i class="material-icons">account_circle</i><?php _e("Eucharistic miracles"); ?></span>
                       </label>
                     </a>
                   </li>
@@ -94,7 +94,7 @@
                       <label>
                         <input type="checkbox" data-filter="APOSTLE">
                         <span class="toggle"></span>
-                        <span class="label small"><?php _e("Places of the Apostles"); ?></span>
+                        <span class="label small"><i class="material-icons">manage_accounts</i><?php _e("Apostles"); ?></span>
                       </label>
                     </a>
                   </li>
@@ -103,7 +103,7 @@
                       <label>
                         <input type="checkbox" data-filter="EVANGELIST">
                         <span class="toggle"></span>
-                        <span class="label small"><?php _e("Places of the Evangelists"); ?></span>
+                        <span class="label small"><i class="material-icons">import_contacts</i><?php _e("Evangelists"); ?></span>
                       </label>
                     </a>
                   </li>
@@ -112,7 +112,7 @@
                       <label>
                         <input type="checkbox" data-filter="MARTYR">
                         <span class="toggle"></span>
-                        <span class="label small"><?php _e("Places of the Martyrs"); ?></span>
+                        <span class="label small"><i class="material-icons">local_hospital</i><?php _e("Martyrs"); ?></span>
                       </label>
                     </a>
                   </li>
@@ -121,7 +121,7 @@
                       <label>
                         <input type="checkbox" data-filter="CATHEDRAL">
                         <span class="toggle"></span>
-                        <span class="label small"><?php _e("World Cathedrals"); ?></span>
+                        <span class="label small"><i class="material-icons">church</i><?php _e("Cathedrals"); ?></span>
                       </label>
                     </a>
                   </li>
@@ -130,7 +130,7 @@
                       <label>
                         <input type="checkbox" data-filter="MARIAN_SHRINE">
                         <span class="toggle"></span>
-                        <span class="label small"><?php _e("Marian shrines"); ?></span>
+                        <span class="label small"><i class="material-icons">woman</i><?php _e("Marian shrines"); ?></span>
                       </label>
                     </a>
                   </li>
@@ -139,7 +139,7 @@
                       <label>
                         <input type="checkbox" data-filter="SHRINE">
                         <span class="toggle"></span>
-                        <span class="label small"><?php _e("Shrines"); ?></span>
+                        <span class="label small"><i class="material-icons">church</i><?php _e("Shrines"); ?></span>
                       </label>
                     </a>
                   </li>
@@ -148,7 +148,7 @@
                       <label>
                         <input type="checkbox" data-filter="SAINT_UNIVERSAL">
                         <span class="toggle"></span>
-                        <span class="label small"><?php _e("Universal Saints"); ?></span>
+                        <span class="label small"><i class="material-icons">face</i><?php _e("Universal Saints"); ?></span>
                       </label>
                     </a>
                   </li>
@@ -157,7 +157,7 @@
                       <label>
                         <input type="checkbox" data-filter="SAINT_LOCAL">
                         <span class="toggle"></span>
-                        <span class="label small"><?php _e("Local Saints"); ?></span>
+                        <span class="label small"><i class="material-icons">face</i><?php _e("Local Saints"); ?></span>
                       </label>
                     </a>
                   </li>
@@ -249,7 +249,7 @@
                       <label>
                         <input type="checkbox" data-filter="FRESCO">
                         <span class="toggle"></span>
-                        <span class="label small"><i class="material-icons">format_color_fill</i> <?php _e("Frescoes"); ?></span>
+                        <span class="label small"><i class="material-icons">format_color_fill</i><?php _e("Frescoes"); ?></span>
                       </label>
                     </a>
                   </li>
@@ -258,7 +258,7 @@
                       <label>
                         <input type="checkbox" data-filter="MOSAIC">
                         <span class="toggle"></span>
-                        <span class="label small"><i class="material-icons">extension</i> <?php _e("Mosaics"); ?></span>
+                        <span class="label small"><i class="material-icons">extension</i><?php _e("Mosaics"); ?></span>
                       </label>
                     </a>
                   </li>
@@ -267,7 +267,7 @@
                       <label>
                         <input type="checkbox" data-filter="ICON">
                         <span class="toggle"></span>
-                        <span class="label small"><i class="material-icons">account_box</i> <?php _e("Icons"); ?></span>
+                        <span class="label small"><i class="material-icons">account_box</i><?php _e("Icons"); ?></span>
                       </label>
                     </a>
                   </li>
@@ -276,7 +276,7 @@
                       <label>
                         <input type="checkbox" data-filter="PAINTING">
                         <span class="toggle"></span>
-                        <span class="label small"><i class="material-icons">brush</i> <?php _e("Paintings"); ?></span>
+                        <span class="label small"><i class="material-icons">brush</i><?php _e("Paintings"); ?></span>
                       </label>
                     </a>
                   </li>
@@ -285,7 +285,7 @@
                       <label>
                         <input type="checkbox" data-filter="SCULPTURE">
                         <span class="toggle"></span>
-                        <span class="label small"><i class="material-icons">brush</i> <?php _e("Sculptures"); ?></span>
+                        <span class="label small"><i class="material-icons">settings_accessibility</i><?php _e("Sculptures"); ?></span>
                       </label>
                     </a>
                   </li>

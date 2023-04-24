@@ -291,6 +291,11 @@ fetch(ENDPOINT).then((response) => response.json()).then((json) => {
       console.log('all markers loaded from the database should now have been created');
       GLOBE_STATE.MARKERS_CREATED = true;
       hideLoaderIfGlobeReady();
+      Object.entries(CATEGORIES).forEach(([key,val]) => {
+        let $label = $(`[data-filter='${key}']`).siblings('.label');
+        let count = ` (${CATEGORIES[key].length})`;
+        $label.html($label.html() + count);
+      });
     }
   }
 });
