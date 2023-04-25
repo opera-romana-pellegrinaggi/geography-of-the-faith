@@ -5,7 +5,20 @@ $sidebar_responsive = $('body > .navbar-collapse');
 window_width = $(window).width();
 */
 
-const ENDPOINT = 'https://geografiadellafede.bibleget.io/geofaith_backend.php';
+const thirdlevelMap = {
+  geographyofthefaith: 'en',
+  geografiadellafede: 'it',
+  geografiadelafe: 'es',
+  geographiedelafoi: 'fr',
+  geographiedesglaubens: 'de',
+  geografiadafe: 'pt'
+}
+
+const thirdlevel = location.hostname.split('.')[0];
+const lang = thirdlevelMap[thirdlevel] ?? 'en';
+console.log(location.hostname + ' : lang set to ' + lang);
+
+const ENDPOINT = `https://${location.hostname}/geofaith_backend.php`;
 
 const GLOBE_STATE = {
   DOCUMENT_READY: false,
@@ -49,9 +62,6 @@ Cesium.Camera.DEFAULT_VIEW_FACTOR = 0;
 let allPromisedResolved = false;
 
 Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5YzNlODY2Yy0yZjY1LTRkMDktOTViYi02M2I3M2NjMTg3YmIiLCJpZCI6NTM3MjUsImlhdCI6MTYxOTM1MzA0NX0.t8ZCZb4qQKgU2sQbzAwgZ85ReK07ZmRZjnecUP8IE9Y';
-
-const lang = location.hostname.includes('geografiadellafede') ? 'it' : 'en';
-console.log(location.hostname + ' : lang set to ' + lang);
 
 var bing = new Cesium.BingMapsImageryProvider({
   url : 'https://dev.virtualearth.net',
@@ -280,7 +290,11 @@ const CATEGORIES = {
 };
 
 let databaseResults;
-fetch(ENDPOINT).then((response) => response.json()).then((json) => {
+let params = new URLSearchParams({
+  LANG: lang.toUpperCase()
+});
+
+fetch(`${ENDPOINT}?${params.toString()}`).then((response) => response.json()).then((json) => {
   databaseResults = json;
   console.log('retrieved rows from database:');
   console.log(json);
