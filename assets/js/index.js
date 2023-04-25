@@ -244,13 +244,14 @@ let label = {
 
 let markersLayer = new Cesium.CustomDataSource();
 
-let createMarker = (latitude,longitude,marker,title,description,show) => markersLayer.entities.add({
+let createMarker = (latitude,longitude,marker,title,description,properties,show) => markersLayer.entities.add({
     position : Cesium.Cartesian3.fromDegrees(longitude,latitude),
     name : title,
     billboard : marker,
     description: description,
     show: show,
-    label : { ...label, text: title}
+    label : { ...label, text: title},
+    properties: properties
   });
 //LATITUDE: increasing the value will increase vertical position, towards north
 //LATITUDE: decreasing the value will decrease vertical position, towards south
@@ -278,7 +279,9 @@ const CATEGORIES = {
   SCULPTURE: []
 };
 
+let databaseResults;
 fetch(ENDPOINT).then((response) => response.json()).then((json) => {
+  databaseResults = json;
   console.log('retrieved rows from database:');
   console.log(json);
   let row;
@@ -296,6 +299,7 @@ fetch(ENDPOINT).then((response) => response.json()).then((json) => {
       marker,
       row.title,
       row.description,
+      { isoAlpha3: row.country },
       false
     );
     let cats = row.category.split(',');
@@ -303,8 +307,10 @@ fetch(ENDPOINT).then((response) => response.json()).then((json) => {
       CATEGORIES[cat].push(row.id_key);
     });
     allMarkers.push(row.id_key);
+    //console.log(PilgrimageMarkers[row.id_key].properties.isoAlpha3.getValue());
     if( i === json.length-1 ) {
       console.log('all markers loaded from the database should now have been created');
+      //console.log(PilgrimageMarkers);
       GLOBE_STATE.MARKERS_CREATED = true;
       hideLoaderIfGlobeReady();
       Object.entries(CATEGORIES).forEach(([key,val]) => {
@@ -318,14 +324,24 @@ fetch(ENDPOINT).then((response) => response.json()).then((json) => {
 
 
 let eventListener;
-let clusteredMarkers;
+let clusteredMarkers = [];
 
 let customStyle = () => {
   if (Cesium.defined(eventListener) === false) {
     eventListener = markersLayer.clustering.clusterEvent.addEventListener(
       (clusteredEntities, cluster) => {
+        clusteredEntities.forEach(ent => {
+          ent.label.show = false;
+        });
         console.log('there was a cluster event');
         console.log(clusteredEntities);
+        if(clusteredMarkers.length > 0) {
+          clusteredMarkers.forEach(marker => {
+            if(clusteredEntities.includes(marker) === false ) {
+              marker.label.show = true;
+            }
+          });
+        }
         clusteredMarkers = clusteredEntities;
         cluster.label.show = false;
         cluster.billboard.show = true;
@@ -493,15 +509,15 @@ const makeProperty = (entity, color) => {
   }
 }
 
-let countriesDataSource = undefined;
-let countriesPromise = viewer.dataSources.add(
-  Cesium.KmlDataSource.load('assets/dataSources/countries/countries.kmz',{
+let countryBordersDataSource = undefined;
+let countryBordersPromise = viewer.dataSources.add(
+  Cesium.KmlDataSource.load('assets/dataSources/countries/country-borders.kmz', {
     camera: viewer.scene.camera,
     canvas: viewer.scene.canvas,
     clampToGround: true
   })
 ).then(dataSource => {
-  countriesDataSource = dataSource;
+  countryBordersDataSource = dataSource;
   console.log("country borders kmz is ready!");
   GLOBE_STATE.COUNTRY_BORDERS_READY = true;
   hideLoaderIfGlobeReady();
@@ -509,7 +525,7 @@ let countriesPromise = viewer.dataSources.add(
 
 let countryPolysDataSource = undefined;
 let countryPolysPromise = viewer.dataSources.add(
-  Cesium.KmlDataSource.load('assets/dataSources/countries/polygons.kmz',{ //countries-10m.kmz
+  Cesium.KmlDataSource.load('assets/dataSources/countries/polygons.kmz', {
     camera: viewer.scene.camera,
     canvas: viewer.scene.canvas,
     clampToGround: true
@@ -517,6 +533,7 @@ let countryPolysPromise = viewer.dataSources.add(
 ).then(dataSource => {
   countryPolysDataSource = dataSource;
   console.log("country polys kmz is ready!");
+  console.log(dataSource);
   let entities = dataSource.entities.values;
   for(let i = 0; i < entities.length; i++){
     makeProperty(entities[i], Cesium.Color.BLACK.withAlpha(0.1));
@@ -588,8 +605,6 @@ handler.setInputAction((event) => {
 handler.setInputAction((event) => {
   console.log(event);
   let pickedObjects = viewer.scene.drillPick(event.position);
-  //const pickedPrimitive = viewer.scene.pick(event.endPosition);
-  //const pickedEntity = (Cesium.defined(pickedPrimitive)) ? pickedPrimitive.id : undefined;
   if(Cesium.defined(pickedObjects)){
     //Update the collection of picked entities.
     pickedEntities.removeAll();
@@ -598,6 +613,19 @@ handler.setInputAction((event) => {
       pickedEntities.add(entity);
       if(Cesium.defined(entity.polygon) && countryPolysDataSource.entities.getById(entity.id)){
         viewer.flyTo(entity);
+        console.log(entity);
+        $('.togglebutton input[type="checkbox"]').prop('checked', false);
+        let isoAlpha3 = entity.kml.extendedData.isoAlpha3.value;
+        console.log(isoAlpha3);
+        markersDataSource.clustering.enabled = false;
+        allMarkers.forEach((key,idx) => {
+          let show = (PilgrimageMarkers[key].properties.isoAlpha3.getValue() === isoAlpha3);
+          //PilgrimageMarkers[key].label.show = show;
+          PilgrimageMarkers[key].show = show;
+          if( idx === allMarkers.length - 1 ) {
+            markersDataSource.clustering.enabled = true;
+          }
+        });
       }
     }
   }
