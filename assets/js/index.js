@@ -244,13 +244,13 @@ let label = {
 
 let markersLayer = new Cesium.CustomDataSource();
 
-let createMarker = (latitude,longitude,marker,title,description,properties,show) => markersLayer.entities.add({
+let createMarker = (latitude,longitude,marker,name,description,properties,show) => markersLayer.entities.add({
     position : Cesium.Cartesian3.fromDegrees(longitude,latitude),
-    name : title,
+    name : name,
     billboard : marker,
     description: description,
     show: show,
-    label : { ...label, text: title},
+    label : { ...label, text: name},
     properties: properties
   });
 //LATITUDE: increasing the value will increase vertical position, towards north
@@ -297,7 +297,7 @@ fetch(ENDPOINT).then((response) => response.json()).then((json) => {
       row.latitude,
       row.longitude,
       marker,
-      row.title,
+      row.name,
       row.description,
       { isoAlpha3: row.country },
       false
