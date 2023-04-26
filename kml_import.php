@@ -51,10 +51,20 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" && isset( $_POST["filename"] ) ) {
     $city = '';
     $country = '';
     $category = '';
-    $name           = [ 'EN' => '', 'IT' => '', 'ES' => '', 'FR' => '', 'DE' => '', 'PT' => '' ];
-    $description    = [ 'EN' => '', 'IT' => '', 'ES' => '', 'FR' => '', 'DE' => '', 'PT' => '' ];
     $latitude = 0;
     $longitude = 0;
+    $name_EN = '';
+    $name_IT = '';
+    $name_ES = '';
+    $name_FR = '';
+    $name_DE = '';
+    $name_PT = '';
+    $description_EN = '';
+    $description_IT = '';
+    $description_ES = '';
+    $description_FR = '';
+    $description_DE = '';
+    $description_PT = '';
 
     $dbh = new PDO('mysql:host=localhost;dbname=' . DBNAME, DBUSER, DBPASS);
     $stmt1 = $dbh->prepare("INSERT INTO `pilgrimage_sites` (`id_key`,`latitude`,`longitude`,`category`,`marker_icon`,`marker_color`,`city`,`country`,`tags`) VALUES (:IDKEY,:LAT,:LONG,:CAT,'PLACE_OF_WORSHIP','BLUE',:CITY,:COUNTRY,'')");
@@ -72,20 +82,20 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" && isset( $_POST["filename"] ) ) {
     $stmt1->bindParam(':COUNTRY', $country, PDO::PARAM_STR);
 
     $stmt2->bindParam(':IDKEY', $id_key, PDO::PARAM_STR);
-    $stmt2->bindParam(':EN', $name['EN'], PDO::PARAM_STR);
-    $stmt2->bindParam(':IT', $name['IT'], PDO::PARAM_STR);
-    $stmt2->bindParam(':ES', $name['ES'], PDO::PARAM_STR);
-    $stmt2->bindParam(':FR', $name['FR'], PDO::PARAM_STR);
-    $stmt2->bindParam(':DE', $name['DE'], PDO::PARAM_STR);
-    $stmt2->bindParam(':PT', $name['PT'], PDO::PARAM_STR);
+    $stmt2->bindParam(':EN', $name_EN, PDO::PARAM_STR);
+    $stmt2->bindParam(':IT', $name_IT, PDO::PARAM_STR);
+    $stmt2->bindParam(':ES', $name_ES, PDO::PARAM_STR);
+    $stmt2->bindParam(':FR', $name_FR, PDO::PARAM_STR);
+    $stmt2->bindParam(':DE', $name_DE, PDO::PARAM_STR);
+    $stmt2->bindParam(':PT', $name_PT, PDO::PARAM_STR);
 
     $stmt3->bindParam(':IDKEY', $id_key, PDO::PARAM_STR);
-    $stmt3->bindParam(':EN', $description['EN'], PDO::PARAM_STR);
-    $stmt3->bindParam(':IT', $description['IT'], PDO::PARAM_STR);
-    $stmt3->bindParam(':ES', $description['ES'], PDO::PARAM_STR);
-    $stmt3->bindParam(':FR', $description['FR'], PDO::PARAM_STR);
-    $stmt3->bindParam(':DE', $description['DE'], PDO::PARAM_STR);
-    $stmt3->bindParam(':PT', $description['PT'], PDO::PARAM_STR);
+    $stmt3->bindParam(':EN', $description_EN, PDO::PARAM_STR);
+    $stmt3->bindParam(':IT', $description_IT, PDO::PARAM_STR);
+    $stmt3->bindParam(':ES', $description_ES, PDO::PARAM_STR);
+    $stmt3->bindParam(':FR', $description_FR, PDO::PARAM_STR);
+    $stmt3->bindParam(':DE', $description_DE, PDO::PARAM_STR);
+    $stmt3->bindParam(':PT', $description_PT, PDO::PARAM_STR);
 
     $xml = simplexml_load_file($_POST["filename"], "SimpleXMLElement", LIBXML_NOCDATA );
     //$xml->registerXPathNamespace('f', 'http://www.opengis.net/kml/2.2');
@@ -111,11 +121,15 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" && isset( $_POST["filename"] ) ) {
         foreach( $folders as $folder ) {
             //print_r( $folder );
             foreach( $folder->Placemark as $placemark ) {
-                $name           = [ 'EN' => '', 'IT' => '', 'ES' => '', 'FR' => '', 'DE' => '', 'PT' => '' ];
-                $description    = [ 'EN' => '', 'IT' => '', 'ES' => '', 'FR' => '', 'DE' => '', 'PT' => '' ];
+                $name_EN = '';
+                $name_IT = '';
+                $name_ES = '';
+                $name_FR = '';
+                $name_DE = '';
+                $name_PT = '';
                 ++$placemarkCount;
-                $name['EN'] = (string) $placemark->name;
-                $description['EN'] = (string) $placemark->description;
+                $name_EN = (string) $placemark->name;
+                $description_EN = (string) $placemark->description;
                 $coordStr = (string) $placemark->Point->coordinates;
                 $coordinates = explode(',', trim($coordStr) );
                 //echo '<h1>NAME</h1>';
@@ -147,34 +161,34 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" && isset( $_POST["filename"] ) ) {
                             $category = (string) $extData->value;
                             break;
                         case 'name_IT':
-                            $name['IT'] = (string) $extData->value;
+                            $name_IT = (string) $extData->value;
                             break;
                         case 'name_ES':
-                            $name['ES'] = (string) $extData->value;
+                            $name_ES = (string) $extData->value;
                             break;
                         case 'name_FR':
-                            $name['FR'] = (string) $extData->value;
+                            $name_FR = (string) $extData->value;
                             break;
                         case 'name_DE':
-                            $name['DE'] = (string) $extData->value;
+                            $name_DE = (string) $extData->value;
                             break;
                         case 'name_PT':
-                            $name['PT'] = (string) $extData->value;
+                            $name_PT = (string) $extData->value;
                             break;
                         case 'description_IT':
-                            $description['IT'] = (string) $extData->value;
+                            $description_IT = (string) $extData->value;
                             break;
                         case 'description_ES':
-                            $description['ES'] = (string) $extData->value;
+                            $description_ES = (string) $extData->value;
                             break;
                         case 'description_FR':
-                            $description['FR'] = (string) $extData->value;
+                            $description_FR = (string) $extData->value;
                             break;
                         case 'description_DE':
-                            $description['DE'] = (string) $extData->value;
+                            $description_DE = (string) $extData->value;
                             break;
                         case 'description_PT':
-                            $description['PT'] = (string) $extData->value;
+                            $description_PT = (string) $extData->value;
                             break;
                     }
                 }
