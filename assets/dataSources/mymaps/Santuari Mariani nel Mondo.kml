@@ -1,0 +1,1349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <Document>
+    <name>Marian Shrines in the World</name>
+    <description/>
+    <Folder>
+      <name>North America</name>
+      <Placemark>
+        <name>Basilica of the National Shrine of the Immaculate Conception</name>
+        <description><![CDATA[The basilica is the national and patronal Catholic church of the United States, honoring the Immaculate Conception as Patroness, accorded by Pope Pius IX on February 7, 1847. Pope Pius XI donated a mosaic rendition of the image in 1923. The shrine has merited several papal visits:
+<ul>
+<li>Pope John Paul II raised the National Shrine to the status of Minor Basilica on October 12, 1990.</li>
+<li>Pope Benedict XVI bestowed a Golden Rose on April 16, 2008.</li>
+<li>Pope Francis canonized Saint Junípero Serra, O.F.M., on September 23, 2015.</li>
+</ul>]]>
+        </description>
+        <Point>
+          <coordinates>
+            -77.0006569,38.9333675,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaImmacConcepWashington</value>
+          </Data>
+          <Data name="city">
+            <value>Washington D.C.</value>
+          </Data>
+          <Data name="country">
+            <value>USA</value>
+          </Data>
+          <Data name="name_IT">
+            <value>Basilica del Santuario Nazionale dell'Immacolata Concezione</value>
+          </Data>
+          <Data name="name_ES">
+            <value>Basílica del Santuario Nacional de la Inmaculada Concepción</value>
+          </Data>
+          <Data name="name_FR">
+            <value>Basilique du sanctuaire national de l'Immaculée Conception</value>
+          </Data>
+          <Data name="name_DE">
+            <value>Basilika des Nationalheiligtums der Unbefleckten Empfängnis</value>
+          </Data>
+          <Data name="name_PT">
+            <value>Basílica do Santuário Nacional da Imaculada Conceição</value>
+          </Data>
+          <Data name="description_IT">
+            <value></value>
+          </Data>
+          <Data name="description_ES">
+            <value></value>
+          </Data>
+          <Data name="description_FR">
+            <value></value>
+          </Data>
+          <Data name="description_DE">
+            <value></value>
+          </Data>
+          <Data name="description_PT">
+            <value></value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Baltimore co-Cathedral</name>
+        <description>Basilica of the National Shrine of the Assumption of the Blessed Virgin Mary</description>
+        <Point>
+          <coordinates>
+            -76.616552,39.2946268,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaAssumptionBMVBaltimore</value>
+          </Data>
+          <Data name="city">
+            <value>Baltimore, Maryland</value>
+          </Data>
+          <Data name="country">
+            <value>USA</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>National Shrine Grotto of Our Lady of Lourdes</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -77.3562569,39.6815862,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>LourdesGrottoEmmitsburg</value>
+          </Data>
+          <Data name="city">
+            <value>Emmitsburg, Maryland</value>
+          </Data>
+          <Data name="country">
+            <value>USA</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Holy Hill - Basilica and National Shrine of Mary Help of Christians</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -88.3276914,43.2442119,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaHelpChristiansHubertus</value>
+          </Data>
+          <Data name="city">
+            <value>Hubertus, Wisconsin</value>
+          </Data>
+          <Data name="country">
+            <value>USA</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica of the National Shrine of Mary, Queen of the Universe</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -81.4957827,28.384862,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaQueenUniverseOrlando</value>
+          </Data>
+          <Data name="city">
+            <value>Orlando, Florida</value>
+          </Data>
+          <Data name="country">
+            <value>USA</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>National Shrine of Our Lady of Consolation</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -83.3870827,40.9507798,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ShrineConsolationCarey</value>
+          </Data>
+          <Data name="city">
+            <value>Carey, Ohio</value>
+          </Data>
+          <Data name="country">
+            <value>USA</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>National Shrine of Our Lady of Czestochowa</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -75.179362,40.318964,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ShrineCzestochowaDoylestown</value>
+          </Data>
+          <Data name="city">
+            <value>Doylestown, Pennsylvania</value>
+          </Data>
+          <Data name="country">
+            <value>USA</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>National Shrine of Our Lady of Good Help</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -87.773566,44.5906094,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ShrineGoodHelpNewFranken</value>
+          </Data>
+          <Data name="city">
+            <value>New Franken, Wisconsin</value>
+          </Data>
+          <Data name="country">
+            <value>USA</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Shrine of Our Lady of Guadalupe</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -91.1799979,43.7543354,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ShrineGuadalupeLaCrosse</value>
+          </Data>
+          <Data name="city">
+            <value>La Crosse, Wisconsin</value>
+          </Data>
+          <Data name="country">
+            <value>USA</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Our Lady of Peace Shrine</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -121.9770958,37.3880836,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>OurLadyPeaceSantaClara</value>
+          </Data>
+          <Data name="city">
+            <value>Santa Clara, California</value>
+          </Data>
+          <Data name="country">
+            <value>USA</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>National Shrine of Our Lady of the Snows</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -90.0921231,38.5612988,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ShrineOurLadySnowsBelleville</value>
+          </Data>
+          <Data name="city">
+            <value>Belleville, Illinois</value>
+          </Data>
+          <Data name="country">
+            <value>USA</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Our Lady of Victory National Shrine &amp; Basilica</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -78.8236209,42.8252176,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ShrineOurLadyVictoryBuffalo</value>
+          </Data>
+          <Data name="city">
+            <value>Buffalo, New York</value>
+          </Data>
+          <Data name="country">
+            <value>USA</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Our Lady of Grace Shrine at Marylake</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -79.5433864,43.9505036,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>OurLadyGraceMarylake</value>
+          </Data>
+          <Data name="city">
+            <value>King City, Ontario</value>
+          </Data>
+          <Data name="country">
+            <value>CAN</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica of Notre-Dame-du-Cap</name>
+        <description>The Basilica of Notre-Dame-du-Cap is a minor basilica in Trois-Rivières, Quebec, Canada. It is Canada's national shrine to the Blessed Virgin Mary, and one of five national shrines in Canada. Each year, the site is visited by thousands of Catholic pilgrims.</description>
+        <Point>
+          <coordinates>
+            -72.4981843,46.3685733,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaNotreDameDuCapQuebec</value>
+          </Data>
+          <Data name="city">
+            <value>Trois-Rivières, Quebec</value>
+          </Data>
+          <Data name="country">
+            <value>CAN</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Central America</name>
+      <Placemark>
+        <name>Basilica of Our Lady of Guadalupe</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -99.1178616,19.4848572,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaGuadalupeMexico</value>
+          </Data>
+          <Data name="city">
+            <value>Ciudad de México</value>
+          </Data>
+          <Data name="country">
+            <value>MEX</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica of Our Lady of Zapopan</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -103.3921898,20.7212423,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaOurLadyZapopan</value>
+          </Data>
+          <Data name="city">
+            <value>Zapopan, Jalisco</value>
+          </Data>
+          <Data name="country">
+            <value>MEX</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Diocesan Shrine of Our Lady of Saint Juan Tlalpujahuilla</name>
+        <description>Our Lady of San Juan de los Lagos (English: Our Lady of Saint John of the Lakes) is a Roman Catholic title of the Blessed Virgin Mary venerated by Mexican and Texan faithful. The original image is a popular focus for pilgrims and is located in the state of Jalisco, in central Mexico, 122 kilometers (76 mi) northeast of the city of Guadalajara. The statue is venerated both in Mexico and in the United States where it is known by its proxy title Nuestra Señora de San Juan del Valle (Our Lady of Saint John of the Valley), mainly focused in Texas.
+Pope Pius X granted the image a Pontifical decree of Canonical coronation on 29 January 1904. The rite of coronation was executed on 15 August 1904 via the Archbishop of Guadalajara, Jose de Jesus Ortiz y Rodriguez.
+The image is widely known for the jeweled regalia offered by its devotees and is permanently enshrined at the Basilica Minor of San Juan de los Lagos in Mexico.</description>
+        <Point>
+          <coordinates>
+            -100.1639487,19.7902883,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ShrineOurLadySanJuanLagosTlalpujahuilla</value>
+          </Data>
+          <Data name="city">
+            <value>San Juan Tlalpujahuilla, Michoacan</value>
+          </Data>
+          <Data name="country">
+            <value>MEX</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Parish National Shrine of the Immaculate Heart of Mary</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -79.5226323,8.9843135,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ShrineImmaculateHeartPanama</value>
+          </Data>
+          <Data name="city">
+            <value>Panama</value>
+          </Data>
+          <Data name="country">
+            <value>PAN</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica and National Shrine of the Immaculate Conception of Mary, Virgin of the throne</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -87.1667011,12.6622414,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ShrineImmaculateConceptionElViejo</value>
+          </Data>
+          <Data name="city">
+            <value>El Viejo</value>
+          </Data>
+          <Data name="country">
+            <value>NIC</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Our Lady of Lourdes Shrine</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -86.3261461,12.147459,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ShrineLourdesCiudadSandino</value>
+          </Data>
+          <Data name="city">
+            <value>Ciudad Sandino</value>
+          </Data>
+          <Data name="country">
+            <value>NIC</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica of Our Lady of the Angels</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -83.9128805,9.8641107,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaOurLadyAngelsCartago</value>
+          </Data>
+          <Data name="city">
+            <value>Cartago</value>
+          </Data>
+          <Data name="country">
+            <value>CRI</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>South America</name>
+      <Placemark>
+        <name>Basilica of Our Lady Aparecida</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -45.2337258,-22.8505334,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaAparecida</value>
+          </Data>
+          <Data name="city">
+            <value>Aparecida</value>
+          </Data>
+          <Data name="country">
+            <value>BRA</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica of Luján</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -59.1213975,-34.5641632,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaLujan</value>
+          </Data>
+          <Data name="city">
+            <value>Luján, Provincia de Buenos Aires</value>
+          </Data>
+          <Data name="country">
+            <value>ARG</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Chapel of Our Lady of Good Success</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -78.558765,-0.2790842,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>OurLadyGoodSuccessQuito</value>
+          </Data>
+          <Data name="city">
+            <value>Quito</value>
+          </Data>
+          <Data name="country">
+            <value>ECU</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Shrine of Our Lady of El Cisne</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -79.426496,-3.851045,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ShrineOurLadyElCisne</value>
+          </Data>
+          <Data name="city">
+            <value>Quito</value>
+          </Data>
+          <Data name="country">
+            <value>ECU</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica of the Virgin Mary of the Candelaria of Copacabana</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -69.0856603,-16.1662918,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaCandelariaCopacabana</value>
+          </Data>
+          <Data name="city">
+            <value>Copacabana</value>
+          </Data>
+          <Data name="country">
+            <value>BOL</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica of Our Lady of Guadalupe of El Carrizal</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -69.545572,11.466068,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaGuadalupeElCarrizal</value>
+          </Data>
+          <Data name="city">
+            <value>El Carrizal, Falcón</value>
+          </Data>
+          <Data name="country">
+            <value>VEN</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Shrine of Our Lady of Mount Carmel</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -74.0748724,4.5945394,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ShrineOurLadyCarmel</value>
+          </Data>
+          <Data name="city">
+            <value>Bogotá</value>
+          </Data>
+          <Data name="country">
+            <value>COL</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Shrine of Our Lady of Solitude</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -77.0276271,-12.0451095,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ShrineOurLadySolitude</value>
+          </Data>
+          <Data name="city">
+            <value>Lima</value>
+          </Data>
+          <Data name="country">
+            <value>PER</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica of Lourdes</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -70.6859453,-33.4384037,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaLourdesQuintaNormal</value>
+          </Data>
+          <Data name="city">
+            <value>Quinta Normal, Santiago</value>
+          </Data>
+          <Data name="country">
+            <value>CHL</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Africa</name>
+      <Placemark>
+        <name>Shrine of Our Lady of Kibeho</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            29.5532812,-2.6496097,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ShrineOurLadyKibeho</value>
+          </Data>
+          <Data name="city">
+            <value>Kibeho</value>
+          </Data>
+          <Data name="country">
+            <value>RWA</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Ngome Marian Shrine</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            31.4537987,-27.8553271,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>NgomeMarianShrineLanggewacht</value>
+          </Data>
+          <Data name="city">
+            <value>Langgewacht</value>
+          </Data>
+          <Data name="country">
+            <value>ZAF</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica of Our Lady of Africa</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            3.0426368,36.8009262,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaOurLadyAfricaBologhine</value>
+          </Data>
+          <Data name="city">
+            <value>Bologhine</value>
+          </Data>
+          <Data name="country">
+            <value>DZA</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica of Mary Queen of the Apostles</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            11.5077361,3.8423156,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaMaryQueenApostlesYaounde</value>
+          </Data>
+          <Data name="city">
+            <value>Yaoundé</value>
+          </Data>
+          <Data name="country">
+            <value>CMR</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of the Virgin cave</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            31.1664949,27.11061,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchVirginCaveAssiut</value>
+          </Data>
+          <Data name="city">
+            <value>Durunka, Assiut Governorate</value>
+          </Data>
+          <Data name="country">
+            <value>EGY</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of the Blessed Virgin Mary in Zeitoun, The New Church</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            31.3164139,30.1045589,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchBVMZeitoun</value>
+          </Data>
+          <Data name="city">
+            <value>Zeitoun, Cairo Governorate</value>
+          </Data>
+          <Data name="country">
+            <value>EGY</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Oceania</name>
+      <Placemark>
+        <name>Cathedral of Saint Mary</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            151.2133254,-33.8711905,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>CathedralSaintMarySydney</value>
+          </Data>
+          <Data name="city">
+            <value>Sydney</value>
+          </Data>
+          <Data name="country">
+            <value>AUS</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Our Lady Of Mount Carmel Church</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            144.95935,-37.8485139,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>OurLadyMountCarmelMiddlePark</value>
+          </Data>
+          <Data name="city">
+            <value>Middle Park</value>
+          </Data>
+          <Data name="country">
+            <value>AUS</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Europe</name>
+      <Placemark>
+        <name>Basilica of the Immaculate Conception of Lourdes</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -0.0580289,43.0974393,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaImmaculateConceptionLourdes</value>
+          </Data>
+          <Data name="city">
+            <value>Lourdes</value>
+          </Data>
+          <Data name="country">
+            <value>FRA</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Shrine of Our Lady of La Salette</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            5.9788044,44.8586296,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ShrineLaSalette</value>
+          </Data>
+          <Data name="city">
+            <value>La Salette-Fallavaux</value>
+          </Data>
+          <Data name="country">
+            <value>FRA</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Shrine of Our Lady of Fatima</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -8.6731571,39.6312638,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ShrineOurLadyFatima</value>
+          </Data>
+          <Data name="city">
+            <value>Fatima</value>
+          </Data>
+          <Data name="country">
+            <value>PRT</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica of Our Lady of the Pillar</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -0.8785192,41.656771,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaPilarZaragoza</value>
+          </Data>
+          <Data name="city">
+            <value>Zaragoza</value>
+          </Data>
+          <Data name="country">
+            <value>ESP</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Monastery of Montserrat</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            1.8376757,41.5933262,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>MonasteryMontserratBarcelona</value>
+          </Data>
+          <Data name="city">
+            <value>Montserrat, Barcelona</value>
+          </Data>
+          <Data name="country">
+            <value>ESP</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica of Saint Mary</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            6.2445232,51.5844672,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaSaintMaryKevelaer</value>
+          </Data>
+          <Data name="city">
+            <value>Kevelaer</value>
+          </Data>
+          <Data name="country">
+            <value>DEU</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Mariazell Basilica</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            15.3186281,47.7727486,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaMariazell</value>
+          </Data>
+          <Data name="city">
+            <value>Mariazell</value>
+          </Data>
+          <Data name="country">
+            <value>AUT</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Maria Plain</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            13.0397424,47.8385391,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ShrineMariaPlain</value>
+          </Data>
+          <Data name="city">
+            <value>Bergheim bei Salzburg</value>
+          </Data>
+          <Data name="country">
+            <value>AUT</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Shrine of Our Lady of Częstochowa</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            19.0970058,50.8125957,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ShrineOurLadyCzestochowa</value>
+          </Data>
+          <Data name="city">
+            <value>Częstochowa</value>
+          </Data>
+          <Data name="country">
+            <value>POL</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica of Our Lady of Licheń</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            18.358238,52.3234976,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaOurLadyLichen</value>
+          </Data>
+          <Data name="city">
+            <value>Licheń Stary</value>
+          </Data>
+          <Data name="country">
+            <value>POL</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Shrine of the Mother of God Marija Bistrica</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            16.1194043,46.0044756,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ShrineMotherGodMarijaBistrica</value>
+          </Data>
+          <Data name="city">
+            <value>Marija Bistrica</value>
+          </Data>
+          <Data name="country">
+            <value>HRV</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Our Lady</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            16.637304,43.7014144,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchOurLadySinj</value>
+          </Data>
+          <Data name="city">
+            <value>Sinj</value>
+          </Data>
+          <Data name="country">
+            <value>HRV</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica of Mary Help of Christians</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            14.2322192,46.3288039,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaHelpChristiansBrezje</value>
+          </Data>
+          <Data name="city">
+            <value>Brezje</value>
+          </Data>
+          <Data name="country">
+            <value>SVN</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Shrine of the Holy Mountain</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            13.6493044,45.9549755,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ShrineHolyMountainNovaGorica</value>
+          </Data>
+          <Data name="city">
+            <value>Nova Gorica</value>
+          </Data>
+          <Data name="country">
+            <value>SVN</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Shrine of Our Lady of Beauraing</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            4.9609612,50.1086666,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ShrineOurLadyBeauraing</value>
+          </Data>
+          <Data name="city">
+            <value>Beauraing</value>
+          </Data>
+          <Data name="country">
+            <value>BEL</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Shrine of Our Lady of the Poor</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            5.7507226,50.5382448,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ShrineOurLadyPoor</value>
+          </Data>
+          <Data name="city">
+            <value>Sprimont</value>
+          </Data>
+          <Data name="country">
+            <value>BEL</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Shrine of Ta' Pinu</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            14.2152246,36.0617694,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ShrineTaPinu</value>
+          </Data>
+          <Data name="city">
+            <value>Ta' Pinu, Gharb</value>
+          </Data>
+          <Data name="country">
+            <value>MLT</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica of Our Lady of Knock, Queen of Ireland</name>
+        <description></description>
+        <Point>
+          <coordinates>
+            -8.9172521,53.7920331,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaOurLadyKnock</value>
+          </Data>
+          <Data name="city">
+            <value>Drum, Glenbrook, Co. Mayo</value>
+          </Data>
+          <Data name="country">
+            <value>IRL</value>
+          </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+  </Document>
