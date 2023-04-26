@@ -4449,6 +4449,25 @@
 					</Data>
 				</ExtendedData>
 			</Placemark>
+			<Placemark>
+				<name>Malta</name>
+				<description>MLT</description>
+				<styleUrl>#C</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<altitudeMode>clampToGround</altitudeMode>
+							<coordinates>14.1801083,36.0764825,0 14.180795,36.035404,0 14.2178738,36.0181892,0 14.2611325,36.0070808,0 14.308511,36.0192999,0 14.3215573,36.0020815,0 14.3181241,35.9726349,0 14.3263638,35.9398417,0 14.3256772,35.8992483,0 14.3325436,35.8764401,0 14.4142545,35.8263504,0 14.4506467,35.8168854,0 14.5117581,35.8040781,0 14.5330441,35.8040781,0 14.5639432,35.8135446,0 14.5763028,35.8397108,0 14.5742429,35.8753274,0 14.4794858,35.9403977,0 14.4396603,35.9559621,0 14.407388,35.9687449,0 14.3785489,35.9893041,0 14.3373502,36.0392908,0 14.3112576,36.0603867,0 14.2714322,36.0737076,0 14.23298,36.0842516,0 14.1801083,36.0764825</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+				<ExtendedData>
+					<Data name="isoAlpha3">
+						<value>MLT</value>
+					</Data>
+				</ExtendedData>
+			</Placemark>
 		</Folder>
 	</Document>
 </kml>
