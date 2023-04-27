@@ -249,7 +249,8 @@ let label = {
   verticalOrigin : Cesium.VerticalOrigin.BOTTOM,
   pixelOffset : new Cesium.Cartesian2(0, -40),
   heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
-  disableDepthTestDistance: Number.POSITIVE_INFINITY
+  disableDepthTestDistance: Number.POSITIVE_INFINITY,
+  show: false
 }
 
 let markersLayer = new Cesium.CustomDataSource();
@@ -345,14 +346,14 @@ let customStyle = () => {
     eventListener = markersLayer.clustering.clusterEvent.addEventListener(
       (clusteredEntities, cluster) => {
         clusteredEntities.forEach(ent => {
-          ent.label.show = false;
+          //ent.label.show = false;
         });
         console.log('there was a cluster event');
         console.log(clusteredEntities);
         if(clusteredMarkers.length > 0) {
           clusteredMarkers.forEach(marker => {
             if(clusteredEntities.includes(marker) === false ) {
-              marker.label.show = true;
+              //marker.label.show = true;
             }
           });
         }
@@ -509,6 +510,12 @@ bing.readyPromise.then(() => {
   hideLoaderIfGlobeReady();
 });
 
+//pickedEntities is the collection of currently hovered polygons
+//it is renewed every time the mouse moves and detects a hover over a polygon
+let pickedEntities = new Cesium.EntityCollection();
+
+//define a callback property that will be applied to polygons that are included in the pickedEntities collection:
+//the result is a change to a darker alpha transparency on hover
 const pickColor = Cesium.Color.BLACK.withAlpha(0.3);
 const makeProperty = (entity, color) => {
   if(Cesium.defined(entity.polygon)){
@@ -562,26 +569,38 @@ viewer.camera.setView({
 
 
 let handler = new Cesium.ScreenSpaceEventHandler(viewer.canvas);
-let pickedEntities = new Cesium.EntityCollection();
+let hoveredEntities = new Cesium.EntityCollection();
 
 handler.setInputAction((event) => {
   let pickedObjects = viewer.scene.drillPick(event.endPosition);
   //const pickedPrimitive = viewer.scene.pick(event.endPosition);
   //const pickedEntity = (Cesium.defined(pickedPrimitive)) ? pickedPrimitive.id : undefined;
-  if(Cesium.defined(pickedObjects)){
-    //Update the collection of picked entities.
+  if(Cesium.defined(pickedObjects)) {
+    //Update the collection of picked entities: start afresh on each mousemove.
     pickedEntities.removeAll();
     for (let i = 0; i < pickedObjects.length; ++i) {
       let entity = pickedObjects[i].id;
-      if(Cesium.defined(entity.billboard)){
+      if(Cesium.defined(entity.billboard) && hoveredEntities.contains(entity) === false ){
+        hoveredEntities.add(entity);
         entity.billboard.scale = 1.1;
-        entity.label.pixelOffset = new Cesium.Cartesian2(0, -50);
-      } else if(Cesium.defined(entity.polygon) && countryPolysDataSource.entities.getById(entity.id)){
-        jQuery('#currentNation').text(entity.name);
+        //entity.label.show = true;
+        //entity.label.pixelOffset = new Cesium.Cartesian2(0, -50);
+        setTimeout(() => {
+          entity.billboard.scale = 1.0;
+          //entity.label.pixelOffset = new Cesium.Cartesian2(0, -40);
+          hoveredEntities.remove(entity);
+        }, 250, entity);
+        /*setTimeout(() => {
+          entity.label.show = false;
+        }, 1000, entity);*/
       } else {
-        jQuery('#currentNation').text('Planet earth');
+        if(Cesium.defined(entity.polygon) && countryPolysDataSource.entities.getById(entity.id)){
+          jQuery('#currentNation').text(entity.name);
+          pickedEntities.add(entity);
+        } else {
+          jQuery('#currentNation').text('Planet earth');
+        }
       }
-      pickedEntities.add(entity);
     }
   } else {
     jQuery('#currentNation').text('Planet earth');
