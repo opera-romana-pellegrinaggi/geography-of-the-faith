@@ -23,6 +23,7 @@ const ENDPOINT = `https://${location.hostname}/geofaith_backend.php`;
 const GLOBE_STATE = {
   DOCUMENT_READY: false,
   MARKERS_LAYER_READY: false,
+  OPENBUS_MARKERS_LAYER: false,
   MARKERS_CREATED: false,
   COUNTRY_POLYS_READY: false,
   COUNTRY_BORDERS_READY: false,
@@ -194,6 +195,150 @@ frame.addEventListener('load', function () {
   frame.contentDocument.head.appendChild(cssLink);
 }, false);
 
+const OpenBusMarkers = [
+  {
+    "name": "1 / 16 - Vaticano / Castel Sant'Angelo",
+    "description": "<div class=\"cesium-infoBox-description-lighter\" style=\"background-color:rgb(255,255,255);color:rgb(0,0,0);\"><h3>1 / 16 - Vaticano / Castel Sant'Angelo</h3></div>",
+    "position": {
+        "cartographicDegrees": [
+            12.467435,
+            41.90124999999999
+        ]
+    }
+  },
+  {
+    "name": "2 - San Giovanni dei Fiorentini",
+    "description": "<div class=\"cesium-infoBox-description-lighter\" style=\"background-color:rgb(255,255,255);color:rgb(0,0,0);\"><h3>2 - San Giovanni dei Fiorentini</h3></div>",
+    "position": {
+        "cartographicDegrees": [
+            12.465399000000003,
+            41.899874000000004
+        ]
+    }
+  },
+  {
+    "name": "3 - Sant'Agnese in Agone / Piazza Navona",
+    "description": "<div class=\"cesium-infoBox-description-lighter\" style=\"background-color:rgb(255,255,255);color:rgb(0,0,0);\"><h3>3 - Sant'Agnese in Agone / Piazza Navona</h3></div>",
+    "position": {
+        "cartographicDegrees": [
+            12.472515999999995,
+            41.896889999999985
+        ]
+    }
+  },
+  {
+    "name": "4 - Area Sacra Torre Argentina",
+    "description": "<div class=\"cesium-infoBox-description-lighter\" style=\"background-color:rgb(255,255,255);color:rgb(0,0,0);\"><h3>4 - Area Sacra Torre Argentina</h3></div>",
+    "position": {
+        "cartographicDegrees": [
+            12.476326000000002,
+            41.89554099999999
+        ]
+    }
+  },
+  {
+    "name": "5 / 14 - Santa Maria in Ara Coeli",
+    "description": "<div class=\"cesium-infoBox-description-lighter\" style=\"background-color:rgb(255,255,255);color:rgb(0,0,0);\"><h3>5 / 14 - Santa Maria in Ara Coeli</h3></div>",
+    "position": {
+        "cartographicDegrees": [
+            12.482292999999997,
+            41.895295000000004
+        ]
+    }
+  },
+  {
+    "name": "6 - Santi Apostoli",
+    "description": "<div class=\"cesium-infoBox-description-lighter\" style=\"background-color:rgb(255,255,255);color:rgb(0,0,0);\"><h3>6 - Santi Apostoli</h3></div>",
+    "position": {
+        "cartographicDegrees": [
+            12.483456,
+            41.896812999999995
+        ]
+    }
+  },
+  {
+    "name": "7 - Santa Maria degli Angeli",
+    "description": "<div class=\"cesium-infoBox-description-lighter\" style=\"background-color:rgb(255,255,255);color:rgb(0,0,0);\"><h3>7 - Santa Maria degli Angeli</h3></div>",
+    "position": {
+        "cartographicDegrees": [
+            12.495621000000003,
+            41.90326699999999
+        ]
+    }
+  },
+  {
+    "name": "8 - Stazione Termini",
+    "description": "<div class=\"cesium-infoBox-description-lighter\" style=\"background-color:rgb(255,255,255);color:rgb(0,0,0);\"><h3>8 - Stazione Termini</h3></div>",
+    "position": {
+        "cartographicDegrees": [
+            12.499573,
+            41.90091799999999
+        ]
+    }
+  },
+  {
+    "name": "9 - Santa Maria Maggiore",
+    "description": "<div class=\"cesium-infoBox-description-lighter\" style=\"background-color:rgb(255,255,255);color:rgb(0,0,0);\"><h3>9 - Santa Maria Maggiore</h3></div>",
+    "position": {
+        "cartographicDegrees": [
+            12.498128000000005,
+            41.89709100000001
+        ]
+    }
+  },
+  {
+    "name": "10 - San Giovanni in Laterano",
+    "description": "<div class=\"cesium-infoBox-description-lighter\" style=\"background-color:rgb(255,255,255);color:rgb(0,0,0);\"><h3>10 - San Giovanni in Laterano</h3></div>",
+    "position": {
+        "cartographicDegrees": [
+            12.503956999999998,
+            41.886531999999995
+        ]
+    }
+  },
+  {
+    "name": "11 - Colosseo / San Gregorio al Celio",
+    "description": "<div class=\"cesium-infoBox-description-lighter\" style=\"background-color:rgb(255,255,255);color:rgb(0,0,0);\"><h3>11 - Colosseo / San Gregorio al Celio</h3></div>",
+    "position": {
+        "cartographicDegrees": [
+            12.490195000000005,
+            41.888603
+        ]
+    }
+  },
+  {
+    "name": "12 - Circo Massimo / Santa Saba all'Aventino",
+    "description": "<div class=\"cesium-infoBox-description-lighter\" style=\"background-color:rgb(255,255,255);color:rgb(0,0,0);\"><h3>12 - Circo Massimo / Santa Saba all'Aventino</h3></div>",
+    "position": {
+        "cartographicDegrees": [
+            12.484844999999998,
+            41.88559499999999
+        ]
+    }
+  },
+  {
+    "name": "13 - Teatro Marcello / Santa Maria in Campitelli",
+    "description": "<div class=\"cesium-infoBox-description-lighter\" style=\"background-color:rgb(255,255,255);color:rgb(0,0,0);\"><h3>13 - Teatro Marcello / Santa Maria in Campitelli</h3></div>",
+    "position": {
+        "cartographicDegrees": [
+            12.481594000000001,
+            41.893271
+        ]
+    }
+  },
+  {
+    "name": "15 - Largo Argentina / Sancta Maria ad Martyres",
+    "description": "<div class=\"cesium-infoBox-description-lighter\" style=\"background-color:rgb(255,255,255);color:rgb(0,0,0);\"><h3>15 - Largo Argentina / Sancta Maria ad Martyres</h3></div>",
+    "position": {
+        "cartographicDegrees": [
+            12.476819999999998,
+            41.896103
+        ]
+    }
+  }
+];
+
+
 let pinBuilder = new Cesium.PinBuilder();
 
 const pin50 = pinBuilder
@@ -240,6 +385,16 @@ const placeOfWorship = {
   }
 };
 
+const openBusMarker = {
+  image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAACXBIWXMAAAAcAAAAHAAPAbmPAAAAvVBMVEUAAAAAAAAAAAAAAAAAAAAAAADOzs5ycnIFBQXr6+v///9aWlqSkpL////////////////////////v7+9+fn7////7+/v////////////////m5ub7+/vz8/P39/fOzs7///////+urq7KysqGhob////mUQD/+/vrdjX3wqbztpL3yrLvnm775tr/8+/zpn7mWg377+braiXrgkn73srmVgXvnnLzrormUQXmXhXzupr77+v78+vmWgnvjl4Q9G0WAAAAJXRSTlMAUQ0wGUmycjnakmp+JUk5xuZq2na689qK987O9+bzrjEJkn5JnsBJ6AAAAstJREFUeNrt/cWC4zAMhgGEg+VyYVB2uFyeef/HWicFQzOF217+Y+wvlmRJ1lH6T1SqO63OGONxp+XUS89S790acKp135/AylWy9RDEi/lutdrNF3FwIB+q5QdYhWDH0Eec/PBI0Mod7MMBmK1/0I1+1jMA5+MvrtQHvJmiQk03GPp/hKnShsRHf8pPoF1obrkH0RTd0TSCXkGMKj3Yb9FdbffQuzmz1IY9eqg9tAU/P/oQbR+D2wj6fGwdSKboCU0TcDgHAbPx9CfBcpZiAJzOlsGEW8LAulmFDV1bJCAoWdDVDVQpV4YZNfQXw43wLzV2BmXmwDVdSKFAKf3xmh75Dkean79QKHrkzxEuVdaFEDE/LBQ1CYXQPYM1YOI2AfC3gnyACd3hQ+3EleCAeBAJ4kF0gFP61CF4DQygnoMOxK+B8Tl7WrB4DVxAKwc7MH8NnEMnB8ewew3cwTgHMax4MAoERTy4AlwMFqkIvDH1EXgxdSQG5xE4h1EODsTrgGW4pMgyTEC8jkEOGmICRKssO84iLWy1FBPAyMEvMeXi/K9nZdasxZT7ysFvMclDxLga5zuFJP/OQY0rK1LIeOLH1/6Rxn72E1rIWVlpOai8sYW8K24dzI2F8KacCtJkW0dx72AOJK3DPHGSarOdYU724YhRZjVz02uw1TOoeGx7zMAUMUo5kLRH72ypJFk205AzkA0zymYA6uIGbOvCSZrJPgEBCSsLTjCmF02eAFO7gpJlPP/oGPRA4qXcePaZa8gKA0qq++zD6qoSJ705fOYpHzZ1npMU3Rs+Hh6Gnq4IoKTpzcfjSlMnEb0l3cb9AanhFnEZKRv3RjJDLuYyP2XT/msItE351r+rVFn2bCgYO21PllXpjhRLls03cdB9M2XZUqT70ggqu5/GYJSN1qOB8emSD5YmPZai6jInXVWkJ6VoqqXnslStmPoHjhdHI1NHJmUAAAAASUVORK5CYII=",
+  color: Cesium.Color.WHITE,
+  verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
+  width: 32,
+  height: 32,
+  heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
+  disableDepthTestDistance: Number.POSITIVE_INFINITY
+};
+
 let label = {
   font : 'bold 14pt Arial',
   backgroundColor: new Cesium.Color(0.165, 0.165, 0.165, 0.8),
@@ -254,20 +409,33 @@ let label = {
 }
 
 let markersLayer = new Cesium.CustomDataSource();
+let openBusMarkersLayer = new Cesium.CustomDataSource();
 
 let createMarker = (latitude,longitude,marker,name,description,properties,show) => markersLayer.entities.add({
     position : Cesium.Cartesian3.fromDegrees(longitude,latitude),
     name : name,
-    billboard : marker,
     description: description,
+    billboard : marker,
     show: show,
     label : { ...label, text: name},
     properties: properties
   });
+
+let createOpenBusMarker = (latitude,longitude,name,description) => openBusMarkersLayer.entities.add({
+  position : Cesium.Cartesian3.fromDegrees(longitude,latitude),
+  name : name,
+  description: description,
+  billboard : openBusMarker,
+  show: true
+});
 //LATITUDE: increasing the value will increase vertical position, towards north
 //LATITUDE: decreasing the value will decrease vertical position, towards south
 //LONGITUDE: increase = move east
 //LONGITUDE: decrease = move west
+
+OpenBusMarkers.forEach(marker => {
+  createOpenBusMarker(marker.position.cartographicDegrees[1], marker.position.cartographicDegrees[0], marker.name, marker.description );
+});
 
 let PilgrimageMarkers = {};
 let allMarkers = [];
@@ -388,19 +556,6 @@ let customStyle = () => {
   markersLayer.clustering.pixelRange = pixelRange;
 }
 
-let mousemoveLabel = viewer.entities.add({
-  name: 'mousemoveLabel',
-  label: {
-    ...label,
-    font : 'bold 14pt monospace',
-    pixelOffset: null,
-    horizontalOrigin: Cesium.HorizontalOrigin.CENTER,
-    text: 'no position',
-    show: false
-  }
-});
-
-
 /*
 let francigenaDataSourcePromise = viewer.dataSources.add(
   Cesium.KmlDataSource.load('assets/dataSources/Via Francigena/Via_Francigena.kmz',
@@ -459,18 +614,22 @@ let lauretanaDataSourcePromise = viewer.dataSources.add(
   console.log("lauretanaDataSource is ready!");
 });
 */
-let openBusModel,
+/*let openBusModel,
   openBusPosition;
+  */
 let omniaVaticanRomeDataSourcePromise = viewer.dataSources.add(
-  Cesium.CzmlDataSource.load('assets/dataSources/OpenBus/OpenBusRoute.czml',{
-    camera: viewer.scene.camera,
-    canvas: viewer.scene.canvas,
-    clampToGround: true
-  })
+  Cesium.CzmlDataSource.load('assets/dataSources/OpenBus/OpenBusRoute.czml')
 ).then(dataSource => {
   console.log("omniaVaticanRomeDataSource is ready!");
+  //console.log(dataSource);
+
   GLOBE_STATE.OMNIA_VR_READY = true;
   hideLoaderIfGlobeReady();
+  /*let entities = dataSource.entities.values;
+  for (let i = 0; i < entities.length; i++) {
+    let entity = entities[i];
+    entity.heightReference = Cesium.HeightReference.CLAMP_TO_GROUND;
+  }*/
   //openBusModel = dataSource.entities.getById("CesiumMilkTruck");
   //openBusPosition = openBusModel.position;
 });
@@ -483,14 +642,19 @@ markersLayerPromise.then(dataSource => {
   GLOBE_STATE.MARKERS_LAYER_READY = true;
   hideLoaderIfGlobeReady();
 
-  let pixelRange = 15;
-  let minimumClusterSize = 3;
-  let enabled = true;
-
-  dataSource.clustering.enabled = enabled;
-  dataSource.clustering.pixelRange = pixelRange;
-  dataSource.clustering.minimumClusterSize = minimumClusterSize;
+  dataSource.clustering.enabled = true;
+  dataSource.clustering.pixelRange = 15;
+  dataSource.clustering.minimumClusterSize = 3;
   customStyle();
+});
+
+let openBusMarkersDataSource;
+let openBusMarkersLayerPromise = viewer.dataSources.add(openBusMarkersLayer);
+openBusMarkersLayerPromise.then(dataSource => {
+  openBusMarkersDataSource = dataSource;
+  console.log("OpenBus markers layer is ready!");
+  GLOBE_STATE.OPENBUS_MARKERS_LAYER = true;
+  hideLoaderIfGlobeReady();
 });
 
 
@@ -664,8 +828,6 @@ handler.setInputAction((event) => {
   }
 }, Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
 
-
-//viewer.flyTo(PilgrimageMarkers.StPeterBasilicaRome,{duration:5});
 
 //jQuery Document Ready
 $(function(){
