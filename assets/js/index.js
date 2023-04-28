@@ -869,7 +869,11 @@ function detectDoubleTapClosure() {
   return function detectDoubleTap(event) {
     const curTime = new Date().getTime();
     const tapLen = curTime - lastTap;
-    if (tapLen < 500 && tapLen > 0 && scaling === false) {
+    if( scaling ) {
+      console.log('filtering out pinches from double taps');
+      scaling = false;
+    }
+    else if (tapLen < 500 && tapLen > 0) {
       console.log('Double tapped!');
       event.preventDefault();
       console.log(event);
@@ -905,16 +909,14 @@ function detectDoubleTapClosure() {
       }, 500);
     }
     lastTap = curTime;
-    if( scaling ) {
-      scaling = false;
-    }
   };
 }
 
 function detectPinchStartClosure() {
   return function detectPinchStart(e) {
     if (e.touches.length === 2) {
-        scaling = true;
+      console.log('pinch detected!');
+      scaling = true;
     }
   }
 }
