@@ -14,11 +14,37 @@ const thirdlevelMap = {
   geografiadafe: 'pt'
 }
 
-const thirdlevel = location.hostname.split('.')[0];
-const lang = thirdlevelMap[thirdlevel] ?? 'en';
-console.log(location.hostname + ' : lang set to ' + lang);
+const hostname = location.hostname.split('.');
+let thirdlevel;
+let lang;
+if( hostname[1] === 'bibleget' ) {
+  thirdlevel = hostname[0];
+  lang = thirdlevelMap[thirdlevel] ?? 'en';
+}
+else if ( hostname[1] === 'orp' ) {
+  if( location.pathname.includes('geography') ) {
+    lang = 'en';
+  }
+  else if( location.pathname.includes('geografia') && location.pathname.includes('fede') ) {
+    lang = 'it';
+  }
+  else if( location.pathname.includes('geografia') && location.pathname.includes('de') && location.pathname.includes('fe') ) {
+    lang = 'es';
+  }
+  else if( location.pathname.includes('geographie') ) {
+    lang = 'fr';
+  }
+  else if( location.pathname.includes('geographie') && location.pathname.includes('glaubens') ) {
+    lang = 'de';
+  }
+  else if( location.pathname.includes('geografia') && location.pathname.includes('da') && location.pathname.includes('fe') ) {
+    lang = 'pt';
+  }
+}
 
-const ENDPOINT = `https://${location.hostname}/geofaith_backend.php`;
+console.log(location.hostname + location.pathname + ' : lang set to ' + lang);
+
+const ENDPOINT = `https://${location.hostname}${location.pathname}geofaith_backend.php`;
 
 const GLOBE_STATE = {
   DOCUMENT_READY: false,
