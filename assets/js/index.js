@@ -874,6 +874,7 @@ function detectDoubleTapClosure() {
     }
     else if (tapLen < 500 && tapLen > 0) {
       console.log('Double tapped!');
+      scaling = false;
       event.preventDefault();
       console.log(event);
       let pickedObjects = viewer.scene.drillPick({ x: event.changedTouches[0].pageX, y: event.changedTouches[0].pageY });
