@@ -349,12 +349,12 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 .cesium-widget,
 .cesium-widget canvas {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   touch-action: none;
 }
 .cesium-widget-credits {
@@ -1214,7 +1214,7 @@ span.cesium-projectionPicker-wrapper {
 }
 .cesium-viewer-cesiumWidgetContainer {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 .cesium-viewer-bottom {
   display: block;

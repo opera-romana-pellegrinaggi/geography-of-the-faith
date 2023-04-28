@@ -41,7 +41,7 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta http-equiv="content-language" content="<?php echo $lang; ?>">
-    <meta name="keywords" content="opera romana, <?php _e("pilgrimage, pilgrimages, pilgrim, pilgrima, travel, trip, route, holy land, via francigena, santiago, compostela, rome, map, maps, itinerary, itineraries, walk, walks, path, paths, walking") ?>">
+    <meta name="keywords" content="opera romana, <?php _e("pilgrimage, pilgrimages, pilgrim, travel, trip, route, holy land, via francigena, santiago, compostela, rome, map, maps, itinerary, itineraries, walk, walks, path, paths, walking") ?>">
     <meta name="description" content="<?php _e("Geography of the Faith is an interactive globe presenting christian pilgrimage destinations and routes from around the world."); ?>">
 
     <!-- Fonts and icons -->
@@ -52,7 +52,8 @@
     <link rel="stylesheet" href="node_modules/material-dashboard-dark-edition/assets/css/material-dashboard.min.css?v=2.1.2" />
 
     <!-- Cesium CSS -->
-    <link rel="stylesheet" href="https://cesium.com/downloads/cesiumjs/releases/1.104/Build/Cesium/Widgets/widgets.css" />
+    <!-- <link rel="stylesheet" href="https://cesium.com/downloads/cesiumjs/releases/1.104/Build/Cesium/Widgets/widgets.css" /> -->
+    <link rel="stylesheet" href="assets/js/Cesium/Build/Cesium/Widgets/widgets.css" />
 
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
