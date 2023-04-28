@@ -860,6 +860,8 @@ handler.setInputAction((event) => {
   }
 }, Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
 
+let scaling = false;
+
 /** Double tap event for mobile */
 function detectDoubleTapClosure() {
   let lastTap = 0;
@@ -867,7 +869,7 @@ function detectDoubleTapClosure() {
   return function detectDoubleTap(event) {
     const curTime = new Date().getTime();
     const tapLen = curTime - lastTap;
-    if (tapLen < 500 && tapLen > 0) {
+    if (tapLen < 500 && tapLen > 0 && scaling === false) {
       console.log('Double tapped!');
       event.preventDefault();
       console.log(event);
@@ -903,12 +905,24 @@ function detectDoubleTapClosure() {
       }, 500);
     }
     lastTap = curTime;
+    if( scaling ) {
+      scaling = false;
+    }
   };
+}
+
+function detectPinchStartClosure() {
+  return function detectPinchStart(e) {
+    if (e.touches.length === 2) {
+        scaling = true;
+    }
+  }
 }
 
 /* Regex test to determine if user is on mobile */
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
   document.body.addEventListener('touchend', detectDoubleTapClosure());
+  document.body.addEventListener('touchstart', detectPinchStartClosure());
 }
 
 
