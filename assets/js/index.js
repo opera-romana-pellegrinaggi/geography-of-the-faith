@@ -870,7 +870,8 @@ function detectDoubleTapClosure() {
     if (tapLen < 500 && tapLen > 0) {
       console.log('Double tapped!');
       event.preventDefault();
-      let pickedObjects = viewer.scene.drillPick(event.position);
+      console.log(event);
+      let pickedObjects = viewer.scene.drillPick({x: event.changedTouches[0].pageX, y: event.changedTouches[0].pageY });
       if(Cesium.defined(pickedObjects)){
         //Update the collection of picked entities.
         pickedEntities.removeAll();
