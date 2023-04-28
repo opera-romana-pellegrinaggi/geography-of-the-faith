@@ -770,7 +770,10 @@ handler.setInputAction((event) => {
     pickedEntities.removeAll();
     for (let i = 0; i < pickedObjects.length; ++i) {
       let entity = pickedObjects[i].id;
-      if(Cesium.defined(entity.billboard) && hoveredEntities.contains(entity) === false ){
+      if(Cesium.defined(entity.billboard) && hoveredEntities.contains(entity) === false ) {
+        console.log('billboard entity was hovered:');
+        console.log(entity.name);
+        jQuery('#currentNation').text(entity.name);
         hoveredEntities.add(entity);
         entity.billboard.scale = 1.1;
         //entity.label.show = true;
@@ -787,6 +790,9 @@ handler.setInputAction((event) => {
         if(Cesium.defined(entity.polygon) && countryPolysDataSource.entities.getById(entity.id)){
           jQuery('#currentNation').text(entity.name);
           pickedEntities.add(entity);
+        } else if (Cesium.defined(entity.polyline)) {
+          jQuery('#currentNation').text(entity.name);
+          console.log('a polyline was hovered: ' + entity.name);
         } else {
           jQuery('#currentNation').text('Planet earth');
         }
