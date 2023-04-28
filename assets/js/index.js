@@ -871,13 +871,12 @@ function detectDoubleTapClosure() {
     const tapLen = curTime - lastTap;
     if( scaling ) {
       console.log('filtering out pinches from double taps');
-      scaling = false;
     }
     else if (tapLen < 500 && tapLen > 0) {
       console.log('Double tapped!');
       event.preventDefault();
       console.log(event);
-      let pickedObjects = viewer.scene.drillPick({x: event.changedTouches[0].pageX, y: event.changedTouches[0].pageY });
+      let pickedObjects = viewer.scene.drillPick({ x: event.changedTouches[0].pageX, y: event.changedTouches[0].pageY });
       if(Cesium.defined(pickedObjects)){
         //Update the collection of picked entities.
         pickedEntities.removeAll();
@@ -904,6 +903,7 @@ function detectDoubleTapClosure() {
       }
     } else {
       console.log('Single tapped!')
+      scaling = false;
       timeout = setTimeout(() => {
         clearTimeout(timeout);
       }, 500);
