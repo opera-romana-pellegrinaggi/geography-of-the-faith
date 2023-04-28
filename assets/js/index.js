@@ -860,6 +860,57 @@ handler.setInputAction((event) => {
   }
 }, Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
 
+/** Double tap event for mobile */
+function detectDoubleTapClosure() {
+  let lastTap = 0;
+  let timeout;
+  return function detectDoubleTap(event) {
+    const curTime = new Date().getTime();
+    const tapLen = curTime - lastTap;
+    if (tapLen < 500 && tapLen > 0) {
+      console.log('Double tapped!');
+      event.preventDefault();
+      let pickedObjects = viewer.scene.drillPick(event.position);
+      if(Cesium.defined(pickedObjects)){
+        //Update the collection of picked entities.
+        pickedEntities.removeAll();
+        for (let i = 0; i < pickedObjects.length; ++i) {
+          let entity = pickedObjects[i].id;
+          pickedEntities.add(entity);
+          if(Cesium.defined(entity.polygon) && countryPolysDataSource.entities.getById(entity.id)){
+            viewer.flyTo(entity);
+            console.log(entity);
+            $('.togglebutton input[type="checkbox"]').prop('checked', false);
+            let isoAlpha3 = entity.kml.extendedData.isoAlpha3.value;
+            console.log(isoAlpha3);
+            markersDataSource.clustering.enabled = false;
+            allMarkers.forEach((key,idx) => {
+              let show = (PilgrimageMarkers[key].properties.isoAlpha3.getValue() === isoAlpha3);
+              //PilgrimageMarkers[key].label.show = show;
+              PilgrimageMarkers[key].show = show;
+              if( idx === allMarkers.length - 1 ) {
+                markersDataSource.clustering.enabled = true;
+              }
+            });
+          }
+        }
+      }
+    } else {
+      console.log('Single tapped!')
+      timeout = setTimeout(() => {
+        clearTimeout(timeout);
+      }, 500);
+    }
+    lastTap = curTime;
+  };
+}
+
+/* Regex test to determine if user is on mobile */
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+  document.body.addEventListener('touchend', detectDoubleTapClosure());
+}
+
+
 
 //jQuery Document Ready
 $(function(){
