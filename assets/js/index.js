@@ -872,9 +872,8 @@ function detectDoubleTapClosure() {
     if( scaling ) {
       console.log('filtering out pinches from double taps');
     }
-    else if (tapLen < 500 && tapLen > 0) {
+    if ((tapLen < 500 && tapLen > 0) && scaling === false) {
       console.log('Double tapped!');
-      scaling = false;
       event.preventDefault();
       console.log(event);
       let pickedObjects = viewer.scene.drillPick({ x: event.changedTouches[0].pageX, y: event.changedTouches[0].pageY });
@@ -902,7 +901,7 @@ function detectDoubleTapClosure() {
           }
         }
       }
-    } else {
+    } else if (tapLen < 0 || tapLen > 499) {
       console.log('Single tapped!')
       scaling = false;
       timeout = setTimeout(() => {
