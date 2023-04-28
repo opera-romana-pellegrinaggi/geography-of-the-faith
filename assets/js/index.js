@@ -46,51 +46,15 @@ console.log(location.hostname + location.pathname + ' : lang set to ' + lang);
 
 const ENDPOINT = `https://${location.hostname}${location.pathname}geofaith_backend.php`;
 
-const GLOBE_STATE = {
-  DOCUMENT_READY: false,
-  MARKERS_LAYER_READY: false,
-  OPENBUS_MARKERS_LAYER: false,
-  MARKERS_CREATED: false,
-  COUNTRY_POLYS_READY: false,
-  COUNTRY_BORDERS_READY: false,
-  OMNIA_VR_READY: false,
-  MAPS_SOURCE_READY: false,
-  TILES_LOADED: false,
-  ALL_DRAWN: false
-}
 
-const isGlobeReady = () => {
-  return Object.values(GLOBE_STATE).reduce((prev,curr,idx) => {
-    return (prev && curr);
-  }, true);
-};
-
-const hideLoaderIfGlobeReady = () => {
-  if(isGlobeReady()) {
-    console.log('all conditions for globe ready are now met! hiding loader...');
-    $('.loader').fadeOut();
-  } else {
-    let arr = Object.entries(GLOBE_STATE).reduce((prev,curr) => {
-      if(curr[1] === false) {
-        prev.push(curr[0]);
-      }
-      return prev;
-    },[]);
-    console.log('conditions that are not yet met for the globe to be ready: ' + arr.sort().join(', ') );
-  }
-}
+/** CREATE OUR CESIUM GLOBE */
 
 const extent = Cesium.Rectangle.fromDegrees(12.373249, 41.987067, 12.626621, 41.797435);
-
 Cesium.Camera.DEFAULT_VIEW_RECTANGLE = extent;
 Cesium.Camera.DEFAULT_VIEW_FACTOR = 0;
-
-
-let allPromisedResolved = false;
-
 Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5YzNlODY2Yy0yZjY1LTRkMDktOTViYi02M2I3M2NjMTg3YmIiLCJpZCI6NTM3MjUsImlhdCI6MTYxOTM1MzA0NX0.t8ZCZb4qQKgU2sQbzAwgZ85ReK07ZmRZjnecUP8IE9Y';
 
-var bing = new Cesium.BingMapsImageryProvider({
+let bing = new Cesium.BingMapsImageryProvider({
   url : 'https://dev.virtualearth.net',
   key : 'AsRSrIU0SOTDG268mtY0kyGIN86fK07A9rjb5QPWU-9kW64slsXWdhTe0thkvykQ',
   mapStyle : Cesium.BingMapsStyle.AERIAL
@@ -128,16 +92,10 @@ let viewer = new Cesium.Viewer('map', {
 //see :FLYTO_COUNTRY_CLICKED
 viewer.screenSpaceEventHandler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
 
-let isViewerReady = () => {
-  GLOBE_STATE.ALL_DRAWN = viewer.dataSourceDisplay.ready;
-  if( GLOBE_STATE.ALL_DRAWN ) {
-    console.log('all viewer polygons are now completely drawn');
-    clearInterval(viewerIntvl);
-    hideLoaderIfGlobeReady();
-  }
-}
-
-let viewerIntvl = setInterval(isViewerReady, 50);
+//set our initial camera view for our pilgrimage globe
+viewer.camera.setView({
+  destination: Cesium.Cartesian3.fromDegrees(12.4531362,41.9020481, 15000000)
+});
 
 let scene = viewer.scene;
 scene.skyAtmosphere.show = false;
@@ -202,7 +160,6 @@ const airplaneEntity = viewer.entities.add({
 viewer.trackedEntity = airplaneEntity;
 */
 
-
 let lensFlare = scene.postProcessStages.add(
   Cesium.PostProcessStageLibrary.createLensFlareStage()
 );
@@ -220,6 +177,97 @@ frame.addEventListener('load', function () {
   cssLink.type = 'text/css';
   frame.contentDocument.head.appendChild(cssLink);
 }, false);
+
+
+
+/** DEFINE READY STATES AND READY CALLBACKS */
+
+const GLOBE_STATE = {
+  DOCUMENT_READY: false,
+  MARKERS_LAYER_READY: false,
+  OPENBUS_MARKERS_LAYER: false,
+  MARKERS_CREATED: false,
+  COUNTRY_POLYS_READY: false,
+  COUNTRY_BORDERS_READY: false,
+  OMNIA_VR_READY: false,
+  MAPS_SOURCE_READY: false,
+  TILES_LOADED: false,
+  ALL_DRAWN: false
+}
+
+const isGlobeReady = () => {
+  return Object.values(GLOBE_STATE).reduce((prev,curr,idx) => {
+    return (prev && curr);
+  }, true);
+};
+
+const hideLoaderIfGlobeReady = () => {
+  if(isGlobeReady()) {
+    console.log('all conditions for globe ready are now met! hiding loader...');
+    $('.loader').fadeOut();
+  } else {
+    let arr = Object.entries(GLOBE_STATE).reduce((prev,curr) => {
+      if(curr[1] === false) {
+        prev.push(curr[0]);
+      }
+      return prev;
+    },[]);
+    console.log('conditions that are not yet met for the globe to be ready: ' + arr.sort().join(', ') );
+  }
+}
+
+let isViewerReady = () => {
+  GLOBE_STATE.ALL_DRAWN = viewer.dataSourceDisplay.ready;
+  if( GLOBE_STATE.ALL_DRAWN ) {
+    console.log('all viewer polygons are now completely drawn');
+    clearInterval(viewerIntvl);
+    hideLoaderIfGlobeReady();
+  }
+}
+
+let viewerIntvl = setInterval(isViewerReady, 50);
+
+bing.readyPromise.then(() => {
+  console.log("bing maps is ready!");
+  GLOBE_STATE.MAPS_SOURCE_READY = true;
+  hideLoaderIfGlobeReady();
+});
+
+let helper = new Cesium.EventHelper();
+helper.add(scene.globe.tileLoadProgressEvent, ev => {
+  console.log("tiles to load = " + ev);
+  if(ev === 0){
+    console.log("and all tiles are now loaded");
+    GLOBE_STATE.TILES_LOADED = true;
+    hideLoaderIfGlobeReady();
+  }
+});
+
+
+
+/** DEFINE MAIN CATEGORIES FOR ENTITIES */
+
+const CATEGORIES = {
+  RELIC: [],
+  APOSTLE: [],
+  EVANGELIST: [],
+  MARTYR: [],
+  EUCHARISTIC_MIRACLE: [],
+  CATHEDRAL: [],
+  MARIAN_SHRINE: [],
+  SHRINE: [],
+  SAINT_UNIVERSAL: [],
+  SAINT_LOCAL: [],
+  FRESCO: [],
+  MOSAIC: [],
+  ICON: [],
+  PAINTING: [],
+  SCULPTURE: []
+};
+
+
+
+/** DEFINE CUSTOM MARKERS AND LABELS AND COLLECTIONS */
 
 const OpenBusMarkers = [
   {
@@ -364,6 +412,15 @@ const OpenBusMarkers = [
   }
 ];
 
+const openBusMarker = {
+  image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAACXBIWXMAAAAcAAAAHAAPAbmPAAAAvVBMVEUAAAAAAAAAAAAAAAAAAAAAAADOzs5ycnIFBQXr6+v///9aWlqSkpL////////////////////////v7+9+fn7////7+/v////////////////m5ub7+/vz8/P39/fOzs7///////+urq7KysqGhob////mUQD/+/vrdjX3wqbztpL3yrLvnm775tr/8+/zpn7mWg377+braiXrgkn73srmVgXvnnLzrormUQXmXhXzupr77+v78+vmWgnvjl4Q9G0WAAAAJXRSTlMAUQ0wGUmycjnakmp+JUk5xuZq2na689qK987O9+bzrjEJkn5JnsBJ6AAAAstJREFUeNrt/cWC4zAMhgGEg+VyYVB2uFyeef/HWicFQzOF217+Y+wvlmRJ1lH6T1SqO63OGONxp+XUS89S790acKp135/AylWy9RDEi/lutdrNF3FwIB+q5QdYhWDH0Eec/PBI0Mod7MMBmK1/0I1+1jMA5+MvrtQHvJmiQk03GPp/hKnShsRHf8pPoF1obrkH0RTd0TSCXkGMKj3Yb9FdbffQuzmz1IY9eqg9tAU/P/oQbR+D2wj6fGwdSKboCU0TcDgHAbPx9CfBcpZiAJzOlsGEW8LAulmFDV1bJCAoWdDVDVQpV4YZNfQXw43wLzV2BmXmwDVdSKFAKf3xmh75Dkean79QKHrkzxEuVdaFEDE/LBQ1CYXQPYM1YOI2AfC3gnyACd3hQ+3EleCAeBAJ4kF0gFP61CF4DQygnoMOxK+B8Tl7WrB4DVxAKwc7MH8NnEMnB8ewew3cwTgHMax4MAoERTy4AlwMFqkIvDH1EXgxdSQG5xE4h1EODsTrgGW4pMgyTEC8jkEOGmICRKssO84iLWy1FBPAyMEvMeXi/K9nZdasxZT7ysFvMclDxLga5zuFJP/OQY0rK1LIeOLH1/6Rxn72E1rIWVlpOai8sYW8K24dzI2F8KacCtJkW0dx72AOJK3DPHGSarOdYU724YhRZjVz02uw1TOoeGx7zMAUMUo5kLRH72ypJFk205AzkA0zymYA6uIGbOvCSZrJPgEBCSsLTjCmF02eAFO7gpJlPP/oGPRA4qXcePaZa8gKA0qq++zD6qoSJ705fOYpHzZ1npMU3Rs+Hh6Gnq4IoKTpzcfjSlMnEb0l3cb9AanhFnEZKRv3RjJDLuYyP2XT/msItE351r+rVFn2bCgYO21PllXpjhRLls03cdB9M2XZUqT70ggqu5/GYJSN1qOB8emSD5YmPZai6jInXVWkJ6VoqqXnslStmPoHjhdHI1NHJmUAAAAASUVORK5CYII=",
+  color: Cesium.Color.WHITE,
+  verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
+  width: 32,
+  height: 32,
+  heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
+  disableDepthTestDistance: Number.POSITIVE_INFINITY
+};
 
 let pinBuilder = new Cesium.PinBuilder();
 
@@ -411,16 +468,6 @@ const placeOfWorship = {
   }
 };
 
-const openBusMarker = {
-  image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAACXBIWXMAAAAcAAAAHAAPAbmPAAAAvVBMVEUAAAAAAAAAAAAAAAAAAAAAAADOzs5ycnIFBQXr6+v///9aWlqSkpL////////////////////////v7+9+fn7////7+/v////////////////m5ub7+/vz8/P39/fOzs7///////+urq7KysqGhob////mUQD/+/vrdjX3wqbztpL3yrLvnm775tr/8+/zpn7mWg377+braiXrgkn73srmVgXvnnLzrormUQXmXhXzupr77+v78+vmWgnvjl4Q9G0WAAAAJXRSTlMAUQ0wGUmycjnakmp+JUk5xuZq2na689qK987O9+bzrjEJkn5JnsBJ6AAAAstJREFUeNrt/cWC4zAMhgGEg+VyYVB2uFyeef/HWicFQzOF217+Y+wvlmRJ1lH6T1SqO63OGONxp+XUS89S790acKp135/AylWy9RDEi/lutdrNF3FwIB+q5QdYhWDH0Eec/PBI0Mod7MMBmK1/0I1+1jMA5+MvrtQHvJmiQk03GPp/hKnShsRHf8pPoF1obrkH0RTd0TSCXkGMKj3Yb9FdbffQuzmz1IY9eqg9tAU/P/oQbR+D2wj6fGwdSKboCU0TcDgHAbPx9CfBcpZiAJzOlsGEW8LAulmFDV1bJCAoWdDVDVQpV4YZNfQXw43wLzV2BmXmwDVdSKFAKf3xmh75Dkean79QKHrkzxEuVdaFEDE/LBQ1CYXQPYM1YOI2AfC3gnyACd3hQ+3EleCAeBAJ4kF0gFP61CF4DQygnoMOxK+B8Tl7WrB4DVxAKwc7MH8NnEMnB8ewew3cwTgHMax4MAoERTy4AlwMFqkIvDH1EXgxdSQG5xE4h1EODsTrgGW4pMgyTEC8jkEOGmICRKssO84iLWy1FBPAyMEvMeXi/K9nZdasxZT7ysFvMclDxLga5zuFJP/OQY0rK1LIeOLH1/6Rxn72E1rIWVlpOai8sYW8K24dzI2F8KacCtJkW0dx72AOJK3DPHGSarOdYU724YhRZjVz02uw1TOoeGx7zMAUMUo5kLRH72ypJFk205AzkA0zymYA6uIGbOvCSZrJPgEBCSsLTjCmF02eAFO7gpJlPP/oGPRA4qXcePaZa8gKA0qq++zD6qoSJ705fOYpHzZ1npMU3Rs+Hh6Gnq4IoKTpzcfjSlMnEb0l3cb9AanhFnEZKRv3RjJDLuYyP2XT/msItE351r+rVFn2bCgYO21PllXpjhRLls03cdB9M2XZUqT70ggqu5/GYJSN1qOB8emSD5YmPZai6jInXVWkJ6VoqqXnslStmPoHjhdHI1NHJmUAAAAASUVORK5CYII=",
-  color: Cesium.Color.WHITE,
-  verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
-  width: 32,
-  height: 32,
-  heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
-  disableDepthTestDistance: Number.POSITIVE_INFINITY
-};
-
 let label = {
   font : 'bold 14pt Arial',
   backgroundColor: new Cesium.Color(0.165, 0.165, 0.165, 0.8),
@@ -433,6 +480,92 @@ let label = {
   disableDepthTestDistance: Number.POSITIVE_INFINITY,
   show: false
 }
+
+
+let eventListener;
+let clusteredMarkers = [];
+
+//handle styles for clustered markers
+let customStyle = () => {
+  if (Cesium.defined(eventListener) === false) {
+    eventListener = markersLayer.clustering.clusterEvent.addEventListener(
+      (clusteredEntities, cluster) => {
+        clusteredEntities.forEach(ent => {
+          //ent.label.show = false;
+        });
+        console.log('there was a cluster event');
+        console.log(clusteredEntities);
+        if(clusteredMarkers.length > 0) {
+          clusteredMarkers.forEach(marker => {
+            if(clusteredEntities.includes(marker) === false ) {
+              //marker.label.show = true;
+            }
+          });
+        }
+        clusteredMarkers = clusteredEntities;
+        cluster.label.show = false;
+        cluster.billboard.show = true;
+        cluster.billboard.id = cluster.label.id;
+        cluster.billboard.verticalOrigin = Cesium.VerticalOrigin.BOTTOM;
+        cluster.billboard.disableDepthTestDistance = Number.POSITIVE_INFINITY;
+
+        if (clusteredEntities.length >= 50) {
+          cluster.billboard.image = pin50;
+        } else if (clusteredEntities.length >= 40) {
+          cluster.billboard.image = pin40;
+        } else if (clusteredEntities.length >= 30) {
+          cluster.billboard.image = pin30;
+        } else if (clusteredEntities.length >= 20) {
+          cluster.billboard.image = pin20;
+        } else if (clusteredEntities.length >= 10) {
+          cluster.billboard.image = pin10;
+        } else {
+          cluster.billboard.image =
+            singleDigitPins[clusteredEntities.length - 2];
+        }
+      }
+    );
+  }
+
+  // force a re-cluster with the new styling
+  let pixelRange = markersLayer.clustering.pixelRange;
+  markersLayer.clustering.pixelRange = 0;
+  markersLayer.clustering.pixelRange = pixelRange;
+}
+
+
+//pickedEntities is the collection of currently hovered polygons
+//it is renewed every time the mouse moves and detects a hover over a polygon
+let pickedEntities = new Cesium.EntityCollection();
+let openBusRoutePicked = new Cesium.EntityCollection();
+
+//define a callback property that will be applied to polygons that are included in the pickedEntities collection:
+//the result is a change to a darker alpha transparency on hover
+const pickColor = Cesium.Color.BLACK.withAlpha(0.3);
+const openBusRoutePickColor = Cesium.Color.ORANGE.withAlpha(1.0);
+const makeProperty = (entity, property) => {
+  if(Cesium.defined(entity.polygon)){
+    let colorProperty = new Cesium.CallbackProperty((time,result) => {
+      if (pickedEntities.contains(entity)) {
+        return pickColor.clone(result);
+      }
+      return property.clone(result);
+    },
+    false);
+    entity.polygon.material = new Cesium.ColorMaterialProperty(colorProperty);
+  }
+  else if (Cesium.defined(entity.polyline)) {
+    let colorProperty = new Cesium.CallbackProperty((time,result) => {
+      if (openBusRoutePicked.contains(entity)) {
+        return openBusRoutePickColor.clone(result);
+      }
+      return property.clone(result);
+    }, false);
+    entity.polyline.material = new Cesium.ColorMaterialProperty(colorProperty);
+  }
+}
+
+/** DEFINE LAYERS AND CREATION FUNCTIONS FOR ENTITIES THAT WILL BE LOADED SHORTLY */
 
 let markersLayer = new Cesium.CustomDataSource();
 let openBusMarkersLayer = new Cesium.CustomDataSource();
@@ -466,23 +599,8 @@ OpenBusMarkers.forEach(marker => {
 let PilgrimageMarkers = {};
 let allMarkers = [];
 
-const CATEGORIES = {
-  RELIC: [],
-  APOSTLE: [],
-  EVANGELIST: [],
-  MARTYR: [],
-  EUCHARISTIC_MIRACLE: [],
-  CATHEDRAL: [],
-  MARIAN_SHRINE: [],
-  SHRINE: [],
-  SAINT_UNIVERSAL: [],
-  SAINT_LOCAL: [],
-  FRESCO: [],
-  MOSAIC: [],
-  ICON: [],
-  PAINTING: [],
-  SCULPTURE: []
-};
+
+/** START LOADING DATA SOURCES AND DEFINE PROMISES */
 
 let databaseResults;
 let params = new URLSearchParams({
@@ -530,57 +648,6 @@ fetch(`${ENDPOINT}?${params.toString()}`).then((response) => response.json()).th
     }
   }
 });
-
-
-let eventListener;
-let clusteredMarkers = [];
-
-let customStyle = () => {
-  if (Cesium.defined(eventListener) === false) {
-    eventListener = markersLayer.clustering.clusterEvent.addEventListener(
-      (clusteredEntities, cluster) => {
-        clusteredEntities.forEach(ent => {
-          //ent.label.show = false;
-        });
-        console.log('there was a cluster event');
-        console.log(clusteredEntities);
-        if(clusteredMarkers.length > 0) {
-          clusteredMarkers.forEach(marker => {
-            if(clusteredEntities.includes(marker) === false ) {
-              //marker.label.show = true;
-            }
-          });
-        }
-        clusteredMarkers = clusteredEntities;
-        cluster.label.show = false;
-        cluster.billboard.show = true;
-        cluster.billboard.id = cluster.label.id;
-        cluster.billboard.verticalOrigin = Cesium.VerticalOrigin.BOTTOM;
-        cluster.billboard.disableDepthTestDistance = Number.POSITIVE_INFINITY;
-
-        if (clusteredEntities.length >= 50) {
-          cluster.billboard.image = pin50;
-        } else if (clusteredEntities.length >= 40) {
-          cluster.billboard.image = pin40;
-        } else if (clusteredEntities.length >= 30) {
-          cluster.billboard.image = pin30;
-        } else if (clusteredEntities.length >= 20) {
-          cluster.billboard.image = pin20;
-        } else if (clusteredEntities.length >= 10) {
-          cluster.billboard.image = pin10;
-        } else {
-          cluster.billboard.image =
-            singleDigitPins[clusteredEntities.length - 2];
-        }
-      }
-    );
-  }
-
-  // force a re-cluster with the new styling
-  let pixelRange = markersLayer.clustering.pixelRange;
-  markersLayer.clustering.pixelRange = 0;
-  markersLayer.clustering.pixelRange = pixelRange;
-}
 
 /*
 let francigenaDataSourcePromise = viewer.dataSources.add(
@@ -640,25 +707,6 @@ let lauretanaDataSourcePromise = viewer.dataSources.add(
   console.log("lauretanaDataSource is ready!");
 });
 */
-/*let openBusModel,
-  openBusPosition;
-  */
-let omniaVaticanRomeDataSourcePromise = viewer.dataSources.add(
-  Cesium.CzmlDataSource.load('assets/dataSources/OpenBus/OpenBusRoute.czml')
-).then(dataSource => {
-  console.log("omniaVaticanRomeDataSource is ready!");
-  //console.log(dataSource);
-
-  GLOBE_STATE.OMNIA_VR_READY = true;
-  hideLoaderIfGlobeReady();
-  /*let entities = dataSource.entities.values;
-  for (let i = 0; i < entities.length; i++) {
-    let entity = entities[i];
-    entity.heightReference = Cesium.HeightReference.CLAMP_TO_GROUND;
-  }*/
-  //openBusModel = dataSource.entities.getById("CesiumMilkTruck");
-  //openBusPosition = openBusModel.position;
-});
 
 let markersDataSource;
 let markersLayerPromise = viewer.dataSources.add(markersLayer);
@@ -674,6 +722,29 @@ markersLayerPromise.then(dataSource => {
   customStyle();
 });
 
+let openBusRouteDataSource;
+let omniaVaticanRomeDataSourcePromise = viewer.dataSources.add(
+  Cesium.CzmlDataSource.load('assets/dataSources/OpenBus/OpenBusRoute.czml')
+).then(dataSource => {
+  openBusRouteDataSource = dataSource;
+  let entities = dataSource.entities.values;
+  for(let i = 0; i < entities.length; i++){
+    makeProperty(entities[i], Cesium.Color.ORANGE.withAlpha(0.7));
+  }
+  console.log("omniaVaticanRomeDataSource is ready!");
+  //console.log(dataSource);
+
+  GLOBE_STATE.OMNIA_VR_READY = true;
+  hideLoaderIfGlobeReady();
+  /*let entities = dataSource.entities.values;
+  for (let i = 0; i < entities.length; i++) {
+    let entity = entities[i];
+    entity.heightReference = Cesium.HeightReference.CLAMP_TO_GROUND;
+  }*/
+  //openBusModel = dataSource.entities.getById("CesiumMilkTruck");
+  //openBusPosition = openBusModel.position;
+});
+
 let openBusMarkersDataSource;
 let openBusMarkersLayerPromise = viewer.dataSources.add(openBusMarkersLayer);
 openBusMarkersLayerPromise.then(dataSource => {
@@ -683,42 +754,6 @@ openBusMarkersLayerPromise.then(dataSource => {
   hideLoaderIfGlobeReady();
 });
 
-
-let helper = new Cesium.EventHelper();
-helper.add(scene.globe.tileLoadProgressEvent, ev => {
-  console.log("tiles to load = " + ev);
-  if(ev === 0){
-    console.log("and all tiles are now loaded");
-    GLOBE_STATE.TILES_LOADED = true;
-    hideLoaderIfGlobeReady();
-  }
-});
-
-bing.readyPromise.then(() => {
-  console.log("bing maps is ready!");
-  GLOBE_STATE.MAPS_SOURCE_READY = true;
-  hideLoaderIfGlobeReady();
-});
-
-//pickedEntities is the collection of currently hovered polygons
-//it is renewed every time the mouse moves and detects a hover over a polygon
-let pickedEntities = new Cesium.EntityCollection();
-
-//define a callback property that will be applied to polygons that are included in the pickedEntities collection:
-//the result is a change to a darker alpha transparency on hover
-const pickColor = Cesium.Color.BLACK.withAlpha(0.3);
-const makeProperty = (entity, color) => {
-  if(Cesium.defined(entity.polygon)){
-    let colorProperty = new Cesium.CallbackProperty((time,result) => {
-      if (pickedEntities.contains(entity)) {
-        return pickColor.clone(result);
-      }
-      return color.clone(result);
-    },
-    false);
-    entity.polygon.material = new Cesium.ColorMaterialProperty(colorProperty);
-  }
-}
 
 let countryBordersDataSource = undefined;
 let countryBordersPromise = viewer.dataSources.add(
@@ -753,10 +788,9 @@ let countryPolysPromise = viewer.dataSources.add(
   hideLoaderIfGlobeReady();
 });
 
-viewer.camera.setView({
-  destination: Cesium.Cartesian3.fromDegrees(12.4531362,41.9020481, 15000000)
-});
 
+
+/** DEFINE INTERACTIONS FOR HOVERED ENTITIES (MARKERS, POLYGONS, POLYLINES) */
 
 let handler = new Cesium.ScreenSpaceEventHandler(viewer.canvas);
 let hoveredEntities = new Cesium.EntityCollection();
@@ -768,6 +802,7 @@ handler.setInputAction((event) => {
   if(Cesium.defined(pickedObjects)) {
     //Update the collection of picked entities: start afresh on each mousemove.
     pickedEntities.removeAll();
+    openBusRoutePicked.removeAll();
     for (let i = 0; i < pickedObjects.length; ++i) {
       let entity = pickedObjects[i].id;
       if(Cesium.defined(entity.billboard) && hoveredEntities.contains(entity) === false ) {
@@ -793,6 +828,10 @@ handler.setInputAction((event) => {
         } else if (Cesium.defined(entity.polyline)) {
           jQuery('#currentNation').text(entity.name);
           console.log('a polyline was hovered: ' + entity.name);
+          if( openBusRouteDataSource.entities.getById(entity.id) ) {
+            console.log('specifically, the open bus route polyline was hovered');
+            openBusRoutePicked.add(entity);
+          }
         } else {
           jQuery('#currentNation').text('Planet earth');
         }
@@ -928,6 +967,8 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 }
 
 
+
+/** DEFINE HTML DOCUMENT INTERACTIONS */
 
 //jQuery Document Ready
 $(function(){
