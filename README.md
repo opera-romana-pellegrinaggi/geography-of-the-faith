@@ -1,2 +1,4 @@
-# geography-of-the-faith
-An interactive website, presenting the Geography of the Catholic Faith throughout different countries
+# Geography of the Faith
+An interactive globe, presenting the Geography of Christian pilgrimage sites throughout different countries
+
+Implements the open source project [CesiumJS](https://github.com/CesiumGS/cesium) for rendering of the globe, markers, polygons and polylines.
