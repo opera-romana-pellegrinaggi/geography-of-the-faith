@@ -419,7 +419,8 @@ const openBusMarker = {
   width: 32,
   height: 32,
   heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
-  disableDepthTestDistance: Number.POSITIVE_INFINITY
+  disableDepthTestDistance: Number.POSITIVE_INFINITY,
+  scaleByDistance: new Cesium.NearFarScalar(500, 1, 1500000, 0.2)
 };
 
 let pinBuilder = new Cesium.PinBuilder();
