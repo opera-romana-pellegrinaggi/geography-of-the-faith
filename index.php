@@ -162,6 +162,15 @@
                       </label>
                     </a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link togglebutton">
+                      <label>
+                        <input type="checkbox" data-filter="BIBLICAL_SITES_ISRAEL">
+                        <span class="toggle"></span>
+                        <span class="label small"><i class="material-icons">import_contacts</i><?php _e("Biblical sites"); ?></span>
+                      </label>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </li>
