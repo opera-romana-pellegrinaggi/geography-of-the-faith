@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geography of the Faith - KML import</title>
+</head>
+<body>
+
 <?php
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -53,6 +63,9 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" && isset( $_POST["filename"] ) ) {
     $category = '';
     $latitude = 0;
     $longitude = 0;
+    $tag = '';
+    $markerIcon = '';
+    $markerColor = '';
     $name_EN = '';
     $name_IT = '';
     $name_ES = '';
@@ -67,7 +80,7 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" && isset( $_POST["filename"] ) ) {
     $description_PT = '';
 
     $dbh = new PDO('mysql:host=localhost;dbname=' . DBNAME, DBUSER, DBPASS);
-    $stmt1 = $dbh->prepare("INSERT INTO `pilgrimage_sites` (`id_key`,`latitude`,`longitude`,`category`,`marker_icon`,`marker_color`,`city`,`country`,`tags`) VALUES (:IDKEY,:LAT,:LONG,:CAT,'PLACE_OF_WORSHIP','BLUE',:CITY,:COUNTRY,'')");
+    $stmt1 = $dbh->prepare("INSERT INTO `pilgrimage_sites` (`id_key`,`latitude`,`longitude`,`category`,`marker_icon`,`marker_color`,`city`,`country`,`tags`) VALUES (:IDKEY,:LAT,:LONG,:CAT,:ICON,:COLOR,:CITY,:COUNTRY,:TAG)");
     $stmt2 = $dbh->prepare("INSERT INTO `i18n__name` (`id_key`,`EN`,`IT`,`ES`,`FR`,`DE`,`PT`) VALUES (:IDKEY,:EN,:IT,:ES,:FR,:DE,:PT)");
     $stmt3 = $dbh->prepare("INSERT INTO `i18n__description` (`id_key`,`EN`,`IT`,`ES`,`FR`,`DE`,`PT`) VALUES (:IDKEY,:EN,:IT,:ES,:FR,:DE,:PT)");
     //$stmt1 = $dbh->prepare("UPDATE `pilgrimage_sites` SET `latitude` = :LAT, `longitude` = :LONG WHERE `id_key` = :IDKEY");
@@ -80,6 +93,9 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" && isset( $_POST["filename"] ) ) {
     $stmt1->bindParam(':CAT', $category, PDO::PARAM_STR);
     $stmt1->bindParam(':CITY', $city, PDO::PARAM_STR);
     $stmt1->bindParam(':COUNTRY', $country, PDO::PARAM_STR);
+    $stmt1->bindParam(':TAG', $tag, PDO::PARAM_STR);
+    $stmt1->bindParam(':ICON', $markerIcon, PDO::PARAM_STR);
+    $stmt1->bindParam(':COLOR', $markerColor, PDO::PARAM_STR);
 
     $stmt2->bindParam(':IDKEY', $id_key, PDO::PARAM_STR);
     $stmt2->bindParam(':EN', $name_EN, PDO::PARAM_STR);
@@ -102,23 +118,31 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" && isset( $_POST["filename"] ) ) {
     if( $xml === false ) {
         $errors = libxml_get_errors();
         foreach ($errors as $error) {
-            echo display_xml_error($error, $xml);
+            echo '<p>' . display_xml_error($error, $xml) . '</p>';
         }
     } else {
+        echo '<p>now reading and importing data from ' . $_POST["filename"] . '...</p>';
         //print_r($xml);
         //echo '<br>';
-        $folders = $xml->xpath('Folder');
+        echo "<p> {$xml->getName()} has {$xml->count()} child:<br>";
+        foreach( $xml->children() as $child ) {
+            echo "{$child->getName()}";
+        }
+        echo "</p>";
+        $folders = $xml->Document->Folder;
         $foldersCount = 0;
         $placemarkCount = 0;
         if( $folders === false || $folders === null ) {
-            echo 'XPATH query returned false or null<br>';
+            echo '<p>query returned false or null</p>';
         } else {
             $foldersCount = count( $folders );
-            //echo "folders var is of type " . gettype( $folders ) . "<br>";
-            //echo 'XPATH query returned ' . count( $folders ) . ' results' . "<br>";
+            echo "<p>folders var is of type " . gettype( $folders ) . "</p>";
+            echo '<p>' . count( $folders ) . ' folders were found...</p>';
         }
-        //$segnaposti = [];
+        $segnaposti = [];
         foreach( $folders as $folder ) {
+            $placemarksInFolder = count( $folder->Placemark );
+            echo "<p>" . $placemarksInFolder . " placemarks were found in the current folder $folder->name...</p>";
             //print_r( $folder );
             foreach( $folder->Placemark as $placemark ) {
                 $name_EN = '';
@@ -137,17 +161,21 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" && isset( $_POST["filename"] ) ) {
                 //echo '<h1>DESCRIPTION</h1>';
                 //print_r($description);
                 //echo '<br>' . $coordinates . '<br>';
-                $extDatas = $placemark->xpath( 'ExtendedData/Data' );
+                $extDatas = $placemark->ExtendedData->Data;
                 if( $extDatas === false || $extDatas === null ) {
-                    echo 'XPATH query for ExtendedData/Data returned false or null <br>';
+                    echo 'query for ExtendedData/Data returned false or null <br>';
                 }
                 else {
-                    //echo 'XPATH query for ExtendedData/Data produced ' . count($extDatas) . ' results</br>';
+                    echo 'query for ExtendedData/Data produced ' . count($extDatas) . ' results</br>';
                 }
                 //echo '<pre>';
                 foreach( $extDatas as $extData ) {
-                    //print_r($extData);
-                    switch( (string) $extData['name'] ) {
+                    /*
+                    echo '<pre>';
+                    print_r($extData);
+                    echo '</pre>';
+                    */
+                    switch( $extData->attributes()->name ) {
                         case 'id_key':
                             $id_key = (string) $extData->value;
                             break;
@@ -159,6 +187,9 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" && isset( $_POST["filename"] ) ) {
                             break;
                         case 'category':
                             $category = (string) $extData->value;
+                            break;
+                        case 'tags':
+                            $tag = (string) $extData->value;
                             break;
                         case 'name_IT':
                             $name_IT = (string) $extData->value;
@@ -190,26 +221,52 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" && isset( $_POST["filename"] ) ) {
                         case 'description_PT':
                             $description_PT = (string) $extData->value;
                             break;
+                        case 'markerIcon':
+                            $markerIcon = (string) $extData->value;
+                            break;
+                        case 'markerColor':
+                            $markerColor = (string) $extData->value;
+                            break;
                     }
                 }
                 //echo '</pre>';
-                /*$segnaposti[$id_key] = [
-                    'name' => $name,
-                    'description' => $description,
+                $segnaposti[$id_key] = [
+                    'name' => $name_EN,
+                    'description' => $description_EN,
                     'coordinates' => $coordinates,
                     'city' => $city,
                     'country' => $country,
                     'category' => $category
-                ];*/
+                ];
                 $latitude = $coordinates[1];
                 $longitude = $coordinates[0];
-                $stmt1->execute();
-                $stmt2->execute();
-                $stmt3->execute();
+
+                $result = $dbh->query("SELECT COUNT(*) FROM `pilgrimage_sites` WHERE `id_key` = '$id_key'");
+                $count = $result->fetchColumn();
+
+                if($count === 0) {
+                    $resultA = $stmt1->execute();
+                    $resultB = $stmt2->execute();
+                    $resultC = $stmt3->execute();
+    
+                    if( false === $resultA ) {
+                        echo "<p>There was an error executing SQL statement 1</p>";
+                    }
+                    if( false === $resultB ) {
+                        echo "<p>There was an error executing SQL statement 2</p>";
+                    }
+                    if( false === $resultC ) {
+                        echo "<p>There was an error executing SQL statement 3</p>";
+                    }
+                } else {
+                    echo "<p>Skipping id_key $id_key since it already seems to exist in the database...</p>";
+                }
+
+
             }
         }
 
-        //echo "<h1>RESULTS " . count($segnaposti) . " ($placemarkCount)</h1>";
+        echo "<h1>RESULTS " . count($segnaposti) . " ($placemarkCount)</h1>";
         //echo '<pre>';
         //print_r($segnaposti);
         //echo '</pre>';
@@ -219,15 +276,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" && isset( $_POST["filename"] ) ) {
 }
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geography of the Faith - KML import</title>
-</head>
-<body>
     <div style="margin: 3em auto; text-align: center;">
         <form method="post">
             <div style="margin: 1em auto;"><select name="filename">

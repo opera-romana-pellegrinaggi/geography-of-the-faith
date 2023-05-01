@@ -192,7 +192,8 @@ const GLOBE_STATE = {
   OMNIA_VR_READY: false,
   MAPS_SOURCE_READY: false,
   TILES_LOADED: false,
-  ALL_DRAWN: false
+  ALL_DRAWN: false,
+  BIBLICAL_SITES_ISRAEL_READY: false
 }
 
 const isGlobeReady = () => {
@@ -262,7 +263,8 @@ const CATEGORIES = {
   MOSAIC: [],
   ICON: [],
   PAINTING: [],
-  SCULPTURE: []
+  SCULPTURE: [],
+  BIBLICAL_SITES_ISRAEL: []
 };
 
 
@@ -425,21 +427,21 @@ const openBusMarker = {
 
 let pinBuilder = new Cesium.PinBuilder();
 
-const pin50 = pinBuilder
-.fromText("50+", Cesium.Color.RED, 48)
-.toDataURL();
-const pin40 = pinBuilder
-.fromText("40+", Cesium.Color.ORANGE, 48)
-.toDataURL();
-const pin30 = pinBuilder
-.fromText("30+", Cesium.Color.YELLOW, 48)
-.toDataURL();
-const pin20 = pinBuilder
-.fromText("20+", Cesium.Color.GREEN, 48)
-.toDataURL();
-const pin10 = pinBuilder
-.fromText("10+", Cesium.Color.BLUE, 48)
-.toDataURL();
+const biblicalSitePin = {
+  image: pinBuilder.fromText("!", Cesium.Color.DARKRED, 36).toDataURL(), // ✡ Star of David
+  color: Cesium.Color.WHITE,
+  verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
+  width: 36,
+  height: 36,
+  heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
+  disableDepthTestDistance: Number.POSITIVE_INFINITY
+}
+
+const pin50 = pinBuilder.fromText("50+", Cesium.Color.RED, 48).toDataURL();
+const pin40 = pinBuilder.fromText("40+", Cesium.Color.ORANGE, 48).toDataURL();
+const pin30 = pinBuilder.fromText("30+", Cesium.Color.YELLOW, 48).toDataURL();
+const pin20 = pinBuilder.fromText("20+", Cesium.Color.GREEN, 48).toDataURL();
+const pin10 = pinBuilder.fromText("10+", Cesium.Color.BLUE, 48).toDataURL();
 
 let singleDigitPins = new Array(8);
 for (let i = 0; i < singleDigitPins.length; ++i) {
@@ -448,26 +450,55 @@ for (let i = 0; i < singleDigitPins.length; ++i) {
     .toDataURL();
 }
 
-const placeOfWorship = {
-  RED: {
-    image: pinBuilder.fromMakiIconId("place-of-worship", Cesium.Color.DARKRED, 36),
-    color: Cesium.Color.WHITE,
-    verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
-    width: 36,
-    height: 36,
-    heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
-    disableDepthTestDistance: Number.POSITIVE_INFINITY
-  },
-  BLUE: {
-    image: pinBuilder.fromMakiIconId("place-of-worship", Cesium.Color.DARKBLUE, 36),
-    color: Cesium.Color.WHITE,
-    verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
-    width: 36,
-    height: 36,
-    heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
-    disableDepthTestDistance: Number.POSITIVE_INFINITY
+const markerBase = {
+  verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
+  width: 36,
+  height: 36,
+  heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
+  disableDepthTestDistance: Number.POSITIVE_INFINITY
+}
+
+const markerContrastMap = {
+  BLACK: 'WHITE',
+  DARKGREEN: 'WHITE',
+  DARKRED: 'WHITE',
+  DARKBLUE: 'WHITE',
+  DARKORANGE: 'BLACK',
+  DARKMAGENTA: 'WHITE',
+  LIMEGREEN: 'BLACK',
+  YELLOW: 'BLACK',
+  GREEN: 'WHITE',
+  ROYALBLUE: 'WHITE'
+};
+
+const markerIconMap = {
+  ART_GALLERY: 'art-gallery',
+  BUILDING: 'building',
+  CASTLE: 'castle',
+  CEMETERY: 'cemetery',
+  HOME: 'home',
+  HOSPITAL: 'hospital',
+  LANDMARK: 'landmark',
+  LIBRARY: 'library',
+  MUSEUM: 'museum',
+  MONUMENT: 'monument',
+  PARK: 'park',
+  PLACE_OF_WORSHIP: 'place-of-worship',
+  RELIGIOUS_BUDDHIST: 'religious-buddhist',
+  RELIGIOUS_CHRISTIAN: 'religious-christian',
+  RELIGIOUS_JEWISH: 'religious-jewish',
+  RELIGIOUS_MUSLIM: 'religious-muslim',
+  RELIGIOUS_SHINTO: 'religious-shinto'
+};
+
+const createMarkerDef = (markericon,markercolor) => {
+  return {
+    image: pinBuilder.fromMakiIconId(markerIconMap[markericon], Cesium.Color[markercolor], 36),
+    color: Cesium.Color[markerContrastMap[markercolor]],
+    ...markerBase
   }
 };
+
 
 let label = {
   font : 'bold 14pt Arial',
@@ -613,18 +644,12 @@ fetch(`${ENDPOINT}?${params.toString()}`).then((response) => response.json()).th
   console.log('retrieved rows from database:');
   console.log(json);
   let row;
-  let marker;
   for( let i=0; i< json.length; i++ ) {
     row = json[i];
-    switch( row.marker_icon ) {
-      case 'PLACE_OF_WORSHIP':
-        marker = placeOfWorship[row.marker_color];
-        break;
-    }
     PilgrimageMarkers[row.id_key] = createMarker(
       row.latitude,
       row.longitude,
-      marker,
+      createMarkerDef(row.marker_icon,row.marker_color),
       row.name,
       row.description,
       { isoAlpha3: row.country },
@@ -789,7 +814,29 @@ let countryPolysPromise = viewer.dataSources.add(
   hideLoaderIfGlobeReady();
 });
 
-
+/*
+let biblicalSitesDataSource;
+let biblicalSitesPromise = viewer.dataSources.add(
+  Cesium.KmlDataSource.load('assets/dataSources/mymaps/Siti biblici in Israele.kml', {
+    camera: viewer.scene.camera,
+    canvas: viewer.scene.canvas,
+    clampToGround: true
+  })
+  .then(dataSource => {
+    console.log("biblical sites kml is ready!");
+    console.log(dataSource);
+    biblicalSitesDataSource = dataSource;
+    //dataSource.show = false;
+    dataSource.entities.values.forEach(entity => {
+      CATEGORIES.BIBLICAL_SITES_ISRAEL.push(entity.id);
+      entity.billboard = biblicalSitePin;
+    });
+    GLOBE_STATE.BIBLICAL_SITES_ISRAEL_READY = true;
+    hideLoaderIfGlobeReady();
+  })
+);
+*/
+GLOBE_STATE.BIBLICAL_SITES_ISRAEL_READY = true;
 
 /** DEFINE INTERACTIONS FOR HOVERED ENTITIES (MARKERS, POLYGONS, POLYLINES) */
 
@@ -988,13 +1035,23 @@ $(document).on('click', '#accordion > .nav-item > .nav-link', ev => {
 $(document).on('change', '.togglebutton input[type="checkbox"]', ev => {
   let filter = $(ev.currentTarget).data('filter');
   let show = $(ev.currentTarget).prop("checked");
-  markersDataSource.clustering.enabled = false;
-  allMarkers.forEach((key,idx) => {
-    if(CATEGORIES[filter].includes(key)) {
-      PilgrimageMarkers[key].show = show;
-    }
-    if( idx === allMarkers.length - 1 ) {
-      markersDataSource.clustering.enabled = true;
-    }
-  });
+  if( filter === 'BIBLICAL_SITES_ISRAEL' ) {
+    allMarkers.forEach((key,idx) => {
+      PilgrimageMarkers[key].show = false;
+    });
+    biblicalSitesDataSource.show = true;
+    /*biblicalSitesDataSource.entities.values.forEach(entity => {
+      entity.show = show;
+    });*/
+  } else {
+    markersDataSource.clustering.enabled = false;
+    allMarkers.forEach((key,idx) => {
+      if(CATEGORIES[filter].includes(key)) {
+        PilgrimageMarkers[key].show = show;
+      }
+      if( idx === allMarkers.length - 1 ) {
+        markersDataSource.clustering.enabled = true;
+      }
+    });
+  }
 });

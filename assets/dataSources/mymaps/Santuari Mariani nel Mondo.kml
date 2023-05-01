@@ -28,6 +28,9 @@
           <Data name="country">
             <value>USA</value>
           </Data>
+          <Data name="category">
+            <value>MARIAN_SHRINE</value>
+          </Data>
           <Data name="name_IT">
             <value>Basilica del Santuario Nazionale dell'Immacolata Concezione</value>
           </Data>
@@ -57,9 +60,6 @@
           </Data>
           <Data name="description_PT">
             <value></value>
-          </Data>
-          <Data name="category">
-            <value>MARIAN_SHRINE</value>
           </Data>
         </ExtendedData>
       </Placemark>

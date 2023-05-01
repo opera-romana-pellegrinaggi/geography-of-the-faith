@@ -1,0 +1,1590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Santi a Roma</name>
+    <description><![CDATA[<p class="justify">https://www.operaromanapellegrinaggi.org<br>https://www.omniaforitaly.org<br>https://www.omniavaticanrome.org<br><br>Si prendono in considerazione soprattutto i luoghi dove sono venerati i resti mortali o le reliquie più significative dei santi, e non tutti i luoghi dove hanno soggiornato o vissuto.</p>]]></description>
+    <Folder>
+      <name>I-V secolo</name>
+      <Placemark>
+        <name>Basilica of Saint Sebastian</name>
+        <description><![CDATA[<p class="justify">Basilica di San Sebastiano fuori le Mura<br>136 Via Appia Antica<br><br>The last chapel on the right side of the nave is dedicated to Pope Saint Fabian (d. 250). Also a reliquary chapel near the center of the church on the right side of the nave contains relics of the saint. Saint Fabian was originally buried in the Catacombs of San Callixtus but later his remains were moved to this church. Also within this same chapel are the column to which Saint Sebastian was tied, an arrow that pierced his flesh, and some small relics from a number of other saints including Saint Peter, Saint Paul, and Saint Andrew.<br></br>Directly across from this chapel and on the left side of the nave is a chapel dedicated to Saint Sebastian (d. 288). Saint Sebastian was originally buried in the catacombs located under this church. At some point, however, these remains were removed. Some of these remains are now located within an urn in this chapel below the very impressive statue of Saint Sebastian created by Giuseppe Giorgetti.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.513921,41.857759,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaSaintSebastianRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>MARTYR,SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Sebastian,Pope Saint Fabian,Saint Peter apostle,Saint Paul apostle,Saint Andrew apostle,Minor basilica,Seven churches</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica Four Crowned Martyrs</name>
+        <description><![CDATA[<p class="justify">Basilica dei Santo Quattro Coronati<br>20 Piazza dei Santi Quattro Coronati<br><br>For centuries the skull of Saint Sebastian (d. 288) was venerated within the crypt of this church. Signage at an altar on the left side of the nave continues to indicate its presence. However, at some point in the last century the skull was removed. It can now be found within a reliquary in the Treasury Museum of Saint Peter’s Basilica.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.498879,41.888038,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaFourCrownedMartyrsRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>MARTYR,SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Sebastian,Minor basilica</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica of Saint Agnes outside the Walls</name>
+        <description><![CDATA[<p class="justify">Basilica di Saint'Agnese fuori le Mura<br>Via S Agnese 315<br><br>The bones of Saint Agnes (d. 304) rest in the crypt under the main sanctuary.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.518706,41.922333,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaStAgnesOutsideTheWallsRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>MARTYR,SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Agnes,Minor basilica</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica of Saint Agnes "in Agone"</name>
+        <description><![CDATA[<p class="justify">Basilica di Saint'Agnese in Agone<br>Piazza Navona<br><br>According to tradition Saint Agnes was martyred at this location in 304 AD. A relic of her skull is present in a chapel located to the left of the main sanctuary.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.472572,41.898739,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaStAgnesInAgoneRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>MARTYR,SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Agnes</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Papal Basilica of Saint John Lateran</name>
+        <description><![CDATA[<p class="justify">Basilica di San Giovanni in Laterano<br>Piazza San Giovanni in Laterano 4<br><br>Positioned above the Papal Altar are two busts of Saint Peter and Saint Paul. According to tradition the skulls or parts of the skulls of Saints Peter and Paul are within these busts. Also located within the Papal Altar is a wooden table that Saint Peter and many of the earliest popes are said to have celebrated the Eucharist upon.<br><br>Located to the left of the Papal Altar is another very ancient table. This table rests above the altar where the Blessed Sacrament is reserved. It is placed directly behind a bronze relief of the Last Supper. Tradition claims that it was upon this table that Jesus and the apostles celebrated the Last Supper. Another section of the "table of the Last Supper" is kept in the Holy of Holies, within the Church of the Holy Stairs across the street.<br><br>Also the tomb of Pope Leo XIII (d. 1903) is to the left of the Papal Altar.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.506046,41.886304,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaSaintJohnLateran</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>APOSTLE,SAINT_UNIVERSAL,MOSAIC,CATHEDRAL,FRESCO</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Peter apostle,Saint Paul apostle,Table Last Supper,Major basilica,Seven churches</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica of Saint Clement</name>
+        <description><![CDATA[<p class="justify">Basilica di San Clemente<br>Via di San Giovanni in Laterano<br><br>The remains of Pope Saint Clement I (d. 80) and of Saint Ignatius of Antioch (d. 107) rest beneath the main altar.<br><br>A chapel on the right side of the nave is dedicated to Saints Cyril (d. 869) and Methodius (d. 885). The relic of Saint Cyril found in the 1960’s rests within the altar of this chapel.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.4974033,41.8894212,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaSaintClementRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Pope Saint Clement I,Saint Ignatius of Antioch,Saints Cyril and Methodius,Minor basilica</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Saint George "in Velabro"</name>
+        <description><![CDATA[<p class="justify">Chiesa di San Giorgio in Velabro<br>19 Via del Velabro<br><br>Part of the skull of Saint George megalomartyr rests beneath the main altar.<br><br>Many legends surround this early Christian martyr. The most famous involves him slaying a dragon. Critical research in the last century has upheld the existence of Saint George; however, it has cast doubts upon many of his legendary accounts. (Note: Other shrines throughout the world also claim to have the relic of his skull.)</p>]]></description>
+        <Point>
+          <coordinates>
+            12.48314,41.889533,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaSaintGeorgeInVelabro</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>FRESCO,MARTYR,SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint George</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Papal Basilica of Saint Mary Major</name>
+        <description><![CDATA[<p class="justify">Basilica di Santa Maria Maggiore<br>42 Piazza di Santa Maria Maggiore<br><br>Some relics of Saint Matthias rest within the porphyry urn that makes up the base of the Papal Altar. Also in the <i>confessio</i>below this altar are five pieces of wood believed to be from the crib of Jesus Christ.<br><br>Enshrined within the large chapel in the right transept is the body of Pope Saint Pius V (d. 1572). His remains rest within an urn on the left side of this chapel.<br><br>The remains of Saint Jerome (d. 420) were brought to this basilica in the 12th century. There is some doubt as to their exact location. They either rest under the Papal Altar within the main body of the church or within the <i>confessio</i>in the right transept.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.4987398,41.8975136,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaSaintMaryMajor</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>APOSTLE,SAINT_UNIVERSAL,MOSAIC,FRESCO,SCULPTURE</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Jerome,Saint Matthias,Pope Saint Pius V,Major basilica,Seven churches</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica of Saint Pancras</name>
+        <description><![CDATA[<p class="justify">Chiesa di San Pancrazio<br>Piazza San Pancrazio 5/D<br><br>The church was built on the site of the tomb of Saint Pancras.<br><br>In 1798 a general under Napoleon Bonaparte invaded Rome and established the Roman Republic. During this time intruders entered the church of San Pancrazio and severely damaged the remains of Saint Pancras. His head, however, was left untouched since it was kept at the Basilica of Saint John Lateran from 850 to 1966. In 1966 Pope Paul VI restored the head of Saint Pancras to the church of San Pancrazio. It now rests within a reliquary bust on the right side of the nave<br><br>.The porphyry urn that makes up the base of the main altar is said to contain relics from early martyrs including a few relics from Saint Pancras.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.454247,41.884627,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaSaintPancras</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>MARTYR,SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Pancras,Minor basilica</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Our Lady "in Vallicella"</name>
+        <description><![CDATA[<p class="justify">Chiesa di Santa Maria in Vallicella (Chiesa Nuova)<br>Via del Governo Vecchio 134<br><br>In 1597 the skulls of Saints Nereus and Achilleus were given to this church. They rest within reliquaries in the sacristy and are sometimes brought out for public veneration on May 12th.<br><br>The additional remains of Saints Nereus and Achilleus had been stolen in 1870 from the church of Santi Nereo e Achilleo. These remains were recovered and are now said to rest within a porphyry urn under the main altar of Chiesa Nuova.<br><br>The body of Saint Philip Neri (d. 1595) is enshrined in the left transept of this church. His private rooms can be visited on certain days of the week. They are located in the right wall of the left transept.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.4692221,41.8982844,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchHolyMaryInVallicellaRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>MARTYR,SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Philip Neri,Saints Nereus and Achilleus</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica of Saint Lawrence outside the Walls</name>
+        <description><![CDATA[<p class="justify">Basilica di San Lorenzo fuori le Mura<br>3 Piazzale del Verano<br><br>The remains of Saint Lawrence, Saint Stephen, and Saint Justin lie in the <i>confessio</i>below the main altar. (Note: The relics are labeled as Saint Justin the Presbyter. Therefore, it is likely that this is not Saint Justin the Martyr.)<br><br>A marble stone slab beneath the choir floor is said to be the stone on which Saint Lawrence was placed after his execution. Also enshrined in this lower area is the body of Blessed Pius IX Pope(d. 1878).</p>]]></description>
+        <Point>
+          <coordinates>
+            12.5204534,41.9024987,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaSaintLawrenceOutsideTheWalls</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>MARTYR,SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Blessed Pius IX,Saint Lawrence,Saint Stephen,Saint Justin,Seven churches</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Saint Silvester "in Capite"</name>
+        <description><![CDATA[<p class="justify">Chiesa di San Silvestro in Capite<br>Piazza San Silvestro<br><br>A relic of the skull of Saint John the Baptist is within the chapel to the left of the main entrance. The authenticity is uncertain since this same relic is said to be located at a number of other places throughout the world including the Cathedral of Amiens in France, the Residenz Museum in Munich, Germany, and the Umayyad Mosque in Damascus, Syria.<br><br>The remains of Pope Saint Sylvester I (d. 335) rest in the <i>confessio</i>below the main altar. A relic of his skull is also brought out on his feast day for veneration. Also a work from 1688 depicting the legend of Saint Sylvester I baptizing Constantine can be seen in the apse vault.<br><br>Saint Tarcisius was originally buried in the Catacombs of Saint Callixtus and the inscription by Damasus was placed later on his tomb. Some time later his relics were moved to Basilica of San Silvestro in Capite.<br><br>Tarcisius was a martyr of the early Christian church who lived in the 3rd century. The little that is known about him comes from a metrical inscription by Pope Damasus I (366–384). In the poem composed in his honour, Pope Damasus compares himto the deacon Saint Stephen and says that, as Stephen was stoned by a crowd, so Tarcisius, carrying the Blessed Sacrament, was attacked by a group and beaten to death.<br><br>According to one version of the detailed legend that developed later, Tarsicius was a young boy during one of the fierce 3rd-century Roman persecutions, probably during the reign of Emperor Valerian (253–259). One day, he was entrusted with the task of bringing the Eucharist to condemned Christians in prison. He preferred death at the hands of a mob rather than deliver to them the Blessed Sacrament which he was carrying.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.48064,41.902868,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchSaintSilvester</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>MARTYR,SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint John the Baptist,Saint Silvester</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Saint Sixtus</name>
+        <description><![CDATA[<p class="justify">Chiesa di San Sisto Vecchio<br>8 Piazzale Numa Pompilio<br><br>The relics of Pope Saint Sixtus II (d. 258) were moved from the Catacombs of Saint Callixtus to this church. A small stone located within the wall on the left side of the nave marks their location.<br><br>Pope Honorius III gave this church to the Dominican order with the issue of a Papal Bull dated December 3, 1218. This was the first Dominican monastery in Rome.<br><br>The Miracle of the Bread attributed to Saint Dominic occurred within the refectory of this monastery. This room can be visited.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.4959087,41.8805138,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchSaintSixtusRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Pope Saint Sixtus II,Saint Dominic,Minor basilica</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica of Saint Augustine</name>
+        <description><![CDATA[<p class="justify">Basilica di Sant'Agostino<br>Piazza Sant'Agostino<br><br>Relics of Saint Monica (d. 387), the mother of Augustine, rest in the chapel to the left of the main altar.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.4742304,41.9008258,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaSaintAugustineRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Monica,Minor basilica</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Saints Cosmas and Damian</name>
+        <description><![CDATA[<p class="justify">Chiesa dei Santi Cosma e Damiano<br>Via dei Fori Imperiali 1<br><br>Relics of Saints Cosmas and Damian (d. 287) rest under the altar in the lower church. Each year for the feast of Saints Cosmas and Damian these relics are brought out for public veneration.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.487346,41.892095,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchSaintsCosmasAndDamianRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>MARTYR,SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saints Cosmas and Damian,Minor basilica</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Our Lady "in Trastevere"</name>
+        <description><![CDATA[<p class="justify">Chiesa di Santa Maria in Trastevere<br>Via della Paglia 14<br><br>Relics of the two popes Saint Callistus I (d. 222) and Saint Cornelius (d. 253) rest under the main altar of this church. These relics are joined by others in particular those of the priest and martyr Saint Calepodius (d. 232).</p>]]></description>
+        <Point>
+          <coordinates>
+            12.469633,41.889491,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchOurLadyInTrastevereRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>MARTYR,SAINT_UNIVERSAL,MOSAIC</value>
+          </Data>
+          <Data name="tags">
+            <value>Pope Saint Callixtus I,Pope Saint Cornelius,Saint Calepodius,Minor basilica</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica of Saint Cecilia</name>
+        <description><![CDATA[<p class="justify">Basilica di Santa Cecilia in Trastevere<br>22 Piazza di Santa Cecilia<br><br>In 821 the body of Saint Cecilia was exhumed from the Catacombs of Saint Callixtus by Pope Saint Paschal I (d. 824) and brought to this church. Today her body rests within the crypt under the main altar.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.476059,41.887439,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaSaintCeciliaRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL,FRESCO,SCULPTURE</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Cecilia,Saint Frances of Rome,Minor basilica</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Saint Lawrence "in Damaso"</name>
+        <description><![CDATA[<p class="justify">Chiesa di San Lorenzo in Damaso<br>Piazza della Cancelleria, 1<br><br>This church is believed to have been founded in the very home of Saint Damasus I (d. 384) whose remains now rest under the main altar.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.471703,41.896863,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchSaintLawrenceInDamasoRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Pope Saint Damasus I,Minor basilica</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Saint John the Baptist of the Florentines</name>
+        <description><![CDATA[<p class="justify">Chiesa di San Giovanni Battista dei Fiorentini<br>2 Via Acciaioli<br><br>A relic of Saint Mary Magdalene’s foot rests in a shrine to the left of the main sanctuary. Also the left transept chapel is dedicated to Saint Mary Magdalene.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.464837,41.89949,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchSaintJohnBaptistFlorentinesRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Mary Magdalen,Minor basilica</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica Holy Cross in Jerusalem</name>
+        <description><![CDATA[<p class="justify">Basilica di Santa Croce in Gerusalemme<br>12 Piazza di Santa Croce in Gerusalemme<br><br>A bone from the index finger of Saint Thomas the Apostle is located here. It is said that this is the same finger that he inserted into the side of the Risen Christ.<br><br>Also found here are relics of the True Cross brought to Rome by Saint Helena in 325. These relics include: the Titulus Crucis (This is the sign that hung over the head of Christ and that declared him to be the King of the Jews), a Crucifixion nail, a relic of the True Cross, two thorns from the Crown of Thorns, the greater part of the sponge used to give Christ vinegar, and a piece of the cross from the good thief (Saint Dismas).<br><br>This chapel can be accessed by the staircase on the left side of the sanctuary.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.515509,41.888301,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaHolyCrossInJerusalemRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL,APOSTLE,RELIC,FRESCO</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Thomas apostle,Holy Cross,Minor basilica,Seven churches</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of the Immaculate Conception of the Blessed Virgin Mary</name>
+        <description><![CDATA[<p class="justify">Chiesa dell’Immacolata Concezione della Beata Vergine Maria<br>27 Via Veneto<br><br>Relics of Saint Justin the Martyr rest under the altar located behind the main altar. Kindly ask the sacristan for access. The remains of Saint Justin the Martyr were temporarily transferred in 1992 to the parish church of San Giustino a Centocelle in Rome. However, they have now been returned to this church.<br><br>The bones of nearly 4,000 Capuchin friars are located in the crypt.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.4884294,41.9049127,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchImmaculateConceptionRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL,MARTYR</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Justin</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Holy Mary "in Campo Marzio"</name>
+        <description><![CDATA[<p class="justify">Chiesa di Santa Maria in Campo Marzio<br>Piazza Campo Marzio 45<br><br>Basilian nuns brought the relics of Saint Gregory Nazianzen (d. 389) to Rome in the 8th century. They were kept in Rome at Campo Marzio and eventually placed within this church.<br><br>With the exception of one arm the remains of Saint Gregory Nazianzen were transferred to Saint Peter’s Basilica in 1580. This arm remained at Santa Maria della Concezione as compensation and was eventually placed in the nearby church of San Gregorio. This relic, however, is not accessible to the general public since San Gregorio is the church used by the Deputies of the Italian Parliament.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.4764306,41.9013905,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchSantaMariaInCampoMarzioRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Gregory Nazianzen</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Saint Ambrose "della Massima"</name>
+        <description><![CDATA[<p class="justify">Chiesa Sant’Ambrogio della Massima<br>Via San Ambrogio 3<br><br>This church is located west of Piazza Venezia near the Fontana delle Tartarughe. It is set behind some buildings and is not easy to notice from the street.<br><br>The relics of Saint Polycarp (d. 155) are set in a marble memorial stone under the high altar.<br><br>Tradition also holds that this church rests on land that was formerly the location of a house owned by Saint Ambrose’s father and occupied by his older sister.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.4780994,41.8932223,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchSaintAmbroseDellaMassimaRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Polycarp,Saint Ambrose</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Saints Celsus and Julian</name>
+        <description><![CDATA[<p class="justify">Chiesa dei Santi Celso e Giuliano<br>12 Vicolo del Curato<br><br>Some relics of Saint Cornelius (d. 253) were transferred to this church in the 18th century. These relics are located in an urn to the right of the entrance.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.4666542,41.9007636,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchSantiCelsoEGiulianoRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saints Celsus and Julian,Pope Saint Cornelius,Minor basilica</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Saints Marcellinus and Peter</name>
+        <description><![CDATA[<p class="justify">Chiesa dei Santi Marcellino e Pietro<br>Via Merulana 162<br><br>Relics of Saints Marcellinus and Peter (d. 304) are preserved within the main altar of this church. Typically on their feast day these relics are brought out and exposed for public veneration.*Above the main altar is a large painting depicting their martyrdom.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.5031321,41.8891307,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchstsMarcellinusPeter</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL,MARTYR</value>
+          </Data>
+          <Data name="tags">
+            <value>Saints Marcellinus and Peter</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica of Saint Mark the Evangelist</name>
+        <description><![CDATA[<p class="justify">Basilica di San Marco evangelista al Campidoglio<br>Palazzo Venezia, Piazza di S. Marco, 48, 00186 Roma RM<br><br>Little is known of Mark's early life. According to the Liber Pontificalis, he was a Roman, and his father's name was Priscus. Mark succeeded Sylvester I as pope on 18 January 336.<br><br>Some evidence suggests that the early lists of bishops and martyrs known as the Depositio episcoporum and Depositio martyrum were begun during his pontificate. According to the Liber Pontificalis, Pope Mark issued a constitution investing the bishop of Ostia with a pallium and confirming his power to consecrate newly elected popes. Likewise according to the Liber Pontificalis, Pope Mark is credited with the foundation of the Basilica of San Marco, a basilica in Rome, and a cemetery church over the Catacomb of Balbina, just outside the city on lands obtained as a donation from Emperor Constantine.<br><br>Mark died of natural causes on 7 October and was buried in the catacomb of Balbina. In 1048, his remains were removed to the town of Velletri, and from 1145 were relocated to the Basilica of San Marco in Rome, where they are kept in an urn under the altar. His feast day is celebrated on 7 October. He is particularly venerated at the Abbadia San Salvatore at Monte Amiata.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.5031321,41.8891307,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>BasilicaSaintMarkEvangelistRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_LOCAL,MOSAIC</value>
+          </Data>
+          <Data name="tags">
+            <value>Pope Saint Mark,Minor basilica</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of the Holy Saviour "in Lauro"</name>
+        <description><![CDATA[<p class="justify">Chiesa di San Salvatore in Lauro<br>Piazza San Salvatore in Lauro 15<br><br>A small bone fragment from an arm of Saint Jude rests within this church.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.469515,41.900704,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchSanSalvatoreInLauro</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL,APOSTLE</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Jude</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Saint Charles "ai Catinari"</name>
+        <description><![CDATA[<p class="justify">Chiesa di San Carlo ai Catinari<br>Piazza Benedetto Cairoli 117<br><br>On February 3rd several relics of Saint Blaise are presented for veneration within this church. Of special note is a reliquary which contains a bone from the throat of Saint Blaise. This relic is used to bless the throats of the faithful.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.475158,41.894211,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchSanCarloAiCatinari</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Blaise</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Catacombs of Saint Callixtus</name>
+        <description><![CDATA[<p class="justify">The body of Saint Cyprian (d. 253 at Civitavecchia) was buried here in the year 283.<br><br> Saint Cecilia was buried here<br><br>Sixteen popes have been buried in the catacombs of Saint Callixtus, though the burial place of Pope Saint Zephyrinus is uncertain.<ul><li>Pope Saint Zephyrinus (?)</li><li>Pope Saint Urban I</li><li>Pope Saint Pontian</li><li>Pope Saint Anterus</li><li>Pope Saint Fabian</li><li>Pope Saint Cornelius</li><li>Pope Saint Lucius I</li><li>Pope Saint Stephen I</li><li>Pope Saint Sixtus II</li><li>Pope Saint Dionysius</li><li>Pope Saint Felix I</li><li>Pope Saint Eutichianus</li><li>Pope Saint Caius</li><li>Pope Saint Eusebius</li><li>Pope Saint Miltiades</li><li>Pope Saint Damasus I</li></ul>There are no longer any human remains in the catacombs (at least in the areas that have been excavated so far) seeing that the Superintendence of Cultural Heritage of the city of Rome decided to move all human remains to the Basilica of Saint Praxedes (to prevent tourists from pillaging fragments or relics, as was quite common in the middle ages).</p>]]></description>
+        <Point>
+          <coordinates>
+            12.5087505,41.8608245,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>CatacombsSaintCallixtus</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL,MARTYR</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Cyprian,Saint Cecilia,Pope Saint Zephyrinus,Pope Saint Urban I,Pope Saint Pontian,Pope Saint Anterus,Pope Saint Fabian,Pope Saint Cornelius,Pope Saint Lucius I,Pope Saint Stephen I,Pope Saint Sixtus II,Pope Saint Dionysius,Pope Saint Felix I,Pope Saint Eutichianus,Pope Saint Caius,Pope Saint Eusebius,Pope Saint Miltiades,Pope Saint Damasus I</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Our Lady "in Cosmedin"</name>
+        <description><![CDATA[<p class="justify">Chiesa di Santa Maria in Cosmedin<br><br>In a side altar on the left of the church is kept the flower-crowned skull attributed to Saint Valentine.<br><br>Saint Valentine was a clergyman – either a priest or a bishop – in the Roman Empire who ministered to persecuted Christians. He was martyred in the year 269 AD, and his body buried at a Christian cemetery on the Via Flaminia on February 14, which has been observed as the Feast of Saint Valentine (Saint Valentine's Day) since 496 AD.<br><br>Relics of him were kept in the Church and Catacombs of San Valentino in Rome, which "remained an important pilgrim site throughout the Middle Ages until the relics of Saint Valentine were transferred to the church of Santa Prassede during the pontificate of Nicholas IV". His skull, crowned with flowers, is exhibited in the Basilica of Santa Maria in Cosmedin, Rome; other relics of him were taken to Whitefriar Street Carmelite Church in Dublin, Ireland, where they remain; this house of worship continues to be a popular place of pilgrimage, especially on Saint Valentine's Day, for those seeking love. At least two different Saint Valentines are mentioned in the early martyrologies: Saint Valentine of Rome and Saint Valentine of Terni.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.4816333,41.8880752,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchSantaMariaInCosmedin</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL,MARTYR</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Valentine,Minor basilica</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Saint Praxedes</name>
+        <description><![CDATA[<p class="justify">Chiesa di Santa Prassede<br>Via di Santa Prassede, 9/a, 00184 Roma RM<br><br>The origins of the two basilicas with the titles of Saint Praxedes and Saint Pudentian are tightly related: the two roman saints were sisters, daughters of the Senator Pudens. The family relation becomes significant in reconstructing the origins of the two churches. The Basilica of Saint Pudentian, among the oldest in Rome, was built in the area of the ancient Vicus Patricius in the "Monti" district, near the current Via Urbana, almost at the start of the valley between the Viminal and Esquiline hills; it is therefore situated at the back of the grandiose Basilica of Saint Mary Major. It is possible that the Titulus Pudentis, instituted by Pope Damasus at the end of the fourth century, and for which there are undisputed historical documents, is derived from the alteration of the name of the original <i>domus ecclesiae</i> that was situated in the same place.<br><br>The Church of Saint Pudentian, among the first "domestic churches" instituted in the houses of the christian families of the origins, would therefore have been erected by Pope Pius I in 145 A.D., by the will of the two sisters who lived in the house which they in inherited from their father Pudens, who was a member of the powerful <i>Acilii Glabriones</i> family, in memory of the hospitality which the senator granted to Saint Peter and to Saint Paul around the year 70 AD. Saint Paul mentions Pudens at the end of the Second Lettere to Timothy. What is certain is archeological excavations and recent studies have confirmed the presence of two Roman <i>domus</i> underneath the foundations of the Basilica, one from the Republican era (2nd century B.C.) and one from the Imperial era (1st-2nd century A.D.), which would thus coincide with the tradition of the <i>Titulus Pudentis</i>. The young Saint Praxedes on the other hand, in the lateran <i>vicus</i>, not far from her sister's <i>domus</i>, also used a paternal inheritance to build a church for Eucharistic celebrations, the <i>Titulus Praxedis</i>, while the <i>Titulus Pudentis</i> would seem to have been built for the sole purpose of baptismal rituals.<br><br>Saint Praxedes used this church to hide christians who were persecuted by the then Emperor Antoninus Pius, providing for the burial of martyrs in the Cemetery of Priscilla, the catacombs of Saint Priscilla on Via Salaria. In this same Cemetery Saint Praxedes herself was buried along with her sister, to then be brought back to her church after being rebuilt by Pope Paschal I, who was elected Pope in the year 817 A.D. The existence of the <i>Titulus Praxedis</i> can be found in an epitaph dated 491 A.D., which confirms the importance in both the Republican and Imperial eras of the whole area around the current church of Saint Martin "ai Monti". Such importance was greatened by the building of the Basilica of Saint Mary Major under Pope Sixtus III (432-440 A.D.).</p>]]></description>
+        <Point>
+          <coordinates>
+            12.4987254,41.8964622,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchSaintPraxedesRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL,MARTYR</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Praxedes,Saint Pudens,Saint Pudentian,Minor basilica</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>VI-X secolo</name>
+      <Placemark>
+        <name>Church of Saint Martin I</name>
+        <description><![CDATA[<p class="justify">Chiesa di San Martino ai Monti<br>28 Viale Monte Oppio<br><br>The greater part of the remains of Saint Martin I (d. 655) were transferred from Crimea to this church in Rome. They now rest in the <i>confessio</i> below the main altar. This <i>confessio</i> also houses the relics of many other saints taken from the Catacombs of Priscilla.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.4982681,41.8946005,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchSaintMartinRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Pope Saint Martin I,Minor basilica</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>XI-XV secolo</name>
+      <Placemark>
+        <name>Church of Saint Frances of Rome</name>
+        <description><![CDATA[<p class="justify">Chiesa di Santa Francesca Romana<br>Piazza di Santa Francesca Romana 4<br><br>The remains of Saint Frances of Rome (d. 1440) are in the crypt below the main sanctuary. Her skeleton is vested in the habit of the Oblate Sisters.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.488666,41.891169,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchSaintFrancesRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL,ICON</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Frances of Rome,Minor basilica</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Our Lady "sopra Minerva"</name>
+        <description><![CDATA[<p class="justify">Santa Maria Sopra Minerva<br>35 Via del Beato Angelico<br><br>The body of Saint Catherine of Siena (d. 1380) rests under the main altar.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.477819,41.897893,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchSantaMariaSopraMinerva</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Catherine of Siena,Blessed Angelico,Minor basilica</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Saint Bridget</name>
+        <description><![CDATA[<p class="justify">Chiesa di Santa Brigida a Campo de'Fiori<br>96 Piazza Farnese<br><br>Following the death of her husband, Saint Bridget of Sweden (d. 1373) devoted herself completely to a life of prayer and service. After founding the Bridgettine Sisters in Sweden she felt compelled to visit Rome in order to seek official approval for her community. Her visit resulted in her permanently remaining in the city for the next twenty-four years until her passing in 1373. Today a few of her relics rest within this Bridgettine convent which still to this day is occupied by members of her community. Her body was returned to Sweden shortly after her death.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.4707002,41.8953117,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchSaintBridgetRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Bridget</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Monastery of Our Lady of the Rosary at Monte Mario</name>
+        <description><![CDATA[<p class="justify">Monastero della Madonna del Rosario a Monte Mario<br>Via Alberto Cadlolo, 51<br><br>The left hand of Saint Catherine of Siena (d. 1380) rests within this monastery.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.4471474,41.9209134,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>MonasteryOurLadyRosaryMonteMarioRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Catherine of Siena</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>XVI-XXI secolo</name>
+      <Placemark>
+        <name>General House of the Brothers of the Christian Schools</name>
+        <description><![CDATA[<p class="justify">Casa Generalizia dei Fratelli delle Scuole Cristiane<br>Via Aurelia, 476<br><br>The remains of Saint John Baptist de la Salle (d. 1719) were transferred here in 1937. They now rest in the sanctuary of the church.<br><br>During the early 18th century he founded a community of consecrated laymen commonly referred to as the Christian Brothers. This community pioneered many educational reforms within France.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.4231125,41.8986313,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>GeneralHouseBrothersChristianSchoolsRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint John Baptist de La Salle</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>HOME</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKBLUE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Saint Ignatius</name>
+        <description><![CDATA[<p class="justify">Chiesa di Sant' Ignazio<br>8/a Via del Caravita<br><br>The remains of Saint Aloysius Gonzaga (d. 1591) rest under the altar in the right transept. His rooms are next to the church and can be visited by appointment.<br><br>The body of Saint Robert Bellarmine (d. 1621), a highly regarded Jesuit cardinal and theologian, rests under the altar in the third chapel on the right side of the nave.<br><br>The remains of Saint John Berchmans (d. 1621), the patron saint of altar servers, rest under the altar in the left transept.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.479782,41.898963,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchSaintIgnatiusRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Robert Bellarmine,Saint Aloysius Gonzaga,Saint John Berchmans</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Mary Magdalene</name>
+        <description><![CDATA[<p class="justify">Chiesa della Maddalena<br>Piazza della Maddalena, 53<br><br>In the third chapel on the right side of the nave are the remains of Saint Camillus de Lellis. He lived in the adjacent monastery and died here in 1614. His rooms can be visited by asking the sacristan. One of these rooms has been transformed into a chapel and contains the relic of his heart.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.4768659,41.9001287,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchMaryMagdaleneRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Camillus de Lellis</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of the Most Holy Name of Jesus</name>
+        <description><![CDATA[<p class="justify">Chiesa del Gesù<br>16 Via degli Astalli<br><br>An arm of Saint Francis Xavier (d. 1552) rests within a reliquary above the altar in the right transept. With this arm he baptized thousands of individuals in India and the Far East.<br><br>Saint Ignatius of Loyola (d. 1556), the founder of the Jesuits, is buried under the altar in the left transept. His rooms are located in the Generalate next to the church and may be visited.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.479514,41.895793,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchMostHolyNameJesusRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Ignatius of Loyola,Saint Frances Xavier</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Saint Pantaleon</name>
+        <description><![CDATA[<p class="justify">Chiesa di San Pantaleo<br>Piazza San Pantaleo / Piazza dei Massimi 4<br><br>The relics of Saint Joseph Calasanz (d. 1648) rest under the main altar of this church. His rooms can be visited in the adjacent convent.<br><br>Saint Joseph Calasanz is uniquely known for setting up the first free public school in modern Europe. During his lifetime it was highly controversial to educate the poor. Some thought that it would only leave the poor more dissatisfied with their lowly tasks in society. Education was not seen as an opportunity for advancement. Saint Joseph Calasanz nevertheless persevered and was eventually appreciated and honored for his work.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.473109,41.897164,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchSaintPantaleonRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_LOCAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Joseph Calasanz</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Our Lady "in Campitelli"</name>
+        <description><![CDATA[<p class="justify">Santa Maria in Campitelli<br>9 Piazza di Campitelli<br><br>The body of Saint John Leonardi (d. 1609) is enshrined in the second chapel on the left side of the nave.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.4792935,41.8930874,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchSantaMariaInCampitelliRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL,ICON</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint John Leonardi</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Our Lady of the Ladder</name>
+        <description><![CDATA[<p class="justify">Chiesa di Santa Maria della Scala<br>23 Piazza della Scala<br><br>The right foot of Saint Teresa of Avila (d. 1582) rests within this church in a beautiful chapel to the left of the main sanctuary. It was gifted to this church in 1617. (This chapel is not visible from the nave of the church and it is rarely open to the public. However, if one kindly asks the sacristan access may be granted. If the sacristan is not present he or she can be called at the neighboring convent door.)</p>]]></description>
+        <Point>
+          <coordinates>
+            12.4679009,41.8912011,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchOurLadyLadderRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Theresa of Avila</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Saints John and Paul</name>
+        <description><![CDATA[<p class="justify">Chiesa dei Santi Giovanni e Paolo al Celio<br>Piazza dei Santi Giovanni e Paolo 13<br><br>Saint Paul of the Cross (d. 1775) is buried under the altar in the large side chapel on the right side of the nave. Upon request one can visit the room in which he died in the monastery adjacent to the church.<br><br>Located beneath this church is a complex of well preserved ancient Roman houses. Among these is an ancient house church. These ruins can be visited.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.4922195,41.8865347,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchSaintsJohnPaulRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Paul of the Cross,Saints John and Paul,Minor basilica</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Saints Ambrose and Charles "al Corso"</name>
+        <description><![CDATA[<p class="justify">Chiesa dei Santi Ambrogio e Carlo al Corso<br>437 Via del Corso<br><br>Saint Charles Borromeo, the great 16th century Archbishop of Milan, is honored in a special way within this church. A relic of his heart rests in a reliquary within an altar located behind the main sanctuary.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.4782121,41.9054313,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchSaintCharlesAlCorsoRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Charles Borromeo,Minor basilica</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of the Most Holy Redeemer and of Saint Frances Cabrini</name>
+        <description><![CDATA[<p class="justify">Chiesa del Santissimo Redentore e Santa Francesca Cabrini<br>Via Sicilia 215<br><br>The skull of Saint Frances Xavier Cabrini (d. 1917) rests within this church. It is placed within a statue of her likeness that reposes within an urn on the right side of the nave.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.4963099,41.9098583,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchRedeemerFrancesCabriniRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Frances Xavier Cabrini</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Saint Claudius</name>
+        <description><![CDATA[<p class="justify">Chiesa San Claudio<br>Via del Pozzetto 160<br><br>A relic of Saint Peter Julian Eymard (d. 1868) is placed within a statue of his likeness that rests within an urn on the right side of the nave.<br><br>This church is managed by priests from the Congregation of the Blessed Sacrament which Saint Peter Julian Eymard founded in 1856.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.481552,41.902221,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchSaintClaudiusRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Peter Julian Eymard</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Our Lady of Peace</name>
+        <description><![CDATA[<p class="justify">Chiesa di Santa Maria della Pace<br>Viale Bruno Buozzi, 75<br><br>The remains of Saint Josemaria Escriva (d. 1975) rest within this church. The church is not visible from the street. To enter ring at  Viale Bruno Buozzi, 75. A secretary will then direct you to the chapel.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.483779,41.92194,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchOurLadyPeaceRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_LOCAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Josemaria Escriva</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKBLUE</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Church of Our Lady "ai Monti"</name>
+        <description><![CDATA[<p class="justify">Chiesa di Santa Maria ai Monti<br><br>Saint Benedict Joseph Labre, known as the "wanderer of God" (Amettes, March 26th 1748 – Rome, April 16th 1783), was born to a large family, in which the parents had a hard time making ends meet cultivating a portion of land and managing a small shop. An uncle priest gave him his first schooling.<br><br>Benedict Joseph requested to enter a trappist monastery but was not welcomed. He tried with a few other monasteries but was always sent back. He did a month in a Carthusian monastery but was again considered suitable. He succeeded in entering the Trappist Abbey of Sept-Fons as a novice, but eight months later he had to leave the monastery.<br><br>In 1770, while he was in Chieri, he understood that his vocation was to become a wanderer for God, preaching the Gospel by giving an example of humility and poverty. He so began to travel to the main shrines in Europe, going on pilgrimage to Germany, France, Spain and Italy: in shortly less than 14 years he seems to have traveled about 30,000 kilometers.<br><br>In Italy, he felt a close tie to the shrine of Loreto, but he also often visited Assisi, and to Bari to see the mortal remains of Saint Nicholas. In 1771 he went to Leuca, to pray at the famous shrine of Our Lady <i>de Finibus Terrae</i>.<br><br>He would sleep in the streets, living off offerings he would receive, even though he never begged for alms, and he would give to others anything he considered superfluous. He would dress in a simple manner, on his shoulders he would carry a satchel where he kept a few things to eat and the few things he possessed: a Gospel, a breviary, the Imitation of Christ, a few books of spiritual devotion and the rosary which he kept around his neck.<br><br>On December 3rd 1770 he arrived for the first time to Rome, where he stayed from 1777, taking up dwelling under an archway of the Colosseum. In a short time his spiritual fame spread throughout the city and his spiritual counsels were sought out by nobles and cardinals. An abbot, who had a hospice for vagabonds near the church of Saint Martin <i>ai Monti</i>, convinced him to stay there.<br><br>Romans considered him "Our Lady's pilgrim", or "the poor man of the Fourty Hour devotion", or "the penitent of the Colosseum". You could find him in the churches where the fourty hours devotion was taking place. According to the trinitarian fathers he also belonged to the Third Order of the Most Holy Trinity.<br><br>Considering the bad conditions in which he lived, his health declined and on Wednesday of Holy Week in 1783 he fell ill in the church of Our Lady <i>ai Monti</i>. He was taken to the back of a butcher shop in Via dei Serpenti by Francesco Zaccarelli, who called both for a doctor and for a priest. Around eight o'clock in the evening Benedict Joseph passed away, at only 35 years of age.<br><br>A huge crowd attended his funeral, with people of every class.</p>]]></description>
+        <Point>
+          <coordinates>
+            12.4905539,41.8946901,0
+          </coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="id_key">
+            <value>ChurchOurLadyAiMontiRome</value>
+          </Data>
+          <Data name="city">
+            <value>Rome</value>
+          </Data>
+          <Data name="country">
+            <value>ITA</value>
+          </Data>
+          <Data name="category">
+            <value>SAINT_UNIVERSAL</value>
+          </Data>
+          <Data name="tags">
+            <value>Saint Benedict Joseph Labre</value>
+          </Data>
+          <Data name="markerIcon">
+            <value>PLACE_OF_WORSHIP</value>
+          </Data>
+          <Data name="markerColor">
+            <value>DARKRED</value>
+          </Data>
+          <Data name="description_IT">
+            <value><![CDATA[<p class="justify">Chiesa di Santa Maria ai Monti<br><br>San Benedetto Giuseppe Labre, detto il "vagabondo di Dio" (Amettes, 26 marzo 1748 – Roma, 16 aprile 1783), nacque in una famiglia numerosa, nella quale i genitori riuscivano a tirare avanti a fatica coltivando un pezzetto di terra e gestendo una piccola merceria. Uno zio parroco si incaricò di dargli i primi insegnamenti scolastici.<br><br>Fece domanda per entrare in un monastero trappista ma non fu accolto, provò con altri monasteri ma fu sempre respinto, fece un mese di prova in un monastero certosino ma fu giudicato non idoneo. Riuscì a entrare come novizio nell'abbazia trappista di Sept-Fons, ma dopo otto mesi dovette lasciare il monastero.<br><br>Nel 1770, mentre si trovava a Chieri, capì che la sua reale vocazione era di essere come vagabondo di Dio, predicando il Vangelo con l'esempio di un'umiltà e povertà estreme. Cominciò così a viaggiare per visitare i più famosi santuari europei, e fece pellegrinaggi in Germania, Francia, Spagna e Italia: si calcola che in poco meno di 14 anni abbia percorso circa 30.000 chilometri.<br><br>In Italia, il santuario a cui era più legato era quello di Loreto, ma visitò spesso anche Assisi e Bari, per vedere le spoglie di San Nicola. Nel 1771 si recò a Leuca, per pregare presso il famoso santuario di Santa Maria de Finibus Terrae.<br><br>Dormiva per strada, vivendo di offerte anche se non chiedeva l'elemosina, e donava ad altri tutto quello che considerava superfluo. Si vestiva in maniera semplice, sulle spalle portava un sacco in cui aveva qualcosa da mangiare e le uniche cose che possedeva erano: un Vangelo, un breviario, il libro Imitazione di Cristo, alcuni libri di devozione spirituale e il rosario che portava al collo.<br><br>Il 3 dicembre 1770 arrivò per la prima volta a Roma, dove si fermò stabilmente dal 1777, stabilendosi sotto un'arcata del Colosseo. In breve tempo la sua fama spirituale si diffuse nella città e i suoi consigli spirituali furono richiesti da nobili e cardinali. Un abate, che gestiva un ospizio per vagabondi vicino alla chiesa di San Martino ai Monti, lo convinse tempo dopo a stabilirsi lì.<br><br>I romani lo conoscevano come "il pellegrino della Madonna", o "il povero delle Quarantore", o "il penitente del Colosseo". Lo si poteva incontrare nelle chiese dove si svolgevano le quarantore. Secondo i trinitari apparteneva anche al terzo Ordine della Santissima Trinità.<br><br>Viste le condizioni di stenti in cui era vissuto, la sua salute peggiorò e il giorno di mercoledì santo del 1783 si sentì male nella chiesa di Santa Maria ai Monti. Fu trasportato nel retrobottega di un macellaio di via dei Serpenti, Francesco Zaccarelli, il quale provvide a chiamare prima un medico, poi un prete. Verso le otto di quella sera il Labre morì, a soli 35 anni.<br><br>I suoi funerali videro la presenza di un'enorme folla di ogni ceto. Tanta fu la gente che si recò a visitare le sue spoglie nella chiesa di Santa Maria ai Monti, dove fu esposto il suo corpo, che non fu possibile la celebrazione degli uffici della Settimana Santa. Subito dopo i romani cominciarono a invocarne l'intercessione, recandosi in pellegrinaggio presso la sua tomba.<br><br>La sua fama di santità si diffuse rapidamente in tutta Europa, tanto che il processo di beatificazione incominciò un anno dopo la sua morte. L'8 luglio 1796 fu effettuata la ricognizione giuridica del corpo, per invocare la protezione del futuro santo in vista dell'imminente e temuto arrivo delle truppe francesi. Il giorno dopo, 9 luglio, incominciarono i noti miracoli mariani del 1796. È stata sottolineata la contiguità delle due date. Fu beatificato il 20 maggio 1860 e canonizzato l'8 dicembre 1881 da papa Leone XIII. La sua memoria liturgica è il 16 aprile.</p>]]></value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
