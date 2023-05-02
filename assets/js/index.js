@@ -47,12 +47,6 @@ console.log(location.hostname + location.pathname + ' : lang set to ' + lang);
 const ENDPOINT = `https://${location.hostname}${location.pathname}geofaith_backend.php`;
 
 
-/** SET CESIUM STATIC OPTIONS */
-const extent = Cesium.Rectangle.fromDegrees(12.373249, 41.987067, 12.626621, 41.797435);
-Cesium.Camera.DEFAULT_VIEW_RECTANGLE = extent;
-Cesium.Camera.DEFAULT_VIEW_FACTOR = 0;
-Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5YzNlODY2Yy0yZjY1LTRkMDktOTViYi02M2I3M2NjMTg3YmIiLCJpZCI6NTM3MjUsImlhdCI6MTYxOTM1MzA0NX0.t8ZCZb4qQKgU2sQbzAwgZ85ReK07ZmRZjnecUP8IE9Y';
-
 /** DEFINE READY STATES AND READY CALLBACKS */
 
 const GLOBE_STATE = {
@@ -93,12 +87,13 @@ const hideLoaderIfGlobeReady = () => {
 
 /** CREATE OUR CESIUM GLOBE */
 
-/*const mapTiler = new Cesium.UrlTemplateImageryProvider({
-  url: 'https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=SxVQSzWgRNS3fbFsWN4k',
-  tileWidth: 512,
-  tileHeight: 512,
-  credit: null
-});*/
+// first set Cesium static options
+Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5YzNlODY2Yy0yZjY1LTRkMDktOTViYi02M2I3M2NjMTg3YmIiLCJpZCI6NTM3MjUsImlhdCI6MTYxOTM1MzA0NX0.t8ZCZb4qQKgU2sQbzAwgZ85ReK07ZmRZjnecUP8IE9Y';
+
+// set the default view that the home button will fly to: Rome!
+const extent = Cesium.Rectangle.fromDegrees(12.373249, 41.987067, 12.626621, 41.797435);
+Cesium.Camera.DEFAULT_VIEW_RECTANGLE = extent;
+Cesium.Camera.DEFAULT_VIEW_FACTOR = 0;
 
 const viewer = new Cesium.Viewer('map', {
   animation: false,
