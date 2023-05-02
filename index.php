@@ -1,4 +1,7 @@
 <?php
+
+  const GEOFAITH = true;
+
   //define possible third levels
   $thirdLevels = [
     "de" => "geographiedesglaubens",
@@ -30,9 +33,8 @@
     echo _($string);
   };
 
-
+  include_once 'env_credentials.php';
 ?>
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -359,7 +361,8 @@
       <script src="node_modules/material-dashboard-dark-edition/assets/js/core/popper.min.js"></script>
       <script src="node_modules/material-dashboard-dark-edition/assets/js/core/bootstrap-material-design.min.js"></script>
 
-      <!-- Library for adding dinamically elements -->
+      <!-- Library for adding elements dynamically -->
+      <!-- TODO: Where did this come from? Is it needed? -->
       <script src="node_modules/arrive/minified/arrive.min.js" type="text/javascript"></script>
 
       <!--  Notifications Plugin, full documentation here: http://bootstrap-notify.remabledesigns.com/    -->
@@ -372,6 +375,10 @@
       <script src="node_modules/material-dashboard-dark-edition/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
 
       <script src="https://unpkg.com/i18next@20.2.4/dist/umd/i18next.js"></script>
+      <script>
+        const ION_ACCESS_TOKEN = "<?php echo ION_ACCESS_TOKEN ?>";
+        const BING_ACCESS_TOKEN = "<?php echo BING_ACCESS_TOKEN; ?>";
+      </script>
       <script src="assets/js/index.js"></script>
 
       <!-- Material Dashboard Core initialisations of plugins and Bootstrap Material Design Library -->

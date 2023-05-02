@@ -5,6 +5,8 @@ $sidebar_responsive = $('body > .navbar-collapse');
 window_width = $(window).width();
 */
 
+//N.B. ION_ACCESS_TOKEN and BING_ACCESS_TOKEN are loaded by index.php from a credentials file not included in git source!
+
 const thirdlevelMap = {
   geographyofthefaith: 'en',
   geografiadellafede: 'it',
@@ -88,7 +90,7 @@ const hideLoaderIfGlobeReady = () => {
 /** CREATE OUR CESIUM GLOBE */
 
 // first set Cesium static options
-Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5YzNlODY2Yy0yZjY1LTRkMDktOTViYi02M2I3M2NjMTg3YmIiLCJpZCI6NTM3MjUsImlhdCI6MTYxOTM1MzA0NX0.t8ZCZb4qQKgU2sQbzAwgZ85ReK07ZmRZjnecUP8IE9Y';
+Cesium.Ion.defaultAccessToken = ION_ACCESS_TOKEN;
 
 // set the default view that the home button will fly to: Rome!
 const extent = Cesium.Rectangle.fromDegrees(12.373249, 41.987067, 12.626621, 41.797435);
@@ -113,7 +115,7 @@ const viewer = new Cesium.Viewer('map', {
 
 
 const bingImageryProvider = Cesium.BingMapsImageryProvider.fromUrl( 'https://dev.virtualearth.net', {
-  key : 'AsRSrIU0SOTDG268mtY0kyGIN86fK07A9rjb5QPWU-9kW64slsXWdhTe0thkvykQ',
+  key : BING_ACCESS_TOKEN,
   mapStyle : Cesium.BingMapsStyle.AERIAL
 }).then((res) => {
   const imageryLayer = Cesium.ImageryLayer.fromProviderAsync(res);
