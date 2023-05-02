@@ -22,12 +22,15 @@ and
 
 # CesiumJS
 
-Implements the open source project [CesiumJS](https://github.com/CesiumGS/cesium) for rendering of the globe, markers, polygons and polylines.
+This project implements the open source project [CesiumJS](https://github.com/CesiumGS/cesium) for rendering of the globe, markers, polygons and polylines.
 
 The data layer can be coordinated in the repository https://github.com/opera-romana-pellegrinaggi/maps-of-the-faith .
 
-There are currently three branches with three different approaches:
 
-1) [Main branch](https://github.com/opera-romana-pellegrinaggi/geography-of-the-faith/tree/main): Compared to the first two attempts represented by the `ThreeJS` branch and the `Dsjs` branch, this is a take on a completely different approach, using `Cesium.js`. This branch has successfully implemented an interactive country boundary layer, and Cesium can ingest data layers such as KML, KMZ, GeoJSON, it's own CZML format, etc.
-2) [ThreeJS branch](https://github.com/opera-romana-pellegrinaggi/geography-of-the-faith/tree/threeJS): this was the very first attempt at creating an interactive globe, using `ThreeJS` to create a 3d scene of a globe with an earth image as the texture of the 3d sphere. Does not incorporate geometry with country boundaries (at least successfully)...
-2) [D3js branch](https://github.com/opera-romana-pellegrinaggi/geography-of-the-faith/tree/D3js): following the first unsuccesfull attempt at creating country boundaries with `ThreeJS`, this was an attempt to solve the issue by implementing `D3.js` which seems to do a better job for geographic data. `D3.js` however needs to be bridged to `ThreeJS.js`, so this an attempt to utilize `D3-threeD.js` to fill the gap. However `D3-threeD.js` isn't updated much, and I didn't have much success in getting it to play nicely with the current versions of `ThreeJS` and `D3.js`... This attempt was ultimately abandoned in favor of using `CesiumJS`, which is now the main branch.
+# Repository branches
+
+There are currently three branches with three different approaches. The first two attempts were not very successful, the third attempt has been more successful and is now the `main` branch.
+
+1) [ThreeJS branch](https://github.com/opera-romana-pellegrinaggi/geography-of-the-faith/tree/threeJS): this was the very first attempt at creating an interactive globe, using `ThreeJS` to create a 3d scene of a globe with an earth image as the texture of the 3d sphere. Does not incorporate geometry with country boundaries (at least successfully)...
+2) [D3js branch](https://github.com/opera-romana-pellegrinaggi/geography-of-the-faith/tree/D3js): following the first unsuccesfull attempt at creating country boundaries with `ThreeJS`, this was an attempt to solve the issue by implementing `D3.js` which seems to do a better job for geographic data. `D3.js` however needs to be bridged to `ThreeJS.js`, so this an attempt to utilize `D3-threeD.js` to fill the gap. However `D3-threeD.js` isn't updated much, and I didn't have much success in getting it to play nicely with the current versions of `ThreeJS` and `D3.js`... This attempt was ultimately abandoned in favor of using `CesiumJS`, which is now utilized in the `main` branch.
+3) [Main branch](https://github.com/opera-romana-pellegrinaggi/geography-of-the-faith/tree/main): takes a completely different approach, using `Cesium.js`. This branch has successfully implemented an interactive country boundary layer, and Cesium can ingest data layers such as KML, KMZ, GeoJSON, it's own CZML format, etc.
