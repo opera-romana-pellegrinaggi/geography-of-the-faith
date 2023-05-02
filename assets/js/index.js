@@ -47,27 +47,60 @@ console.log(location.hostname + location.pathname + ' : lang set to ' + lang);
 const ENDPOINT = `https://${location.hostname}${location.pathname}geofaith_backend.php`;
 
 
-/** CREATE OUR CESIUM GLOBE */
-
+/** SET CESIUM STATIC OPTIONS */
 const extent = Cesium.Rectangle.fromDegrees(12.373249, 41.987067, 12.626621, 41.797435);
 Cesium.Camera.DEFAULT_VIEW_RECTANGLE = extent;
 Cesium.Camera.DEFAULT_VIEW_FACTOR = 0;
 Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5YzNlODY2Yy0yZjY1LTRkMDktOTViYi02M2I3M2NjMTg3YmIiLCJpZCI6NTM3MjUsImlhdCI6MTYxOTM1MzA0NX0.t8ZCZb4qQKgU2sQbzAwgZ85ReK07ZmRZjnecUP8IE9Y';
 
-let bing = new Cesium.BingMapsImageryProvider({
-  url : 'https://dev.virtualearth.net',
-  key : 'AsRSrIU0SOTDG268mtY0kyGIN86fK07A9rjb5QPWU-9kW64slsXWdhTe0thkvykQ',
-  mapStyle : Cesium.BingMapsStyle.AERIAL
-});
+/** DEFINE READY STATES AND READY CALLBACKS */
 
-let mapTiler = new Cesium.UrlTemplateImageryProvider({
+const GLOBE_STATE = {
+  DOCUMENT_READY: false,
+  MARKERS_LAYER_READY: false,
+  OPENBUS_MARKERS_LAYER: false,
+  MARKERS_CREATED: false,
+  COUNTRY_POLYS_READY: false,
+  COUNTRY_BORDERS_READY: false,
+  OMNIA_VR_READY: false,
+  MAPS_SOURCE_READY: false,
+  TILES_LOADED: false,
+  ALL_DRAWN: false,
+  BIBLICAL_SITES_ISRAEL_READY: false
+}
+
+const isGlobeReady = () => {
+  return Object.values(GLOBE_STATE).reduce((prev,curr) => {
+    return (prev && curr);
+  }, true);
+};
+
+const hideLoaderIfGlobeReady = () => {
+  if(isGlobeReady()) {
+    console.log('all conditions for globe ready are now met! hiding loader...');
+    $('.loader').fadeOut();
+  } else {
+    let arr = Object.entries(GLOBE_STATE).reduce((prev,curr) => {
+      if(curr[1] === false) {
+        prev.push(curr[0]);
+      }
+      return prev;
+    },[]);
+    console.log('conditions that are not yet met for the globe to be ready: ' + arr.sort().join(', ') );
+  }
+}
+
+
+/** CREATE OUR CESIUM GLOBE */
+
+/*const mapTiler = new Cesium.UrlTemplateImageryProvider({
   url: 'https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=SxVQSzWgRNS3fbFsWN4k',
   tileWidth: 512,
   tileHeight: 512,
   credit: null
-});
+});*/
 
-let viewer = new Cesium.Viewer('map', {
+const viewer = new Cesium.Viewer('map', {
   animation: false,
   timeline: false,
   baseLayerPicker: false,
@@ -76,17 +109,43 @@ let viewer = new Cesium.Viewer('map', {
   homeButton: true,
   geocoder: true,
   fullscreenButton: true,
-  imageryProvider: bing, //mapTiler,
-  terrainProvider : Cesium.createWorldTerrain({
-    requestVertexNormals: true,
-    requestWaterMask: true
-  }),
   scene3DOnly: true,
   shadows: true,
   creditContainer: document.getElementById("credits"),
   creditViewport: null,
   shouldAnimate: true
 });
+
+
+const bingImageryProvider = Cesium.BingMapsImageryProvider.fromUrl( 'https://dev.virtualearth.net', {
+  key : 'AsRSrIU0SOTDG268mtY0kyGIN86fK07A9rjb5QPWU-9kW64slsXWdhTe0thkvykQ',
+  mapStyle : Cesium.BingMapsStyle.AERIAL
+}).then((res) => {
+  const imageryLayer = Cesium.ImageryLayer.fromProviderAsync(res);
+  viewer.imageryLayers.add(imageryLayer);
+  console.log("%cbing maps is ready!", 'color: yellow;background-color:blue;padding:2px');
+  GLOBE_STATE.MAPS_SOURCE_READY = true;
+  hideLoaderIfGlobeReady();
+});
+
+const terrainProvider = Cesium.createWorldTerrainAsync({
+  requestVertexNormals: true,
+  requestWaterMask: true
+}).then((res) => {
+  console.log('%cworld terrain provider is ready, with watermask!', 'color: yellow;background-color:blue;padding:2px');
+  viewer.terrainProvider = res;
+});
+
+let isViewerReady = () => {
+  GLOBE_STATE.ALL_DRAWN = viewer.dataSourceDisplay.ready;
+  if( GLOBE_STATE.ALL_DRAWN ) {
+    console.log('all viewer polygons are now completely drawn');
+    clearInterval(viewerIntvl);
+    hideLoaderIfGlobeReady();
+  }
+}
+
+let viewerIntvl = setInterval(isViewerReady, 50);
 
 //we remove the default double click action, because we will implement a flyTo for a country polygon on double click
 //see :FLYTO_COUNTRY_CLICKED
@@ -180,59 +239,6 @@ frame.addEventListener('load', function () {
 
 
 
-/** DEFINE READY STATES AND READY CALLBACKS */
-
-const GLOBE_STATE = {
-  DOCUMENT_READY: false,
-  MARKERS_LAYER_READY: false,
-  OPENBUS_MARKERS_LAYER: false,
-  MARKERS_CREATED: false,
-  COUNTRY_POLYS_READY: false,
-  COUNTRY_BORDERS_READY: false,
-  OMNIA_VR_READY: false,
-  MAPS_SOURCE_READY: false,
-  TILES_LOADED: false,
-  ALL_DRAWN: false,
-  BIBLICAL_SITES_ISRAEL_READY: false
-}
-
-const isGlobeReady = () => {
-  return Object.values(GLOBE_STATE).reduce((prev,curr,idx) => {
-    return (prev && curr);
-  }, true);
-};
-
-const hideLoaderIfGlobeReady = () => {
-  if(isGlobeReady()) {
-    console.log('all conditions for globe ready are now met! hiding loader...');
-    $('.loader').fadeOut();
-  } else {
-    let arr = Object.entries(GLOBE_STATE).reduce((prev,curr) => {
-      if(curr[1] === false) {
-        prev.push(curr[0]);
-      }
-      return prev;
-    },[]);
-    console.log('conditions that are not yet met for the globe to be ready: ' + arr.sort().join(', ') );
-  }
-}
-
-let isViewerReady = () => {
-  GLOBE_STATE.ALL_DRAWN = viewer.dataSourceDisplay.ready;
-  if( GLOBE_STATE.ALL_DRAWN ) {
-    console.log('all viewer polygons are now completely drawn');
-    clearInterval(viewerIntvl);
-    hideLoaderIfGlobeReady();
-  }
-}
-
-let viewerIntvl = setInterval(isViewerReady, 50);
-
-bing.readyPromise.then(() => {
-  console.log("bing maps is ready!");
-  GLOBE_STATE.MAPS_SOURCE_READY = true;
-  hideLoaderIfGlobeReady();
-});
 
 let helper = new Cesium.EventHelper();
 helper.add(scene.globe.tileLoadProgressEvent, ev => {
