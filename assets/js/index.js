@@ -932,13 +932,20 @@ handler.setInputAction((event) => {
 handler.setInputAction((event) => {
   console.log(event);
   let pickedObjects = viewer.scene.drillPick(event.position);
-  if(Cesium.defined(pickedObjects)){
+  if(Cesium.defined(pickedObjects)) {
     //Update the collection of picked entities.
     pickedEntities.removeAll();
     for (let i = 0; i < pickedObjects.length; ++i) {
       let entity = pickedObjects[i].id;
       pickedEntities.add(entity);
-      if(Cesium.defined(entity.polygon) && countryPolysDataSource.entities.getById(entity.id)){
+      if(Cesium.defined(entity.polygon) && countryPolysDataSource.entities.getById(entity.id)) {
+        setTimeout(() => {
+          if(countryDblClkWhoosh.paused) {
+            countryDblClkWhoosh.play();
+          } else {
+            countryDblClkWhoosh.currentTime = 0;
+          }
+        }, 100);
         viewer.flyTo(entity);
         console.log(entity);
         $('.togglebutton input[type="checkbox"]').prop('checked', false);
@@ -982,6 +989,13 @@ function detectDoubleTapClosure() {
           let entity = pickedObjects[i].id;
           pickedEntities.add(entity);
           if(Cesium.defined(entity.polygon) && countryPolysDataSource.entities.getById(entity.id)){
+            setTimeout(() => {
+              if(countryDblClkWhoosh.paused) {
+                countryDblClkWhoosh.play();
+              } else {
+                countryDblClkWhoosh.currentTime = 0;
+              }
+            }, 100);
             viewer.flyTo(entity);
             console.log(entity);
             $('.togglebutton input[type="checkbox"]').prop('checked', false);
@@ -1029,18 +1043,48 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 const backgroundMusic = new Audio();
 backgroundMusic.src = "assets/media/audio/The Empty Moons of Jupiter - DivKid.mp3"; //Earth Appears - Brian Bolger.mp3
 backgroundMusic.loop = true;
+
+const countryDblClkWhoosh = new Audio();
+countryDblClkWhoosh.src = "assets/media/audio/whoosh-6316.mp3";
+
+const sidebarClickSound = new Audio();
+sidebarClickSound.src = "assets/media/audio/interface-124464.mp3";
+
+const switchSound = new Audio();
+switchSound.src = "assets/media/audio/button-124476.mp3";
+
+let zoomOutBlob;
+let zoomInBlob;
+
+fetch("assets/media/audio/woosh-1-84800.mp3")
+  .then(resp => resp.blob())
+  .then(blob => {
+    zoomOutBlob = URL.createObjectURL(blob);
+    new Audio(zoomOutBlob);
+  });
+
+fetch("assets/media/audio/woosh-2-6471.mp3")
+  .then(resp => resp.blob())
+  .then(blob => {
+    zoomInBlob = URL.createObjectURL(blob);
+    new Audio(zoomInBlob);
+  });
+
+// const zoomOut = new Audio();
+// zoomOut.src = "assets/media/audio/woosh-1-84800.mp3";
+
+// const zoomIn = new Audio();
+// zoomIn.src = "assets/media/audio/woosh-2-6471.mp3";
+
 let audioCtx;
 let gainNode;
 let audioSource;
 
 //for more on creating a visualizer, see https://blog.logrocket.com/audio-visualizer-from-scratch-javascript/#web-audio-api-overview
 backgroundMusic.onloadstart = ev => {
-  console.log('background music is loaded');
-  console.log(backgroundMusic);
-  console.log('background music plays inline: ' + backgroundMusic.playsinline);
-  console.log('background music is muted: ' + backgroundMusic.muted);
-  console.log('background music autoplay: ' + backgroundMusic.autoplay);
-  console.log(ev);
+  console.log('background music has started to load...');
+  //console.log(backgroundMusic);
+  //console.log(ev);
 };
 backgroundMusic.oncanplay = ev => {
   console.log('background music is ready to start playing');
@@ -1085,6 +1129,59 @@ const spinAndZoomGlobe = () => {
 }
 let unsubscribeTicks;
 
+let lastHeight;
+let lastHeightCheck;
+let unsubscribeZoomCheck;
+const zoomCheck = () => {
+  let currentHeight = viewer.scene.camera.positionCartographic.height;
+  let currentHeightCheck = Date.now();
+  if( typeof lastHeightCheck === 'undefined' ) {
+    lastHeightCheck = Date.now();
+  }
+  if( lastHeight !== currentHeight ) {
+    if(lastHeight > currentHeight) {
+      if( currentHeightCheck - lastHeightCheck > 50 ) { //if more than 50ms since last check
+        console.log('camera has zoomed in');
+        new Audio(zoomInBlob).play();
+        // if( zoomIn.paused && zoomOut.paused ) {
+        //   zoomIn.play();
+        // } else {
+        //   if( zoomOut.paused === false ) {
+        //     zoomOut.pause();
+        //     zoomOut.currentTime = 0;
+        //   }
+        //   if( zoomIn.paused === false ) {
+        //     zoomIn.currentTime = 0;
+        //   } else {
+        //     zoomIn.play();
+        //   }
+        // }
+      }
+    }
+    else if ( lastHeight < currentHeight ) {
+      if( currentHeightCheck - lastHeightCheck > 50 ) { //if more than 50 ms since last check
+        console.log('camera has zoomed out');
+        new Audio(zoomOutBlob).play();
+        // if( zoomOut.paused && zoomIn.paused ) {
+        //   zoomOut.play();
+        // } else {
+        //   if( zoomIn.paused === false ) {
+        //     zoomIn.pause();
+        //     zoomIn.currentTime = 0;
+        //   }
+        //   if( zoomOut.paused === false ) {
+        //     zoomOut.currentTime = 0;
+        //   } else {
+        //     zoomOut.play();
+        //   }
+        // }
+      }
+    }
+    lastHeight = currentHeight;
+    lastHeightCheck = currentHeightCheck;
+  }
+};
+
 
 /** DEFINE HTML DOCUMENT INTERACTIONS */
 
@@ -1120,12 +1217,20 @@ $(document).on('click', ev => {
         backgroundMusic.pause();
       },3100);
     }
+    lastHeight = viewer.scene.camera.positionCartographic.height;
+    lastHeightCheck = Date.now();
+    unsubscribeZoomCheck = scene.preRender.addEventListener(zoomCheck);
   }
 });
 
 $(document).on('click', '#accordion > .nav-item > .nav-link', ev => {
   $('#accordion > .nav-item').removeClass('active');
   $(ev.currentTarget).closest('.nav-item').addClass('active');
+  if(sidebarClickSound.paused) {
+    sidebarClickSound.play();
+  } else {
+    sidebarClickSound.currentTime = 0;
+  }
 });
 
 $(document).on('change', '.togglebutton input[type="checkbox"]', ev => {
@@ -1149,5 +1254,10 @@ $(document).on('change', '.togglebutton input[type="checkbox"]', ev => {
         markersDataSource.clustering.enabled = true;
       }
     });
+  }
+  if(switchSound.paused) {
+    switchSound.play();
+  } else {
+    switchSound.currentTime = 0;
   }
 });
