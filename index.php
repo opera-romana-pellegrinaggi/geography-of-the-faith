@@ -353,6 +353,9 @@
         </div>
       </div>
     </div>
+    <div id="loadingModal">
+      <div id="loadingModalMessage"><?php _e("Multimedia experience is loading..."); ?></div>
+    </div>
     <footer>
       <!-- Core JS files -->
       <script src="assets/js/Cesium/Build/Cesium/Cesium.js"></script>

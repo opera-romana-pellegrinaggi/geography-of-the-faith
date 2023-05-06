@@ -55,7 +55,8 @@
   padding:1px;
   top: 2px;
   left: 50%;
-  margin-left: -35%;
+  margin-left: -45%;
+  z-index: 999;
 }
 .loader:before {
   content:'';
@@ -145,4 +146,26 @@ li.nav-item:last-child > .nav-link.togglebutton {
   font-size: 18px !important;
   margin-right: 0;
   float: none;
+}
+
+#loadingModal {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 990;
+}
+
+#loadingModalMessage {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 3em;
+  /*margin:0 auto;*/
+  position: relative;
+  width: 100vw;
+  left: 0;
+  top: 30vh;
+  line-height: 3em;
 }

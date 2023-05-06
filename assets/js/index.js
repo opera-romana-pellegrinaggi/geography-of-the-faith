@@ -5,8 +5,6 @@ $sidebar_responsive = $('body > .navbar-collapse');
 window_width = $(window).width();
 */
 
-//N.B. ION_ACCESS_TOKEN and BING_ACCESS_TOKEN are loaded by index.php from a credentials file not included in git source!
-
 const thirdlevelMap = {
   geographyofthefaith: 'en',
   geografiadellafede: 'it',
@@ -62,7 +60,8 @@ const GLOBE_STATE = {
   MAPS_SOURCE_READY: false,
   TILES_LOADED: false,
   ALL_DRAWN: false,
-  BIBLICAL_SITES_ISRAEL_READY: false
+  //BIBLICAL_SITES_ISRAEL_READY: false,
+  BACKGROUND_MUSIC_READY: false
 }
 
 const isGlobeReady = () => {
@@ -74,7 +73,14 @@ const isGlobeReady = () => {
 const hideLoaderIfGlobeReady = () => {
   if(isGlobeReady()) {
     console.log('all conditions for globe ready are now met! hiding loader...');
+    $('#loadingModalMessage').fadeOut({
+      complete: () => {
+        $('#loadingModalMessage').html('Multimedia experience is ready<br>Click anywhere to continue').fadeIn();
+
+      }
+    });
     $('.loader').fadeOut();
+    openBusMarkersLayer.show = true;
   } else {
     let arr = Object.entries(GLOBE_STATE).reduce((prev,curr) => {
       if(curr[1] === false) {
@@ -90,6 +96,7 @@ const hideLoaderIfGlobeReady = () => {
 /** CREATE OUR CESIUM GLOBE */
 
 // first set Cesium static options
+//N.B. ION_ACCESS_TOKEN and BING_ACCESS_TOKEN are loaded by index.php from a credentials file not included in git source!
 Cesium.Ion.defaultAccessToken = ION_ACCESS_TOKEN;
 
 // set the default view that the home button will fly to: Rome!
@@ -150,7 +157,7 @@ viewer.screenSpaceEventHandler.removeInputAction(Cesium.ScreenSpaceEventType.LEF
 
 //set our initial camera view for our pilgrimage globe
 viewer.camera.setView({
-  destination: Cesium.Cartesian3.fromDegrees(12.4531362,41.9020481, 15000000)
+  destination: Cesium.Cartesian3.fromDegrees(12.4531362,41.9020481, 30000000)
 });
 
 let scene = viewer.scene;
@@ -604,6 +611,7 @@ const makeProperty = (entity, property) => {
 
 let markersLayer = new Cesium.CustomDataSource();
 let openBusMarkersLayer = new Cesium.CustomDataSource();
+openBusMarkersLayer.show = false;
 
 let createMarker = (latitude,longitude,marker,name,description,properties,show) => markersLayer.entities.add({
     position : Cesium.Cartesian3.fromDegrees(longitude,latitude),
@@ -839,7 +847,7 @@ let biblicalSitesPromise = viewer.dataSources.add(
   })
 );
 */
-GLOBE_STATE.BIBLICAL_SITES_ISRAEL_READY = true;
+
 
 /** DEFINE INTERACTIONS FOR HOVERED ENTITIES (MARKERS, POLYGONS, POLYLINES) */
 
@@ -1017,6 +1025,65 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
   document.body.addEventListener('touchstart', detectPinchStartClosure());
 }
 
+/** DEFINE BACKGROUND MUSIC, SOUND EFFECTS, AND GLOBE ANIMATION */
+const backgroundMusic = new Audio();
+backgroundMusic.src = "assets/media/audio/The Empty Moons of Jupiter - DivKid.mp3"; //Earth Appears - Brian Bolger.mp3
+backgroundMusic.loop = true;
+let audioCtx;
+let gainNode;
+let audioSource;
+
+//for more on creating a visualizer, see https://blog.logrocket.com/audio-visualizer-from-scratch-javascript/#web-audio-api-overview
+backgroundMusic.onloadstart = ev => {
+  console.log('background music is loaded');
+  console.log(backgroundMusic);
+  console.log('background music plays inline: ' + backgroundMusic.playsinline);
+  console.log('background music is muted: ' + backgroundMusic.muted);
+  console.log('background music autoplay: ' + backgroundMusic.autoplay);
+  console.log(ev);
+};
+backgroundMusic.oncanplay = ev => {
+  console.log('background music is ready to start playing');
+  console.log(ev);
+  GLOBE_STATE.BACKGROUND_MUSIC_READY = true;
+  hideLoaderIfGlobeReady();
+};
+backgroundMusic.onplay = ev => {
+  console.log('background music is playing');
+  console.log(ev);
+};
+backgroundMusic.onpause = ev => {
+  console.log('background music has been paused');
+  console.log(ev);
+}
+
+let lastNow = Date.now();
+const initialMoveDistance = 25000;
+const targetDistance = 15000000;
+const spinAndZoomGlobe = () => {
+  const now = Date.now();
+  const spinRate = 0.01;
+  const delta = (now - lastNow) / 1000;
+  lastNow = now;
+  viewer.scene.camera.rotate(Cesium.Cartesian3.UNIT_Z, -spinRate * delta);
+  const cameraPosition = viewer.scene.camera.positionWC;
+  const ellipsoidPosition = viewer.scene.globe.ellipsoid.scaleToGeodeticSurface(cameraPosition);
+  const distance = Cesium.Cartesian3.magnitude(Cesium.Cartesian3.subtract(cameraPosition, ellipsoidPosition, new Cesium.Cartesian3()));
+  const baseDistance = Math.floor(distance);
+  const moveDistance = Math.floor(initialMoveDistance * ( (baseDistance - targetDistance) / targetDistance) );
+  //if( Math.floor(delta) % 50 === 0 ) {
+  //  console.log('current distance is ' + baseDistance);
+  //  console.log('move distance = ' + moveDistance);
+  //}
+  if( baseDistance > targetDistance ) {
+    if( baseDistance - targetDistance < 1000 ) {
+      viewer.scene.camera.moveForward(baseDistance - targetDistance);
+    } else {
+      viewer.scene.camera.moveForward(moveDistance);
+    }
+  }
+}
+let unsubscribeTicks;
 
 
 /** DEFINE HTML DOCUMENT INTERACTIONS */
@@ -1028,6 +1095,32 @@ $(function(){
   hideLoaderIfGlobeReady();
   $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
   $('.cesium-home-button').attr('title', 'Rome is Home!');
+});
+
+
+$(document).on('click', ev => {
+  if( $('#loadingModal').is(":visible") ) {
+    audioCtx = new AudioContext();
+    gainNode = audioCtx.createGain();
+    audioSource = audioCtx.createMediaElementSource(backgroundMusic);
+    gainNode.gain.value = 0.3; // 50 %
+    audioSource.connect(gainNode).connect(audioCtx.destination);
+  
+    if(backgroundMusic.paused) {
+      backgroundMusic.play();
+      unsubscribeTicks = viewer.clock.onTick.addEventListener(spinAndZoomGlobe);
+    }
+    $('#loadingModal').fadeOut('slow');
+  } else {
+    unsubscribeTicks();
+    //console.log('background music is paused: ' + backgroundMusic.paused);
+    if(backgroundMusic.paused === false) {
+      gainNode.gain.setValueCurveAtTime([0.3,0.2,0.1,0.05,0.01], audioCtx.currentTime, 3);
+      setTimeout(() => {
+        backgroundMusic.pause();
+      },3100);
+    }
+  }
 });
 
 $(document).on('click', '#accordion > .nav-item > .nav-link', ev => {
