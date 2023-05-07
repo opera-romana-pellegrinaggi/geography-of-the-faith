@@ -1,4 +1,4 @@
-import handler from "./screenSpaceEventHandler"
+import handler from "./screenSpaceEvent"
 import { pickedEntities } from "./entityHover"
 import { countryDblClkWhoosh } from "./soundEffects"
 import { markersDataSource, countryPolysDataSource } from "./datasources"

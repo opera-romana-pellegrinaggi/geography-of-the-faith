@@ -1,4 +1,4 @@
-import handler from "./screenSpaceEventHandler";
+import handler from "./screenSpaceEvent";
 import { openBusRouteDataSource, countryPolysDataSource } from "./datasources";
 import viewer from "./viewer";
 import { hoverSound } from "./soundEffects";
@@ -68,7 +68,12 @@ const entityHoverCallback = (event) => {
         }, 1000, entity);*/
       } else {
         if(Cesium.defined(entity.polygon) && countryPolysDataSource.entities.getById(entity.id)){
-          jQuery('#currentNation').text(entity.name);
+            if( hoverSound.paused ) {
+              hoverSound.play();
+            } else {
+              hoverSound.currentTime = 0;
+            }
+            jQuery('#currentNation').text(entity.name);
           pickedEntities.add(entity);
         } else if (Cesium.defined(entity.polyline)) {
           jQuery('#currentNation').text(entity.name);

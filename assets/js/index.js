@@ -20,8 +20,8 @@ import { defineEntityHover, entityHoverCallback } from './entityHover';
 import { dbFetch, loadDataSources, markersDataSource } from './datasources';
 import { defineEntityDblClk, entityDblClkCallback } from './countryDblClk';
 import { detectDoubleTapClosure, detectPinchStartClosure } from './mobileEvents';
-import handler from './screenSpaceEventHandler';
-import { backgroundMusic, zoomInBlob, zoomOutBlob, switchSound } from './soundEffects';
+import handler from './screenSpaceEvent';
+import { backgroundMusic, switchSound, sidebarClickSound } from './soundEffects';
 import { spinAndZoom } from './globeAnimation';
 import { zoomCheck } from './cameraZoomState';
 
@@ -175,7 +175,7 @@ $(document).on('change', '.togglebutton input[type="checkbox"]', ev => {
     allMarkers.forEach((key,idx) => {
       PilgrimageMarkers[key].show = false;
     });
-    biblicalSitesDataSource.show = true;
+    //biblicalSitesDataSource.show = true;
     /*biblicalSitesDataSource.entities.values.forEach(entity => {
       entity.show = show;
     });*/
