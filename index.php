@@ -378,14 +378,15 @@
       <script src="node_modules/material-dashboard-dark-edition/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
 
       <script src="https://unpkg.com/i18next@20.2.4/dist/umd/i18next.js"></script>
+
+      <!-- Material Dashboard Core initialisations of plugins and Bootstrap Material Design Library -->
+      <script src="node_modules/material-dashboard-dark-edition/assets/js/material-dashboard.js?v=2.1.2"></script>
+
       <script>
         const ION_ACCESS_TOKEN = "<?php echo ION_ACCESS_TOKEN ?>";
         const BING_ACCESS_TOKEN = "<?php echo BING_ACCESS_TOKEN; ?>";
       </script>
-      <script src="assets/js/index.js"></script>
-
-      <!-- Material Dashboard Core initialisations of plugins and Bootstrap Material Design Library -->
-      <script src="node_modules/material-dashboard-dark-edition/assets/js/material-dashboard.js?v=2.1.2"></script>
+      <script src="assets/js/index.js" type="module"></script>
 
     </footer>
   </body>
