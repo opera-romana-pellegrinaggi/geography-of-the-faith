@@ -16,13 +16,22 @@
 }
 
 #map {
-  /*
-  top: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  width: 80%;
-  */
+  height: 100vh;
+}
+
+#map .cesium-viewer {
+  height: 100vh;
+}
+
+#map .cesium-viewer-cesiumWidgetContainer {
+  height: 100vh;
+}
+
+#map .cesium-widget {
+  height: 100vh;
+}
+
+#map .cesium-widget canvas {
   height: 100vh;
 }
 
