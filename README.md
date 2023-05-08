@@ -1,6 +1,10 @@
 # Geography of the Faith
 An interactive globe, presenting the Geography of Christian pilgrimage sites throughout different countries
 
+|Code quality|
+--------------
+[![CodeFactor](https://www.codefactor.io/repository/github/opera-romana-pellegrinaggi/geography-of-the-faith/badge)](https://www.codefactor.io/repository/github/opera-romana-pellegrinaggi/geography-of-the-faith)
+
 Jesus Christ is God made man.
 From the height of the heavens, he descended upon earth, in a specific time and place.
 He was born in **Bethlehem of Judea**, grew up in **Nazareth of Galilee**, and lived in **Capernaum** along the shores of the **Sea of Galilee**.
