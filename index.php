@@ -55,7 +55,7 @@
 
     <!-- Cesium CSS -->
     <!-- <link rel="stylesheet" href="https://cesium.com/downloads/cesiumjs/releases/1.104/Build/Cesium/Widgets/widgets.css" /> -->
-    <link rel="stylesheet" href="assets/js/Cesium/Build/Cesium/Widgets/widgets.css" />
+    <link rel="stylesheet" href="node_modules/cesium/Build/Cesium/Widgets/widgets.css" />
 
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
@@ -358,7 +358,7 @@
     </div>
     <footer>
       <!-- Core JS files -->
-      <script src="assets/js/Cesium/Build/Cesium/Cesium.js"></script>
+      <script src="node_modules/cesium/Build/Cesium/Cesium.js"></script>
 
       <script src="node_modules/material-dashboard-dark-edition/assets/js/core/jquery.min.js"></script>
       <script src="node_modules/material-dashboard-dark-edition/assets/js/core/popper.min.js"></script>
