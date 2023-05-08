@@ -1,3 +1,15 @@
+/** 
+ * DigitPins
+ * pins (map markers) with digits
+ * useful as pins for clustered entities
+ * to showing how many entities are in a cluster
+ * 
+ * Single digits 2-9 are handled by the singleDigitPins array
+ * When more than 9 entities are in a cluster,
+ * the number of entities in the cluster will be indicated by the nearest 10
+ * 
+ */
+
 let pinBuilder = new Cesium.PinBuilder();
 
 const pin50 = pinBuilder.fromText("50+", Cesium.Color.RED, 48).toDataURL();

@@ -1,10 +1,10 @@
 
-import viewer from "./viewer";
-import { pickedEntities } from "./entityHover";
-import { countryPolysDataSource } from "./datasources";
-import { countryDblClkWhoosh } from "./soundEffects";
-import { markersDataSource } from "./datasources";
-import { PilgrimageMarkers, allMarkers } from "./markers";
+import viewer from "../viewer/Viewer";
+import { pickedEntities } from "./EntityHover";
+import { countryPolysDataSource } from "../resources/DataSources";
+import { countryDblClkWhoosh } from "./SoundEffects";
+import { markersDataSource } from "../resources/DataSources";
+import { PilgrimageMarkers, allMarkers } from "../entities/Markers";
 
 let scaling = false;
 

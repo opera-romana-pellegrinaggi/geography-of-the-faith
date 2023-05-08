@@ -1,9 +1,9 @@
-import { lang } from './i18n';
-import { CATEGORIES, createMarker, createMarkerDef, PilgrimageMarkers, allMarkers, markersLayer, openBusMarkersLayer } from './markers';
-import { GLOBE_STATE, hideLoaderIfGlobeReady } from './GLOBE_STATE';
-import viewer from './viewer';
-import customClusterStyle from './clusteredMarkersStyle';
-import { makeProperty } from './entityHover';
+import { lang } from '../i18n/I18n';
+import { CATEGORIES, createMarker, createMarkerDef, PilgrimageMarkers, allMarkers, markersLayer, openBusMarkersLayer } from '../entities/Markers';
+import { GLOBE_STATE, hideLoaderIfGlobeReady } from '../viewer/GLOBE_STATE';
+import viewer from '../viewer/Viewer';
+import customClusterStyle from '../entities/ClusteredMarkers';
+import { makeProperty } from '../effects/EntityHover';
 
 const ENDPOINT = `https://${location.hostname}${location.pathname}geofaith_backend.php`;
 let markersDataSource;

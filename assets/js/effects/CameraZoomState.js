@@ -1,5 +1,5 @@
-import viewer from "./viewer";
-import { zoomInBlob, zoomOutBlob } from "./soundEffects";
+import viewer from "../viewer/Viewer";
+import { zoomInBlob, zoomOutBlob } from "./SoundEffects";
 
 let lastHeight;
 let lastHeightCheck;

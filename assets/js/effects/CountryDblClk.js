@@ -1,9 +1,9 @@
-import handler from "./screenSpaceEvent"
-import { pickedEntities } from "./entityHover"
-import { countryDblClkWhoosh } from "./soundEffects"
-import { markersDataSource, countryPolysDataSource } from "./datasources"
-import { allMarkers, PilgrimageMarkers } from "./markers"
-import viewer from "./viewer"
+import handler from "./ScreenSpaceEvent"
+import { pickedEntities } from "./EntityHover"
+import { countryDblClkWhoosh } from "./SoundEffects"
+import { markersDataSource, countryPolysDataSource } from "../resources/DataSources"
+import { allMarkers, PilgrimageMarkers } from "../entities/Markers"
+import viewer from "../viewer/Viewer"
 
 const entityDblClkCallback = (event) => {
     console.log(event);

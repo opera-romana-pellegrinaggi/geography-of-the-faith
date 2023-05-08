@@ -5,9 +5,9 @@ $sidebar_responsive = $('body > .navbar-collapse');
 window_width = $(window).width();
 */
 
-import { lang } from './i18n';
-import { GLOBE_STATE, hideLoaderIfGlobeReady } from './GLOBE_STATE';
-import viewer from './viewer';
+import { lang } from './i18n/I18n';
+import { GLOBE_STATE, hideLoaderIfGlobeReady } from './viewer/GLOBE_STATE';
+import viewer from './viewer/Viewer';
 import {
   OpenBusMarkers,
   openBusMarkersLayer,
@@ -15,15 +15,15 @@ import {
   PilgrimageMarkers,
   allMarkers,
   CATEGORIES
-} from './markers';
-import { defineEntityHover, entityHoverCallback } from './entityHover';
-import { dbFetch, loadDataSources, markersDataSource } from './datasources';
-import { defineEntityDblClk, entityDblClkCallback } from './countryDblClk';
-import { detectDoubleTapClosure, detectPinchStartClosure } from './mobileEvents';
-import handler from './screenSpaceEvent';
-import { backgroundMusic, switchSound, sidebarClickSound } from './soundEffects';
-import { spinAndZoom } from './globeAnimation';
-import { zoomCheck } from './cameraZoomState';
+} from './entities/Markers';
+import { defineEntityHover, entityHoverCallback } from './effects/EntityHover';
+import { dbFetch, loadDataSources, markersDataSource } from './resources/DataSources';
+import { defineEntityDblClk, entityDblClkCallback } from './effects/CountryDblClk';
+import { detectDoubleTapClosure, detectPinchStartClosure } from './effects/MobileEvents';
+import handler from './effects/ScreenSpaceEvent';
+import { backgroundMusic, switchSound, sidebarClickSound } from './effects/SoundEffects';
+import { spinAndZoom } from './effects/GlobeAnimation';
+import { zoomCheck } from './effects/CameraZoomState';
 
 console.log(location.hostname + location.pathname + ' : lang set to ' + lang);
 

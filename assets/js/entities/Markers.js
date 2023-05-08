@@ -1,7 +1,7 @@
-import OpenBusMarkers from './resources/OpenBusMarkers';
-import label from './label';
-import { markersLayer, openBusMarkersLayer } from './entityLayers';
-import { pinBuilder } from './digitpins';
+import OpenBusMarkers from '../resources/OpenBusMarkers';
+import label from './MarkerLabel';
+import { markersLayer, openBusMarkersLayer } from './EntityLayers';
+import { pinBuilder } from './DigitPins';
 
 const openBusMarker = {
     image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAACXBIWXMAAAAcAAAAHAAPAbmPAAAAvVBMVEUAAAAAAAAAAAAAAAAAAAAAAADOzs5ycnIFBQXr6+v///9aWlqSkpL////////////////////////v7+9+fn7////7+/v////////////////m5ub7+/vz8/P39/fOzs7///////+urq7KysqGhob////mUQD/+/vrdjX3wqbztpL3yrLvnm775tr/8+/zpn7mWg377+braiXrgkn73srmVgXvnnLzrormUQXmXhXzupr77+v78+vmWgnvjl4Q9G0WAAAAJXRSTlMAUQ0wGUmycjnakmp+JUk5xuZq2na689qK987O9+bzrjEJkn5JnsBJ6AAAAstJREFUeNrt/cWC4zAMhgGEg+VyYVB2uFyeef/HWicFQzOF217+Y+wvlmRJ1lH6T1SqO63OGONxp+XUS89S790acKp135/AylWy9RDEi/lutdrNF3FwIB+q5QdYhWDH0Eec/PBI0Mod7MMBmK1/0I1+1jMA5+MvrtQHvJmiQk03GPp/hKnShsRHf8pPoF1obrkH0RTd0TSCXkGMKj3Yb9FdbffQuzmz1IY9eqg9tAU/P/oQbR+D2wj6fGwdSKboCU0TcDgHAbPx9CfBcpZiAJzOlsGEW8LAulmFDV1bJCAoWdDVDVQpV4YZNfQXw43wLzV2BmXmwDVdSKFAKf3xmh75Dkean79QKHrkzxEuVdaFEDE/LBQ1CYXQPYM1YOI2AfC3gnyACd3hQ+3EleCAeBAJ4kF0gFP61CF4DQygnoMOxK+B8Tl7WrB4DVxAKwc7MH8NnEMnB8ewew3cwTgHMax4MAoERTy4AlwMFqkIvDH1EXgxdSQG5xE4h1EODsTrgGW4pMgyTEC8jkEOGmICRKssO84iLWy1FBPAyMEvMeXi/K9nZdasxZT7ysFvMclDxLga5zuFJP/OQY0rK1LIeOLH1/6Rxn72E1rIWVlpOai8sYW8K24dzI2F8KacCtJkW0dx72AOJK3DPHGSarOdYU724YhRZjVz02uw1TOoeGx7zMAUMUo5kLRH72ypJFk205AzkA0zymYA6uIGbOvCSZrJPgEBCSsLTjCmF02eAFO7gpJlPP/oGPRA4qXcePaZa8gKA0qq++zD6qoSJ705fOYpHzZ1npMU3Rs+Hh6Gnq4IoKTpzcfjSlMnEb0l3cb9AanhFnEZKRv3RjJDLuYyP2XT/msItE351r+rVFn2bCgYO21PllXpjhRLls03cdB9M2XZUqT70ggqu5/GYJSN1qOB8emSD5YmPZai6jInXVWkJ6VoqqXnslStmPoHjhdHI1NHJmUAAAAASUVORK5CYII=",

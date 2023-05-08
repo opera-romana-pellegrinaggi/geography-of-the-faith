@@ -1,4 +1,4 @@
-import { openBusMarkersLayer } from "./markers";
+import { openBusMarkersLayer } from "../entities/Markers";
 
 const GLOBE_STATE = {
     MAPS_SOURCE_READY: false,

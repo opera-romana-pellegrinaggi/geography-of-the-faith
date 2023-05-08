@@ -1,7 +1,7 @@
-import handler from "./screenSpaceEvent";
-import { openBusRouteDataSource, countryPolysDataSource } from "./datasources";
-import viewer from "./viewer";
-import { hoverSound } from "./soundEffects";
+import handler from "./ScreenSpaceEvent";
+import { openBusRouteDataSource, countryPolysDataSource } from "../resources/DataSources";
+import viewer from "../viewer/Viewer";
+import { hoverSound } from "./SoundEffects";
 
 //pickedEntities is the collection of currently hovered polygons
 //it is renewed every time the mouse moves and detects a hover over a polygon
