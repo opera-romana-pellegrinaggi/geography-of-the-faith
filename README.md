@@ -2,8 +2,8 @@
 An interactive globe, presenting the Geography of Christian pilgrimage sites throughout different countries
 
 |Code quality|
---------------
-[![CodeFactor](https://www.codefactor.io/repository/github/opera-romana-pellegrinaggi/geography-of-the-faith/badge)](https://www.codefactor.io/repository/github/opera-romana-pellegrinaggi/geography-of-the-faith)
+|:----------:|
+|[![CodeFactor](https://www.codefactor.io/repository/github/opera-romana-pellegrinaggi/geography-of-the-faith/badge)](https://www.codefactor.io/repository/github/opera-romana-pellegrinaggi/geography-of-the-faith)|
 
 Jesus Christ is God made man.
 From the height of the heavens, he descended upon earth, in a specific time and place.
