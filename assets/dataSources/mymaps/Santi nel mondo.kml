@@ -1,0 +1,1533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Santi nel mondo</name>
+    <description><![CDATA[https://www.operaromanapellegrinaggi.org<br>https://www.omniaforitaly.org<br>https://www.omniavaticanrome.org<br><br>Si prendono in considerazione soprattutto i luoghi dove sono venerati i resti mortali o le reliquie più significative, e non tutti i luoghi dove hanno soggiornato o vissuto.]]></description>
+    <Style id="icon-1899-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-9C27B0-normal">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-9C27B0-highlight">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-9C27B0">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-9C27B0-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-9C27B0-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-A52714-normal">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-A52714-highlight">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-A52714">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-A52714-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-A52714-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-A52714-nodesc-normal">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-A52714-nodesc-highlight">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-A52714-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-A52714-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-A52714-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-BDBDBD-normal">
+      <IconStyle>
+        <color>ffbdbdbd</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-BDBDBD-highlight">
+      <IconStyle>
+        <color>ffbdbdbd</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-BDBDBD">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-BDBDBD-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-BDBDBD-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-F57C00-normal">
+      <IconStyle>
+        <color>ff007cf5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-F57C00-highlight">
+      <IconStyle>
+        <color>ff007cf5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-F57C00">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-F57C00-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-F57C00-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-F57C00-nodesc-normal">
+      <IconStyle>
+        <color>ff007cf5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-F57C00-nodesc-highlight">
+      <IconStyle>
+        <color>ff007cf5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-F57C00-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-F57C00-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-F57C00-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>I-V secolo</name>
+      <Placemark>
+        <name>Saints Joachim and Anne</name>
+        <description><![CDATA[Church of St Anne <br>91190 Jerusalem, Israel <br><br>*Formerly this church was called St Mary in Probatica. <br>*Tradition claims that this church rests over the house of Saints Joachim and Anne. Thus it is presumed that the Blessed Virgin Mary was born here. The crypt below this church honors this tradition. Also located just outside of this church is the Pool of Bethesda where Jesus healed a man who had been ill for thirty-eight years. <br>*Historically the tombs of Saints Joachim and Anne have also been thought to rest below this church. However, at present this tradition is not noted in the church.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            35.23647,31.781412,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St Anne</name>
+        <description><![CDATA[Sanctuaire Sainte-Anne de Beaupré <br>(Sanctuary of Saint Anne of Beaupré) <br>10018 Avenue Royale <br>Sainte-Anne de Beaupré, Quebec, G0A C30, Canada <br><br>*Over the last few centuries this shrine has obtained three relics of St Anne. In 1670 it obtained a portion of a bone from St Anne’s finger. Then in 1892 and again in 1960 the shrine received two separate forearm bones. <br>*A forearm bone of St Anne is currently enshrined in the left transept of the upper church.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -70.928389,47.02416,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Joseph</name>
+        <description><![CDATA[Sisters of Nazareth Convent<br>A 1st century tomb within the excavations below this convent is possibly the tomb of St Joseph.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            35.2969805,32.7024252,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St John the Baptist</name>
+        <description><![CDATA[Umayyad Mosque <br>Souq Al Hamidya Street <br>Damascus, Syria <br><br>*Relics of St John the Baptist, including his skull, rest within a shrine in this mosque. The authenticity of these relics are uncertain since the skull of St John the Baptist is also said to be located at a number of other places throughout the world including the Cathedral of Amiens in France, San Silvestro in Capite in Rome, Italy, and the Residenz Museum in Munich, Germany.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            36.306639,33.511692,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tomb of Saint John the Baptist, Sebastia</name>
+        <description>Currently is an empty tomb, which tradition holds was the tomb of Saint John the Baptist.</description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            35.198633,32.278241,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Andrew</name>
+        <description><![CDATA[St Mary’s Roman Catholic Cathedral <br>61 York Place <br>EH1 3JD, Edinburgh, United Kingdom (Scotland) <br><br>*In recent centuries the Scottish church has been blessed to receive several relics of St Andrew to replace the original relics that had been destroyed during the Scottish Reformation. In 1879 a large portion of the shoulder of St Andrew was taken from his remains in Amalfi, Italy and brought to Scotland. Also in 1969 Pope Paul VI gave additional relics of St Andrew to the Scottish church with the words, “Peter greets his brother Andrew.” These relics of St Andrew now rest within an altar to the right of the main sanctuary in this cathedral.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -3.187956,55.956078,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Andrew</name>
+        <description><![CDATA[St Andrew’s Church <br>Андріївський узвіз, 23, <br>Kiev, Ukraine 02000 <br><br>*Legend holds that St Andrew’s apostolic zeal led him as far north as Ukraine where he placed a cross in the very spot where this church now stands. The present church was erected in the 18th century and houses a small relic of St Andrew.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            30.517981,50.45915,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[St James The Greater & St James the Less]]></name>
+        <description><![CDATA[St James Cathedral <br>Armenian Quarter <br>91190 Jerusalem, Israel <br><br>*St James the Less is purportedly buried next to his reputed throne on the left side of the main sanctuary. This is the large chair below the onion-shaped baldacchino. <br>*The head of St James the Greater is said to rest under a small circular piece of red marble located within the third chapel on the left side of the nave. This chapel is also said to mark the location of his martyrdom. <br>*Access to this church is limited. It is generally open for only forty minutes during the Vigil service at the 3pm hour.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            35.229083,31.774558,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Basilica di San Tommaso</name>
+        <description><![CDATA[San Thome Basilica<br>19/38, Santhome High Road<br>600004 Mylapore, Chennai, Tamil Nadu, India<br><br>*Tradition holds that St Thomas the Apostle preached in this region and was martyred on St Thomas Mount.<br>*The church is built over the tomb of St Thomas. The tomb is empty; however, some relics of St Thomas are within the church. The mortal remains of St. Thomas were brought to Ortona, Italy in medieval times.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            80.277822,13.033569,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint-Thaddé</name>
+        <description><![CDATA[According to the tradition of the Armenian Apostolic Church, Saint Thaddeus, also known as Saint Jude, (not to be confused with Judas Iscariot), evangelized the region of Armenia and Persia. Thaddeus suffered martyrdom in Armenia, according to the same tradition, and is revered as an apostle of the Armenian Church. Legend has it that a church dedicated to him was first built on the present site in AD 68.<br>In July 2008, the Monastery of Saint Thaddeus was added to UNESCO's World Heritage List, along with two other Armenian monuments in the same province: the Monastery of Saint Stepanos and the Chapel of Dzordzor.<br><br>According to Armenian Church tradition, the Apostles Thaddeus and Bartholomew traveled through Armenia in AD 45 to preach the word of God, where many people were converted and numerous secret Christian communities were established.<br><br>The ancient Christian historian Moses of Khorene told the following story, considered a legend by most modern historiographers. Thaddeus converted King Abgar V of Edessa. After his death, the Armenian kingdom was split into two parts. His son Ananun crowned himself in Edessa, while his nephew Sanatruk ruled in Armenia. About AD 66, Ananun gave the order to kill Saint Thaddeus in Edessa. The king's daughter Sandokht, who had converted to Christianity, was martyred with Thaddeus. Her tomb is said to be located near the Qara Kelisa.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            44.5444247,39.0922837,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Tito</name>
+        <description><![CDATA[Nella chiesa di San Tito a Candia sull'isola di Creta si venera il suo cranio.<br><br>Fu uno dei più stretti collaboratori di Paolo di Tarso, che gli indirizzò una delle sue lettere pastorali. Secondo la tradizione fu vescovo di Creta.<br>Tito è noto solo attraverso le lettere di Paolo, in quanto gli Atti degli Apostoli non lo menzionano. È anche il destinatario della Lettera a Tito, che però, insieme alle altre due lettere pastorali (le due lettere a Timoteo), è considerata pseudoepigrafa (cioè non scritta da Paolo sebbene l'autore affermi di esserlo) dai critici modernisti mentre è considerata autentica da tutti gli studiosi di orientamento conservatore.<br><br>Greco di origine pagana, venne probabilmente convertito al cristianesimo dallo stesso Paolo. Gli fu frequentemente vicino durante tutti i suoi viaggi, particolarmente nei difficili rapporti con l'irrequieta comunità di Corinto.<br><br>Attorno al 50 accompagnò Barnaba e Paolo al concilio di Gerusalemme per discutere con gli apostoli circa la libertà dell'adesione alla legge giudaica per i nuovi convertiti di origine pagana.<br><br>Durante il terzo viaggio missionario, fu inviato da Paolo a Corinto quale messaggero di pace, per ristabilire l'armonia fra i cristiani della città e l'Apostolo (2 Cor 2,13; 7,6). Successivamente, ebbe anche l'incarico di organizzare la colletta per i poveri in Gerusalemme in quella stessa comunità (2 Cor 8,6-17).<br><br>Il rapporto tra Paolo e Tito appare improntato all'amicizia fraterna, cementato da una comunanza di sentimenti, di spirito, di cuore. In 2 Cor 2,12-13 Paolo, recatosi a Troas per predicarvi la parola di Dio, non trova vera consolazione - non ebbi pace nello spirito - perché non vi trova Tito.<br><br>Nelle lettere pastorali, è definito dall'autore «vero figlio nella fede comune», e si dice che Tito era stato posto a guida della Chiesa di Creta, per poi andare in seguito in Epiro, a Nicopoli, e in Dalmazia.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            25.1346964,35.3401071,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Barnabas Monastery</name>
+        <description>*Tradition claims that the remains of St Barnabas rest within a tomb in this monastery. His relics, according to legend, were discovered in 488 AD by the Archbishop of Constantia. According to this legend St Barnabas appeared to the Archbishop in a dream and revealed to him the location of his tomb. Upon opening the tomb a manuscript of St Matthew’s Gospel was found resting upon St Barnabas’ breast.</description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            33.8803749,35.1747436,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St Lazarus</name>
+        <description><![CDATA[Church of Saint Lazarus <br>Larnaca, Cyprus <br><br>*Tradition claims that the tomb of St Lazarus was discovered in this city in the 9th century. Records depict that these remains were later transferred to Constantinople. However, this church in Larnaca continues to claim the possession of his relics. Tradition claims that St Lazarus settled in this area and became its first bishop.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            33.634863,34.91152,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St Jude</name>
+        <description><![CDATA[National Shrine of St Jude <br>3200 East 91st Street <br>Chicago, Illinois, 60617, USA <br><br>*Two bone fragments of St Jude rest within this church. They are located on the right side of the main sanctuary at the Altar of St Jude. The larger fragment is placed within a reliquary above the altar. The smaller piece is positioned on the kneeler directly in front of the altar.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -87.546712,41.730376,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Stephen protomartyr</name>
+        <description><![CDATA[Basilique de Saint-Étienne <br>(Basilica of St Stephen) <br>6 Nablus Road <br>91190 Jerusalem, Israel <br><br>*Tradition claims that the tomb of St Stephen was miraculously discovered in Jerusalem in 415 AD through a special revelation given to a priest named Lucian. They were then placed within the now-destroyed Church of Holy Zion which was located in the south-west corner of the city. Then in 439 they were translated to a newly constructed Byzantine church just north of Jerusalem’s walls. This Byzantine church was destroyed by the Persians in 614 AD and the relics lost. A new church built over the ruins of this ancient church, called the Basilique de Saint- Étienne, was dedicated in 1900. It honors the memory of Stephen.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            35.229528,31.784673,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Stephen protomartyr</name>
+        <description><![CDATA[Greek Orthodox Church of St Stephen <br>Kidron Valley <br>91190 Jerusalem, Israel <br><br>*Just below this church is a chapel that possibly marks the location of St Stephen’s martyrdom.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            35.238516,31.780206,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Saints Perpetua & Felicity]]></name>
+        <description><![CDATA[Basilica Maiorum <br>Carthage, Tunisia <br><br>*This church was erected over the tombs of Saints Perpetua and Felicity. <br><br>Perpetua e Felicita (morte a Cartagine il 7 marzo 203) furono due giovani cristiane che subirono il martirio sotto l'imperatore Settimio Severo insieme a Saturo, il catechista di Perpetua, Revocato, Saturnino e Secondolo. <br><br>Una meravigliosa basilica, chiamata Basilica Maggiore, fu eretta nel luogo in cui i martiri furono sepolti. Alfred Louis Delattre, proprio in questa basilica, scoprì un'antica iscrizione recante i nomi dei martiri.<br><br>Nel 439 le reliquie di santa Perpetua, all'approssimarsi dell'invasione dei Vandali, furono trasferite a Roma, poi da lì, nell'843, dall'arcivescovo di Bourges, san Raoul, all'abbazia di Dèvres (o Deuvre), a Saint-Georges-sur-la-Prée. Dopo che quest'abbazia fu saccheggiata dai Normanni nel 903, furono trasferite a Vierzon, nel sito dell'attuale municipio. Da lì furono traslate nella chiesa di Notre Dame di Vierzon nel 1807, dove sono state conservate finora.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            10.3337791,36.8675365,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint George</name>
+        <description><![CDATA[Church of St George<br>Lod (Lydda), Israel <br><br>*St George (d. 303) was an early Christian martyr who died in this city. Many shrines throughout the world now claim possession of his relics. Preserved within the crypt of this church are St George’s original tomb and a few relics credited to him.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            34.8995843,31.9533823,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Cipriano</name>
+        <description><![CDATA[Basilica di San Cipriano<br>Tascio Cecilio Cipriano (Cartagine, 210 – Sesti, 14 settembre 258) è stato un vescovo e scrittore romano, vescovo di Cartagine e martire, venerato come santo e Padre della Chiesa. Fu martirizzato durante le persecuzioni di Valeriano.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            10.3374791,36.8638945,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Anthony of the Desert</name>
+        <description><![CDATA[Saint Anthony’s Monastery <br>Zaafarana, Egypt <br><br>*A tradition holds that this monastery was built directly over the tomb of St Anthony (d. 356). However, since he had requested to be buried secretly in an unmarked grave this claim is uncertain.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            32.350101,28.923838,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[St Athanasius & St Mark]]></name>
+        <description><![CDATA[St Mark’s Coptic Orthodox Cathedral <br>Al Abbasiya, Cairo, Egypt <br><br>*In 1968 Pope Paul VI gave some of the Venetian relics of St Mark to the Coptic Orthodox Patriarch of Alexandria. They are now kept at this church in Cairo. <br>*A similar situation happened in 1973 when some relics of St Athanasius (d. 373) were likewise returned to the Coptic Orthodox Patriarch of Alexandria. These relics are also kept at this same church.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            31.27563,30.072279,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Cyril of Jerusalem</name>
+        <description><![CDATA[Eleona / Église du Pater Noster <br>(Church of the Our Father) <br>Mount of Olives <br>91190 Jerusalem, Israel <br><br>*St Cyril of Jerusalem (d. 386) and many other early patriarchs of Jerusalem were buried in a church called the Apostoleion located upon the Mount of Olives. At some point this church was destroyed and the relics lost. Today a French Carmelite Monastery called Eleona rests upon this land. Even though St Cyril’s remains are lost this church is notable for its proximity to his ancient burial site.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            35.244902,31.778152,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Augustine</name>
+        <description><![CDATA[Basilique Saint-Augustin <br>(Basilica of Saint Augustine) <br>Annaba, Algeria <br><br>*This magnificent basilica was completed in 1881 and rests upon a hill overlooking the ruins of the ancient city of Hippo. In 1842 several arm bones of St Augustine (d. 430), the former bishop of Hippo, were returned to this city. These bones now rest within a glass tube inserted into the arm of a life size marble statue of the saint.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            7.74461,36.881655,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Gregorio Illuminatore</name>
+        <description>La mano destra si trova nella Cattedrale di Echmiadzin.</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            44.2909906,40.16183,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Bodbe's St. Nino's Convent]]></name>
+        <description>Una delle figure più feconde della Cristianità delle origini è, senza dubbio, Santa Nino, fra le prime coraggiose testimoni della fede in Cristo a cui le Cronache attribuiscono la conversione della Georgia, Stato plurisecolare oggi indipendente dopo settant’anni di dominio sovietico. Secondo le sue fonti agiografiche più diffuse, era originaria di Colastra in Cappadocia e giunse in Georgia (l’antica Iberia) proveniente da Costantinopoli. Altre fonti la indicano come di Gerusalemme, di Roma, o gallica. Dopo aver compiuto diverse guarigioni miracolose convertì dapprima la regina Nana e successivamente il re pagano Mirian III di Iberia che, perso in un bosco fitto ed immerso dalle tenebre durante una battuta di caccia, trovò la strada della salvezza solo dopo aver invocato il “Dio di Nino”. Mirian dichiarò quindi il Cristianesimo religione ufficiale (c. 327) e Cristiana continuò le proprie attività missionarie tra i georgiani fino alla sua morte. La sua tomba è ancora presente nel monastero di Bodbe a Kakheti, nella Georgia orientale e uno dei suoi attributi, la croce di tralci di vite, e il simbolo della cristianità georgiana. </description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            45.933395,41.6065624,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Gregory Nazianzen and Saint John Chrysostom</name>
+        <description><![CDATA[Patriarcato Ecumenico di Costantinopoli<br>Yavuz Sultan Selim Mh.<br>34083 Fatih/Istanbul Province, Turkey<br><br>*On November 27, 2004 a major part of the relics of St John Chrysostom and of St Gregory Nazianzen were returned to the Ecumenical Patriarch of Constantinople by St John Paul II and placed within this church.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            28.9516933,41.0293399,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St John Chrysostom</name>
+        <description><![CDATA[Cathedral of Christ the Savior <br>ул. Волхонка, 15 <br>119019 Moscow, Russia <br><br>*The skull of St John Chrysostom (d. 407) is enshrined within this church.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            37.605557,55.744482,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Patrick</name>
+        <description><![CDATA[Down Cathedral<br>English Street<br>BT30 6AB, Downpatrick, United Kingdom (Ireland)<br><br>*The exact location of St Patrick’s (d. 461) grave is uncertain. However, it is believed that his remains rest under a large stone in the churchyard.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -5.7216984,54.327564,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St Catherine of Alexandria</name>
+        <description><![CDATA[Saint Catherine’s Monastery <br>Mount Catherine, Egypt <br><br>*This is the oldest continually inhabited Christian monastery in the world. It has never been destroyed and can trace its history back seventeen centuries. Tradition claims that this monastery rests upon the land where God spoke to Moses in the burning bush and at the foot of the mountain where Moses received the Ten Commandments. <br>*As for the relics of St Catherine (d. 305) a tradition claims that a monk at this monastery saw in a vision angels carrying the body of St Catherine to the top of the highest mountain in Sinai. The monks then miraculously found her body as the vision indicated and subsequently buried her body in this monastery. Today these relics rest within a marble reliquary at an altar to the right of the main sanctuary.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            33.955412,28.509673,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Antica Sebaste</name>
+        <description><![CDATA[Nell’odierna Sivas, ricca di monumenti risalenti perlopiù alla dominazione selgiuchide (sec. XIII), nulla resta del suo più remoto passato.<br><br>Sotto Diocleziano Sebaste assurse a metropoli dell’Armenia Prima (fine III secolo) e con Giustiniano (527-565) che ne restaurò le mura, fu eretta a capitale dell’Armenia Seconda. Quantunque da un punto di vista archeologico Sebaste non presenti alcun interesse, non si può dire altrettanto per le memorie cristiane scritte.<br><br>40 soldati appartenenti alla legione Fulminata furono arrestati perché cristiani e posti nell’alternativa di apostatare o di subire la morte. Ora in questo tempo Sebaste era metropoli dell’Armenia. Le nostre conoscenze si ampliano a partire dalla persecuzione di Licinio (320-324). In quel tempo 40 soldati appartenenti alla legione Fulminata furono arrestati perché cristiani e posti nell’alternativa di apostatare o di subire la morte. Rimasti fedeli alla loro fede, vennero condannati alla crudele pena di essere esposti nudi ai rigori del gelo invernale particolarmente pungente in questa regione. Il martirio ebbe luogo il 9 di marzo nel cortile del ginnasio annesso alle terme della città. Melezio, forse il capo del gruppo, apostatò ma il suo posto venne preso dal custode delle terme. Dal prezioso documento che è il Testamento dei 40 martiri, apprendiamo che allora, nei piccoli paesi dell’Armenia, il cristianesimo di stampo ellenistico non era meno diffuso che in Cappadocia.<br><br>Forse ancora sotto Licinio, a Sebaste fu decapitato S. Biagio.  I suoi Atti, tardivi e leggendari, lo presentano come medico divenuto poi vescovo della città. Scoppiata la persecuzione, si nascose, ma venne catturato. Un giorno, una donna il cui figlio stava morendo a causa d’una lisca di pesce conficcatasi in gola, lo visitò in carcere e gli chiese aiuto. La benedizione di Biagio guarì immediatamente il fanciullo. Questo, come altri episodi ricorrenti negli Atti, giustificano la larghissima diffusione del culto riservato a Biagio, assunto quale patrono contro i mali di gola e — a motivo d’un altro miracolo — come patrono del bestiame.<br><br>Sempre a Sebaste furono portate le reliquie di San Gregorio di Narek nel 1021; il villaggio dove furono deposte fu soprannominato Narek in ricordo del monastero dove San Gregorio aveva trascorso la sua vita.]]></description>
+        <styleUrl>#icon-1899-BDBDBD</styleUrl>
+        <Point>
+          <coordinates>
+            37.0046158,39.7469781,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>VI-X secolo</name>
+      <Placemark>
+        <name>San Beda il Venerabile</name>
+        <description><![CDATA[Cattedrale di Durham<br>Durham Cathedral<br>The College<br>DH1 3EH, Durham, United Kingdom<br><br>*The remains of St Bede (d. 735) rest within the Galilee chapel. This is the large chapel located on the western end of the church.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -1.5763921,54.7732329,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Sant'Agostino di Canterbury]]></name>
+        <description><![CDATA[Abbazia di Sant'Agostino<br>Agostino di Canterbury (Roma, 13 novembre 534 – Canterbury, 26 maggio 604) è stato un monaco e il primo arcivescovo di Canterbury. Venerato come santo da cattolici e anglicani, è conosciuto anche come l'Apostolo d'Inghilterra.<br><br>Fu infatti inviato presso il re (Bretwalda) Ethelbert del Kent, in Inghilterra, da papa Gregorio I nel 597. Fu accompagnato da san Lorenzo, secondo arcivescovo di Canterbury.<br>Alla sua morte, fu sepolto a Canterbury nella chiesa dell'abbazia dedicata ai santi Pietro e Paolo (oggi abbazia di Sant'Agostino). Viene festeggiato il 27 maggio.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            1.088522,51.277883,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Anselm and Saint Thomas Becket</name>
+        <description><![CDATA[Canterbury Cathedral<br>CT1 2EH, Canterbury, United Kingdom<br><br>*The remains of St Anselm (d. 1109) were originally in this church; however, it is assumed that his relics are now lost. Nevertheless, the memory of St Anselm continues within the chapel dedicated to him on the right side of the nave.<br>*For centuries this church also housed the tomb St Thomas Becket (d. 1170) until its destruction in 1538. Some of his relics, nevertheless, still exist throughout the world.<br>*In the 11th century an arm of St Bartholomew was gifted to this church. However, this relic was also lost.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            1.0827998,51.2797971,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint John Damascene</name>
+        <description><![CDATA[Mar Saba Monastery <br><br>*Located in a remote area eighteen miles south-east of Jerusalem. <br>*St John Damascene (d. 750), like his father before him, held a high position as a civil-servant in Damascus. However, at some point in the early 8th century he left this to become a monk at Mar Saba Monastery. Upon his death he was buried in this monastery where his remains are said to still be located.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            35.331264,31.705109,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>XI-XV secolo</name>
+      <Placemark>
+        <name>St Simon Stock</name>
+        <description><![CDATA[Carmelite Friary <br>ME20 7BX, Aylesford, United Kingdom <br><br>*Part of the skull of St Simon Stock (d. 1265) rests within a reliquary behind the main altar of this church. It was transferred here in 1951.]]></description>
+        <styleUrl>#icon-1899-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            0.471693,51.30276,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St Thomas Becket</name>
+        <description><![CDATA[Saint Thomas of Canterbury Roman Catholic Church <br>59 Burgate <br>CT1 2HJ, Canterbury, United Kingdom <br><br>*A reliquary within the Martyr’s Chapel in the right transept of this church contains three relics of St Thomas Becket (d. 1170). <br>*The presence of these relics are partially explained by the following sequence of events. In 1220 AD several cardinals from Rome who were present for the translation of the body of St Thomas Becket from the crypt to the main floor of Canterbury Cathedral took several small relics of St Thomas Becket back to Italy. Upon the destruction of St Thomas Becket’s shrine in 1538 these relics remained of the saint. In the past two centuries some of these relics and others from around Europe have been returned to Canterbury. In the 19th century the church received from Gubbio, Italy both a piece of his vestment and a bone from his body. Then in 1953 the Prior of Chevetogne, Father Thomas Becquet, presented to this church a piece of St Thomas Becket’s finger.]]></description>
+        <styleUrl>#icon-1899-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            1.0830586,51.2782655,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Margaret of Scotland</name>
+        <description><![CDATA[St Margaret’s National Memorial Church<br>East Port<br>KY12 7YN, Dunfermline, United Kingdom (Scotland)<br><br>*A shoulder bone of St Margaret of Scotland (d. 1093) rests beneath the main altar of this church within a gothic reliquary.]]></description>
+        <styleUrl>#icon-1899-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -3.4546088,56.0722232,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Gregorio di Narek</name>
+        <description><![CDATA[Monastero di Narek (attuale Naravank - Yemişlik, Distretto di Gevaş/Provincia di Van, Turchia)<br><br>ll monastero fu raso al suolo dalle autorità turche nel 1915, ma fu rifondato di recente.<br>https://it.cathopedia.org/wiki/Monastero_di_Narek<br>https://www.centroculturaledimilano.it/wp-content/uploads/2012/09/Il-potere-delle-lacrime-LOsservatore-Romano-Rossella-Fabiani.pdf<br><br>Alla sua morte, il corpo di Gregorio fu deposto nella chiesa del monastero dedicata alla santa Sanducht, secondo la tradizione figlia del re Sanatruk e prima martire armena nel I secolo, uccisa a causa della sua fede per ordine di suo padre. Nel 1021 le reliquie del santo furono trasferite a Sebaste, l'attuale Sivaz, nell'antica provincia dell'Armenia Minore nell'Anatolia centrale. Il villaggio dove furono deposte le reliquie fu poi soprannominato Narek in ricordo del monastero dove Gregorio aveva trascorso la sua vita.<br><br>Gregorio di Narek (in lingua armena: Գրիգոր Նարեկացի; 951 – 1003) è stato un poeta, monaco cristiano, teologo e filosofo mistico armeno. È venerato come santo dalla Chiesa apostolica armena e dalla Chiesa cattolica; quest'ultima gli ha attribuito il titolo di dottore della Chiesa.<br><br>Gregorio di Narek nacque in una famiglia di scrittori. Suo padre, Khosrov, fu un arcivescovo. Avendo perso sua madre molto presto, fu educato da suo cugino, Anania di Narek, fondatore della scuola e del villaggio. Visse gran parte della sua vita nei monasteri di Narek (nella Grande Armenia, attualmente in Turchia) dove insegnava presso la scuola monastica. Fu uno dei più importanti poeti della storia della letteratura armena.<br><br>Martirologio Romano:<br>«Nel monastero di Narek in Armenia, san Gregorio, monaco, dottore degli Armeni, insigne per la dottrina, gli scritti e la scienza mistica.»<br><br>Il 21 febbraio 2015 papa Francesco ha confermato la sentenza affermativa della sessione plenaria dei cardinali e vescovi, membri della Congregazione delle cause dei santi, annunciando il prossimo conferimento del titolo di dottore della Chiesa a san Gregorio; la proclamazione a dottore della Chiesa è avvenuta con apposita lettera apostolica di papa Francesco il 12 aprile 2015, e annunciata solennemente lo stesso giorno durante la celebrazione nella Basilica di San Pietro in occasione del centenario del genocidio degli armeni. Gregorio è il 36° Dottore della Chiesa proclamato dalla Chiesa cattolica.<br><br>Lo stesso papa il 25 gennaio 2021 ne ha istituito la memoria facoltativa per tutta la Chiesa universale, fissandola al 27 febbraio.<br><br>Non solo per la sua dottrina, ma anche per la capacità poeta Gregorio di Narek è un modello per la poesia armena di ogni tempo. Nel XX e XI secolo con la riscoperta della mistica nella poesia armena egli è ritornato ad essere un modello e un esempio per molti poeti che lo hanno citato più o meno velatamente nella loro opera. Tra cui coloro che lo hanno preso maggiormente ad esempio ricordiamo il poeta Hrand Nazariantz e la poetessa Anahit Ghazakhetsyan.]]></description>
+        <styleUrl>#icon-1899-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            42.9282476,38.2969421,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>XVI-XXI secolo</name>
+      <Placemark>
+        <name>Saint Elizabeth Ann Seton</name>
+        <description><![CDATA[National Shrine of St Elizabeth Ann Seton<br>339 S. Seton Avenue<br>Emmitsburg, Maryland, 21727, USA<br><br>*The remains of St Elizabeth Ann Seton (d. 1821) rest within this shrine. It was here that she established the Sisters of Charity of St Joseph which was the first religious order of women founded in America. This community adopted the rules written in the 17th century by St Vincent de Paul for the Daughters of Charity in France. In 1850 the Emmitsburg community officially united with this French community and are now known as the Daughters of Charity.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -77.3264291,39.6989248,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St Frances Cabrini Shrine</name>
+        <description><![CDATA[St Frances Xavier Cabrini Shrine<br>701 Fort Washington Avenue<br>New York City, New York, 10040, USA<br><br>*A life size representation of St Frances Xavier Cabrini (d. 1917) rests below the main altar of the church at this shrine. Within this simulation is a large portion of the extant remains of St Frances.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.9351772,40.8583907,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St Frances Xavier Cabrini</name>
+        <description><![CDATA[The National Shrine of St Frances Xavier Cabrini <br>2520 N. Lakeview Avenue <br>Chicago, Illinois, 60614, USA <br><br>*An arm bone of St Frances Xavier Cabrini (d. 1917) is enshrined beneath the main altar of this church.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -87.6398788,41.9289223,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Kateri National Shrine and Historic Site</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.3927741,42.9501141,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St Kateri Tekakwitha</name>
+        <description><![CDATA[St Francis Xavier Mission <br>1 Church Street <br>J0L 1B0, Kahnawake, Quebec, Canada <br><br>*The remains of St Kateri Tekakwitha (d. 1680) rest within this church.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.676784,45.415383,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Our Lady of Martyrs Shrine</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -74.3021888,42.9251757,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[John de Brebeuf, Isaac Jogues, & Companions]]></name>
+        <description><![CDATA[The Martyr’s Shrine <br>16163 Highway 12 West <br>L4R 4K6, Midland, Ontario, Canada <br><br>*The skull of St John de Brebeuf and some small bone fragments from St Gabriel Lalemant and St Charles Garnier rest within two reliquaries in the left transept.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -79.841777,44.736659,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Andrea Dung-Lac e compagni Martiri vietnamiti</name>
+        <description><![CDATA[Nhà Thờ Giáo Xứ Lan Mát<br>(Basilica of the Immaculate Conception, Hà Nam, Vietnam)]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            105.8892043,20.5027791,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Matteo Ricci</name>
+        <description><![CDATA[Cathedral of the Immaculate Conception, Beijing<br>Storica chiesa cattolica fatta costruire da Matteo Ricci, dove visse e dove morì.<br><br>Padre Matteo Ricci (Macerata, 6 ottobre 1552 – Pechino, 11 maggio 1610) è stato un gesuita, matematico, cartografo e sinologo italiano. È stato proclamato Servo di Dio il 19 aprile 1984.<br><br>Vissuto al tempo della dinastia Ming, padre Matteo Ricci ha impresso un forte impulso all'azione evangelizzatrice ed è riconosciuto come uno dei più grandi missionari della Cina. Il suo nome in lingua mandarina era Lì Mǎdòu (cinese tradizionale: 利瑪竇, cinese semplificato: 利玛窦), dalla traslitterazione delle proprie iniziali nei suoni cinesi , mentre nella cerchia dei mandarini ricevette il titolo onorifico di Studioso confuciano del grande Occidente (泰西儒士T, Tàixī RúshìP).]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            116.375103,39.900779,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Matteo Ricci</name>
+        <description><![CDATA[Tomba dell'evangelizzatore della Cina<br>Cimitero Zhalan (Giardino di Shal)<br>https://en.wikipedia.org/wiki/Zhalan_Cemetery<br>https://www.findagrave.com/cemetery/2288893/zhalan-cemetery/map<br><br>Ricci had wished to be buried in Beijing, as a rare honor for a non-Chinese foreigner and a recognition of the status of the Catholic Church in the Empire.[1] Following his death on 11 May 1610, the Wanli Emperor allowed Diego de Pantoja to create a burial ground. The imperial decision was implemented on a lot that had been recently confiscated from a disgraced eunuch, outside the Fuchengmen gate of the Beijing city fortifications.[2] A funeral ceremony was held on 22 April 1611, with a procession starting from the Jesuit premises where the Cathedral of the Immaculate Conception now stands. Ricci's coffin stayed at the cemetery's chapel for several months until it was finally buried in November 1611.<br><br>Other Jesuits were buried on the ground in the ensuing years. In 1654, Johann Adam Schall von Bell obtained from the Shunzhi Emperor the authorization to extend the cemetery. Shall von Bell was himself buried there in 1666.<br><br>Following the Suppression of the Society of Jesus by the Holy See in 1773, the Lazarists took care of the cemetery, then the archimandrite of the Chinese Orthodox Church, then again the Catholic Church.<br><br>The cemetery was vandalized in 1900 during the Boxer Rebellion, and the bones of the interred Jesuits were dispersed.[3] Its restoration, stipulated by the Boxer Protocol, included the brick framing of some of the delicately carved tombstones. At the same time a church dedicated to Mary was erected nearby (Maweigou Church, zh:馬尾溝教堂).[2]<br><br>In the mid-1950s, remains including hundreds of tombstones were moved to the Xibeiwang area of Beijing (now the Catholic Cemetery, zh:北京天主教陵園). A Communist Party of China school, now the Beijing Administration Institute, was established on the grounds. Because of their historical significance, however, the tombstones of Ricci, Johann Adam Schall von Bell and Ferdinand Verbiest were kept on the original ground. Other monumental tombstones were aligned against the Maweigou Church's wall.[4]<br><br>During the Cultural Revolution, the site was again targeted as a symbol of foreign domination. The Red Guards intended to destroy the tombstones, but a staff member of the party school persuaded them to bury them instead, which ensured their preservation. The Maweigou Church was demolished in 1974.[5]<br><br>In the late 1970s, Deng Xiaoping approved the restoration of Matteo Ricci's grave. The tombstones of Ricci, Schall von Bell and Verbiest were once again re-erected on what was believed to be their original locations. 60 additional original tombstones were re-erected in 1984 in a fenced section, of which 14 of Chinese converts and 46 of European missionaries.[2]<br><br>Jean-Luc Dehaene, Valéry Giscard d'Estaing, Sergio Mattarella, Giorgio Napolitano, Jorge Sampaio, Oscar Luigi Scalfaro and Miloš Zeman are among the foreign dignitaries who have visited the cemetery with their Chinese official hosts since.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            116.3412483,39.928955,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St Francis Xavier</name>
+        <description><![CDATA[Basilica of Bom Jesus <br>Near Ghandi Circle <br>403402 Old Goa, Goa, India <br><br>*The body of St Francis Xavier (d. 1552) rests within a casket in the right transept of this church.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            73.91151,15.500933,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Sant'Andrea Kim Tae-gon]]></name>
+        <description><![CDATA[Cattedrale di Myeongdong<br>Le spoglie (reliquie?) del santo sono venerate all'interno della cattedrale.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            126.9873604,37.563177,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St Andrew Kim Taegon</name>
+        <description><![CDATA[Mirinae Shrine <br>420 Mirinaeseongji-ro, Yangseong-myeon, <br>Anseong-si, Gyeonggi-do, South Korea <br><br>*The remains of St Andrew Kim Taegon rest in a cemetery near this shrine. Within this same cemetery are the remains of Bishop Ferréol who ordained St Andrew Kim Taegon as Korea’s first native-born priest.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            127.258887,37.145916,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St Andrew Kim Taegon</name>
+        <description><![CDATA[Songsin Theological Campus <br>The Catholic University of Korea <br>296-12 Changgyeonggung-ro <br>Jongno-gu, Seoul, South Korea <br><br>*Some small relics of St Andrew Kim Taegon are preserved here. <br>*Note: Within the city of Seoul the following shrines also honor the Korean martyrs: Myeongdong Cathedral, Seosomun Martyrs’ Shrine, Danggogae Martyrs’ Shrine, Saenamteo Martyrs’ Shrine, and Jeoldusan Martyrs’ Shrine.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            127.004839,37.58573,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Jeoldusan Martyrs' Site]]></name>
+        <description>It came into use in the late 1860s, during the rule of the Daewon-gun, as a place of execution, primarily of native Koreans who had converted to the proscribed Roman Catholic faith. The present day memorial was built in commemoration of the 100th anniversary of the Byeonin Persecution in dedication of the approximate 8000 executions. In 1984, Pope John Paul II visited the site. Mother Teresa visited a year later. The memorial currently holds approximately 3000 religious relics.</description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            126.9111753,37.5444948,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saenamteo Martyrs Shrine</name>
+        <description>Site of the martyrdom of Saint Andrea Kim Tae-gon</description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            126.9568082,37.5248911,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Seosomun Catholic Martyrs Shrine Memorial Hall</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            126.9671236,37.559201,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Seosomun Shrine History Museum</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            126.9692101,37.5604616,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Danggogae Catholic Martyrs' Shrine]]></name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            126.9669941,37.5356039,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Peter Claver</name>
+        <description><![CDATA[A native of Spain, this young Jesuit left his home in 1610 to spend the rest of his life doing mission work in present day Colombia, South America. He was ordained in 1616 in the port city of Cartagena. This city was a major port for the slave trade. An estimated ten thousand slaves from West Africa were brought through there annually. This young priest was so dedicated to the plight of the slaves that he would meet them, often running through the water to board the ship and provide medicine, food and with the help of interpreters encouragement. During his ministry it is thought that he ministered to over three hundred thousand slaves. At his death, the city fathers, who had often frowned upon his work, paid for a large funeral honoring him for his lifelong ministry. He was canonized in 1888. He is known as the “Slave of Slaves”.<br><br>Iglesia de San Pedro Claver<br>(Church of St Peter Claver)<br>Carrera 4<br>Cartagena, Bolivar, Colombia<br><br>*The remains of St Peter Claver (d. 1654) rest under the main altar of this church. For forty years he attended to the many slaves who arrived in the city upon slave ships. Through his ministry he would offer at least a glimmer of hope and love before they were carted off to the auction blocks. It is estimated that during his life he baptized over 300,000 of these individuals.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -75.5509947,10.4217664,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St John Nepomucene Neumann</name>
+        <description><![CDATA[National Shrine of St John Nepomucene Neumann <br>1019 N. 5th Street <br>Philadelphia, Pennsylvania, 19123, USA <br><br>*The body of St John Nepomucene Neumann (d. 1860) is enshrined under the main altar.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -75.144349,39.969789,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St Katharine Drexel</name>
+        <description><![CDATA[National Shrine of Katharine Drexel <br>1663 Bristol Pike <br>Bensalem, Pennsylvania, 19020, USA <br><br>*St Katharine Drexel (d. 1955) is buried under the main altar in the Saint Elizabeth Chapel.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -74.95711,40.072965,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Blessed Junipero Serra</name>
+        <description><![CDATA[Mission San Carlos Borromeo <br>3080 Rio Road <br>Carmel, California, 93923, USA <br><br>*At the age of thirty-six Blessed Junipero Serra (d. 1784) left Spain to enter the mission fields of the New World.  After spending many years in Mexico he was transferred to California where he established a total of nine missions and evangelized many of the natives.  It was at this mission in Carmel, which he had established in 1770, that he eventually died.  His body is now buried beneath the sanctuary floor of this church.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -121.920186,36.542803,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Blessed Marie Rose Durocher</name>
+        <description><![CDATA[Co-Cathédrale Saint-Antoine de Padoue <br>(St Anthony of Padua Co-Cathedral) <br>55 Sainte Elizabeth Rue <br>74H 1J3, Longueuil, Quebec, Canada <br><br>*The remains of Blessed Marie Rose Durocher (d. 1849) rest within the right transept in the Marie Rose Chapel. It was in this city that she founded the Sisters of the Holy Names of Jesus and Mary with the charism of providing a Christian education for the poor and the needy.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.507708,45.540165,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St Rose Phillippine Duchesne</name>
+        <description><![CDATA[Shrine of Saint Rose Philippine Duchesne <br>619 North Second Street <br>St Charles, Missouri, 63301, USA <br><br>*The remains of St Rose Philippine Duchesne (d. 1852) rest at this church within a marble sarcophagus on the right side of the nave. In 1818 she left her native France and came to America where she began establishing schools in Missouri and Louisiana. In 1852 at the age of 83 she passed away in St Charles, Missouri.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -90.480802,38.786263,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[St John Fisher & St Thomas More]]></name>
+        <description><![CDATA[Church of St Peter ad Vincula <br>Tower of London <br>EC3N 4AB, London, United Kingdom <br> <br>*The headless bodies of St John Fisher (d. 1535) and St Thomas More (d. 1535) are said to rest in simple graves within the crypt of this church. Both of these saints were beheaded on Tower Hill in London.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -0.076872,51.508495,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St Thomas More</name>
+        <description><![CDATA[St Dunstan’s Church <br>80 London Road <br>CT2 8LS Canterbury, United Kingdom <br><br>*The head of St Thomas More (d. 1535) is said to rest in the Roper Vault of this church. His daughter, Margaret Roper, and his son-in-law, William Roper, are also believed to be buried in this church.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            1.070687,51.283694,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St Andre Bessette</name>
+        <description><![CDATA[L’Oratoire Saint-Joseph Du Mont-Royal <br>(St Joseph’s Oratory of Mount Royal) <br>3800 Chemin Queen Mary <br>H3V 1H6, Montreal, Quebec, Canada <br><br>*A relic of St Andre Bessette’s (d. 1937) heart is kept in the museum. <br>*His body rests within a large black marble tomb in the votive chapel within the lower church.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -73.616724,45.492014,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Sharbel Makhluf</name>
+        <description><![CDATA[Monastery of St Maron <br>Annaya, Jbeil District, Lebanon <br><br>*St Sharbel Makhluf (d. 1898) was a Maronite monk who lived the last 23 years of his life in a hermitage near this monastery. His remains now rest within this monastery. ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            35.752816,34.121335,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St Paul Miki and Companions</name>
+        <description><![CDATA[Saint Philip of Jesus Church<br>aka<br>Twenty-Six Martyrs Church <br>Nagasaki, Japan <br><br>The church, along with the adjacent museum, was built in 1962. Both buildings were designed by the Japanese architect Kenji Imai. The church overlooks the spot where the 26 martyrs of Japan were crucified. Its patron saint is Saint Philip of Jesus, one of the 26 martyrs and the first ever Mexican Christian martyr. From April 2002, the Archdiocese of Nagasaki designated Nishizaka as a place of pilgrimage, and in 2012 the Catholic Bishops' Conference of Japan designated it as a national pilgrimage site.<br><br>*Nearly all of the remains of the 26 martyrs were destroyed after the martyrdom. However, one remaining relic of a bone has survived and rests within this shrine. This bone belongs to Jacob Kisai, a Jesuit lay brother. <br>*The museum of this church also holds additional items that are connected to the 26 martyrs.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            129.87217,32.7545169,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nishizaka Park</name>
+        <description><![CDATA[On Nishizaka hill in Nagasaki, at least 400 Christians are known to have been martyred for their Christian faith. The first Christians to be martyred here were the 26 saints of Japan, and among the later martyrs was Saint Lorenzo Ruiz, the first Filipino Christian martyr.<br><br>The 26 saints of Japan were crucified here in the year 1597. They included missionaries from Spain, Portugal and Mexico, as well as Japanese Christians (including three children). They were crucified on this hill at the request Portuguese residents in Nagasaki at the time, who did not wish them to be executed in the same place that common criminals usually were. In his record of the event, the Jesuit missionary Luis Frois wrote that the hill resembled Golgotha (where Christ was crucified) because it had paths leading up it on either side.<br><br>After the end of the Second World War, as Nagasaki was rebuilt from the ruins of the atomic bomb, a park was made on Nishizaka hill, and in 1956 the hill was formally designated as an historical landmark by Nagasaki Prefecture. It had already been designated by Pope Pius XII as an official Catholic pilgrimage site in 1950.<br><br>On the hundredth anniversary of the canonisation of the 26 martyrs of Japan in Rome, a life-sized bronze sculpture of the 26 martyrs and an accompanying museum were built. Both were visited by Pope John Paul II during his visit to Japan in 1981.<br><br>The park where the monument stands is always open.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            129.8715453,32.7542449,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nakamachi Catholic Church</name>
+        <description>Nakamachi Church is dedicated to Saint Thomas Nishi and his 15 companions (among whom was Saint Lorenzo Ruiz of the Philippines). It is a five minute walk from Nishizaka. In 2015, as part of a set of events held to mark the 150th anniversary of the discovery of the Hidden Christians of Japan, statues of these 16 martyrs were built in the Japanese garden to the side of the church. On August 9th 1945, fires caused by the atomic bombing reduced the majority of the church to ruins, leaving only the spire and the outer wall still standing. In October 1951 the church was rebuilt incorporating the original spire and outer wall, and since then it has retained this form.</description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            129.8741667,32.7516667,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Saint Kolbe Memorial Museum / Hongouchi Church & Lourdes]]></name>
+        <description><![CDATA[Saint Kolbe Memorial Museum / Hongouchi Church & Lourdes<br><br>The Polish Conventual Franciscan friar, Saint Kolbe, arrived in Nagasaki in 1930. He established a monastery in 1931 and opened the Hongouchi Seminary, a previous incarnation of the Seibo no Kishi (Knights of the Immaculata) School, five years later inside the monastery. He made great efforts to propagate the faith through publications and to nurture Japanese priests, before returning to Poland in 1936. He was martyred, however, in the Auschwitz Concentration Camp after the invasion of the Nazis and was later canonized.<br>The Saint Kolbe Memorial Museum exhibits items with connections to Saint Kolbe and other relics, such as the articles of Friar Zenon, who came to Japan with Kolbe and devoted himself to saving war orphans. The second through fifth floors are currently being used as a living space for seminarians aspiring to join the OFM.<br>After Pope John Paul II arrived in Nagasaki in 1981, he visited the Seibo no Kishi Monastery and Saint Kolbe Memorial Museum. It is said that he had tears in his eyes, having been greatly moved after touching the relics left by Saint Kolbe.<br><br>Opening hours	9:00am-5:00pm (Saint Kolbe Museum)<br>Admission fee	Free *There is an offertory box inside the church for voluntary donations<br>Advice for Visitors	<br>As places of prayer, many of Nagasaki's churches are, under normal circumstances, open. However, for management reasons some churches may be locked.<br>The main door at the front of the church is principally for use when a Mass is being held. Before entering the church, please kindly remove your shoes and place them in the shoe rack provided. Please also remove your hat. Once inside, visitors are politely requested to remain quiet and respect the church's spiritual atmosphere at all times.<br>Photography inside the church is normally forbidden.<br>There are no visitor toilets at the church. Please go to the other restroom as much as possible, before arriving.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            129.899101,32.75117,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Site of Martyrdom at Shimabara</name>
+        <description>c/o Hotel Nampuro</description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            130.377383,32.7809066,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Site of Martyrdom at Arima and Shimabara</name>
+        <description>仙乗院（高野山真言宗）</description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            130.2646765,32.6529243,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Site of Martyrdom at Unzen Jigoku (Unzen Hell)</name>
+        <description><![CDATA[キリシタン殉教記念碑<br>The boiling water of the Unzen Onsen (hot spring) was used in the 17th century for torturing Christians in order to persuade them to renounce their faith. By the 19th century, it became known as a "paradise on Earth," the first hot spring resort in East Asia. It continues to be popular today as a prominent hot spring resort in Japan.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            130.2639977,32.7407366,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nishi Gaspar martyrdom site</name>
+        <description><![CDATA[A churchyard once existed here, built in 1563 with raised crosses. The family of Saint Thomas Nishi, including his father, Gaspar Nishi (one of the 188 blessed martyrs, who became the first martyr of Ikitsuki), as well as his mother and siblings, were executed at this site in 1609. The Christians of Ikitsuki revered this land as the "grave of the venerable Gaspar." As his family risked their lives for their faith, Thomas Nishi travelled to Manila and became a priest in order to promote the spread of Christianity. When he returned to Nagasaki, however, he was martyred and subsequently canonised.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            129.4301416,33.3719921,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Damien de Veuster</name>
+        <description><![CDATA[St Philomena Church <br>Kalawao, Hawaii, USA <br><br>*In 1995 the right hand of St Damien Joseph (d. 1889) was returned to Kalawao and placed within his original grave located in the outside cemetery.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -156.948216,21.177139,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Damien de Veuster and Saint Marianne Cope</name>
+        <description><![CDATA[Cathedral of Our Lady of Peace <br>1184 Bishop Street <br>Honolulu, Hawaii, 96813, USA <br><br>*A relic of the heel of St Damien Joseph was given to the Hawaiian Catholic Church during the canonization of St Damien Joseph in 2009. Today it is enshrined in this church. It is located within a glass case to the right of the main sanctuary.<br>*The mortal remains of Saint Marianne Cope are also enshrined here. Marianne Cope, also known as Saint Marianne of Molokaʻi, (January 23, 1838 – August 9, 1918) was a German-born American religious sister who was a member of the Sisters of St Francis of Syracuse, New York, and founding leader of its St. Joseph's Hospital in the city, among the first of 50 general hospitals in the country. Known also for her charitable works, in 1883 she relocated with six other sisters to Hawaiʻi to care for persons suffering leprosy on the island of Molokaʻi and aid in developing the medical infrastructure in Hawaiʻi. Despite direct contact with the patients over many years, Cope did not contract the disease.<br><br>In 2005, Cope was beatified by Pope Benedict XVI. Cope was declared a saint by the same pope on October 21, 2012, along with Kateri Tekakwitha, a 17th-century Native American. Cope is the 11th person in what is now the United States to be canonized by the Catholic Church.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -157.8595203,21.310596,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St Marianne Cope</name>
+        <description><![CDATA[Shrine and Museum of Saint Marianne Cope<br>St Anthony Convent<br>1024 Court Street<br>Syracuse, New York, 13208, USA<br><br>*The remains of St Marianne Cope (d. 1918) rest within a large reliquary in the convent chapel. It was here in Syracuse in 1862 that she joined the Sisters of St Francis. Fifteen years later she became the mother general of this community. Despite all of her responsibilities in 1883 she embraced a call to take charge of several hospitals and schools in Hawaii including those at a leper colony at Moloka’i. It was here that she helped assist St Damien Joseph de Veuster in caring for the lepers.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -76.151685,43.074676,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St Charles Lwanga and Companions</name>
+        <description><![CDATA[Uganda Martyrs Shrine <br>Namugongo, Uganda <br><br>*This shrine is built upon the spot where St Charles Lwanga (d. 1886) suffered martyrdom. Also preserved here are additional relics from other Ugandan martyrs who lost their lives during this same persecution.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            32.651432,0.385637,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Cristóbal Magallanes and Companions</name>
+        <description><![CDATA[Parroquia de Nuestra Señora del Rosario <br>(Parish of Our Lady of the Rosary) <br>Totatiche, Mexico <br><br>*The relics of St Cristóbal Magallanes (d. 1927) rest within a golden urn in the church.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -103.4435398,21.928122,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Blessed Miguel Agustin Pro</name>
+        <description><![CDATA[Parroquia de la Sagrada Familia <br>(Parish of the Holy Family) <br>Calle Puebla 144 <br>Colonia Roma, Mexico City, 06700, Mexico <br><br>*The remains of Blessed Miguel Agustin Pro (d. 1927) rest within a silver reliquary to the right of the main sanctuary.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -99.161047,19.422442,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Vietnamese Martyrs</name>
+        <description><![CDATA[College General Major Seminary <br>Jalan Cengai <br>11200 Tanjung Bungah, Penang, Malaysia <br><br>*Preserved here are relics from the Vietnamese martyrs including some who were alumni from this college.<br><br>I martiri del Vietnam sono un gruppo di 117 tra ecclesiastici, religiosi, missionari e laici uccisi nel corso di diverse persecuzioni in Tonchino, Cocincina e Annam tra il 1745 e il 1862.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            100.300825,5.460081,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Blessed Francis Xavier Seelos</name>
+        <description><![CDATA[National Shrine of Blessed Francis Xavier Seelos <br>919 Josephine Street <br>New Orleans, Louisiana, USA 70130 <br><br>*The remains of Blessed Francis Xavier Seelos (d. 1867) rest within an ornate house-like reliquary within this shrine.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -90.074464,29.929136,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Turibius of Mongrovejo</name>
+        <description><![CDATA[Capilla del Palacio Arzobispal de Lima<br>(Chapel of the Archbishop’s Palace of Lima)<br>Lima, Peru<br><br>*Some bones of St Turibius (d. 1606) are preserved within a reliquary in this chapel. On his feast day these relics are often presented for public veneration within the Lima Cathedral. St Turibius was known for his evangelical activity as the Archbishop of Lima. During his time in Peru he is said to have baptized over 500,000 individuals including St Rose of Lima and St Martin de Porres.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0296576,-12.0460759,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Rose of Lima, Saint Martin de Porres, Saint John Macías</name>
+        <description><![CDATA[Iglesia de Santo Domingo<br>(Church of Holy Sunday)<br>Jr. Camaná & Conde de Superunda<br>Lima, Peru<br><br>*The remains of three prominent Peruvian saints rest within this convent. The tomb of St Martin de Porres (d 1639) is located within a chapel in the convent’s second cloister. St Rose of Lima (d. 1617) is buried in the crypt below the Chapter House. Also located at this convent are the remains of St John Macías (d. 1645).]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -77.0319351,-12.0440764,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Mary Mackillop</name>
+        <description><![CDATA[Mary MacKillop Palace<br>Mary Helen MacKillop RSJ (15 January 1842 – 8 August 1909) was an Australian religious sister who has been declared a saint by the Catholic Church, as St Mary of the Cross. Of Scottish descent, she was born in Melbourne but is best known for her activities in South Australia. Together with Julian Tenison-Woods, she founded the Sisters of St Joseph of the Sacred Heart (the Josephites), a congregation of religious sisters that established a number of schools and welfare institutions throughout Australia and New Zealand, with an emphasis on education for the rural poor.<br><br>The process to have MacKillop declared a saint began in the 1920s, and she was beatified in January 1995 by Pope John Paul II. Pope Benedict XVI prayed at her tomb during his visit to Sydney for World Youth Day 2008 and in December 2009 approved the Catholic Church's recognition of a second miracle attributed to her intercession. She was canonised on 17 October 2010, during a public ceremony in St Peter's Square at the Vatican. She is the first Australian to be recognised by the Catholic Church as a saint. Mary MacKillop is the patron saint of the Roman Catholic Archdiocese of Brisbane.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            151.2049279,-33.8388348,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Pietro Chanel</name>
+        <description><![CDATA[Peter Chanel (12 July 1803 – 28 April 1841), born Pierre Louis Marie Chanel, was a Catholic priest, missionary, and martyr.<br>In 1831, at the age of 28, Chanel joined the nascent Society of Mary (Marists), who would concentrate on local missions and foreign missionary work. Instead of selecting him as a missionary, however, the Marists appointed him as the spiritual director at the seminary of Belley, where he stayed for five years. In 1833, he accompanied Jean-Claude Colin to Rome to seek approval of the nascent Society. In 1836, the Marists were asked to send missionaries to the territory of the southwest Pacific. In return for eventual acceptance, the group were promised formal approbation, granted by Pope Gregory XVI. Chanel, professed with the other aspirants as Marist on 24 September 1836, was made the superior of theband of seven Marist missionaries that set out on 24 December from Le Havre. They were accompanied by Bishop Jean Baptiste Pompallier who was to become the first Roman Catholic bishop of New Zealand.<br><br>Chanel traveled first to the Canary Islands (8 January 1837), where his friend, Claude Bret, caught a flu-like virus which led to his death at sea (20 March 1837). Next, Chanel traveled to Valparaíso, Chile (28 June), where the French Congregation of the Sacred Hearts of Jesus and Mary ("Picpus Fathers"), who had care of the Apostolic Vicariate of Eastern Oceania, had their base. His third and fourth stops were in the Gambier Islands (13 September) and in Tahiti (21 September), where the group transferred to the ship Raiatea. In that ship, they set sail (23 October) to drop off two missionaries at Wallis, the main seat of the mission in Tonga. The missionaries arrived at Vava’u but were not welcome, and thus continued their journey to Futuna. Chanel went to neighboring Futuna, accompanied by a French lay brother Marie-Nizier Delorme. They arrived on 8 November 1837 with an English Protestant layman named Thomas Boag, who had been resident on the island and had joined them at Tonga seeking passage to Futuna.<br><br>The group was initially well received by Futuna's king, Niuliki. Chanel struggled to learn the language but eventually mastered it. Despite little apparent success and severe want, he maintained endless patience and courage. It was a difficult mission, requiring him to cope with isolation and acclimatise to different foods and customs, but it eventually began to bear some fruit. A few natives had been baptised while a few more were being instructed. King Niuliki believed Christianity would undermine his authority as high priest and king. When his son, Meitala, sought to be baptised, the king sent a favored warrior, his son-in-law, Musumusu, to "do whatever was necessary" to resolve the problem. Musumusu went to Meitala and the two fought. Musumusu, injured in the fracas, went to Chanel feigning need of medical attention. While Chanel tended him, a group of others ransacked his house. Musumusu took an ax and clubbed Chanel to death. Chanel died on 28 April 1841.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -178.0926712,-14.2954147,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Pedro Calungsod</name>
+        <description><![CDATA[Pedro Calungsod (Spanish: Pedro Calúñgsod or archaically Pedro Calonsor; mid-1650s – April 2, 1672), also known as Peter Calungsod and Pedro Calonsor, was a Catholic Filipino migrant, sacristan and missionary catechist who, along with the Spanish Jesuit missionary Diego Luis de San Vitores, suffered religious persecution and martyrdom in Guam for their missionary work in 1672.<br><br>While in Guam, Calungsod preached Christianity to the Chamorro people through catechesis, while baptizing infants, children, and adults at the risk and expense of being persecuted and eventually murdered. Through Calungsod and San Vitores's missionary efforts, many native Chamorros converted to Roman Catholicism.<br><br>Calungsod was beatified on March 5, 2000, by Pope John Paul II, and canonized by Pope Benedict XVI at Saint Peter's Basilica in Vatican City on October 21, 2012.<br><br>At his martyrdom in Guam, his body was thrown to the sea and lost. Thus there are no first class relics. The cutlass used to hack Calungsod's head and neck was retrieved from Guam by Cardinal Vidal and is now venerated as a second-class relic.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            123.9019445,10.2944965,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Blessed Diego de San Vitores Church</name>
+        <description>Memorial of the martyrdom of Sanvitores alongside Saint Pedro Calungsod</description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            144.8021869,13.5070766,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Blessed Diego Saint Pedro Shrine</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            144.8060918,13.5163199,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Peter of Saint Joseph de Betancur</name>
+        <description><![CDATA[Santuario San Francisco el Grande<br><br>Peter of Saint Joseph de Betancur (or Betancourt) y Gonzáles (Spanish: Pedro de San José de Betancur y Gonzáles, March 21, 1626 (Tenerife) – April 25, 1667 (Antigua Guatemala), called Hermano Pedro de San José Betancurt (Brother Peter of Saint Joseph Betancur) or more simply Peter de Betancurt, Hermano Pedro (Brother Peter), Santo Hermano Pedro (Saint Brother Peter), or San Pedro de Vilaflor (Saint Peter of Vilaflor), was a Spanish saint and missionary in Guatemala. Known as the "Saint Francis of Assisi of the Americas", he is the first saint native to the Canary Islands, is also considered the first saint of Guatemala and Central America for having done his missionary work in those American lands. He was the founder of Order of Our Lady of Bethlehem.<br><br>Betancourt's tomb is in the San Francisco Church in Antigua Guatemala. The Cave of Santo Hermano Pedro is located in the south of the island of Tenerife, in a desert on the outskirts of the city of El Médano. It is a very popular pilgrimage site, where the faithful present votive offerings to Betancourt. Inside the cave is a wooden statue of Betancourt. Also an important place of veneration is the Sanctuary of the Santo Hermano Pedro, which is built on his birthplace in Vilaflor.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -90.7294272,14.5538338,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Joseph of Anchieta</name>
+        <description><![CDATA[Catedral de La Laguna<br>José de Anchieta y Díaz de Clavijo (Joseph of Anchieta) (19 March 1534 – 9 June 1597) was a Spanish Jesuit missionary to the Portuguese colony of Brazil in the second half of the 16th century. A highly influential figure in Brazil's history in the first century after its European discovery, Anchieta was one of the founders of São Paulo in 1554 and of Rio de Janeiro in 1565. He is the first playwright, the first grammarian and the first poet born in the Canary Islands, and the father of Brazilian literature. Anchieta was also involved in the religious instruction and conversion to the Catholic faith of the Indian population. His efforts along with those of another Jesuit missionary, Manuel da Nóbrega, at Indian pacification were crucial to the establishment of stable colonial settlements in the colony.<br><br>With his book Arte de gramática da lingoa mais usada na costa do Brasil (1595, as Ioseph de Anchieta), Anchieta became the first person to provide an orthography to the Old Tupi language most commonly spoken by the indigenous people of Brazil.<br><br>Anchieta is commonly known as "the Apostle of Brazil". He was canonized by Pope Francis on 3 April 2014. He was the second native of the Canary Islands, after Peter of Saint Joseph Betancur, also a missionary to Latin America, declared a saint by the Catholic Church. Anchieta is also considered the third saint of Brazil.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -16.3164987,28.4890239,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Charles de Foucauld</name>
+        <description>Tomb</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            2.8733283,30.614764,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santa Madre Teresa di Calcutta</name>
+        <description>Casa madre delle Missionarie della carità</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            88.3637058,22.5530462,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Francesco Solano</name>
+        <description><![CDATA[Basílica y Convento de San Francisco de Lima Francesco Solano, in lingua spagnola Francisco, è stato un religioso dell'Ordine dei Frati minori osservanti, missionario presso gl'indios del Cile, di Panama e del Perù; è stato proclamato santo da papa Benedetto XIII nel 1726.<br>Nascita: 10 marzo 1549, Montilla, Spagna<br>Morte: 14 luglio 1610, Lima, Perù<br>Sepoltura: 15 luglio 1610, Basílica y Convento de San Francisco de Lima, Distretto di Lima, Perù]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -77.027025,-12.0453403,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Juan Diego</name>
+        <description>Basilica di Nostra Signora di Guadalupe</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1178616,19.4848572,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Christianity in Japan</name>
+      <Placemark>
+        <name>Museum of 26 Martyrs of Japan</name>
+        <description><![CDATA[The museum introduces visitors to the arrival of Christianity in Japan, the time of its initial flourishing, the long period during which Christianity was severely banned, as well as to the subsequent resurrection of Christianity in Japan in the mid-19th century. Outside there is a statue of Saint Lorenzo Ruiz donated by Cardinal Jaime Sin of the Philippines, and among the exhibits on display inside is a statue of the Christian samurai Takayama Ukon (who is soon set to be beatified).<br><br>Email address	martyrs@hotmail.com<br>Opening hours	9.00am-5.00pm<br>Periods of closure	New year holidays<br>Admission fee	500 yen (400 yen per person for groups of over 20), high school students 300 yen (200 yen), elementary students 150 yen (100 yen)<br>Special notices	Photography inside the museum is normally forbidden.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            129.8717394,32.7546856,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ōura Church</name>
+        <description><![CDATA[A shrine and tourist attraction for local japanese christians.<br> The oldest and national treasure church in Japan. In 1981, John Paul II visited here.<br>Oura Catholic church still now publishes and distributes “Seibo no kishi” magazine that was published by St. Maximilian Kolbe between 1930 and 1936. It was the first place of Kolbe’s residence in Nagasaki]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            129.8701372,32.7341535,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St. Francis Xavier Memorial Church</name>
+        <description><![CDATA[Hirado Island in Nagasaki Prefecture is home to some interesting Christian churches dating back one hundred years or so. Probably the most-photographed is the St. Francis Xavier Memorial Church in the town of Hirado itself.<br><br>Sitting atop a hill overlooking the small town and its harbor, the church was originally named the Hirado Catholic Church, but was renamed following the placing of a statue of St. Xavier in the grounds.<br><br>One of the sites of the town is "the view of temples and church" which can be had halfway up the lane leading up the hill.<br><br>The church was originally built on a different site in 1913, but was reconstructed at its present location in 1931.<br><br>Other churches on Hirado Island include Kigatsu Church, Furue Church, Osashi Church, Houki Church, Himosashi Church, Yamano Church, Kamikouzaki Church and the beautiful Tabira Church over the bridge on the mainland.<br><br>All of these churches were built after the Meiji Restoration of 1868. The Tokugawa ban on Christianity (the "evil sect") and the death penalty for its practice was lifted in 1873 and full freedom of religion was finally guaranteed in Japan by the Meiji Constitution of 1889.<br><br>The church is open from 6am to 6pm. There is no entry fee.<br><br>St. Francis Xavier Memorial Church<br>259-1 Kagamigawa-cho<br>Hirado-shi<br>Nagasaki<br>Tel: 0950 22 2442]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            129.549598,33.369636,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santo Domingo Church Museum</name>
+        <description><![CDATA[In 1602, Dominican friars began missionary work in Japan. They began their missionary activities in Kagoshima, but were banished from there in 1609. They therefore disassembled the church they had constructed and rebuilt it in Nagasaki. However, it was destroyed only 5 years later following the ban on Christianity in Japan. At that time, a statue of the Virgin Mary was taken to Manila so that it would not be destroyed. In the year 2002, the remains of the destroyed church were discovered beneath a local elementary school. A museum to house the ruins was subsequently built, and today it is open to the public.<br><br>Location	30-1 Katsuyama Town, Nagasaki City, Nagasaki Prefecture (within the grounds of Sakura-machi Elementary School)<br>Opening hours	9:00am-5:00pm<br>Periods of closure	Every Monday & 29th December-3rd January inclusive<br>Admission fee	Free]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            129.8794522,32.7513146,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Shimabara Church</name>
+        <description><![CDATA[カトリック島原教会<br>Shimabara Church dedicated to the 26 Saints of Japan, where prayers are made to the Christians who became martyrs on the Shimabara Peninsula.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            130.367737,32.780656,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Arima Christian Heritage Museum</name>
+        <description><![CDATA[The Arima Christian Heritage Museum displays information on the process that led to the ban on Christianity in Japan, as well as the context of the Shimabara-Amakusa Rebellion. Some display items were excavated from the ruins of Hinoe Castle and Hara Castle, including lead crucifixes made from melted bullets and Christianity-related artefacts, such as medals and rosaries.<br><br>Opening hours	9:00am-6:00pm<br>Days Closed	Thursdays, December 29th-January 3rd<br>Fees	Free]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            130.2435345,32.6361331,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Remains of Hara Castle</name>
+        <description>The site of the Hara Castle contains the castle ruins of Christian daimyo (feudal lord) Arima, who controlled Shimabara. It was the setting of the Shimabara-Amakusa Rebellion, a peasant revolt, which took place in the Shimabara-Amakusa area and became a catalyst for the implementation of the sakoku (national seclusion) policy in Japan. A large amount of human bones and crucifixes have been discovered here. The Sakoku Edict, which was issued five times beginning in 1633, ended with the exclusion of the Portuguese in 1639, one year after the Shimabara-Amakusa Rebellion was suppressed. The site is set to be listed as a World Heritage site in 2018.</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            130.2541749,32.6290242,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Remains of Hinoe Castle</name>
+        <description>The site of Hinoe Castle contains the remains of the castle of a Christian daimyo (feudal lord) who ruled over the Shimabara Peninsula. The site includes the ruins of the place (called a seminario) where the four members of the Tensho embassy who visited Europe in the 16th century were educated, as well as the remains of temples and shrines that were destroyed at the time when Christianity was flourishing. The site of the Hara Castle is set to be listed as a World Heritage site in 2016.</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            130.2526885,32.6598242,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Unzen Church</name>
+        <description><![CDATA[カトリック雲仙教会<br>Unzen Church was built on the occasion of the visit by Saint John Paul II, and is dedicated to those who suffered from Unzen and became martyrs at Nishizaka.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            130.2527441,32.7248135,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Yamada Catholic Church</name>
+        <description><![CDATA[Yamada Church contains monuments of Saint Lorenzo Ruiz and Saint Thomas Nishi, two within a group of canonised martyrs known as St. Thomas Nishi and his 15 Companions.<br>As the second son of Gaspar Nishi, the governor of Ikitsuki, Fr. Thomas Nishi travelled to Manila around 1620 to become a friar and entered the Monastery of the Rosary (Santo Domingo Monastery) of the Dominican Order. He took his vows in 1625, and his religious name became Thomas of Saint Hyacinth. He studied theology at Saint Thomas University in 1621 and became ordained as the first Dominican priest from Japan in 1626.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            129.426802,33.367047,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tabira Catholic Church</name>
+        <description>Tabira Church was built by local Christians under the guidance of Italian and French priests, and by a leading church architect in Japan at that time - master builder Yosuke Tetsukawa.</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            129.577165,33.339668,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hirado City Ikitsuki-jima no Yakata Museum</name>
+        <description><![CDATA[A museum that provides visitors with an introduction to Ikitsuki's Hidden Christians.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            129.4308631,33.3553938,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hirado Castle</name>
+        <description>Hirado Castle stands in an area with a commanding view of Hirado Port. A monument commemorating the landing of Franciscan Fr. Pedro Bautista (26 Martyrs), who was sent to Japan by the Governor-General of the Philippines OFM as an ambassador, lies at the castle entrance.</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            129.5575561,33.3685455,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nagai Takashi Memorial Museum Nagasaki</name>
+        <description><![CDATA[Takashi Nagai (永井隆 Nagai Takashi) (Matsue, 3 febbraio 1908 – Nagasaki, 1º maggio 1951) è stato un medico giapponese, specializzato in radiologia, che si convertì al cattolicesimo con il nome di Paolo e sopravvisse al bombardamento atomico di Nagasaki. La sua successiva vita di preghiera e di servizio gli ha fatto ottenere il soprannome di "Santo di Urakami".<br><br>Intraprende allora la lettura dei Pensieri, riflette sulla vita umana e cambia progressivamente. Diventa più sensibile. Così, nel suo terzo anno di medicina, è sorpreso dall'atteggiamento rigido dei professori quando vanno al capezzale dei malati.<br><br>Nel 1931, continuando la lettura di Pascal, si interroga sulla vita dei cristiani e sulla preghiera. Si interessa al cristianesimo, facendosi ospitare dalla famiglia Moriyama che, da sette generazioni, fa parte di un gruppo di "kakure kirishitan" (cristiani nascosti) del quartiere di Urakami. Sadakichi Moriyama vive con la sua sposa, mentre la loro figlia unica, Midori, fa la maestra in una città vicina. Takashi apprende che la costruzione della cattedrale è stata finanziata dai poveri contadini e pescatori cristiani giapponesi.<br><br>La sera del 24 dicembre Midori Moriyama lo invita a partecipare alla messa di mezzanotte. Nella cattedrale gremita Takashi è colpito dai fedeli in preghiera, dai canti, dalla loro fede e dall'omelia. Racconterà: "ho sentito qualcuno vicino a me che non conoscevo ancora". La notte seguente Midori è colpita da un attacco di appendicite acuta. Takashi fa una rapida diagnosi, avverte il chirurgo e porta Midori tra le sue braccia in ospedale, sotto la neve. L'operazione riesce e Midori si salva.<br><br>Il 9 giugno 1934 riceve il battesimo nella fede cattolica e sceglie il nome cristiano Paolo. Entra così a far parte della comunità cattolica. Particolarmente significativa è per lui la figura di san Paolo Miki. Poi chiede a Midori di sposarlo e lei accetta. Nell'agosto 1934, un mercoledì, alle 7 della mattina, durante la prima messa nella cattedrale di Urakami, il loro matrimonio è celebrato in presenza del presbitero e di due testimoni. Maria Midori Moriyama e Paolo Takashi Nagai intraprendono insieme la loro vita cristiana: Midori è presidentessa dell'associazione delle donne del quartiere di Urakami, Takashi diventa membro della Società San Vincenzo De Paoli, scoprendo gli scritti del suo fondatore, Federico Ozanam. Visita i malati e i più poveri, portando loro conforto e aiuti alimentari. Della loro unione nascono quattro bambini: un maschio, Makoto (3 aprile 1935 – 4 aprile 2001), e tre femmine, Ikuko (7 luglio 1937 – 1939), Sasano, che muore poco dopo la nascita, e Kayano (nata nel 1941). Takashi riceve il sacramento della confermazione nel dicembre 1934.<br><br>Dal 1931 al 1936 il frate Massimiliano Kolbe risiede in un sobborgo di Nagasaki, dove fonda un monastero. Takashi lo incontra diverse volte.<br><br>Nel 1945, quando la seconda bomba atomica lanciata dagli Stati Uniti colpisce Nagasaki, Takashi sopravvive ma sua moglie muore. Per i cinquantotto giorni seguenti Nagai continua a curare le vittime della bomba atomica e a insegnare all'università di Nagasaki. Si trasferisce nel quartiere di Urakami, quello dell'ipocentro della bomba, il 15 ottobre 1945. Fa costruire una piccola capanna, da pazienti riconoscenti e dai suoi allievi, fatta coi pezzi della sua vecchia casa. Denominata "Nyoko-dō" ("Amate gli altri come voi stessi", secondo le parole di Gesù "amerai il tuo prossimo come te stesso").]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            129.865673,32.779004,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Madonna di Lourdes e Museo di Padre Kolbe</name>
+        <description><![CDATA[本河内ルルド<br>IL CONVENTO-MUSEO DI PADRE KOLBE E LA MADONNA DI LOURDES]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            129.8995019,32.7494451,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nagasaki National Peace Memorial Hall for the Atomic Bomb Victims</name>
+        <styleUrl>#icon-1899-F57C00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            129.865019,32.7721237,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nagasaki Atomic Bomb Museum</name>
+        <styleUrl>#icon-1899-F57C00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            129.8645521,32.7725222,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St. Francis Xavier Memorial Church</name>
+        <styleUrl>#icon-1899-F57C00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            129.549598,33.369636,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Catholic Kawaramachi Church</name>
+        <description>Saint Francis Xavier Memorial Church, Kyoto</description>
+        <styleUrl>#icon-1899-F57C00</styleUrl>
+        <Point>
+          <coordinates>
+            135.769425,35.0097098,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kinkaku-ji</name>
+        <styleUrl>#icon-1899-F57C00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.7292431,35.03937,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santuario di Fushimi Inari-taisha</name>
+        <styleUrl>#icon-1899-F57C00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            135.7726717,34.9671402,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Seitai Hoshikai</name>
+        <styleUrl>#icon-1899-F57C00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            140.149485,39.759344,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Memoriale della pace di Hiroshima</name>
+        <styleUrl>#icon-1899-F57C00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            132.453592,34.395483,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parco del Monumento alla memoria di Hiroshima</name>
+        <styleUrl>#icon-1899-F57C00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            132.4523059,34.3925863,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Assumption of Mary Cathedral</name>
+        <styleUrl>#icon-1899-F57C00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            132.4677436,34.395661,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Otome Toge St. Mary's Chapel]]></name>
+        <description>Doctor Nagai wrote about the christians in this mountain</description>
+        <styleUrl>#icon-1899-F57C00</styleUrl>
+        <Point>
+          <coordinates>
+            131.7708032,34.4731246,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

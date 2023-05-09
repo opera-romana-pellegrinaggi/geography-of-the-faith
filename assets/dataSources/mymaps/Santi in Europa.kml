@@ -1,0 +1,1338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Santi in Europa</name>
+    <description><![CDATA[https://www.operaromanapellegrinaggi.org<br>https://www.omniaforitaly.org<br>https://www.omniavaticanrome.org<br><br>Si prendono in considerazione soprattutto i luoghi dove sono venerati i resti mortali o le reliquie più significative, e non tutti i luoghi dove hanno soggiornato o vissuto.]]></description>
+    <Style id="icon-1899-01579B-normal">
+      <IconStyle>
+        <color>ff9b5701</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-01579B-highlight">
+      <IconStyle>
+        <color>ff9b5701</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-01579B">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-01579B-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-01579B-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-097138-normal">
+      <IconStyle>
+        <color>ff387109</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-097138-highlight">
+      <IconStyle>
+        <color>ff387109</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-097138">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-097138-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-097138-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-1A237E-normal">
+      <IconStyle>
+        <color>ff7e231a</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-1A237E-highlight">
+      <IconStyle>
+        <color>ff7e231a</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-1A237E">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-1A237E-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-1A237E-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-880E4F-normal">
+      <IconStyle>
+        <color>ff4f0e88</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-880E4F-highlight">
+      <IconStyle>
+        <color>ff4f0e88</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-880E4F">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-880E4F-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-880E4F-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-A52714-normal">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-A52714-highlight">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-A52714">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-A52714-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-A52714-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>I-V secolo</name>
+      <Placemark>
+        <name>Saint Anne</name>
+        <description><![CDATA[Cathédrale Sainte Anne / La Cathédrale d’Apt<br>(Saint Anne’s Cathedral / Cathedral of Apt)<br>44 Place de la Cathédrale<br>84400 Apt, France<br><br>*The first chapel on the left side of the nave is dedicated to St Anne. A reliquary niche within this chapel contains busts of several saints including St Anne.<br>*It is uncertain how the relics of St Anne arrived in this church. Popular legend claims that they were brought by St Lazarus in the 1st century. However, it is more likely that they were transferred from the Holy Land to Constantinople and then brought to France after 1204 AD.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            5.3973976,43.8759635,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Anne</name>
+        <description><![CDATA[Annakirche<br>(Saint Anne’s Church)<br>Annagasse 3b,<br>1010 Vienna, Austria<br><br>*A relic of St Anne’s hand is preserved within this church. Each year this relic is brought out on July 26th for public veneration.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            16.3721273,48.2043601,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Anne</name>
+        <description><![CDATA[Basilique de Sainte-Anne d’Auray<br>(Basilica of Saint Anne of Auray)<br>9 Rue de Vannes<br>56400 Sainte-Anne d’Auray, France<br><br>*A small chapel dedicated to St Anne was destroyed at this location in the 7th century. Ten centuries later it is said that St Anne began appearing to a simple villager and requested that a new church be built over this ancient chapel. A sanctuary was then built and a relic of St Anne was given to this church as a gift.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -2.9535647,47.7042053,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Bartholomew</name>
+        <description><![CDATA[Frankfurter Dom<br>(Frankfurt Cathedral)<br>Domplatz 1,<br>60313 Frankfurt, Germany<br><br>*The skull of St Bartholomew is venerated within this church. It rests within a Gothic reliquary located on the eastern wall of the right transept. Small wooden statues of Joachim, Cleopas, and Zebedee adorn the sides of this reliquary.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            8.6854204,50.1106631,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint James the Greater</name>
+        <description><![CDATA[Catedrale de Santiago de Compostela<br>(Cathedral of James of Compostela)<br>Praza do Obradoiro S/N<br>15705 Santiago de Compostela, La Coruna, Spain<br><br>*For more than 1000 years pilgrims have walked across northern Spain along the famous Camino de Santiago to reach this church and to visit the relics of St James the Greater. In 2012 alone nearly 200,000 individuals made this pilgrimage. The relics of St James rest below the main sanctuary of this church within a small silver reliquary.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -8.5446412,42.8805962,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Sant'Andrea Apostolo]]></name>
+        <description><![CDATA[Basilica di Sant'Andrea<br>Αγίου Ανδρέου<br>Patras, Greece<br><br>*La tradizione ritiene che Sant'Andrea fosse stato martirizzato crocifisso in diagonale a Patras in Grecia. Resti di questa croce sono venerati all'interno della chiesa e a sinistra del santuario principale.<br>*Nel 1964 il teschio di Sant'Andrea fu restituito a questa chiesa dalla Basilica di San Pietro in Vaticano. La reliquia è custodita ora in una bella cappela a destra della navata principale.<br>*Vi sono anche varie altre reliquie di Sant'Andrea, tra cui il suo dito.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            21.7278061,38.2424316,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Paolo</name>
+        <description><![CDATA[St Paul’s Shipwreck Church<br>74 St Paul’s Street<br>1212 Valletta, Malta<br><br>*L'osso del polso di San Paolo è custodito in un reliquiario nel transetto destro della chiesa. A destra della navata principale c'è una colonna che viene indicata come una colonna alla quale San Paolo fu legato.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            14.4068812,35.9493092,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Twelve Apostles</name>
+        <description><![CDATA[Imperial Treasury of Vienna<br>Hofburg Schwiezerhof<br>1010 Wien, Austria<br>*Schatzkammer Museum<br>*Within this museum are twelve small silver busts of the apostles. Each bust is said to contain a relic of the apostle depicted.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            16.3661328,48.2069987,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Luke the Evangelist</name>
+        <description><![CDATA[Church of St Luke<br>Thebes, Greece<br><br>*This church is located near an old cemetery south-east of the ancient citadel called the Cadmea.<br>*The original tomb of St Luke rests here.<br>*Recently a rib bone was taken from the body of St Luke in Padua, Italy and regifted to this church.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            23.3235575,38.3150824,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Luke the evangelist</name>
+        <description><![CDATA[Duomo di Praga<br>Cathedral of St Vitus<br>Hrad III. Nádvoří<br>119 00 Prague, Czech Republic<br><br>*A relic of the head of St Luke is preserved at this church. A recent study of this relic was conducted at the request of Archbishop Antonio Malttiazzo of Padua in 1998. This study seems to suggest that the authentic relic of St Luke’s head is the one located here and not the one found in the Treasury Museum of St Peter’s Basilica in Rome, Italy.<br>*Also in this church are relics of St Adalbert, of St Wenceslaus, and of St John of Nepomuk (d. 1393)]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            14.4006938,50.0909004,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Matthias</name>
+        <description><![CDATA[Benediktinerabtei St Matthias<br>(St Matthias Benedictine Abbey)<br>Matthiasstraße 85,<br>54290 Trier, Germany<br><br>*The tomb of St Matthias lies within the nave of this church and is surrounded by candles. A sarcophagus within the crypt is said to contain some of his relics.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            6.6320129,49.7382403,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Mary Magdalen</name>
+        <description><![CDATA[Grotte de Sainte-Marie-Madeleine<br>(Grotto of Saint Mary Magdalene)<br>83640 Plan-d’Aups-Sainte-Baume, France<br><br>*The Grotto of Saint Mary Magdalene is carved into the side of a mountain located near Plan-d’Aups-Sainte-Baume.<br>*Tradition claims that St Mary Magdalene spent the last 30 years of her life here. Some relics of St Mary Magdalene are located under the altar.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            5.764401,43.3268569,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Mary Magdalen</name>
+        <description><![CDATA[Basilique Sainte-Marie-Madeleine<br>(Basilica of Saint Mary Magdalene)<br>2 Route Asquins<br>89450 Vézelay, France<br><br>*Tradition holds that St Mary Magdalene was originally buried in the Church of St Maximin in the present day French city of Saint-Maximin-La-Sainte-Baume. In the 8th century her remains were unearthed and transferred to Vézelay, France. Five centuries later the King of Naples, Charles II, claimed to have found her original tomb in St Maximin. In 1281 he was able to obtain official recognition of these relics. As a result, the shrine in Vézelay lost its prominence. Then in the 16th century the relics that remained in Vézelay were burned by French Huguenots. Presently only an empty tomb and a few small relics remain within this church. They are located in the Carolingian crypt.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            3.7487404,47.4663856,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Mary Magdalen</name>
+        <description><![CDATA[Basilique Sainte-Marie-Madeleine<br>(Basilica of Saint Mary Magdalene)<br>Place de l’Hôtel de Ville<br>83470 Saint-Maximin-La-Sainte-Baume, France<br><br>*In the 13th century this church was built over the recently found tomb of St Mary Magdalene. Five centuries later, however, it was severely damaged by supporters of the French Revolution. Despite this damage, both the tomb and a relic of St Mary Magdalene’s skull were saved. These relics can be visited within the crypt of this church.<br><br>*Tradition holds that St Mary Magdalene was originally buried in the Church of St Maximin in the present day French city of Saint-Maximin-La-Sainte-Baume. In the 8th century her remains were unearthed and transferred to Vézelay, France. Five centuries later the King of Naples, Charles II, claimed to have found her original tomb in St Maximin. In 1281 he was able to obtain official recognition of these relics. As a result, the shrine in Vézelay lost its prominence. Then in the 16th century the relics that remained in Vézelay were burned by French Huguenots. Presently only an empty tomb and a few small relics remain within this church. They are located in the Carolingian crypt.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            5.8637199,43.4526909,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Martha</name>
+        <description><![CDATA[Collégiale Royale Sainte-Marthe<br>(Royal Collegiate of Saint Martha)<br>Place de la Concorde<br>13150 Tarascon, France<br><br>*For centuries the relics of St Martha resided in this church. However, during the French Revolution most of these relics were stolen and subsequently lost. Presently only small bone fragments remain. They rest within a bust reliquary in a chapel set behind an iron grate.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            4.6557785,43.8056344,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint John the Baptist</name>
+        <description><![CDATA[Cathédrale d’Amiens<br>(Cathedral of Amiens)<br>30 Place Notre Dame<br>80000 Amiens, France<br><br>*Part of the skull of St John Baptist rests within this cathedral. The authenticity is uncertain since this skull is also said to be located at a number of other places throughout the world including San Silvestro in Capite in Rome, Italy, the Residenz Museum in Munich, Germany, and the Umayyad Mosque in Damascaus, Syria.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            2.3020481,49.8946252,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint John the Baptist</name>
+        <description><![CDATA[Residenzmuseum<br>(Residenz Museum)<br>Residenzstraße 1,<br>80333 Munich, Germany<br><br>*A relic of the skull of St John Baptist rests within this museum. The authenticity is uncertain since this same relic is said to be located at a number of other places throughout the world including the Cathedral of Amiens in France, San Silvestro in Capite in Rome, Italy, and the Umayyad Mosque in Damascaus, Syria.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            11.5785342,48.140593,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Lazarus</name>
+        <description><![CDATA[Cathédrale Sainte-Marie-Majeure / La Major<br>(Cathedral of Saint Mary Major / The Major)<br>Place de la Major<br>13002 Marseille, France<br><br>*This impressive church was completed in 1896. It replaced an older cathedral that can trace its origins back to a 5th century monastery. This church has historically claimed to be in possession of some relics of St Lazarus including his skull.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            5.3648684,43.2999924,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Lazarus</name>
+        <description><![CDATA[Cathédrale Saint-Lazare<br>(Cathedral of Saint Lazarus)<br>Place du Terreau<br>71400 Autun, France<br><br>*This church was built in the 12th century to hold the relics of St Lazarus. His tomb, however, was destroyed during the French Revolution.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            4.2991216,46.9450248,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Sant'Apollinare]]></name>
+        <description><![CDATA[Sankt Lambertus<br>(Saint Lambertus)<br>Stiftsplatz 7,<br>40213 Düsseldorf, Germany<br><br>*Some relics of St Apollinaris (d. sec. II) rest within the main sanctuary of this church.<br><br>Apollinare conobbe il cristianesimo ad Antiochia di Siria, una delle prime città dove esso si diffuse. Divenne discepolo di Pietro apostolo, allorché questi giunse nella città siriana, probabilmente intorno al 44.<br><br>Apollinare accompagnò San Pietro da Antiochia fino a Roma (dove esiste una basilica a lui intitolata) e in seguito fu inviato a Classe, dove la marina militare romana aveva una base (Classis Ravennatis) con centinaia di marinai, molti dei quali provenienti dal Levante.<br><br>Subì il martirio sotto Vespasiano.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            6.7715998,51.2282542,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Sant'Apollinare]]></name>
+        <description><![CDATA[Apollinariskirche<br>(Saint Apollinaris Church)<br>Apollinarisberg 4,<br>53424 Remagen, Germany<br><br>*Relics of St Apollinaris were brought to this city in the 12th century. In 1383 all of these relics, except the skull, were stolen by Duke Wilhelm I and brought to Düsseldorf, Germany. At a later date the skull was also taken and over the next few centuries transferred between several cities before its return to Remagen in 1857. It now rests within a magnificent reliquary bust placed within a large sarcophagus in the crypt of this church. Twice a year this bust is removed for the blessing of pilgrims.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            7.2212896,50.5809709,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sante Perpetua e Felicita</name>
+        <description><![CDATA[Chiesa di Notre Dame di Vierzon<br><br>Perpetua e Felicita (morte a Cartagine il 7 marzo 203) furono due giovani cristiane che subirono il martirio sotto l'imperatore Settimio Severo insieme a Saturo, il catechista di Perpetua, Revocato, Saturnino e Secondolo. <br><br>Una meravigliosa basilica, chiamata Basilica Maggiore, fu eretta nel luogo in cui i martiri furono sepolti. Alfred Louis Delattre, proprio in questa basilica, scoprì un'antica iscrizione recante i nomi dei martiri.<br><br>Nel 439 le reliquie di santa Perpetua, all'approssimarsi dell'invasione dei Vandali, furono trasferite a Roma, poi da lì, nell'843, dall'arcivescovo di Bourges, san Raoul, all'abbazia di Dèvres (o Deuvre), a Saint-Georges-sur-la-Prée. Dopo che quest'abbazia fu saccheggiata dai Normanni nel 903, furono trasferite a Vierzon, nel sito dell'attuale municipio. Da lì furono traslate nella chiesa di Notre Dame di Vierzon nel 1807, dove sono state conservate finora.<br><br>Paroisse Notre Dame<br>(Parish of Notre Dame)<br>4 Rue du Presbytère<br>18100 Vierzon, France<br><br>*Saints Perpetua and Felicity (d. 203) were originally buried in Tunisia. A tradition, however, maintains that at some point relics of St Perpetua were transferred to France. By 903 these relics were brought to the French city of Vierzon where they were first placed in L’abbaye Saint-Pierre and then later transferred to this church.<br>*The chapel on the right side of the apse is dedicated to St Perpetua. Her relics, however, are only presented to the public once a year.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            2.0716618,47.2217767,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pope Saint Cornelius</name>
+        <description><![CDATA[Pfarrkirche St. Kornelius<br>(Parish Church of St Cornelius)<br>Benediktusplatz 11,<br>52076 Aachen, Germany<br><br>*This church was once part of the historic Kornelimünster Abbey that was founded in the 9th century by the Carolingian Emperor, Louis the Pious. However, in 1802 the abbey was dissolved and this church was made into a parish. The abbey has since then been reestablished and now exists in a new building just a short walk from this church.<br>*A number of remarkable relics are preserved within this church. In 875 through the efforts of Emperor Charles the Bald this church received the relic of the head of St Cornelius (d. 253) from l’abbaye Saint-Corneille in Compiègne, France. This relic is now enshrined within a magnificent bust reliquary positioned in the center of the octagonal chapel located in the apse of this church. Also preserved at this church are the cloth used by Christ to wash the disciples’ feet, a cloth used to wipe the brow of Christ, and finally a cloth used in the burial of Christ.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            6.18305,50.72885,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Denis e King Saint Louis</name>
+        <description><![CDATA[Cathédrale de Saint Denis<br>(Cathedral of St Denis)<br>1 Place de la Legion d’Honneur<br>93200 Saint Denis, France<br><br>*Tradition claims that this church was erected over the tomb of St Denis (d. 3rd cent somewhere between 250/285).<br>*For centuries the remains of St Louis (d. 1270) also rested in this church. However, during the French Revolution these remains were destroyed. Only a finger, now kept within this church, was preserved.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            2.3592882,48.9354718,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saints Cosmas and Damian</name>
+        <description><![CDATA[Jesuitenkirche St. Michael<br>(Jesuit Church of St Michael)<br>Neuhauser Straße 6,<br>80333 Munich, Germany<br><br>*The skulls of Saints Cosmas and Damian (d. 287) purportedly rest within an ornate reliquary chest placed within a chapel on the right side of the nave of this church.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            11.5704987,48.1388989,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Sant'Eufemia]]></name>
+        <description><![CDATA[Chiesa di Santa Eufemia<br><br>Eufemia (Calcedonia, 288 – Calcedonia, 16 settembre 303) è stata una santa greca antica, giovane martire presso Calcedonia in Bitinia, venerata dalla Chiesa cattolica e dalla Chiesa ortodossa. Fra i primi documenti sulla vita e sul culto di Sant'Eufemia si ricorda l'Omelia XI di Asterio di Amasea, contemporaneo dei Padri Cappadoci (IV secolo). Asterio descrive fra l'altro un Martyrion in Amasea in cui era presente un ciclo pittorico con i particolari del martirio della santa.<br><br>Eufemia nacque nella città di Calcedonia, in Bitinia. Essendo figlia di nobili (secondo la tradizione, i genitori erano Filofrone e Teodosia), ricevette una buona educazione, sempre secondo le regole di vita cristiane a cui la famiglia faceva riferimento.<br><br>Durante la persecuzione di Diocleziano, a soli quindici anni, fu arrestata assieme ad altri quarantanove cristiani che avevano rifiutato di immolare una vittima ad una divinità pagana. Come gli altri fu torturata, ma restò sempre fedele ai suoi ideali spirituali rifiutando di compiere l'olocausto. Il 16 settembre del 303 (come attestano i Fasti vindobonenses priores) fu gettata nell'arena di Calcedonia tra i leoni. Secondo la tradizione, essi la uccisero ma, mangiatone la sola mano destra, rifiutarono di divorare il resto del corpo, intuendo la sua santità. Gli altri fedeli riuscirono così a recuperare il corpo e a proteggerlo sino all'Editto di Costantino, con il quale veniva riconosciuta la religione cristiana.<br><br>Il suo culto si diffuse notevolmente e sulla sua tomba fu edificata una chiesa dove, nel 451 si tenne il concilio di Calcedonia. San Asterio compose un sermone in onore della santa, letto nel 787 al secondo Concilio di Nicea in una Chiesa a lei dedicata. Quando nel 620 Calcedonia fu conquistata dai Persiani, il suo corpo fu trasferito a Costantinopoli dove l'imperatore Costantino III edificò una nuova chiesa per venerarla.<br><br>Nell'800, secondo quanto dice la tradizione, il sarcofago con le reliquie della santa sparì misteriosamente da Costantinopoli e riapparve, quasi miracolosamente, su una spiaggia di Rovigno in Istria. Probabilmente, i resti furono messi in salvo da alcuni fedeli barcaioli. Ancora secondo la leggenda, gli abitanti di Rovigno tentarono in svariati modi e con gli animali più forti di portare in città il sarcofago, invano. Vi riuscì infine un fanciullo con l'aiuto di due sole giumente, a dimostrazione che la cristianità non si basa sulla forza o sul vigore, ma sulla mitezza e la semplicità.<br><br>Il culto della santa a Rovigno, divenutane la patrona, è molto forte e le reliquie sono venerate presso la chiesa a lei dedicata.<br><br>Sant'Apollinare, vescovo di Ravenna, raccolse probabilmente alcune reliquie della santa e le portò con sé nella sua opera evangelizzatrice in Romagna. I resti di Sant'Eufemia e di Sant'Agata furono rinvenuti nel 1686 sotto la lastra dell'altare della chiesa dedicata alla santa, come testimonia una scritta su carta pecora in romano arcaico[non chiaro] ritrovata insieme ai resti.<br><br>Una parte delle reliquie si trova ad Istanbul, nella cattedrale di San Giorgio.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            13.6311077,45.0832203,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saints Marcellinus and Peter</name>
+        <description><![CDATA[Basilika St Marcellinus und Petrus<br>Einhardbasilika<br>(Basilica of St Marcellinus and Peter)<br>63500 Seligenstadt, Germany<br>Kloster Seligenstadt <br><br>*Relics of Saints Marcellinus and Peter (d. 304) were transferred from Rome to this beautiful church in the 9th century. Shortly thereafter the city took on its new name of Seligenstadt which translated into English means ‘Blessed City’. These relics are now located within a golden chest under the main altar of this church.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            8.9785654,50.0428833,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Vincent of Saragozza deacon and martyr</name>
+        <description><![CDATA[Cathédrale Saint Benoît<br>(Cathedral of St Benedict)<br>9 Rue Barral<br>81100 Castres, France<br><br>*Tradition holds that some relics of St Vincent (d. 304) were brought to the Abbey of St Benedict in Castres, France in 864 AD. Today all that remains of this abbey is its Romanesque tower. In its place stands the Cathedral of St Benedict.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            2.2413035,43.6042251,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Vincent of Saragozza and Saint Gregory Nazianzen</name>
+        <description><![CDATA[Sé Catedral de Lisboa<br>(Lisbon Cathedral)<br>Largo da Sé<br>1100-585 Lisbon, Portugal<br><br>*A tradition claims that relics of St Vincent (d. 304) were brought to Lisbon in 1175. However, it is uncertain if these relics survived the devastating earthquake that hit this city in 1755. Nevertheless, there is within the Treasury of this church a reliquary chest which is said to contain some relics of St Vincent.<br>*Also placed within this Treasury Museum is a gilded silver arm reliquary that contains a right arm bone of St Gregory Nazianzen (d. 389).]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -9.1325844,38.7098786,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Biagio</name>
+        <description><![CDATA[Cattedrale di Dubrovnik<br>20000 Općina<br>Dubrovnik, Croatia<br><br>*Le reliquie di San Biagio (m. 316) sono custodite in preziosi reliquiari all'interno di questa chiesa. Il giorno 2 e 3 Febbraio vengono tolte dalla chiesa e portate gioiosamente in processione per tutta la città durante la Festa di San Biagio.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            18.1104121,42.6398828,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Sant'Antonio del Deserto]]></name>
+        <description><![CDATA[Saint-Antoine-l'Abbaye<br>(Abbey of St Anthony)<br>38160 Saint-Antoine-l’Abbaye, France<br><br>Noto in origine con il nome di La-Motte-Saint-Didier, fu rinominato dal momento che accolse i resti mortali di Sant'Antonio abate nel secolo XI. Fu qui fondato l'ordine ospedaliero dei Fratelli di Sant'Antonio nel 1095 a seguito delle guarigioni dal Fuoco di Sant'Antonio attribuite alle sue reliquie.<br><br>*This monastery is located west of the city of Grenoble, France.<br>*Relics of St Anthony (d. 365) are said to have been transferred here around the 11th century.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            5.2158336,45.1761844,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Anthony of the Desert</name>
+        <description><![CDATA[Cathédrale St Trophime<br>(Parish of St Trophime)<br>12 Rue du Cloître<br>13200 Arles, France<br><br>*Some relics of St Anthony (d. 365) are said to rest in this church. ]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            4.6278718,43.6766368,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Hilary the Great</name>
+        <description><![CDATA[L’Eglise Saint-Hilaire-le-Grand<br>(Church of Saint Hilary)<br>26 Rue Saint-Hilaire<br>86000 Poitiers, France<br><br>*For centuries the remains of St Hilary (d. 368) rested in Poitiers, France. However, in 1572 both his relics and his shrine were destroyed by Huguenots. A miraculous discovery of his relics; however, is said to have occurred in 1657 in Le Puy, France. Some of these relics now rest within a small box inside a bronze shrine in the crypt of this church in Poitiers.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            0.3326622,46.5773395,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Gregory Nazianzen and Saint John Chrysostom</name>
+        <description><![CDATA[Vatopedi Monastery<br>Mount Athos, Greece<br><br>*The skulls of both St Gregory Nazianzen (d. 389) and St John Chrysostom (d. 407) are said to rest within this monastery. They are preserved within ornate reliquaries.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            24.2098214,40.3147233,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Basil the Great</name>
+        <description><![CDATA[The Monastery of Great Lavra<br>Mount Athos, Greece<br><br>*The skull of St Basil the Great (d. 379) rests in this monastery.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            24.3831216,40.1708086,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Basil the Great</name>
+        <description><![CDATA[Basiliek van het Heilig Bloed<br>(Basilica of the Holy Blood)<br>Burg 13,<br>8000 Bruges, Belgium<br><br>*For the last 750 years this church has preserved a precious relic of the Holy Blood of Jesus Christ. Veneration of this relic occurs every Friday in this basilica and culminates with a grand procession on the Solemnity of the Ascension.<br>*The lower chapel of this church is dedicated to St Basil. Within this chapel to the left of the choir is an even smaller chapel dedicated to St Yves. It is within this chapel that a relic of St Basil (d. 379) brought to Bruges in the early part of the 12th century rests.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            3.2265448,51.2081343,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Martin of Tours</name>
+        <description><![CDATA[Basilique Saint Martin<br>(Basilica of St Martin)<br>7 Rue Baleschoux<br>37000 Tours, France<br><br>*This church was recently rebuilt in 1924 to replace the ancient church which was destroyed during the French Revolution. In the crypt of this church is a restored tomb of Saint Martin of Tours (d. 397).<br>Originario della Pannonia, nell'odierna Ungheria, esercitò il suo ministero nella Gallia del tardo impero romano.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            0.6830192,47.3928804,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>VI-X secolo</name>
+      <Placemark>
+        <name>Saint Fulgentius of Ruspe</name>
+        <description><![CDATA[Cattedrale di Bourges<br>Fulgentius of Ruspe (462 or 467 – 1 January 527 or 533) was bishop of the city of Ruspe, Roman province of Africa, North Africa, in modern-day Tunisia, during the 5th and 6th century.<br>His relics were transferred to Bourges in France around 714. They were destroyed during the French Revolution.]]></description>
+        <styleUrl>#icon-1899-1A237E</styleUrl>
+        <Point>
+          <coordinates>
+            2.399205,47.0821639,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Benedict and Saint Scholastica</name>
+        <description><![CDATA[Abbaye Fleury<br>(Fleury Abbey)<br>1 Avenue de l’Abbaye<br>45730 Saint-Benoît-sur-Loire, France<br><br>*Tradition claims that during the latter part of the 7th century relics of St Benedict and St Scholastica were stolen from Montecassino and brought to this city in France. Today this is still a hotly debated issue with both shrines claiming to have the authentic relics. The relics located here rest within the crypt of the church.]]></description>
+        <styleUrl>#icon-1899-1A237E</styleUrl>
+        <Point>
+          <coordinates>
+            2.3057125,47.8095941,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Scholastica</name>
+        <description><![CDATA[L’église Saint-Denis<br>2 Rue Grande<br>55600 Juvigny-sur-Loison, France<br><br>*In the year 874 the relics of St Scholastica, which had been stolen from Montecassino, were placed within the abbey located here. This abbey was later destroyed; however, the relics remain and are preserved within this church. They are processed annually during St Scholastica’s feast in February.]]></description>
+        <styleUrl>#icon-1899-1A237E</styleUrl>
+        <Point>
+          <coordinates>
+            5.3391611,49.4664672,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Boniface</name>
+        <description><![CDATA[Fuldaer Dom<br>(Fulda Cathedral)<br>Eduard-Schick-Platz 3,<br>36037 Fulda, Germany<br><br>*Part of the skull of St Boniface (d. 754) rests on an altar located within the museum of this church. A mitre is positioned upon this relic.<br>*The tomb of St Boniface rests in the crypt chapel directly below the main sanctuary. The relief on the side of his tomb shows St Boniface rising from his grave as he pushes the cover off of his coffin. The majority of his relics are presumed to be located within this tomb. However, some of his relics have been distributed as gifts over the centuries.<br>*Other cities that hold St Boniface in great honor include the two Dutch cities of Dokkum and Groningen and the two German cities of Fritzlar and Mainz.]]></description>
+        <styleUrl>#icon-1899-1A237E</styleUrl>
+        <Point>
+          <coordinates>
+            9.6717379,50.5540597,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Metodio</name>
+        <description><![CDATA[Basilica of Assumption of Mary and Saint Cyrillus and Methodius<br>Luogo della morte e della sepoltura di San Metodio, che evangelizzò gli slavi insieme a San Cirillo]]></description>
+        <styleUrl>#icon-1899-1A237E</styleUrl>
+        <Point>
+          <coordinates>
+            17.3958677,49.1034892,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Sant'Adalberto]]></name>
+        <description><![CDATA[Cattedrale di Gniezno<br>Gniezno Cathedral<br>Jana Laskiego 9,<br>62-200 Gniezno, Poland<br><br>*Questa chiesa vanta di custodire le reliquie di Sant'Adalberto (m. 997) nonostante la tradizione boema seconda la quale le sue spoglie mortali furono portate a Praga. Le reliquie si trovano nella tomba di argento che è messa in evidenza all'interno del santuario principale.]]></description>
+        <styleUrl>#icon-1899-1A237E</styleUrl>
+        <Point>
+          <coordinates>
+            17.5928042,52.5367048,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Sant'Adalberto e San Wenceslao]]></name>
+        <description><![CDATA[Duomo di Praga<br>Cathedral of St Vitus<br>Hrad III. Nádvoří<br>119 00 Prague, Czech Republic<br><br>*Tradition claims that Prague came into the possession of the relics of St Adalbert after Bohemia defeated Poland in 1039 AD. In the spring of 2014 a special ceremony was held to honor these relics. During this ceremony a new ornamental-house shaped reliquary was presented and now serves to house many of St Adalbert’s relics. This reliquary is placed within the Old Archbishop’s Chapel in the cathedral. The skull of the saint, which is kept separate, was placed within the Hilbert Treasury. The remaining relics remain within St Vitus Cathedral and rest within an altar located to the left of the main sanctuary. A sign in Czech located below this altar reads ‘Ostatky Svatého Vojtěcha Druhého Pražského Biskupa (982-997)’. (Gniezno Cathedral in Poland also claims to be in possession of St Adalbert’s relics.)<br>*A relic of the head of St Luke is preserved at this church, as are relics of Saint John of Nepomuk..<br>*St Wenceslaus, a 10th century duke of Bohemia, is buried within a large chapel on the right side of the nave. Frescoes upon the wall of this chapel depict scenes from his life including his martyrdom. Each year on September 28th the relic of his skull is processed from St Vitus Cathedral to the church where he was martyred in Stará Boleslav. This twelve mile walk is greatly celebrated and includes many of the city’s elite including the Castle Guards of the Prague Castle.]]></description>
+        <styleUrl>#icon-1899-1A237E</styleUrl>
+        <Point>
+          <coordinates>
+            14.400093,50.0908798,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Sant'Ansgario (Oscar) di Brema]]></name>
+        <description>Duomo di Amburgo</description>
+        <styleUrl>#icon-1899-1A237E</styleUrl>
+        <Point>
+          <coordinates>
+            10.0135345,53.5575595,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Sant'Ansgario (Oscar) di Brema]]></name>
+        <description><![CDATA["Kleiner Michel" - Kath. Kirche St. Ansgar und St. Bernhard]]></description>
+        <styleUrl>#icon-1899-1A237E</styleUrl>
+        <Point>
+          <coordinates>
+            9.9828464,53.5491373,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Bernardo di Chiaravalle</name>
+        <description><![CDATA[Cattedrale di Troyes<br>Cathédrale de Troyes<br>(Troyes Cathedral)<br>Place Saint-Pierre<br>10000 Troyes, France<br><br>*During the 13th century this church acquired an impressive collection of relics and artifacts that had been looted from the churches of Constantinople in 1204. During the French Revolution, however, many of these relics and historic treasures were destroyed and the church itself was converted into a Temple of Reason. The church has since then been returned to sacred use and is known in particular for its expansive and impressive stained glass windows.<br>*One of the significant relics still preserved by this church is part of the skull of St Bernard (d. 1153). This relic can be found in the Treasury of this church.]]></description>
+        <styleUrl>#icon-1899-1A237E</styleUrl>
+        <Point>
+          <coordinates>
+            4.0815342,48.3004459,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Isidore of Seville</name>
+        <description><![CDATA[Basilica de San Isidoro<br>(Basilica of St Isidore)<br>Plaza San Isidoro 4,<br>24003 Leon, Spain<br><br>*In 1063 the relics of St Isidore (d. 636) were transferred to this church. They now rest in a silver urn within the main sanctuary.]]></description>
+        <styleUrl>#icon-1899-1A237E</styleUrl>
+        <Point>
+          <coordinates>
+            -5.570794,42.600768,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Isidore of Seville</name>
+        <description><![CDATA[Catedral de Murcia<br>Plaza Cardenal Belluga 1,<br>30001 Murcia, Spain<br><br>*Some bones of St Isidore of Seville (d. 636) rest within a silver urn in the main sanctuary of this church. This urn holds remains from all four of the Cartagena saints: St Isidore of Seville, St Leander, St Fulgentius, and St Florentina.]]></description>
+        <styleUrl>#icon-1899-1A237E</styleUrl>
+        <Point>
+          <coordinates>
+            -1.1285752,37.9840473,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Metodio</name>
+        <description><![CDATA[Basilica dell'Assunzione di Maria e Santi Cirillo e Metodio<br>Monastero di Velehrad<br>Stojanovo nádvoří 206,<br>687 06 Velehrad, Repubblica Ceca<br><br>*Dopo la morte di San Cirillo, San Metodio tornò in Moravia dove diffuse con zelo la Fede fino alla sua morte nel 885 d.C. In seguito venne costruita una chiesa sulla sua tomba. Tuttavia sia la chiesa che la tomba furono distrutte più tardi. Questo monastero ora sta in prossimità del luogo originale di sepoltura di San Metodio.]]></description>
+        <styleUrl>#icon-1899-1A237E</styleUrl>
+        <Point>
+          <coordinates>
+            17.3958677,49.1034892,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>XI-XV secolo</name>
+      <Placemark>
+        <name>San Bonaventura</name>
+        <description><![CDATA[Basilica di San Bonaventura a Lione<br><br>Per circa tre secoli vi furono conservate le spoglie mortali del santo, dalla sua morte nel 1274 fino al sec. XVI.<br>In occasione della traslazione dei resti del santo dalla chiesa più antica a quella nuova nell'anno 1450, andarono perdute alcune reliquie. Per esempio della lingua del santo, custodita in un reliquiario prezioso, non si hanno più tracce.<br><br>A fine sec. XV, una mascella fu donata alla reale Cappella di Fontainebleau; nel 1662 la regina Anna d'Austria la donò al Grand Couvent des Cordeliers a Parigi.<br><br>Nel 1499 la testa del santo venne collocata in un reliquiario a parte, sempre al convento dei minori a Lione. Il reliquiario del capo era a forma di busto e fu unito al sarcofago.<br><br>Nel 1562, durante la rivoluzione dei Calvinisti o Ugonotti, scomparve la maggior parte del corpo del santo. I frati cercarono di nascondere il reliquiario con il capo e la cassa con i resti mortali sotterrandoli nel giardino, ma dopo tre settimane di ricerche fu scoperta la cassa e venne distrutta, e bruciarono le sacre ossa sulla piazza "des Cordeliers" (venne poi eretta una croce sul posto). Dopo due anni i frati poterono rientrare al convento, e ritrovarono il reliquiario del capo.<br><br>Tuttavia le due reliquie rimanenti (la mascella a Parigi e il capo a Lione), scomparvero durante la Rivoluzione francese nel 1793. I frati cercarono nuovamente di nascondere il reliquiario del capo a Lione, ma non poterono più rientrare al convento e sorsero nuove costruzioni sul sito che con ogni probabilità hanno sotterrato definitivamente il reliquiario. <br><br>A Bagnoregio si conserva il Santo Braccio, che fu donato da Carlo VIII nel 1491. <br><br>http://www.doctorseraphicus.it/images/annate/1958_67-81_Petrangeli_Papini.pdf]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            4.8368258,45.7634037,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[San Tommaso d'Aquino]]></name>
+        <description><![CDATA[Chiesa dei Giacobini<br>Couvent des Jacobins<br>(Convent of the Jacobins)<br>69 Rue Pargaminieres<br>31000 Toulouse, France<br><br>*From 1274 to 1369 the remains of St Thomas Aquinas rested in Fossanova, Italy. In 1369 they were transferred to the Convent of the Jacobins in Toulouse, France. They remained here until the French Revolution. At this time they were moved for their protection a few blocks away to the Church of St Sernin in Toulouse. From 1789 to 1974 they remained within this church. Finally, in 1974 in honor of the 700th anniversary of the death of St Thomas Aquinas the relics were returned to the Convent of the Jacobins in Toulouse. They now rest within a bronze chest placed under the main altar of this church.]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            1.4404851,43.6034816,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Thomas Aquinas</name>
+        <description><![CDATA[Basilique Saint Sernin<br>13 Place Saint-Sernin<br>31000 Toulouse, France<br><br>*The remains of St Thomas Aquinas (d. 1274) were moved in 1789 for their protection to this church. From 1789 to 1974 they remained here. Finally, in honor of the 700th anniversary of his death in 1974 his relics were returned to the Convent of the Jacobins in Toulouse.]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            1.4418039,43.6083156,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Giovanni Nepomuceno</name>
+        <description><![CDATA[Duomo di Praga<br>*The remains of St John of Nepomuk (d. 1393) rest within a beautiful tomb just to the right of the main sanctuary. The tomb’s odd placement creates a bottleneck for the pilgrims who are making their rounds through the church. His tomb is marked ‘Stříbrný Náhrobek Svatého Jana Nepomuckého (1345-1393)’. Also outside of the cathedral upon Charles Bridge is a large statue of St John of Nepomuk. This statue marks the spot where St John was thrown to his death in 997 for refusing to betray the seal of Confession.]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            14.401316,50.0909227,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Canuto (Canuto IV)</name>
+        <description>Cattedrale di San Canuto</description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            10.3891359,55.3953875,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Raymond of Penyafort</name>
+        <description><![CDATA[Catedral de Santa Eulalia<br>(Cathedral of Saint Eulalia)<br>Plaça de la Seu<br>08002 Barcelona, Spain<br><br>*St Raymond of Penyafort (d. 1275) died in this city and his remains now rest within this church. During his life he codified the canons of the Catholic Church. As a result he is now honored as the patron saint of canon lawyers.]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            2.1761991,41.383962,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Vincent Ferrer</name>
+        <description><![CDATA[Cathédrale Saint-Pierre de Vannes<br>(Cathedral of St Peter of Vannes)<br>22 Rue des Chanoines<br>56000 Vannes, France<br><br>*The tomb of St Vincent Ferrer (d. 1419) is on the left side of the nave within the Blessed Sacrament Chapel. Also located here is a reliquary bust of the saint. These relics have resided in the Blessed Sacrament Chapel since 1956.]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            -2.7569045,47.657814,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Casimiro</name>
+        <description><![CDATA[Catterale di Vilnius<br>Cathedral Square<br>01122 Vilnius, Lithuania<br><br>*San Casimiro (m. 1484) era un leader beneamato. Se non fosse per la morte prematura a 25 anni, sarebbe diventato il Re della Polonia. Viene ricordato in particolare per la sua pietà eccezionale e la sua umiltà. Le sue spoglie mortali si trovano oggi a Vilnius in Lituania e sono custodite in una in un sarcofago di argento all'interno della cattedrale.]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            25.2877342,54.6858486,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Stanislao</name>
+        <description><![CDATA[Wawel Cathedral<br>Wawel 3,<br>31-001 Kraków, Poland<br><br>*The remains of St Stanislaus, the martyred 11th century bishop of Kraków, rest within this church. They are placed within an exquisite silver-plated coffin located above the main altar in the center of this church.]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            19.9354684,50.0546371,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Isidore the Farmer</name>
+        <description><![CDATA[Parroquia de Nuestra Senora del Buen Consejo y San Isidoro<br>(Parish of Our Lady of Good Counsel and St Isidore)<br>Calle de Toledo 37,<br>28005 Madrid, Spain<br><br>*The body of St Isidore (d. 1130) is enshrined in the main sanctuary of this church. The remains of his wife, Maria de la Cabeza, also rest within this church.]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            -3.7072444,40.4129464,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Norbert</name>
+        <description><![CDATA[Strahov Monastery<br>Strahovské Nádvoří 132/1,<br>118 00 Prague, Czech Republic<br><br>*The relics of St Norbert (d. 1134), who founded the Norbertine Order and later became the bishop of Magdeburg, Germany, were transferred from the city of Magdeburg to Strahov Monastery in 1627. Since 1873 these relics have rested within a beautifully crafted gilded sarcophagus placed above the main altar of the large side chapel located on the right side of the nave of this church.]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            14.3892515,50.0861478,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santa Brigida</name>
+        <description><![CDATA[Vadstena Klosterkyrka<br>(Vadstena Abbey)<br>Lasarettsgatan<br>592 30 Vadstena, Sweden<br><br>*Le reliquie di Santa Brigida (m. 1373) furono trasferite qui nel 1374. Si trovano nella cappella a destra del transetto.]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            14.8913536,58.4508051,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Henry</name>
+        <description><![CDATA[Bamberger Dom<br>(Bamberg Cathedral)<br>Domplatz 5,<br>96049 Bamberg, Germany<br><br>*St Henry (d. 1024) was the Holy Roman Emperor from 1014 – 1024. Both he and his wife, St Cunegonde, are canonized saints. They are buried next to each other in this church at the base of the east choir.]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            10.882515,49.8907746,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Elizabeth of Portugal</name>
+        <description><![CDATA[Mosteiro de Santa Clara-a-Nova<br>(New Monastery of St Clare)<br>Calçada de Santa Isabel / Alto de Sta Clara<br>3040-270 Coimbra, Portugal<br><br>*St Elizabeth of Portugal (d. 1336) was both the Queen of Portugal and a great-niece of St Elizabeth of Hungary. She is known as the ‘Peacemaker’ since her efforts were critical in maintaining the peace in her kingdom. In particular she is known for reconciling her husband and her son when they were warring against each other.<br>*The remains of St Elizabeth of Portugal currently rest within a casket above the main altar within the church at this convent in Coimbra. For ten years she was part of a Poor Clare community in this city. The convent where her body now rests was completed after her death in the 17th century.]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            -8.4372418,40.2025972,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>King Saint Louis</name>
+        <description><![CDATA[Cathédrale de Saint Denis<br>(Cathedral of St Denis)<br>1 Place de la Legion d’Honneur<br>93200 Saint Denis, France<br><br>*Tradition claims that this church was erected over the tomb of St Denis (d. 3rd cent).<br>*For centuries the remains of St Louis (d. 1270) also rested in this church. However, during the French Revolution these remains were destroyed. Only a finger, now kept within this church, was preserved.]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            2.3595886,48.9354647,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Sant'Edvige]]></name>
+        <description><![CDATA[Kloster Andechs<br>(Andechs’ Abbey)<br>Bergstraße 2,<br>82346 Andechs, Germany<br><br>*In 1929 this abbey received a fragment of St Hedwig’s (d. 1243) skull from Cardinal Bertram of Breslau. This relic can be viewed in the Holy Chapel. However, access is only permitted for those who have reserved a tour.]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            11.1828171,47.9744764,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Sant'Edvige]]></name>
+        <description><![CDATA[St Hedwigs Kathedrale<br>(St Hedwig's Cathedral)<br>Hinter der Katholischen Kirche 3,<br>10117 Berlin, Germany<br><br>*Some of St Hedwig’s (d.1243) relics rest in the Treasury of this church within a small silver-gilded statue of her likeness. She is depicted holding both the Blessed Virgin Mary and a model of the church. This statue was completed in 1513 by Andreas Heidecker.]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            13.3948097,52.5157702,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Albert the Great and Saint Andrew</name>
+        <description><![CDATA[Sankt Andreas (Saint Andrew)<br>Komodienstraße 6-8,<br>50667 Cologne, Germany<br><br>*The remains of St Albert the Great (d. 1280) rest within a tomb in the crypt of this church. Also an arm of St Andrew rests within a reliquary located in the back of the choir in the main body of this church. It was placed here in 1997.<br>*The city of Cologne is also noted for its connection to a number of other prominent relics and traditions. The remains of the Three Kings are said to rest within a magnificent golden reliquary located in the apse of the Cologne Cathedral. Blessed John Duns Scotus is buried within a tomb in the church called the Minoritenkirche. Also it was here in this city that St Thomas Aquinas studied theology under St Albert the Great and where St Bruno, the founder of the Carthusians, was born. Finally, it was here in 1933 that Edith Stein entered a Carmelite Convent and took the name Teresa Benedicta of the Cross.]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            6.9582814,50.9412784,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Elizabeth of Hungary</name>
+        <description><![CDATA[Kloster der Elisabethinen<br>(Convent of St Elizabeth)<br>Landstraßer Hauptstraße 4a,<br>A-1030 Vienna, Austria<br><br>*Resting within this convent are some bones and the skull of St Elizabeth of Hungary (d. 1231). Her skull is crowned with the crown she wore during her life.]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            16.3867484,48.2052808,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Elizabeth of Hungary</name>
+        <description><![CDATA[Elisabethkirche<br>(St Elizabeth's Church)<br>Elisabethstraße 3,<br>35037 Marburg, Germany<br><br>*Prior to the Protestant Reformation the remains of St Elizabeth of Hungary (d. 1231) rested within two separate reliquaries within this church. The one held her bones and the other her skull. On special occasions these relics would be placed upon the ornate mausoleum pedestal which can still be seen today within the left transept of this church. However, all veneration of her relics ceased in 1539 by decree of Philip of Hesse (d. 1567). He had the relics removed and all Catholic services halted.<br><br>The relics were dispersed in various places:<br>* the skull, in the Convent of Saint Elizabeth in Vienna<br>* il reliquiario del teschio nel Museo di storia svedese a Stoccolma<br>* un reliquiario del braccio nel castello di Sayn]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            8.7701175,50.8148856,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Sant'Elisabetta di Ungheria]]></name>
+        <description><![CDATA[Museo della Storia Svedese<br><br>Vi è custodito il reliquiario che conteneva il teschio di Sant'Elisabetta. Proviene dalla sua chiesa a Marburgo, dopo che Filippo d'Assia fece cessare il culto delle reliquie. Il teschio si trova invece al convento di Sant'Elisabetta a Vienna.]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            18.0899315,59.334679,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Elizabeth of Hungary</name>
+        <description><![CDATA[Schloss Sayn<br><br>Vi è custodito il reliquiario del braccio di Sant'Elisabetta, proveniente dalla chiesa di Sant'Elisabetta a Marburgo.]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            7.5770422,50.4385529,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint John of Kanty</name>
+        <description><![CDATA[Church of St Anne<br>św. Anny 11,<br>30-962 Kraków, Poland<br><br>*St John of Kanty (d. 1473), a professor of theology and a parish priest, is buried in the right transept of this church. In Polish his tomb is marked as (św. Jan z Kęt).]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            19.9335184,50.062316,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Simon Stock</name>
+        <description><![CDATA[Cathédrale Saint André<br>(Saint Andrew’s Cathedral)<br>Place Pey Berland<br>33000 Bordeaux, France<br><br>*The body of St Simon Stock (d. 1265) rests below an altar on the left side of the nave.]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            -0.5776695,44.8376447,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santo Stefano di Ungheria</name>
+        <description><![CDATA[Basilica di Santo Stefano<br>Cattedrale di Santo Stefano<br>Szent István tér 1,<br>1051 Budapest, Hungary<br><br>*La mano destra di Santo Stefano di Ungheria (m. 1038) riposa in un reliquiario in una cappella a sinistra del santuario principale.]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            19.0539887,47.5008902,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Giovanni Capestrano</name>
+        <description><![CDATA[Il Convento di San Giovanni Capestrano<br>Ilok, Croatia<br><br>*San Giovanni da Capestrano giocò un ruolo imporante nell'organizzazione di una crociata contro i Turchi Ottomani nella Battaglia di Belgrado nel 1456. Poco dopo si ammalò di peste e morì in questo convento. Le sue reliquie qui rimasero, e vi si venerano fino ad oggi.]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            19.3770174,45.2244343,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Olaf II Haraldsson</name>
+        <description><![CDATA[Cattedrale di Trondheim<br>Fu re di Norvegia dal 1015 al 1028 ed è considerato santo e martire dalla Chiesa cattolica e ortodossa. Nella cultura moderna norvegese è noto con il nome di Olav den Hellige (Olaf il Santo).<br>All’età di dodici anni intraprese le prime scorrerie sulle coste dell’Europa settentrionale (Paesi baltici, Spagna, Francia) e in particolare in Inghilterra, combattendo contro i danesi e dimostrando sin da giovanissimo, così dicono le fonti, un carattere orgoglioso e vendicativo. Pare che ricevette il battesimo intorno al 1014, durante un soggiorno in Normandia, dove i duchi normanni, sin dall'inizio del dominio avevano accettato il cristianesimo.<br>Durante il suo regno cercò di annullare la minaccia del potere dei suoi vassalli a sud del paese, e cercò di imporre l'insediamento del Cristianesimo come religione di Stato, grazie anche all'aiuto e all'appoggio dato ai missionari cristiani e alla loro attività di evangelizzazione della popolazione.<br>A seguito della morte nel 1030, venne canonizzato il 29 luglio 1031 dal vescovo di Nidaros (attuale Trondheim) Grimkell.]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            10.3969374,63.4269097,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santa Ildegarda di Bingen</name>
+        <description><![CDATA[Wallfahrtskirche St. Hildegard<br><br>Nel 1632, dopo la distruzione del Monastero di Rupertsberg, le reliquie furono traslate nel sito del secondo monastero che Ildegarda aveva fondato a Eibingen nel 1165. L'abbazia di Eibingen è tuttora esistente ed è un floridissimo centro religioso-culturale. L'abbazia è visitabile, e nella chiesa si possono ammirare gli affreschi che ritraggono i momenti salienti della vita di Ildegarda e i segni straordinari che accompagnarono il momento del suo trapasso, avvenuto il 17 settembre 1179.<br><br>Nasce a Bermesheim nel 1098, ultima di dieci figli. Il suo nome di battesimo, tradotto letteralmente, significa «colei che è audace in battaglia». Tra il 1147 e il 1150, sul monte di San Ruperto vicino a Bingen, sul Reno, Ildegarda fonda il primo monastero e, nel 1165, il secondo, sulla sponda opposta del fiume. È una persona delicata e soggetta alle malattie, tuttavia, raggiunge l'età di 81 anni affrontando una vita piena di lavoro, lotte e contrasti spirituali, temprata da incarichi divini. Figura, intellettualmente lungimirante e spiritualmente forte, le sue visioni, trascritte in appunti e poi in libri organici, la rendono celebre. È interpellata per consigli e aiuto da personalità del tempo. Sono documentati i suoi contatti con Federico Barbarossa, Filippo d'Alsazia, san Bernardo, Eugenio III. Negli anni della maturità intraprende numerosi viaggi per visitare monasteri, che avevano chiesto il suo intervento e per predicare nelle piazze, come a Treviri, Metz e Colonia. Muore il 17 settembre 1179.]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            7.9284,49.98563,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>XVI-XXI secolo</name>
+      <Placemark>
+        <name><![CDATA[Santa Teresa d'Avila]]></name>
+        <description><![CDATA[Monasterio de la Anunciación de Nuestra Señora de Carmelitas Descalzas de Alba de Tormes / Madres Carmelitas Descalzas<br>(Discalced Carmelite Monastery of the Annunciation of Our Lady)<br>Plaza de Santa Teresa 3,<br>37800 Alba de Tormes, Spain<br><br>*While visiting various religious communities in the summer of 1582, St Teresa’s health which was already weak began to get imminently worse. Eventually she took to bed and passed away at Alba de Tormes. A great struggle then ensued between Avila and Alba de Tormes in regards to whom would receive her body. At one point her remains were transferred to Avila; however, shortly thereafter a Papal decree was issued and her body was returned to Alba de Tormes where it remains to this day. Also preserved within this convent, but separate from her body, are one of her arms and her heart.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            -5.5152252,40.8264631,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Teresa of Avila</name>
+        <description><![CDATA[Convento de Santa Teresa<br>(Convent of St Teresa)<br>Plaza de la Santa 2,<br>05001 Avila, Spain<br><br>*This church is built over the home where St Teresa of Avila (d. 1582) was born.<br>*Within the gift shop located outside of the church are several prominent relics of St Teresa of Avila.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            -4.7028658,40.655333,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Giovanni della Croce</name>
+        <description>Convento de las Carmelitas Descalzas</description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            -5.837851,43.3831047,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Juan de la Cruz</name>
+        <description><![CDATA[Monasterio de los Carmelitas Descalzos<br>(Monastery of the Discalced Carmelites)<br>Alameda de la Fuencisla<br>40003 Segovia, Spain<br><br>*The body of St John of the Cross (d. 1591) rests within an ornate tomb in the church of this monastery.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            -4.1333059,40.955655,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Juan de la Cruz</name>
+        <description><![CDATA[Oratorio de San Juan de la Cruz /<br>Museo San Juan de la Cruz<br>(Oratory and Museum of Saint John of the Cross)<br>C/ Carmen 13,<br>23400 Ubeda, Spain<br><br>*St John of the Cross (d. 1591) died in this city. Shortly thereafter, his body was transferred to Segovia, Spain. In 1596 Pope Clement VIII agreed that some of his relics should be returned to Ubeda. These relics are now preserved within the sacristy of this church. Also within this church is the grave where his body had originally rested before it was transferred to Segovia.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            -3.3657585,38.0097714,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Sant'Edith Stein - Carmelo di Colonia]]></name>
+        <description><![CDATA[Karmelitinnenkloster "Maria vom Frieden"]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            6.9526374,50.926904,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Sant'Edith Stein - Carmelo di Echt]]></name>
+        <description>Karmelietessenklooster</description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            5.8662882,51.1036109,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santa Teresa di Lisieux</name>
+        <description><![CDATA[Monastère du Carmel de Lisieux<br>(Carmelite Monastery of Lisieux)<br>37 Rue du Carmel<br>14100 Lisieux, France<br><br>*St Therese (d. 1897) lived and prayed in this convent with her Carmelite community from 1888 to 1897. Today the majority of her relics rest within a golden casket in the chapel of this convent below the statue of her likeness.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            0.2286507,49.1414841,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Therese of Lisieux</name>
+        <description><![CDATA[Basilique Sainte Therese de Lisieux<br>(Basilica of St Therese of Lisieux)<br>Avenue Jean XXIII<br>14100 Lisieux, France<br><br>*The right arm bones of St Therese (d. 1897) are enshrined within an impressive reliquary in this basilica.<br><br>The rest of her mortal remains are kept in the Lisieux Carmel.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            0.2363959,49.1396932,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Sant'Antonio Maria Claret]]></name>
+        <description><![CDATA[Temple Sepulcre de Sant Antoni Mª Claret<br>Carrer Sant Antoni Maria Claret, 8 Vic<br><br>Casa d’Espiritualitat Claret<br>(Claretian House of Spirituality)<br>Rambla Sant Domènec 5,<br>08500 Vic, Barcelona, Spain<br><br>*The remains of St Anthony Mary Claret (d. 1870) rest within the crypt of the church at this retreat center. In 1849 he established the Claretian Missionaries in this city under their original title ‘The Missionary Sons of The Immaculate Heart of Mary’.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            2.253819,41.927541,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[San Francesco de Sales & Santa Giovanna Francesca de Chantal]]></name>
+        <description><![CDATA[Basilica della Visitazione, Annecy<br><br>Basilique de la Visitation<br>(Basilica of the Visitation)<br>11 Avenue de la Visitation<br>74000 Annecy, France<br><br>*The remains of St Francis de Sales (d. 1622) and St Jane Frances de Chantal (d. 1641) rest within two different sarcophagi near the communion rail at the base of the main sanctuary. St Francis de Sales is on the left and St Jane Frances de Chantal is on the right. Each sarcophagus is overlaid with a bronze relief depicting the saint’s image.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            6.1275721,45.8926317,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint John of God</name>
+        <description><![CDATA[Basílica de San Juan de Dios<br>(Basilica of St John of God)<br>Calle San Juan de Dios 23,<br>18001 Granada, Spain<br><br>*The remains of St John of God (d. 1550) rest within a silver urn prominently placed above the main altar within the gilded Baroque altarpiece.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            -3.6029815,37.1806656,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[San Damiano de Veuster of Moloka'i]]></name>
+        <description><![CDATA[Sint-Antoniuskapel<br>(St Anthony’s Chapel)<br>Pater Damiaanplein<br>3000 Leuven, Belgium<br><br>* St Damien Joseph de Veuster (d. 1889), the priest who faithfully and heroically served the leper community in Molokai, Hawaii for over fifteen years before finally succumbing himself to the disease, is buried within the crypt of this church.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            4.6982492,50.8759801,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santa Bernadette</name>
+        <description><![CDATA[Couvent de Saint Gildard<br>(Convent of Saint Gildard)<br>34 Rue Saint Gildard<br>58000 Nevers, France<br><br>*The incorrupt body of St Bernadette (d. 1879) is enshrined to the right of the main altar.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            3.1526796,46.9917795,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Lawrence of Brindisi</name>
+        <description><![CDATA[Monasterio de La Anunciada<br>(Monastery of the Annunciation)<br>Plaza Anunciada 1,<br>24500 Villafranca del Bierzo, Spain<br><br>*St Lawrence of Brindisi (d. 1619) died in Lisbon, Portugal. Shortly thereafter, his body was carried to Spain and brought to this city. His remains are now enshrined within this monastery.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            -6.8128012,42.6058811,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint John Maria Vianney</name>
+        <description><![CDATA[Sanctuaire d’Ars<br>(Sanctuary of Ars)<br>451 Rue Jean Marie Vianney<br>01480 Ars Sur Formans, France<br><br>*The body of St John Vianney (d. 1859) is enshrined in this church on the right side of the nave. His heart rests within a small chapel located just outside of this church.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            4.8229512,45.9923698,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Vincent of Paul</name>
+        <description><![CDATA[Chapelle des Pères Lazaristes<br>(Chapel of the Vincentian Priests)<br>95 Rue de Sèvres<br>75006 Paris, France<br><br>*This church is very near the Vaneau Metro Stop. The body of St Vincent de Paul (d. 1660) rests above the main sanctuary and is accessed by means of a staircase. The heart of Saint Vincent is in the shrine of Rue du Bac]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            2.3216405,48.8488565,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Catherine Laboure</name>
+        <description><![CDATA[La Chapelle Notre Dame de la Médaille Miraculeuse<br>(Chapel of Our Lady of the Miraculous Medal)<br>140 Rue du Bac<br>75006 Paris, France<br><br>*The body of St Catherine Laboure (d. 1876) is enshrined within this church. This is also the church where she had the visions of the Miraculous Medal.<br>*Also the heart of St Vincent de Paul (d. 1660) is preserved within a reliquary at this shrine.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            2.3229912,48.8507859,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santa Margherita Maria Alacoque</name>
+        <description><![CDATA[Chapelle de la Visitation<br>(Chapel of the Visitation)<br>16 Rue de la Visitation<br>71600 Paray-le-Monial, France<br><br>*The body of St Margaret Mary Alacoque (d. 1690) is enshrined within this small church.<br>*This is also the church where she received the visions of the Sacred Heart of Jesus.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            4.1222002,46.45109,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Claude de la Colombière</name>
+        <description><![CDATA[Chapelle la Colombiere<br>(Chapel of Colombiere)<br>Rue Pasteur<br>71600 Paray le Monial, France<br><br>*The remains of St Claude de la Colombiere (d. 1682) are enshrined within this church.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            4.1237773,46.4521031,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Peter Canisius</name>
+        <description><![CDATA[L’Eglise Saint-Michel<br>(The Church of Saint Michael)<br>Rue Saint-Pierre-Canisius 10,<br>1700 Fribourg, Switzerland<br><br>*The relics of St Peter Canisius (d. 1597) lie under the main altar of this church.<br>*In order to make his relics more accessible there is a possibility that his relics may be transferred in the near future. If this occurs his relics would be transferred just a few blocks away to the Cathédrale Saint-Nicolas in Fribourg.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            7.1579666,46.8060425,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Luigi Maria Grignion de Montfort</name>
+        <description><![CDATA[Basilique Saint Louis Marie Grignion de Montfort<br>(Basilica of St Louis Grignion de Montfort)<br>Rue Jean Paul II<br>85290 Saint-Laurent-sur-Sevre, France<br><br>*The tomb of St Louis Grignion de Montfort (d. 1716) is in the crypt.<br>*The room where he died can be visited at an oratory about one block from the basilica.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            -0.8896221,46.9584921,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Peter Julian Eymard</name>
+        <description><![CDATA[Eglise du Saint-Sacrement<br>(Blessed Sacrament Chapel)<br>23 Avenue de Friedland<br>75008 Paris, France<br><br>*The remains of St Peter Julian Eymard (d. 1868) rest within a glass case in this chapel.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            2.301845,48.8743103,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Faustina Kowalska</name>
+        <description><![CDATA[Sanktuarium Bożego Miłosierdzia<br>(Shrine of Divine Mercy)<br>Siostry Faustyny 3,<br>30-420 Kraków, Poland<br><br>*The remains of St Faustina (d. 1938), to whom Jesus revealed the inexhaustible limits of His Divine Mercy, rest within this convent. They are placed within a white urn located under an image of Divine Mercy just to the left of the main sanctuary within the convent chapel. The original tomb of St Faustina can be visited in the cemetery adjacent to the new church.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            19.9380803,50.0201057,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Fidelis of Sigmaringen</name>
+        <description><![CDATA[Kapuzinerkloster Feldkirch<br>(Capuchin Monastery of Feldkirch)<br>Bahnhostraße 4,<br>6800 Feldkirch, Austria<br><br>*The skull of St Fidelis (d 1622) rests within this monastery. He was martyred in the nearby town of Grüsch, Switzerland. The rest of his mortal remains are in the Cathedral of Coira.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            9.5991394,47.2394441,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Fidelis of Sigmaringen</name>
+        <description><![CDATA[Cattedrale di Coira<br>Kathedrale Chur<br>(Cathedral of Chur)<br>Hof 14,<br>7000 Chur, Switzerland<br><br>*Relics of St Fidelis rest within a reliquary in the crypt of this church.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            9.5353634,46.8477089,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Vietnamese martyrs</name>
+        <description><![CDATA[Missions Etrangères de Paris<br>(Foreign Missions of Paris)<br>128 Rue du Bac<br>75007 Paris, France<br><br>*This shrine preserves relics from a number of French missionaries who were martyred in Asia. Two of these martyrs, St Pierre Dumoulin-Borie and St Jean-Louis Bonnard, are among the 117 canonized Vietnamese martyrs. Also preserved here are some remains from Bishop Jean-Gabriel Dufresse who was martyred at the age of 64 in China.]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            2.3230291,48.8518476,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Francis Xavier</name>
+        <description><![CDATA[Sint-Carolus Borromeuskerk<br>(Saint Charles Borromeo Church)<br>Hendrik Conscienceplein 12,<br>2000 Antwerp, Belgium<br><br>*A small relic of St Francis Xavier (d. 1552) is preserved in this church in a chapel to the left of the main sanctuary.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            4.4048534,51.2209923,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Peter of Saint Joseph de Betancur</name>
+        <description><![CDATA[Cueva del Hermano Pedro<br><br>Peter of Saint Joseph de Betancur (or Betancourt) y Gonzáles (Spanish: Pedro de San José de Betancur y Gonzáles, March 21, 1626 (Tenerife) – April 25, 1667 (Antigua Guatemala), called Hermano Pedro de San José Betancurt (Brother Peter of Saint Joseph Betancur) or more simply Peter de Betancurt, Hermano Pedro (Brother Peter), Santo Hermano Pedro (Saint Brother Peter), or San Pedro de Vilaflor (Saint Peter of Vilaflor), was a Spanish saint and missionary in Guatemala. Known as the "Saint Francis of Assisi of the Americas", he is the first saint native to the Canary Islands, is also considered the first saint of Guatemala and Central America for having done his missionary work in those American lands. He was the founder of Order of Our Lady of Bethlehem.<br><br>As a small child, he worked as a shepherd, caring for his family's small flock, their only source of income, but also spending some time praying in small cave[5] in the arid region near the present-day town of El Médano (municipality of Granadilla de Abona). Of his life in Tenerife there are some anecdotal data, such as his stay in the famous cave that bears his name, located in El Médano in the south of the island, which Betancourt used as a refuge with his cattle during the winter, as a place of prayer and even as a hiding place to shelter from a pirate raid, so abundant on the Canary Islands coast in that time.<br><br>Betancourt's tomb is in the San Francisco Church in Antigua Guatemala. The Cave of Santo Hermano Pedro is located in the south of the island of Tenerife, in a desert on the outskirts of the city of El Médano. It is a very popular pilgrimage site, where the faithful present votive offerings to Betancourt. Inside the cave is a wooden statue of Betancourt. Also an important place of veneration is the Sanctuary of the Santo Hermano Pedro, which is built on his birthplace in Vilaflor.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -16.5531762,28.0511587,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saint Peter of Saint Joseph de Betancur</name>
+        <description><![CDATA[Santuario del Santo Hermano Pedro<br>Birthplace of the saint.<br><br>Peter of Saint Joseph de Betancur (or Betancourt) y Gonzáles (Spanish: Pedro de San José de Betancur y Gonzáles, March 21, 1626 (Tenerife) – April 25, 1667 (Antigua Guatemala), called Hermano Pedro de San José Betancurt (Brother Peter of Saint Joseph Betancur) or more simply Peter de Betancurt, Hermano Pedro (Brother Peter), Santo Hermano Pedro (Saint Brother Peter), or San Pedro de Vilaflor (Saint Peter of Vilaflor), was a Spanish saint and missionary in Guatemala. Known as the "Saint Francis of Assisi of the Americas", he is the first saint native to the Canary Islands, is also considered the first saint of Guatemala and Central America for having done his missionary work in those American lands. He was the founder of Order of Our Lady of Bethlehem.<br><br>As a small child, he worked as a shepherd, caring for his family's small flock, their only source of income, but also spending some time praying in small cave[5] in the arid region near the present-day town of El Médano (municipality of Granadilla de Abona). Of his life in Tenerife there are some anecdotal data, such as his stay in the famous cave that bears his name, located in El Médano in the south of the island, which Betancourt used as a refuge with his cattle during the winter, as a place of prayer and even as a hiding place to shelter from a pirate raid, so abundant on the Canary Islands coast in that time.<br><br>Betancourt's tomb is in the San Francisco Church in Antigua Guatemala. The Cave of Santo Hermano Pedro is located in the south of the island of Tenerife, in a desert on the outskirts of the city of El Médano. It is a very popular pilgrimage site, where the faithful present votive offerings to Betancourt. Inside the cave is a wooden statue of Betancourt. Also an important place of veneration is the Sanctuary of the Santo Hermano Pedro, which is built on his birthplace in Vilaflor.]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -16.6367994,28.1602165,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[San Giovanni d'Avila]]></name>
+        <description><![CDATA[Basilica di San Giovanni d'Avila<br><br>Giovanni d'Ávila (Almodóvar del Campo, 6 gennaio 1499 – Montilla, 10 maggio 1569) è stato un sacerdote spagnolo, grande predicatore e mistico, ed è stato proclamato santo da papa Paolo VI (1970); nel 2012 è stato dichiarato dottore della Chiesa da papa Benedetto XVI; è chiamato l'Apostolo dell'Andalusia.<br><br>Nato da una nobile famiglia castigliana, iniziò a studiare giurisprudenza a Salamanca, ma passò presto all'università di Alcalá de Henares dove si laureò in teologia e filosofia. Rimase orfano quando era ancora studente e, ordinato sacerdote, nel 1525 celebrò la sua prima messa nella chiesa dov'erano sepolti i genitori e distribuì la sua parte di eredità ai poveri.<br><br>Nel 1527 progettò di partire per il Messico come missionario, ma il suo zelo e la sua abilità oratoria vennero segnalate al Vescovo di Siviglia, Alfonso Manrique de Lara, che lo incaricò di organizzare delle missioni popolari in tutta l'Andalusia per ravvivare la fede in quelle terre: la sua fama di oratore si diffuse rapidamente presso tutti gli strati sociali della popolazione fino a divenire leggendaria; venne incaricato anche di pronunciare il sermone in occasione dei funerali della regina Isabella di Portogallo, moglie di Carlo V, tenutisi il 17 maggio 1538.<br><br>Amico di sant'Ignazio di Loyola, favorì lo sviluppo e la diffusione dei Gesuiti in Spagna; sostenne santa Teresa d'Avila nella sua opera di riforma dell'Ordine carmelitano e san Giovanni di Dio per la fondazione dei Fatebenefratelli; fu una sua omelia, quella pronunciata per i funerali di Isabella di Portogallo, a causare la conversione di san Francesco Borgia che abbandonò la carica di Viceré di Catalogna per diventare un sacerdote della Compagnia di Gesù.<br><br>Fu autore di numerose opere di carattere devozionale tra cui l'Epistolario spirituale tra tutti gli stati e Audi, filia, et vide che ebbero uno straordinario successo nella seconda metà del XVII secolo e vennero tradotti e diffusi in tutta Europa.<br><br>Il suo culto fu approvato sotto il pontificato di Clemente XIII e venne proclamato Venerabile l'8 febbraio 1759; Leone XIII lo beatificò il 4 aprile 1894 e il 31 maggio 1970 è stato canonizzato da Paolo VI.<br><br>La sua memoria liturgica ricorre il 10 maggio.<br><br>Dal Martirologio romano (ed. 2005):<br><br>«10 maggio - A Montilla nell’Andalusia in Spagna, san Giovanni d’Ávila, sacerdote, che percorse tutta la regione predicando Cristo e, sospettato ingiustamente di eresia, fu gettato in carcere, dove scrisse la parte più importante della sua dottrina spirituale.»<br><br>Il 7 ottobre 2012 papa Benedetto XVI ha proclamato san Giovanni d'Ávila "Dottore della Chiesa Universale", unitamente alla santa tedesca Ildegarda di Bingen. Secondo la lettera apostolica con cui è avvenuta la proclamazione,[1] Giovanni d'Avila spiegò che "la vita spirituale cristiana, che è partecipazione alla vita trinitaria, parte dalla fede in Dio Amore", è nutrita dalla misericordia e carità del Padre manifestata nei meriti della Passione di Gesù Cristo, ed è guidata dallo Spirito Santo. Il «Padre Maestro Ávila» (o "Santo Maestro di Ávila"), chiamato Maestro già dai suoi contemporanei, fu prima di tutto un ricercato "predicatore evangelico" e amico di Ignazio di Loyola, autore di una "teologia vicina alla vita, che risponde alle questioni poste in quel momento e lo fa in modo didattico e comprensibile". Pur non essendo professore, la sua "profonda conoscenza della Bibbia" e "profonda esperienza delle realtà soprannaturali" lo resero un influente consigliere di dotti vescovi e religiosi del suo tempo. Le citazioni si focalizzano su 5 dei 70 libri del canone biblico, con alcuni commenti patristici di rilievo.<br><br>Il 25 gennaio 2021 papa Francesco ne ha istituito la memoria facoltativa per tutta la Chiesa universale, fissandola al 10 maggio.]]></description>
+        <styleUrl>#icon-1899-097138</styleUrl>
+        <Point>
+          <coordinates>
+            -4.6384215,37.5888488,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Christian Noblemen</name>
+      <Placemark>
+        <name>Charlemagne</name>
+        <description><![CDATA[Aachen Cathedral<br>Domhof 1,<br>52062 Aachen, Germany<br><br>*A number of relics from various martyrs and saints are preserved in the Treasury of this church. Also on display are several reliquaries of Emperor Charlemagne (d. 814).]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            6.0839201,50.7747198,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
