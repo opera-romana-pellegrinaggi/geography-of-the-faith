@@ -38,6 +38,10 @@ const hostnameToLocale = () => {
         else if( location.pathname.includes('geografia') && location.pathname.includes('da') && location.pathname.includes('fe') ) {
             lang = 'pt';
         }
+        else {
+            thirdlevel = hostname[0];
+            lang = thirdlevelMap[thirdlevel] ?? 'en';
+        }
     }
     return lang;
 }
