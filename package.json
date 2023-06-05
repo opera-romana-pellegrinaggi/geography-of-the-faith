@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "arrive": "^2.4.1",
-    "cesium": "^1.105.2",
+    "cesium": "^1.106.1",
     "i18next": "^22.5.0",
     "material-dashboard": "^3.0.9",
     "material-dashboard-dark-edition": "^2.1.0",
