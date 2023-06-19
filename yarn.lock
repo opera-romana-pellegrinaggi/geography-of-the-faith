@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@babel/runtime@^7.20.6":
-  version "7.21.5"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.21.5.tgz#8492dddda9644ae3bda3b45eabe87382caee7200"
+"@babel/runtime@^7.22.5":
+  version "7.22.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.22.5.tgz#8564dd588182ce0047d55d7a75e93921107b57ec"
   dependencies:
     regenerator-runtime "^0.13.11"
 
@@ -130,11 +130,11 @@ grapheme-splitter@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/grapheme-splitter/-/grapheme-splitter-1.0.4.tgz#9cf3a665c6247479896834af35cf1dbb4400767e"
 
-i18next@^22.5.0:
-  version "22.5.0"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-22.5.0.tgz#16d98eba7c748ab183a36505046b5b91f87e989b"
+i18next@^23.2.0:
+  version "23.2.0"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-23.2.0.tgz#954736c04b461b38cfcc4584a3d5eb3a8fe6914f"
   dependencies:
-    "@babel/runtime" "^7.20.6"
+    "@babel/runtime" "^7.22.5"
 
 jsep@^1.3.8:
   version "1.3.8"
