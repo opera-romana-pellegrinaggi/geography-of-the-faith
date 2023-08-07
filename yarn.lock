@@ -8,9 +8,9 @@
   dependencies:
     regenerator-runtime "^0.13.11"
 
-"@cesium/engine@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@cesium/engine/-/engine-3.0.0.tgz#5d16fe2264aff72b4397fb446d0580d8a5164aa9"
+"@cesium/engine@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@cesium/engine/-/engine-3.0.2.tgz#c990892ff56c12b563d671f791fb7a3bd660604e"
   dependencies:
     "@tweenjs/tween.js" "^21.0.0"
     "@zip.js/zip.js" "2.4.x"
@@ -21,7 +21,7 @@
     grapheme-splitter "^1.0.4"
     jsep "^1.3.8"
     kdbush "^4.0.1"
-    ktx-parse "^0.5.0"
+    ktx-parse "^0.6.0"
     lerc "^2.0.0"
     mersenne-twister "^1.1.0"
     meshoptimizer "^0.19.0"
@@ -31,11 +31,11 @@
     topojson-client "^3.1.0"
     urijs "^1.19.7"
 
-"@cesium/widgets@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@cesium/widgets/-/widgets-3.0.0.tgz#82f98c3cb7172a8a84f3c02ca739af6c659b3344"
+"@cesium/widgets@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@cesium/widgets/-/widgets-3.0.2.tgz#f157c7215ff04f1cc1e6d674abb25fedd8f676e6"
   dependencies:
-    "@cesium/engine" "^3.0.0"
+    "@cesium/engine" "^3.0.2"
     nosleep.js "^0.12.0"
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
@@ -107,12 +107,12 @@ bitmap-sdf@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/bitmap-sdf/-/bitmap-sdf-1.0.4.tgz#e87b8b1d84ee846567cfbb29d60eedd34bca5b6f"
 
-cesium@^1.107.0:
-  version "1.107.0"
-  resolved "https://registry.yarnpkg.com/cesium/-/cesium-1.107.0.tgz#eed2c54c934aed9f22bb68d8b86a09087de52e4c"
+cesium@^1.108.0:
+  version "1.108.0"
+  resolved "https://registry.yarnpkg.com/cesium/-/cesium-1.108.0.tgz#a6b9301640c5c1c261cc116d4fad5a33a959ea1b"
   dependencies:
-    "@cesium/engine" "^3.0.0"
-    "@cesium/widgets" "^3.0.0"
+    "@cesium/engine" "^3.0.2"
+    "@cesium/widgets" "^3.0.2"
 
 commander@2:
   version "2.20.3"
@@ -144,9 +144,9 @@ kdbush@^4.0.1:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/kdbush/-/kdbush-4.0.2.tgz#2f7b7246328b4657dd122b6c7f025fbc2c868e39"
 
-ktx-parse@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/ktx-parse/-/ktx-parse-0.5.0.tgz#b4025bbc73ac5386ac37e869de455eab915261bc"
+ktx-parse@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/ktx-parse/-/ktx-parse-0.6.0.tgz#69e12a511cf345546da27b5b046182f5f31f68f9"
 
 lerc@^2.0.0:
   version "2.0.0"
