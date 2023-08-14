@@ -130,9 +130,9 @@ grapheme-splitter@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/grapheme-splitter/-/grapheme-splitter-1.0.4.tgz#9cf3a665c6247479896834af35cf1dbb4400767e"
 
-i18next@^23.2.6:
-  version "23.2.6"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-23.2.6.tgz#70c09517c301f206615acd6fc35b4a2570629300"
+i18next@^23.4.4:
+  version "23.4.4"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-23.4.4.tgz#ec8fb2b5f3c5d8e3bf3f8ab1b19e743be91300e0"
   dependencies:
     "@babel/runtime" "^7.22.5"
 
