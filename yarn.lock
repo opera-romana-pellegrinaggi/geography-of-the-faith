@@ -8,20 +8,21 @@
   dependencies:
     regenerator-runtime "^0.13.11"
 
-"@cesium/engine@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@cesium/engine/-/engine-3.0.0.tgz#5d16fe2264aff72b4397fb446d0580d8a5164aa9"
+"@cesium/engine@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@cesium/engine/-/engine-4.0.0.tgz#85b7efde958a5294e70ced6560184b580fe9c52d"
   dependencies:
     "@tweenjs/tween.js" "^21.0.0"
     "@zip.js/zip.js" "2.4.x"
     autolinker "^4.0.0"
     bitmap-sdf "^1.0.3"
     dompurify "^3.0.2"
+    draco3d "^1.5.1"
     earcut "^2.2.4"
     grapheme-splitter "^1.0.4"
     jsep "^1.3.8"
     kdbush "^4.0.1"
-    ktx-parse "^0.5.0"
+    ktx-parse "^0.6.0"
     lerc "^2.0.0"
     mersenne-twister "^1.1.0"
     meshoptimizer "^0.19.0"
@@ -31,11 +32,11 @@
     topojson-client "^3.1.0"
     urijs "^1.19.7"
 
-"@cesium/widgets@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@cesium/widgets/-/widgets-3.0.0.tgz#82f98c3cb7172a8a84f3c02ca739af6c659b3344"
+"@cesium/widgets@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@cesium/widgets/-/widgets-4.0.0.tgz#747bd0d104e2a0665321dc0e2d8e69fc297edff1"
   dependencies:
-    "@cesium/engine" "^3.0.0"
+    "@cesium/engine" "^4.0.0"
     nosleep.js "^0.12.0"
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
@@ -107,12 +108,12 @@ bitmap-sdf@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/bitmap-sdf/-/bitmap-sdf-1.0.4.tgz#e87b8b1d84ee846567cfbb29d60eedd34bca5b6f"
 
-cesium@^1.107.0:
-  version "1.107.0"
-  resolved "https://registry.yarnpkg.com/cesium/-/cesium-1.107.0.tgz#eed2c54c934aed9f22bb68d8b86a09087de52e4c"
+cesium@^1.109.0:
+  version "1.109.0"
+  resolved "https://registry.yarnpkg.com/cesium/-/cesium-1.109.0.tgz#68f1a0f46ec2e49a86dec52438570d2670325140"
   dependencies:
-    "@cesium/engine" "^3.0.0"
-    "@cesium/widgets" "^3.0.0"
+    "@cesium/engine" "^4.0.0"
+    "@cesium/widgets" "^4.0.0"
 
 commander@2:
   version "2.20.3"
@@ -121,6 +122,10 @@ commander@2:
 dompurify@^3.0.2:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-3.0.3.tgz#4b115d15a091ddc96f232bcef668550a2f6f1430"
+
+draco3d@^1.5.1:
+  version "1.5.6"
+  resolved "https://registry.yarnpkg.com/draco3d/-/draco3d-1.5.6.tgz#0d570a9792e3a3a9fafbfea065b692940441c626"
 
 earcut@^2.2.4:
   version "2.2.4"
@@ -144,9 +149,9 @@ kdbush@^4.0.1:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/kdbush/-/kdbush-4.0.2.tgz#2f7b7246328b4657dd122b6c7f025fbc2c868e39"
 
-ktx-parse@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/ktx-parse/-/ktx-parse-0.5.0.tgz#b4025bbc73ac5386ac37e869de455eab915261bc"
+ktx-parse@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/ktx-parse/-/ktx-parse-0.6.0.tgz#69e12a511cf345546da27b5b046182f5f31f68f9"
 
 lerc@^2.0.0:
   version "2.0.0"
