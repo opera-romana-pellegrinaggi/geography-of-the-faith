@@ -51,7 +51,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 
     <!-- Material Dashboard CSS -->
-    <link rel="stylesheet" href="node_modules/material-dashboard-dark-edition/assets/css/material-dashboard.min.css?v=2.1.2" />
+    <link rel="stylesheet" href="node_modules/material-dashboard-dark-edition/assets/css/material-dashboard.min.css" />
 
     <!-- Cesium CSS -->
     <!-- <link rel="stylesheet" href="https://cesium.com/downloads/cesiumjs/releases/1.104/Build/Cesium/Widgets/widgets.css" /> -->
@@ -380,7 +380,7 @@
       <script src="node_modules/i18next/dist/umd/i18next.js"></script>
 
       <!-- Material Dashboard Core initialisations of plugins and Bootstrap Material Design Library -->
-      <script src="node_modules/material-dashboard-dark-edition/assets/js/material-dashboard.js?v=2.1.2"></script>
+      <script src="node_modules/material-dashboard-dark-edition/assets/js/material-dashboard.js"></script>
 
       <script>
         const ION_ACCESS_TOKEN = "<?php echo getenv('ION_ACCESS_TOKEN'); ?>";
