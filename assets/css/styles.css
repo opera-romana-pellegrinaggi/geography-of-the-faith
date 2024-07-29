@@ -132,9 +132,18 @@
   color: #a9afbbd1;
 }
 
-.nav-link.togglebutton {
+.dark-edition .sidebar .nav {
+  margin-top: 0px;
+}
+
+.dark-edition .sidebar .nav li a {
+  margin: 0 10px 0;
+}
+
+.dark-edition .sidebar .nav li.nav-item a.nav-link.togglebutton {
   border-left: 1px groove grey;
   border-right: 1px groove grey;
+  border-radius: 0;
 }
 
 li.nav-item:last-child > .nav-link.togglebutton {
