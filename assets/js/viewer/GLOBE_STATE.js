@@ -40,6 +40,11 @@ const hideLoaderIfGlobeReady = () => {
         return prev;
       },[]);
       console.log('conditions that are not yet met for the globe to be ready: ' + arr.sort().join(', ') );
+      Object.entries(GLOBE_STATE).forEach(([key, value]) => {
+        if (value) {
+          document.querySelector(`#${key} i`).textContent = 'check_box';
+        }
+      });
     }
 }
 

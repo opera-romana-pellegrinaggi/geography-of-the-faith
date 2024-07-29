@@ -47,7 +47,7 @@
     <meta name="description" content="<?php _e("Geography of the Faith is an interactive globe presenting christian pilgrimage destinations and routes from around the world."); ?>">
 
     <!-- Fonts and icons -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons&display=block" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 
     <!-- Material Dashboard CSS -->
@@ -305,11 +305,11 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <a class="nav-link collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 <i class="material-icons">airplanemode_active</i>
                 <p><?php _e("Flyovers"); ?></p>
               </a>
-              <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+              <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
                 <ul class="nav">
                   <li class="nav-item">
                     <a class="nav-link togglebutton">
@@ -354,7 +354,23 @@
       </div>
     </div>
     <div id="loadingModal">
-      <div id="loadingModalMessage"><?php _e("Multimedia experience is loading..."); ?></div>
+      <div id="loadingModalMessage">
+        <div><?php _e("Multimedia experience is loading..."); ?></div>
+        <ul>
+          <li id="MAPS_SOURCE_READY" class="waiting"><i class="material-icons mr-3">check_box_outline_blank</i>MAPS_SOURCE_READY</li>
+          <li id="TERRAIN_READY" class="waiting"><i class="material-icons mr-3">check_box_outline_blank</i>TERRAIN_READY</li>
+          <li id="DOCUMENT_READY" class="waiting"><i class="material-icons mr-3">check_box_outline_blank</i>DOCUMENT_READY</li>
+          <li id="MARKERS_LAYER_READY" class="waiting"><i class="material-icons mr-3">check_box_outline_blank</i>MARKERS_LAYER_READY</li>
+          <li id="OPENBUS_MARKERS_LAYER" class="waiting"><i class="material-icons mr-3">check_box_outline_blank</i>OPENBUS_MARKERS_LAYER</li>
+          <li id="MARKERS_CREATED" class="waiting"><i class="material-icons mr-3">check_box_outline_blank</i>MARKERS_CREATED</li>
+          <li id="COUNTRY_POLYS_READY" class="waiting"><i class="material-icons mr-3">check_box_outline_blank</i>COUNTRY_POLYS_READY</li>
+          <li id="COUNTRY_BORDERS_READY" class="waiting"><i class="material-icons mr-3">check_box_outline_blank</i>COUNTRY_BORDERS_READY</li>
+          <li id="OMNIA_VR_READY" class="waiting"><i class="material-icons mr-3">check_box_outline_blank</i>OMNIA_VR_READY</li>
+          <li id="TILES_LOADED" class="waiting"><i class="material-icons mr-3">check_box_outline_blank</i>TILES_LOADED</li>
+          <li id="ALL_DRAWN" class="waiting"><i class="material-icons mr-3">check_box_outline_blank</i>ALL_DRAWN</li>
+          <li id="BACKGROUND_MUSIC_READY" class="waiting"><i class="material-icons mr-3">check_box_outline_blank</i>BACKGROUND_MUSIC_READY</li>
+        </ul>
+      </div>
     </div>
     <footer>
       <!-- Core JS files -->

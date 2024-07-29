@@ -1,3 +1,4 @@
+name: geography-of-the-faith
 services:
   db:
     image: mariadb:11.4
