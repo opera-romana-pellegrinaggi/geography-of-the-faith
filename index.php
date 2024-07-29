@@ -377,7 +377,7 @@
       <!-- Plugin for Scrollbar documentation here: https://github.com/utatti/perfect-scrollbar -->
       <script src="node_modules/material-dashboard-dark-edition/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
 
-      <script src="https://unpkg.com/i18next@20.2.4/dist/umd/i18next.js"></script>
+      <script src="node_modules/i18next/dist/umd/i18next.js"></script>
 
       <!-- Material Dashboard Core initialisations of plugins and Bootstrap Material Design Library -->
       <script src="node_modules/material-dashboard-dark-edition/assets/js/material-dashboard.js?v=2.1.2"></script>
