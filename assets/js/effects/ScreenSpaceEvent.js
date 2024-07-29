@@ -1,4 +1,4 @@
-import viewer from "../viewer/Viewer";
+import viewer from "../viewer/Viewer.js";
 
 let handler = new Cesium.ScreenSpaceEventHandler(viewer.canvas);
 

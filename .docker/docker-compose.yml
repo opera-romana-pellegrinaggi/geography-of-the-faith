@@ -1,0 +1,29 @@
+services:
+  db:
+    image: mariadb:11.4
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MARIADB_ROOT_PASSWORD: geofaith
+      MARIADB_USER: ${DBUSER:-geofaith}
+      MARIADB_PASSWORD: ${DBPASS:-geofaith}
+      MARIADB_DATABASE: ${DBNAME:-geography_of_the_faith}
+    volumes:
+      - ./geography_of_the_faith.sql:/docker-entrypoint-initdb.d/setup.sql
+      - ./custom-socket.cnf:/etc/mysql/conf.d/custom-socket.cnf
+      - ./socket:/var/run/mysqld-socketdir
+      - mariadb_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      start_period: 15s
+      interval: 15s
+      timeout: 5s
+      retries: 6
+  adminer:
+    image: adminer:4.8.1
+    restart: always
+    ports:
+      - ${ADMINER_PORT:-8080}:8080
+
+volumes:
+  mariadb_data:

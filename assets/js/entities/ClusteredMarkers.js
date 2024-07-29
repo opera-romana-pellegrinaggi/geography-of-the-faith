@@ -1,5 +1,5 @@
-import { markersLayer } from "./Markers";
-import { pin10, pin20, pin30, pin40, pin50, singleDigitPins } from "./DigitPins";
+import { markersLayer } from "./Markers.js";
+import { pin10, pin20, pin30, pin40, pin50, singleDigitPins } from "./DigitPins.js";
 
 let eventListener;
 let clusteredMarkers = [];

@@ -1,11 +1,11 @@
-import { lang } from '../i18n/I18n';
-import { CATEGORIES, createMarker, createMarkerDef, PilgrimageMarkers, allMarkers, markersLayer, openBusMarkersLayer } from '../entities/Markers';
-import { GLOBE_STATE, hideLoaderIfGlobeReady } from '../viewer/GLOBE_STATE';
-import viewer from '../viewer/Viewer';
-import customClusterStyle from '../entities/ClusteredMarkers';
-import { makeProperty } from '../effects/EntityHover';
+import { lang } from '../i18n/I18n.js';
+import { CATEGORIES, createMarker, createMarkerDef, PilgrimageMarkers, allMarkers, markersLayer, openBusMarkersLayer } from '../entities/Markers.js';
+import { GLOBE_STATE, hideLoaderIfGlobeReady } from '../viewer/GLOBE_STATE.js';
+import viewer from '../viewer/Viewer.js';
+import customClusterStyle from '../entities/ClusteredMarkers.js';
+import { makeProperty } from '../effects/EntityHover.js';
 
-const ENDPOINT = `https://${location.hostname}${location.pathname}geofaith_backend.php`;
+const ENDPOINT = `${location.protocol}//${location.hostname}${location.port !== '' ? `:${location.port}` : ''}${location.pathname}geofaith_backend.php`;
 let markersDataSource;
 let openBusRouteDataSource;
 let openBusMarkersDataSource;
@@ -63,13 +63,13 @@ const loadDataSources = () => {
     console.log("markersLayer is ready!");
     GLOBE_STATE.MARKERS_LAYER_READY = true;
     hideLoaderIfGlobeReady();
-  
+
     dataSource.clustering.enabled = true;
     dataSource.clustering.pixelRange = 15;
     dataSource.clustering.minimumClusterSize = 3;
     customClusterStyle();
   });
-  
+
   let omniaVaticanRomeDataSourcePromise = viewer.dataSources.add(
     Cesium.CzmlDataSource.load('assets/dataSources/OpenBus/OpenBusRoute.czml')
   );
@@ -81,7 +81,7 @@ const loadDataSources = () => {
     }
     console.log("omniaVaticanRomeDataSource is ready!");
     //console.log(dataSource);
-  
+
     GLOBE_STATE.OMNIA_VR_READY = true;
     hideLoaderIfGlobeReady();
     /*let entities = dataSource.entities.values;
@@ -92,7 +92,7 @@ const loadDataSources = () => {
     //openBusModel = dataSource.entities.getById("CesiumMilkTruck");
     //openBusPosition = openBusModel.position;
   });
-  
+
   let openBusMarkersLayerPromise = viewer.dataSources.add(openBusMarkersLayer);
   openBusMarkersLayerPromise.then(dataSource => {
     openBusMarkersDataSource = dataSource;
@@ -115,7 +115,7 @@ const loadDataSources = () => {
     GLOBE_STATE.COUNTRY_BORDERS_READY = true;
     hideLoaderIfGlobeReady();
   });
-  
+
   let countryPolysPromise = viewer.dataSources.add(
     Cesium.KmlDataSource.load('assets/dataSources/countries/polygons.kmz', {
       camera: viewer.scene.camera,

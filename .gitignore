@@ -1,3 +1,11 @@
 node_modules
-.yarn*
-*credentials.php
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.env
+.env.development
+.env.production

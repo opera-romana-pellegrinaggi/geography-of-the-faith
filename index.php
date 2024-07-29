@@ -14,11 +14,11 @@
 
   //detect language based on hostname
   $hostname = $_SERVER["HTTP_HOST"];
-  $thirdlevel = explode(".",$hostname)[0];
+  $thirdlevel = explode(".", $hostname)[0];
   $lang = "en";
 
-  if(in_array($thirdlevel,$thirdLevels)){
-    $lang = array_search($thirdlevel,$thirdLevels);
+  if (in_array($thirdlevel, $thirdLevels)) {
+    $lang = array_search($thirdlevel, $thirdLevels);
   }
   // Set language accordingly
   putenv('LC_ALL=' . $lang);
@@ -29,12 +29,12 @@
   // Choose domain
   textdomain("geographyofthefaith");
 
-  function _e($string) {
+  function _e($string)
+  {
     echo _($string);
-  };
-
-  include_once 'env_credentials.php';
-?>
+  }
+  require_once 'geofaith_credentials.php';
+  ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -383,8 +383,8 @@
       <script src="node_modules/material-dashboard-dark-edition/assets/js/material-dashboard.js?v=2.1.2"></script>
 
       <script>
-        const ION_ACCESS_TOKEN = "<?php echo ION_ACCESS_TOKEN ?>";
-        const BING_ACCESS_TOKEN = "<?php echo BING_ACCESS_TOKEN; ?>";
+        const ION_ACCESS_TOKEN = "<?php echo getenv('ION_ACCESS_TOKEN'); ?>";
+        const BING_ACCESS_TOKEN = "<?php echo getenv('BING_ACCESS_TOKEN'); ?>";
       </script>
       <script src="assets/js/index.js" type="module"></script>
 

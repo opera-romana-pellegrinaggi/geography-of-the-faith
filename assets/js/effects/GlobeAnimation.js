@@ -1,4 +1,4 @@
-import viewer from "../viewer/Viewer";
+import viewer from "../viewer/Viewer.js";
 
 let lastNow = Date.now();
 const initialMoveDistance = 25000;

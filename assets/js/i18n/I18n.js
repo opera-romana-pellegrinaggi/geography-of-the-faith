@@ -46,6 +46,6 @@ const hostnameToLocale = () => {
     return lang;
 }
 
-const lang = hostnameToLocale();
+const lang = hostnameToLocale() ?? 'en';
 
 export { lang };

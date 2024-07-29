@@ -1,4 +1,4 @@
-import { GLOBE_STATE, hideLoaderIfGlobeReady } from "../viewer/GLOBE_STATE"
+import { GLOBE_STATE, hideLoaderIfGlobeReady } from "../viewer/GLOBE_STATE.js"
 
 const backgroundMusic = new Audio();
 backgroundMusic.src = "assets/media/audio/The Empty Moons of Jupiter - DivKid.mp3"; //Earth Appears - Brian Bolger.mp3

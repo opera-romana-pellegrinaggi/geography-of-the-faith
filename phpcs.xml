@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ruleset name="PHP_CodeSniffer">
+    <rule ref="PSR12"> <!-- ruleset standard -->
+        <exclude name="Generic.Files.LineLength"/>
+    </rule>
+    <rule ref="Generic.WhiteSpace.ScopeIndent">
+        <properties>
+            <property name="indent" value="2" />
+            <property name="tabIndent" value="false" />
+        </properties>
+    </rule>
+    <file>./</file> <!-- directory you want to analyze -->
+    <arg name="encoding" value="utf-8"/>
+    <arg name="extensions" value="php"/>
+</ruleset>
