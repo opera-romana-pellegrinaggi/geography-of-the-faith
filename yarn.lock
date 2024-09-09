@@ -14,17 +14,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cesium/engine@npm:^10.0.0":
-  version: 10.0.0
-  resolution: "@cesium/engine@npm:10.0.0"
+"@cesium/engine@npm:^11.0.0":
+  version: 11.0.0
+  resolution: "@cesium/engine@npm:11.0.0"
   dependencies:
-    "@tweenjs/tween.js": "npm:^23.1.1"
+    "@tweenjs/tween.js": "npm:^25.0.0"
     "@zip.js/zip.js": "npm:^2.7.34"
     autolinker: "npm:^4.0.0"
     bitmap-sdf: "npm:^1.0.3"
     dompurify: "npm:^3.0.2"
     draco3d: "npm:^1.5.1"
-    earcut: "npm:^2.2.4"
+    earcut: "npm:^3.0.0"
     grapheme-splitter: "npm:^1.0.4"
     jsep: "npm:^1.3.8"
     kdbush: "npm:^4.0.1"
@@ -34,20 +34,20 @@ __metadata:
     meshoptimizer: "npm:^0.21.0"
     pako: "npm:^2.0.4"
     protobufjs: "npm:^7.1.0"
-    rbush: "npm:^3.0.1"
+    rbush: "npm:^4.0.0"
     topojson-client: "npm:^3.1.0"
     urijs: "npm:^1.19.7"
-  checksum: 10c0/5ffea8d6588796a611a83fd518fceeba5222b15a7fb233ab4e8e0465b93386e9784b2bbf80c373d961a17da581a8380bd084c002b7371b846e1e1dae18bbdeba
+  checksum: 10c0/1bea7612e482a1f83c7e53f2470d0f73c7869135b25d0fc9a18f23871b2027cc6132b14bf1c64336e8b0bab1aad30294fcf6ae9e7e5c6fcc9d3836ace46012c3
   languageName: node
   linkType: hard
 
-"@cesium/widgets@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "@cesium/widgets@npm:7.0.0"
+"@cesium/widgets@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "@cesium/widgets@npm:8.0.0"
   dependencies:
-    "@cesium/engine": "npm:^10.0.0"
+    "@cesium/engine": "npm:^11.0.0"
     nosleep.js: "npm:^0.12.0"
-  checksum: 10c0/28f7debdfd5018394f4101faee382a52e32f9bc58aaf71ad70fe4d2a3212499ba5b97afe29d84d27d87dee30bb9cbeac70ebdb3b1293c1cc8bbb4167b7106eb4
+  checksum: 10c0/b4822fe1be46bb7e5eb5d8ccba6ba240dcc610f9c927926d1aef7f6410dab0b23f69df41892304dd26ee3e7b9d3e5eabb29de7eff4c0f0fe6ebf7cbda770b810
   languageName: node
   linkType: hard
 
@@ -124,10 +124,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tweenjs/tween.js@npm:^23.1.1":
-  version: 23.1.3
-  resolution: "@tweenjs/tween.js@npm:23.1.3"
-  checksum: 10c0/811b30f5f0e7409fb41833401c501c2d6f600eb5f43039dd9067a7f70aff6dad5f5ce1233848e13f0b33a269a160d9c133f344d986cbff4f1f6b72ddecd06c89
+"@tweenjs/tween.js@npm:^25.0.0":
+  version: 25.0.0
+  resolution: "@tweenjs/tween.js@npm:25.0.0"
+  checksum: 10c0/372a85913ad088b8d2720e4a5e90469e411e0757b5f3a52da6a7403f1722236b853bc9c78d9437b1f30db61199efe45e7ec40484def2ab1fe7c2334de0673ef3
   languageName: node
   linkType: hard
 
@@ -168,13 +168,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cesium@npm:^1.119.0":
-  version: 1.119.0
-  resolution: "cesium@npm:1.119.0"
+"cesium@npm:^1.121.1":
+  version: 1.121.1
+  resolution: "cesium@npm:1.121.1"
   dependencies:
-    "@cesium/engine": "npm:^10.0.0"
-    "@cesium/widgets": "npm:^7.0.0"
-  checksum: 10c0/01e27ec6af794e03aa6b0432702f6f7a6a405c896a40164c00653211771a2797a7290419e6e0ce9a7979ddd420a19d320d9fbce2fd206b1594b3f8f85f3f735b
+    "@cesium/engine": "npm:^11.0.0"
+    "@cesium/widgets": "npm:^8.0.0"
+  checksum: 10c0/156265d0dd329cb59713c151ab8d18a4f7fda1b98a715d33ecd95323dab1401d1dd23b35467511ad072a278bfa7bdaa3ca4fff3ff92221e47557a1b32e455f7c
   languageName: node
   linkType: hard
 
@@ -199,10 +199,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"earcut@npm:^2.2.4":
-  version: 2.2.4
-  resolution: "earcut@npm:2.2.4"
-  checksum: 10c0/01ca51830edd2787819f904ae580087d37351f6048b4565e7add4b3da8a86b7bc19262ab2aa7fdc64129ab03af2d9cec8cccee4d230c82275f97ef285c79aafb
+"earcut@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "earcut@npm:3.0.0"
+  checksum: 10c0/20f3d8492f02452648466d2ce98276c9317c4d6980fc2596b1cb119fc3ef2d034724c5721de2af191331fb43610a27995b0f1b611d3386976b770ae9af7b3bbe
   languageName: node
   linkType: hard
 
@@ -326,19 +326,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"quickselect@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "quickselect@npm:2.0.0"
-  checksum: 10c0/6c8d591bc73beae4c1996b7b7138233a7dbbbdde29b7b6d822a02d08cd220fd27613f47d6e9635989b12e250d42ef9da3448de1ed12ad962974e207ab3c3562c
+"quickselect@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "quickselect@npm:3.0.0"
+  checksum: 10c0/3a0d33b0ec06841d953accdfd735aa3d8b7922cddd12970544a2c4b0278871280d8f5ba496803600693c1e7b7b2fb57c31d2b14d99132f478888006a1be6e6b7
   languageName: node
   linkType: hard
 
-"rbush@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "rbush@npm:3.0.1"
+"rbush@npm:^4.0.0":
+  version: 4.0.1
+  resolution: "rbush@npm:4.0.1"
   dependencies:
-    quickselect: "npm:^2.0.0"
-  checksum: 10c0/55311586c30cdedaa2220de6f1da45fe1fa806263afbf7b6f4c0078983830c2abc7771187896d68bfc9078cb279079fb4c84971831da4b74384aab2c2c417758
+    quickselect: "npm:^3.0.0"
+  checksum: 10c0/1d3c2e2c8b8111a6bcac0b36348ef55c977bc533a7a7bef44c423e24de531e43749bcf5b939008de69d97d3c6e7cf0e9040cecb4492358e6d562ea85165a1620
   languageName: node
   linkType: hard
 
@@ -354,7 +354,7 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     arrive: "npm:^2.4.1"
-    cesium: "npm:^1.119.0"
+    cesium: "npm:^1.121.1"
     i18next: "npm:^23.5.1"
     material-dashboard: "npm:^3.0.9"
     material-dashboard-dark-edition: "npm:^2.1.0"
